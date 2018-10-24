@@ -1,0 +1,402 @@
+Fullname	Name	Charge	Kernel	Spin_a	Spin_b	
+#Oxygen
+O_2		O-2	6	8	4	4
+O_1		O-1	6	8	4	3
+Oneutrl		O+0	6	8	4	2
+Oneutrlex	O+0*	6	8	3	3
+Oneutrlex2	O+0**	6	8	5	1
+Oplus1		O+1	6	8	4	1
+Oplus1ex	O+1*	6	8	3	2
+Oplus1ex2	O+1**	6	8	5	0
+Oplus2		O+2	6	8	3	1
+Oplus2ex	O+2*	6	8	2	2
+Oplus2ex2	O+2**	6	8	4	0
+Oplus3		O+3	6	8	2	1
+Oplus3ex	O+3*	6	8	3	0
+Oplus4		O+4	6	8	1	1
+Oplus4ex	O+4*	6	8	2	0
+Oplus5		O+5	6	8	1	0
+
+#Zinc
+Znneutrl	Zn+0	12	30	6	6
+Znneutrlex	Zn+0*	12	30	7	5
+Znneutrlex2	Zn+0^^	12	30	8	4
+Znplus1		Zn+1	12	30	6	5
+Znplus1ex	Zn+1*	12	30	7	4
+Znplus1ex2	Zn+1^^	12	30	8	3
+Znplus2		Zn+2	12	30	5	5
+Znplus2ex	Zn+2*	12	30	6	4
+Znplus2ex2	Zn+2^^	12	30	7	3
+Znplus3		Zn+3	12	30	5	4
+Znplus3ex	Zn+3*	12	30	6	3
+Znplus3ex2	Zn+3^^	12	30	7	2
+Znplus4		Zn+4	12	30	5	3
+Znplus4ex	Zn+4*	12	30	4	4
+Znplus4ex2	Zn+4**	12	30	6	2
+Znplus4ex3	Zn+4^^^	12	30	7	1
+Znplus5		Zn+5	12	30	5	2
+Znplus5ex	Zn+5*	12	30	4	3
+Znplus5ex2	Zn+5**	12	30	6	1
+Znplus5ex3	Zn+5^^^	12	30	7	0
+Znplus6		Zn+6	12	30	5	1
+Znplus6ex	Zn+6*	12	30	4	2
+Znplus6ex2	Zn+6**	12	30	3	3
+Znplus6ex3	Zn+6^^^	12	30	6	0
+Znplus7		Zn+7	12	30	5	0
+Znplus7ex	Zn+7^	12	30	4	1
+Znplus8		Zn+8	12	30	4	0
+Znplus8ex	Zn+8^	12	30	3	1
+Znplus9		Zn+9	12	30	3	0
+Znplus9ex	Zn+9^	12	30	2	1
+Znplus10	Zn+10	12	30	2	0
+Znplus10ex	Zn+10*	12	30	1	1
+Znplus11	Zn+11	12	30	1	0
+
+#H
+H		H+0	1	1	1	0
+H_		H-1	1	1	1	1
+
+Fullname	Name		Fix	Charge	Kernel	Charge	Kernel	Spin_a	Spin_b	BL	BO
+#O2                             	
+O2_linnett	O2_li		1 	6	8	6	8	7	5	1.21	2      
+O2_snglbnd	O2_sn		1 	6	8	6	8	7	5	1.21	2 
+O2_dblbnd	O2_db		1 	6	8	6	8	7	5	1.21	2 
+O2_trplbnd	O2_tr		1 	6	8	6	8	7	5	1.21	2 
+O2dia_linnett	O2dia_li	1 	6	8	6	8	6	6	1.21	2 
+O2dia_snglbnd	O2dia_sn	1 	6	8	6	8	6	6	1.21	2 
+O2dia_dblbnd	O2dia_db	1 	6	8	6	8	6	6	1.21	2 
+O2dia_trplbnd	O2dia_tr	1 	6	8	6	8	6	6	1.21	2 
+O2qnt_linnett	O2qnt_li	1 	6	8	6	8	8	4	1.21	1 
+O2qnt_snglbnd	O2qnt_sn	1 	6	8	6	8	8	4	1.21	1 
+O2qnt_dblbnd	O2qnt_db	1 	6	8	6	8	8	4	1.21	1 
+O2qnt_trplbnd	O2qnt_tr	1 	6	8	6	8	8	4	1.21	1 
+                                  
+#H2                               
+H2		H2		2 	1	1	1	1	1	1	0.7414	1	
+H2trp		H2*		2 	1	1	1	1	2	0	0.9890	1	
+H2plus		H2+1		2 	1	1	1	1	1	0	1.05677	1	
+H2minus		H2-1		2 	1	1	1	1	2	1	0.9750	1	
+
+Fullname	Name		Fix     Charge	Kernel	Charge	Kernel	Charge	Kernel	Spin_a	Spin_b	BL	BO
+#H3                                     
+H3		H3		0       1	1	1	1	1	1	2	1	0.877	1 
+H3linear	H3linear	0       1	1	1	1	1	1	2	1	0.9299	1 
+H3plus		H3+1		2	1	1	1	1	1	1	1	1	0.877	1 
+                                        
+O3_linnett	O3_li		3	6	8	6	8	6	8	9	9	1.278	1 
+O3trp_linnett	O3trp_li	0	6	8	6	8	6	8	10	8	1.278	1
+
+
+
+Fullname	Name	Charge	Kernel	Spin_a	Spin_b	
+#Carbon
+C_1		C-1	4	6	4	1
+Cneutrl		C+0	4	6	3	1
+Cneutrlex	C+0*	4	6	2	2
+Cneutrlex2	C+0**	4	6	4	0
+Cplus1		C+1	4	6	2	1
+Cplus1ex	C+1*	4	6	3	0
+Cplus2		C+2	4	6	1	1
+Cplus2ex	C+2*	4	6	2	0
+Cplus3		C+3	4	6	1	0
+
+#Nitrogen
+Nneutrl		N+0	5	7	4	1	
+Nneutrlex	N+0*	5	7	3	2 
+Nplus1		N+1	5	7	3	1     
+Nplus1ex	N+1*	5	7	2	2    
+Nplus1ex2	N+1**	5	7	4	0   
+Nplus2		N+2	5	7	2	1     
+Nplus2ex	N+2*	5	7	3	0    
+Nplus3		N+3	5	7	1	1     
+Nplus3ex	N+3*	5	7	2	0    
+Nplus4		N+4	5	7	1	0     
+
+#Fluorine
+F_1		F-1	7	9	4	4
+Fneutrl		F+0	7	9	4	3
+Fneutrlex	F+0*	7	9	5	2
+Fplus1		F+1	7	9	4	2
+Fplus1ex	F+1*	7	9	3	3
+Fplus1ex2	F+1**	7	9	5	1
+Fplus2		F+2	7	9	4	1
+Fplus2ex	F+2*	7	9	3	2
+Fplus2ex2	F+2**	7	9	5	0
+Fplus3		F+3	7	9	3	1
+Fplus3ex	F+3*	7	9	2	2
+Fplus4		F+4	7	9	2	1
+Fplus4ex	F+4*	7	9	3	0
+Fplus5		F+5	7	9	1	1
+Fplus5ex	F+5*	7	9	2	0
+Fplus6		F+6	7	9	1	0
+
+#Silicon
+Si_1		Si-1	4	14	4	1
+Sineutrl	Si+0	4	14	3	1
+Sineutrlex	Si+0*	4	14	2	2
+Sineutrlex2	Si+0**	4	14	4	0
+Siplus1		Si+1	4	14	2	1
+Siplus1ex	Si+1*	4	14	3	0
+Siplus2		Si+2	4	14	1	1
+Siplus2ex	Si+2*	4	14	2	0
+Siplus3		Si+3	4	14	1	0
+
+#Phosphorus 
+P_1		P-1	5	15	4	2  
+Pneutrl		P+0	5	15	4	1  
+Pneutrlex	P+0*	5	15	3	2 
+Pplus1		P+1	5	15	3	1  
+Pplus1ex	P+1*	5	15	2	2 
+Pplus1ex2	P+1**	5	15	4	0
+Pplus2		P+2	5	15	2	1  
+Pplus2ex	P+2*	5	15	3	0 
+Pplus3		P+3	5	15	1	1  
+Pplus3ex	P+3*	5	15	2	0 
+Pplus4		P+4	5	15	1	0  
+
+#Sulfur
+S_1		S-1	6	16	4	3   
+Sneutrl		S+0	6	16	4	2   
+Sneutrlex	S+0*	6	16	3	3  
+Sneutrlex2	S+0**	6	16	5	1 
+Splus1		S+1	6	16	4	1   
+Splus1ex	S+1*	6	16	3	2  
+Splus2		S+2	6	16	3	1   
+Splus2ex	S+2*	6	16	2	2  
+Splus2ex2	S+2**	6	16	4	0 
+Splus3		S+3	6	16	2	1   
+Splus3ex	S+3*	6	16	3	0  
+Splus4		S+4	6	16	1	1	   
+Splus4ex	S+4*	6	16	2	0  
+Splus5		S+5	6	16	1	0
+
+#Boron
+B_1		B-1	3	5	3	1 
+Bneutrl		B+0	3	5	2	1 
+Bneutrlex	B+0*	3	5	3	0
+Bplus1		B+1	3	5	1	1 
+Bplus1ex	B+1*	3	5	2	0
+Bplus2		B+2	3	5	1	0 
+
+#Chlorine
+Cl_1		Cl-1	7	17	4	4  
+Clneutrl	Cl+0	7	17	4	3  
+Clneutrlex	Cl+0*	7	17	5	2 
+Clplus1		Cl+1	7	17	4	2  
+Clplus1ex	Cl+1*	7	17	3	3 
+Clplus1ex2	Cl+1**	7	17	5	1
+Clplus2		Cl+2	7	17	4	1  
+Clplus2ex	Cl+2*	7	17	3	2 
+Clplus3		Cl+3	7	17	3	1  
+Clplus3ex	Cl+3*	7	17	2	2 
+Clplus3ex2	Cl+3**	7	17	4	0
+Clplus4		Cl+4	7	17	2	1  
+Clplus4ex	Cl+4*	7	17	3	0 
+Clplus5		Cl+5	7	17	1	1  
+Clplus5ex	Cl+5*	7	17	2	0 
+Clplus6		Cl+6	7	17	1	0  
+
+#Aluminum
+Al_1		Al-1	3	13	3	1 
+Alneutrl	Al+0	3	13	2	1 
+Alneutrlex	Al+0*	3	13	3	0
+Alplus1		Al+1	3	13	1	1	 
+Alplus1ex	Al+1*	3	13	2	0
+Alplus2		Al+2	3	13	1	0 
+
+#Lithium
+Li_1		Li-1	1	3	1	1
+Lineutrl	Li+0	1	3	1	0
+
+#Beryllium
+Be_1		Be-1	2	4	2	1 
+Beneutrl	Be+0	2	4	1	1 
+Beneutrlex	Be+0*	2	4	2	0
+Beplus1		Be+1	2	4	1	0 
+
+#Sodium
+Na_1		Na-1	1	11	1	1
+Naneutrl	Na+0	1	11	1	0
+
+#Magnesium
+Mg_1		Mg-1	2	12	2	1 
+Mgneutrl	Mg+0	2	12	1	1 
+Mgneutrlex	Mg+0*	2	12	2	0
+Mgplus1		Mg+1	2	12	1	0 
+
+#Scandium
+Scneutrl	Sc+0	3	21	2	1
+Scneutrlex	Sc+0*	3	21	3	0
+Scplus1		Sc+1	3	21	2	0
+Scplus1ex	Sc+1*	3	21	1	1
+Scplus2		Sc+2	3	21	1	0
+
+#Titanium
+Tineutrl	Ti+0	4	22	3	1
+Tineutrlex	Ti+0*	4	22	4	0
+Tineutrlex2	Ti+0**	4	22	2	2
+Tiplus1		Ti+1	4	22	3	0
+Tiplus1*	Ti+1*	4	22	2	1
+Tiplus2		Ti+2	4	22	2	0
+Tiplus2*	Ti+2*	4	22	1	1
+Tiplus3		Ti+3	4	22	1	0
+
+#Vanadium
+Vneutrl		V+0	5	23	4	1
+Vneutrlex	V+0*	5	23	5	0
+Vneutrlex2	V+0**	5	23	3	2
+Vplus1		V+1	5	23	4	0
+Vplus1ex	V+1*	5	23	3	1	 
+Vplus1ex2	V+1**	5	23	2	2	 
+Vplus3		V+3	5	23	2	0
+Vplus3ex	V+3*	5	23	1	1
+Vplus4		V+4	5	23	1	0
+
+#Chromium
+Crneutrl	Cr+0	6	24	6	0        
+Crneutrlex	Cr+0*	6	24	5	1
+Crneutrlex2	Cr+0**	6	24	4	2
+Crplus1		Cr+1	6	24	5	0
+Crplus1ex	Cr+1*	6	24	4	1
+Crplus1ex2	Cr+1**	6	24	3	2
+Crplus2		Cr+2	6	24	4	0
+Crplus2ex	Cr+2*	6	24	3	1
+Crplus2ex2	Cr+2**	6	24	2	2
+Crplus3		Cr+3	6	24	3	0
+Crplus3ex	Cr+3*	6	24	2	1       
+Crplus4		Cr+4	6	24	2	0         
+Crplus4ex	Cr+4*	6	24	1	1
+Crplus5		Cr+5	6	24	1	0
+
+#Manganese
+Mnneutrl	Mn+0	7	25	6	1  
+Mnneutrlex	Mn+0* 	7	25	7	0
+Mnneutrlex2	Mn+0**	7	25	5	2
+Mnplus1		Mn+1	7	25	6	0  
+Mnplus1ex	Mn+1*	7	25	5	1 
+Mnplus1ex2	Mn+1**	7	25	4	2
+Mnplus2		Mn+2	7	25	5	0	  
+Mnplus2ex	Mn+2*	7	25	4	1 
+Mnplus2ex2	Mn+2**	7	25	3	2
+Mnplus3		Mn+3	7	25	4	0  
+Mnplus3ex	Mn+3*	7	25	3	1 
+Mnplus4		Mn+4	7	25	3	0  
+Mnplus4ex	Mn+4*	7	25	2	1 
+Mnplus5		Mn+5	7	25	2	0  
+Mnplus5ex	Mn+5*	7	25	1	1 
+Mnplus6		Mn+6	7	25	1	0  
+
+#Iron
+Feneutrl	Fe+0	8	26	6	2   
+Feneutrlex	Fe+0*	8	26	5	3  
+Feneutrlex2	Fe+0**	8	26	7	1 
+Feneutrlex3	Fe+0***	8	26	4	4
+Feplus1		Fe+1	8	26	6	1   
+Feplus1ex	Fe+1*	8	26	5	2  
+Feplus1ex2	Fe+1**	8	26	4	3 
+Feplus2		Fe+2	8	26	5	1	   
+Feplus2ex	Fe+2*	8	26	4	2  
+Feplus2ex2	Fe+2**	8	26	6	0 
+Feplus3		Fe+3	8	26	5	0   
+Feplus3ex	Fe+3*	8	26	4	1  
+Feplus3ex2	Fe+3**	8	26	3	2 
+Feplus4		Fe+4	8	26	4	0   
+Feplus4ex	Fe+4*	8	26	3	1  
+Feplus4ex2	Fe+4**	8	26	2	2 
+Feplus5		Fe+5	8	26	3	0   
+Feplus5ex	Fe+5*	8	26	2	1  
+Feplus6		Fe+6	8	26	2	0   
+Feplus6ex	Fe+6*	8	26	1	1  
+Feplus7		Fe+7	8	26	1	0   
+
+#Cobalt
+Coneutrl	Co+0	9	27	6	3   
+Coneutrlex	Co+0*	9	27	5	4  
+Coplus1		Co+1	9	27	5	3   
+Coplus1ex	Co+1*	9	27	6	2  
+Coplus1ex2	Co+1**	9	27	4	4 
+Coplus2		Co+2	9	27	5	2   
+Coplus2ex	Co+2*	9	27	4	3  
+Coplus2ex2	Co+2**	9	27	6	1 
+Coplus3		Co+3	9	27	5	1	   
+Coplus3ex	Co+3*	9	27	4	2  
+Coplus3ex2	Co+3**	9	27	3	3 
+Coplus4		Co+4	9	27	5	0   
+Coplus4ex	Co+4*	9	27	4	1  
+Coplus4ex2	Co+4**	9	27	3	2 
+Coplus5		Co+5	9	27	4	0   
+Coplus5ex	Co+5*	9	27	3	1  
+Coplus5ex2	Co+5**	9	27	2	2 
+Coplus6		Co+6	9	27	3	0   
+Coplus6ex	Co+6*	9	27	2	1  
+Coplus7		Co+7	9	27	2	0   
+Coplus7ex	Co+7*	9	27	1	1  
+Coplus8		Co+8	9	27	1	0   
+
+#Nickel
+Nineutrl	Ni+0	10	28	6	4  
+Nineutrlex	Ni+0*	10	28	5	5 
+Niplus1		Ni+1	10	28	5	4  
+Niplus1ex	Ni+1*	10	28	6	3 
+Niplus2		Ni+2	10	28	5	3  
+Niplus2ex	Ni+2*	10	28	4	4 
+Niplus2ex2	Ni+2**	10	28	6	2
+Niplus3		Ni+3	10	28	5	2  
+Niplus3ex	Ni+3*	10	28	4	3 
+Niplus3ex2	Ni+3**	10	28	6	1
+Niplus4		Ni+4	10	28	5	1  
+Niplus4ex	Ni+4*	10	28	4	2 
+Niplus4ex2	Ni+4**	10	28	3	3
+Niplus5		Ni+5	10	28	5	0  
+Niplus5ex	Ni+5*	10	28	4	1 
+Niplus5ex2	Ni+5**	10	28	3	2
+Niplus6		Ni+6	10	28	4	0  
+Niplus6ex	Ni+6*	10	28	3	1 
+Niplus7		Ni+7	10	28	3	0  
+Niplus7ex	Ni+7*	10	28	2	1 
+Niplus8		Ni+8	10	28	2	0  
+Niplus8ex	Ni+8*	10	28	1	1 
+Niplus9		Ni+9	10	28	1	0
+
+#Copper
+Cuneutrl	Cu+0	11	29	6	5  
+Cuneutrlex	Cu+0*	11	29	7	4 
+Cuplus1		Cu+1	11	29	5	5  
+Cuplus1ex	Cu+1*	11	29	6	4 
+Cuplus2		Cu+2	11	29	5	4	  
+Cuplus2ex	Cu+2*	11	29	6	3 
+Cuplus3		Cu+3	11	29	5	3  
+Cuplus3ex	Cu+3*	11	29	4	4 
+Cuplus3ex2	Cu+3**	11	29	6	2
+Cuplus4		Cu+4	11	29	5	2  
+Cuplus4ex	Cu+4*	11	29	4	3 
+Cuplus4ex2	Cu+4**	11	29	6	1
+Cuplus5		Cu+5	11	29	5	1	  
+Cuplus5ex	Cu+5*	11	29	4	2 
+Cuplus5ex2	Cu+5**	11	29	3	3
+Cuplus6		Cu+6	11	29	5	0  
+Cuplus7		Cu+7	11	29	4	0  
+Cuplus8		Cu+8	11	29	3	0  
+Cuplus9		Cu+9	11	29	2	0  
+Cuplus9ex	Cu+9*	11	29	1	1 
+Cuplus10	Cu+10	11	29	1	0 
+
+#Yttrium
+Yneutrl		Y+0	3	39	2	1 
+Yneutrlex	Y+0*	3	39	3	0
+Yplus1		Y+1	3	39	1	1 
+Yplus1ex	Y+1*	3	39	2	0
+Yplus2		Y+2	3	39	1	0 
+
+#Zirconium	
+Zrneutrl	Zr+0	4	40	3	1  
+Zrneutrlex	Zr+0*	4	40	4	0 
+Zrneutrlex2	Zr+0**	4	40	2	2
+Zrplus1		Zr+1	4	40	3	0  
+Zrplus1ex	Zr+1*	4	40	2	1 
+Zrplus2		Zr+2	4	40	2	0  
+Zrplus2ex	Zr+2*	4	40	1	1 
+Zrplus3		Zr+3	4	40	1	0  
+
+
+

@@ -1,0 +1,123 @@
+
+        //Particle Positions
+        //O
+        Vin[0].x = 0.0;
+        Vin[0].y = 0.0;
+        Vin[0].z = 0.605;
+        Vin[0].q = 6;
+        Vin[0].s = 8;
+
+        //O
+        Vin[1].x = 0.0;
+        Vin[1].y = 0.0;
+        Vin[1].z = -0.605;
+        Vin[1].q = 6;
+        Vin[1].s = 8;
+
+	Vin[2].x = 0.370;
+	Vin[2].y = 0.317;
+	Vin[2].z = 0.001;
+	Vin[2].d = 1.4;
+	Vin[2].eta = 1;
+	Vin[2].zeta = 1;
+	Vin[2].q = -1;
+	Vin[2].s = 2;
+	
+	Vin[3].x = -0.320;
+	Vin[3].y = 0.323;
+	Vin[3].z = 0.000;
+	Vin[3].d = 1.4;
+	Vin[3].eta = 1;
+	Vin[3].zeta = 1;
+	Vin[3].q = -1;
+	Vin[3].s = 2;
+	
+	Vin[4].x = 0.316;
+	Vin[4].y = -0.319;
+	Vin[4].z = 0.000;
+	Vin[4].d = 1.4;
+	Vin[4].eta = 1;
+	Vin[4].zeta = 1;
+	Vin[4].q = -1;
+	Vin[4].s = 2;
+	
+	Vin[5].x = -0.390;
+	Vin[5].y = -0.304;
+	Vin[5].z = 0.000;
+	Vin[5].d = 1.4;
+	Vin[5].eta = 1;
+	Vin[5].zeta = 1;
+	Vin[5].q = -1;
+	Vin[5].s = 2;
+	
+	Vin[6].x = -0.000;
+	Vin[6].y = -0.500;
+	Vin[6].z = 0.000;
+	Vin[6].d = 1.4;
+	Vin[6].eta = 1;
+	Vin[6].zeta = 1;
+	Vin[6].q = -1;
+	Vin[6].s = -2;
+	
+	Vin[7].x = 0.068;
+	Vin[7].y = 0.524;
+	Vin[7].z = 0.001;
+	Vin[7].d = 1.4;
+	Vin[7].eta = 1;
+	Vin[7].zeta = 1;
+	Vin[7].q = -1;
+	Vin[7].s = -2;
+	
+	Vin[8].x = 0.000;
+	Vin[8].y = 0.000;
+	Vin[8].z = 0.605;
+	Vin[8].d = 3;
+	Vin[8].eta = 1;
+	Vin[8].zeta = 1;
+	Vin[8].q = -1;
+	Vin[8].s = 2;
+	
+	Vin[9].x = 0.000;
+	Vin[9].y = 0.000;
+	Vin[9].z = 0.896;
+	Vin[9].d = 3;
+	Vin[9].eta = 1;
+	Vin[9].zeta = 1;
+	Vin[9].q = -1;
+	Vin[9].s = -2;
+	
+	Vin[10].x = 0.001;
+	Vin[10].y = 0.000;
+	Vin[10].z = 1.374;
+	Vin[10].d = 1.4;
+	Vin[10].eta = 1;
+	Vin[10].zeta = 1;
+	Vin[10].q = -1;
+	Vin[10].s = 2;
+	
+	Vin[11].x = 0.000;
+	Vin[11].y = 0.000;
+	Vin[11].z = -0.895;
+	Vin[11].d = 3;
+	Vin[11].eta = 1;
+	Vin[11].zeta = 1;
+	Vin[11].q = -1;
+	Vin[11].s = -2;
+	
+	Vin[12].x = 0.001;
+	Vin[12].y = 0.000;
+	Vin[12].z = -0.605;
+	Vin[12].d = 3;
+	Vin[12].eta = 1;
+	Vin[12].zeta = 1;
+	Vin[12].q = -1;
+	Vin[12].s = 2;
+	
+	Vin[13].x = -0.002;
+	Vin[13].y = 0.000;
+	Vin[13].z = -1.373;
+	Vin[13].d = 1.4;
+	Vin[13].eta = 1;
+	Vin[13].zeta = 1;
+	Vin[13].q = -1;
+	Vin[13].s = 2;

@@ -6721,7 +6721,7 @@ double spinthermo(){
 		fprintf(OutFile, "| (N+2* ) - (N+2)                    | kJ/mol |   % 10.2f    |    % 10.2f    |    % 10.2f    |    % 10.2f     |\n", LitThermo131, thermo131, perdev131*100, dev131*100);
 		fprintf(OutFile, "| (N+1* ) - (N+1)                    | kJ/mol |   % 10.2f    |    % 10.2f    |    % 10.2f    |    % 10.2f     |\n", LitThermo132, thermo132, perdev132*100, dev132*100);
 		fprintf(OutFile, "| (N+1**) - (N+1)                    | kJ/mol |   % 10.2f    |    % 10.2f    |    % 10.2f    |    % 10.2f     |\n", LitThermo133, thermo133, perdev133*100, dev133*100);
-		fprintf(OutFile, "| (N    ) - (N  )                    | kJ/mol |   % 10.2f    |    % 10.2f    |    % 10.2f    |    % 10.2f     |\n", LitThermo134, thermo134, perdev134*100, dev134*100);
+		fprintf(OutFile, "| (N*   ) - (N  )                    | kJ/mol |   % 10.2f    |    % 10.2f    |    % 10.2f    |    % 10.2f     |\n", LitThermo134, thermo134, perdev134*100, dev134*100);
 //		fprintf(OutFile, "| (N  **) - (N  )                    | kJ/mol |   % 10.2f    |    % 10.2f    |    % 10.2f    |    % 10.2f     |\n", LitThermo158, thermo158, perdev158*100, dev158*100);
 		fprintf(OutFile, "| (N+4 ) - (N+5)                     | kJ/mol |   % 10.2f    |    % 10.2f    |    % 10.2f    |    % 10.2f     |\n", LitThermo85, thermo85, perdev85*100, dev85*100);
 		fprintf(OutFile, "| (N+3 ) - (N+5)                     | kJ/mol |   % 10.2f    |    % 10.2f    |    % 10.2f    |    % 10.2f     |\n", LitThermo86, thermo86, perdev86*100, dev86*100);
