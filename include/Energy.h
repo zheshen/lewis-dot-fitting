@@ -8,7 +8,7 @@
 #include "Structure.h"
 
 //Declaration of interaction types================================================================
-double formOfAAX(V *, V *, V *, double, double, double, double, double, double, double, double, double, double, double, double, double, double,double, double, double, double, double, double, double, double, double, double, double, double, double, int, int, int, double *);
+double formOfAAX(V *, V *, V *, double, double, double, double, double, double, double, double, double, double, double, double, double, double, double,double, double, double, double, double, double, double, double, double, double, double, double, double, int, int, int, double *);
 double formOfAA(V *, V *, double, double, double, double, double, double, double, double, double, double, double, double, double, double, double, double, double, double, double, double, double, double, double, double, double, double, int, int, int, int, double *);
 double formOfAB(V *, V *, double, double, double, double, double, double, double, int, int, int, int, double *);
 double formOfAV(double, double, double, double, double, double, double, double, double, double, \

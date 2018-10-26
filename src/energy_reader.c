@@ -95,6 +95,7 @@ double TBenergy_split(V * a, V * b, V * R, int E_or_F, double *items){
 	double pAB22 = parAB[21];
 	double pAB23 = parAB[22];
 	double pAB24 = parAB[23];
+	double pAB25 = parAB[24];
 	double p1=0;
 	double p2=0;
 	double p3=0;
@@ -436,7 +437,7 @@ double TBenergy_split(V * a, V * b, V * R, int E_or_F, double *items){
 //                printf("energy_read r %f, dr1 %f, di1 %f\n", r, dr1, di1);
 //        diagnose_print = 0;
 	
-	return formOfAAX(a, b, R, pAB2, pAB5, pAB6, pAB7, pAB8, pAB9, pAB10, pAB11, pAB12, pAB20, pAB21, pAB22, pAB23, pAB24, p1, p2, p3, p4, p5, p6, p7, p8, p9, p10, p11, p12, p13, n1, n2, E_or_F, items);
+	return formOfAAX(a, b, R, pAB2, pAB5, pAB6, pAB7, pAB8, pAB9, pAB10, pAB11, pAB12, pAB20, pAB21, pAB22, pAB23, pAB24, pAB25, p1, p2, p3, p4, p5, p6, p7, p8, p9, p10, p11, p12, p13, n1, n2, E_or_F, items);
 
 }
 
