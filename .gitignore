@@ -1,3 +1,5 @@
-src/obj/*.o
+src/
+!src/*.c*
+!src/makefile
 DE*
 training-sets-builder/TrainingSets/*.c

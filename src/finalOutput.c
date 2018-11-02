@@ -94,7 +94,7 @@ void finalOutput(){
 	fprintf(OutFile, "\n");
 
 	fprintf(OutFile, "|=========================================================================================================================|\n");
-        fprintf(OutFile, "|    | ChiexK | TauexK1| TauexK2| ChiexR | TauexR | TauexK3| ChiexA | Tauex0 | Tauex1 | Tauex2 | Tauex3 | Tauex4 |  n.a.  |\n");
+        fprintf(OutFile, "|    | ChiexK | TauexK1| TauexK2| ChiexR | TauexR |  n.a.  | ChiexA | Tauex0 | Tauex1 | Tauex2 | Tauex3 | Tauex4 |  n.a.  |\n");
                                                   
 	fprintf(OutFile, "|====|========|========|========|========|========|========|========|========|========|========|========|========|========|\n");
 

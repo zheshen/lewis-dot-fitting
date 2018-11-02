@@ -83,9 +83,9 @@ double formOfAAX(V *a, V *b, V *R, double pAB2, double pAB5, double pAB6, double
 	uA = E2_const*2.0/rootpi*pAB20*sqrt(2*Rhat)*exp(-pAB21*Rbar*r2)*exp(-pAB24*(Eta_a+Eta_b));
 	//uN = p6*q*sqrt(2.0*Rhat)*anglePart/((1+p10*2.0*Rhat*Rn2)+(p11*Ihat*r2))
 	if (q != -1)
-		uN = q * ((1-C) * exp(-0.55*p10  * 2*Rhat * Rn2)+ C * exp(-p10 * 2*Rhat * Rn2)) ;
+		uN = q * ((1-C) * exp(-pAB22 * 2*Rhat * Rn2)+ C * exp(-pAB22 * (1.0+pAB23) * 2*Rhat * Rn2)) ;
 	else
-		uN = q * ((1-C) * exp(-0.55*pAB22 * 2*Rhat * Rn2)+ C * exp(-pAB22 * 2*Rhat * Rn2)) ;
+		uN = q * ((1-C) * exp(-pAB22 * 2*Rhat * Rn2)+ C * exp(-pAB22 * (1.0+pAB23) * 2*Rhat * Rn2)) ;
 	uexA = uA*uN;
 //	uexA = -E2_const/Omega(d_a, r_a, d_b, r_b)*q*Delta_U(d_a, r_a, d_b, r_b, R_X);
 //	uexR = E2_const/Omega(d_a, r_a, d_b, r_b)*(s-q)*Delta_C(d_a, r_a, d_b, r_b, p2, R_X);
