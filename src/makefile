@@ -63,6 +63,9 @@ oxygenrun_no_di: $(OBJECTS)
 oxygenrun_no_qnt: $(OBJECTS)
 	$(CC) -o $@ $^ $(CFLAGS) $(LIBS)
 
+oxygenrun_no_ex_se: $(OBJECTS)
+	$(CC) -o $@ $^ $(CFLAGS) $(LIBS)
+
 oxygenrun_no_loc_min: $(OBJECTS)
 	$(CC) -o $@ $^ $(CFLAGS) $(LIBS)
 
