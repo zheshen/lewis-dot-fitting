@@ -280,7 +280,7 @@ double getTBenergy(struct V *vv, struct V *Vx, int i, int j, int NumNuc){
 		Ri = getR2Dist(vv,i,Vx,k);
 		Rj = getR2Dist(vv,j,Vx,k);
 	
-		temp=TBenergy(&vv[i], &vv[j], &Vx[k], ENERGY);
+		temp=TBenergy(&vv[i], &vv[j], &Vx[k], r2, Rn2, ENERGY);
                 //printf("Threebody energy value for i %d j %d and k %d gives AAX dist %f with energy %f\n",i,j,k,r,temp);
                 sum+= temp;
 	}
