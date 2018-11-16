@@ -1,5 +1,10 @@
-src/
+/src/*
 !src/*.c*
 !src/makefile
+*.d
+*.pdb
+sub.sh.*
+DiffEvolution.out*
+core.*
 DE*
 training-sets-builder/TrainingSets/*.c
