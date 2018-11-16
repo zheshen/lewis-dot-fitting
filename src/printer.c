@@ -208,7 +208,7 @@ void printTBenergyPlot(double q, int s, int distType){
 		b.x     =r;
 		//TBenergy(r2 between electrons & then its r, r2 midpoint to X & then its r, r2 e1 to X, r2 e2 to X, d1, d2, q, s, E_or_F)
 //		if(distType)
-                fprintf(OutFile, "%f %f \n", r, TBenergy(&a, &b, &X, r2, 0.0, ENERGY));
+                fprintf(OutFile, "%f %f \n", r, TBenergy(&a, &b, &X, ENERGY));
 //		else
 //		fprintf(OutFile, "%f %f \n", r, 0.0);
                 //fprintf(OutFile, "%f %f \n", r, TBenergy(0, 0, r2, r, 0, 0, d1,d2, q, s, ENERGY));

@@ -108,9 +108,9 @@ double sumEnergies_split(V * Vin,  int part,  double *items){
 //						sum += TBenergy(r2,r, Rn2, Rn, Ri, Rj, Vin[l].x, Vin[l].y, Vin[l].z, Vin[i].x, Vin[i].y, Vin[i].z, Vin[j].x, Vin[j].y, \
 //Vin[j].z, Vin[i].dr, Vin[j].dr, Vin[i].di, Vin[j].di, Vin[l].q, Vin[l].s, ENERGY);
 						if (Vin[l].q != -1)
-							sum += TBenergy_split(&Vin[i], &Vin[j], &Vin[l], r2, Rn2, ENERGY, items);
+							sum += TBenergy_split(&Vin[i], &Vin[j], &Vin[l], ENERGY, items);
 						else
-							sum += TBenergy_split(&Vin[i], &Vin[j], &Vin[l], r2, Rn2, ENERGY, items);
+							sum += TBenergy_split(&Vin[i], &Vin[j], &Vin[l], ENERGY, items);
 					}
 				}
                         }
