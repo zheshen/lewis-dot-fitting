@@ -248,6 +248,8 @@ Vneutrlex2	V+0**	5	23	3	2
 Vplus1		V+1	5	23	4	0
 Vplus1ex	V+1*	5	23	3	1	 
 Vplus1ex2	V+1**	5	23	2	2	 
+Vplus2		V+2	5	23	3	0
+Vplus2ex	V+2*	5	23	2	1	 
 Vplus3		V+3	5	23	2	0
 Vplus3ex	V+3*	5	23	1	1
 Vplus4		V+4	5	23	1	0
