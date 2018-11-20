@@ -37,6 +37,12 @@ typedef enum MoName{
 	O2, O2dia, O2qnt, O2_linnett, O2_snglbnd, O2_dblbnd, O2_trplbnd, O2dia_linnett, O2dia_snglbnd, O2dia_dblbnd, O2dia_trplbnd, O2qnt_linnett, O2qnt_snglbnd, O2qnt_dblbnd, O2qnt_trplbnd,
 	//O3
 	O3_linnett, O3trp_linnett,
+	//C
+	C_1, Cneutrl, Cneutrlex, Cneutrlex2, Cplus1, Cplus1ex, Cplus2, Cplus2ex, Cplus3, 
+	//N
+	N_1, Nneutrl, Nneutrlex, Nneutrlex2, Nplus1, Nplus1ex, Nplus1ex2, Nplus2, Nplus2ex, Nplus3, Nplus3ex, Nplus4, 
+
+
 	// Dimers
 	t_dimer,
 	t_DeprotonatedDimer,

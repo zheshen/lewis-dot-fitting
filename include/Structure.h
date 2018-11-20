@@ -180,6 +180,274 @@ void specspinFeplus6(Species *spec);
 void specspinFeplus6ex(Species *spec);
 void specspinFeplus7(Species *spec);
 
+void specspinC_1(Species *spec);
+void specspinCneutrl(Species *spec);
+void specspinCneutrlex(Species *spec);
+void specspinCneutrlex2(Species *spec);
+void specspinCplus1(Species *spec);
+void specspinCplus1ex(Species *spec);
+void specspinCplus2(Species *spec);
+void specspinCplus2ex(Species *spec);
+void specspinCplus3(Species *spec);
+
+void specspinNneutrl(Species *spec);
+void specspinNneutrlex(Species *spec);
+void specspinNneutrlex2(Species *spec);
+void specspinNplus1(Species *spec);
+void specspinNplus1ex(Species *spec);
+void specspinNplus1ex2(Species *spec);
+void specspinNplus2(Species *spec);
+void specspinNplus2ex(Species *spec);
+void specspinNplus3(Species *spec);
+void specspinNplus3ex(Species *spec);
+void specspinNplus4(Species *spec);
+
+void specspinF_1(Species *spec);
+void specspinFneutrl(Species *spec);
+void specspinFneutrlex(Species *spec);
+void specspinFplus1(Species *spec);
+void specspinFplus1ex(Species *spec);
+void specspinFplus1ex2(Species *spec);
+void specspinFplus2(Species *spec);
+void specspinFplus2ex(Species *spec);
+void specspinFplus2ex2(Species *spec);
+void specspinFplus3(Species *spec);
+void specspinFplus3ex(Species *spec);
+void specspinFplus4(Species *spec);
+void specspinFplus4ex(Species *spec);
+void specspinFplus5(Species *spec);
+void specspinFplus5ex(Species *spec);
+void specspinFplus6(Species *spec);
+
+void specspinSi_1(Species *spec);
+void specspinSineutrl(Species *spec);
+void specspinSineutrlex(Species *spec);
+void specspinSineutrlex2(Species *spec);
+void specspinSiplus1(Species *spec);
+void specspinSiplus1ex(Species *spec);
+void specspinSiplus2(Species *spec);
+void specspinSiplus2ex(Species *spec);
+void specspinSiplus3(Species *spec);
+
+void specspinP_1(Species *spec);
+void specspinPneutrl(Species *spec);
+void specspinPneutrlex(Species *spec);
+void specspinPplus1(Species *spec);
+void specspinPplus1ex(Species *spec);
+void specspinPplus1ex2(Species *spec);
+void specspinPplus2(Species *spec);
+void specspinPplus2ex(Species *spec);
+void specspinPplus3(Species *spec);
+void specspinPplus3ex(Species *spec);
+void specspinPplus4(Species *spec);
+
+void specspinS_1(Species *spec);
+void specspinSneutrl(Species *spec);
+void specspinSneutrlex(Species *spec);
+void specspinSneutrlex2(Species *spec);
+void specspinSplus1(Species *spec);
+void specspinSplus1ex(Species *spec);
+void specspinSplus2(Species *spec);
+void specspinSplus2ex(Species *spec);
+void specspinSplus2ex2(Species *spec);
+void specspinSplus3(Species *spec);
+void specspinSplus3ex(Species *spec);
+void specspinSplus4(Species *spec);
+void specspinSplus4ex(Species *spec);
+void specspinSplus5(Species *spec);
+
+void specspinB_1(Species *spec);
+void specspinBneutrl(Species *spec);
+void specspinBneutrlex(Species *spec);
+void specspinBplus1(Species *spec);
+void specspinBplus1ex(Species *spec);
+void specspinBplus2(Species *spec);
+
+void specspinCl_1(Species *spec);
+void specspinClneutrl(Species *spec);
+void specspinClneutrlex(Species *spec);
+void specspinClplus1(Species *spec);
+void specspinClplus1ex(Species *spec);
+void specspinClplus1ex2(Species *spec);
+void specspinClplus2(Species *spec);
+void specspinClplus2ex(Species *spec);
+void specspinClplus3(Species *spec);
+void specspinClplus3ex(Species *spec);
+void specspinClplus3ex2(Species *spec);
+void specspinClplus4(Species *spec);
+void specspinClplus4ex(Species *spec);
+void specspinClplus5(Species *spec);
+void specspinClplus5ex(Species *spec);
+void specspinClplus6(Species *spec);
+
+void specspinAl_1(Species *spec);
+void specspinAlneutrl(Species *spec);
+void specspinAlneutrlex(Species *spec);
+void specspinAlplus1(Species *spec);
+void specspinAlplus1ex(Species *spec);
+void specspinAlplus2(Species *spec);
+
+void specspinLi_1(Species *spec);
+void specspinLineutrl(Species *spec);
+
+void specspinBe_1(Species *spec);
+void specspinBeneutrl(Species *spec);
+void specspinBeneutrlex(Species *spec);
+void specspinBeplus1(Species *spec);
+
+void specspinNa_1(Species *spec);
+void specspinNaneutrl(Species *spec);
+
+void specspinMg_1(Species *spec);
+void specspinMgneutrl(Species *spec);
+void specspinMgneutrlex(Species *spec);
+void specspinMgplus1(Species *spec);
+
+void specspinScneutrl(Species *spec);
+void specspinScneutrlex(Species *spec);
+void specspinScplus1(Species *spec);
+void specspinScplus1ex(Species *spec);
+void specspinScplus2(Species *spec);
+
+void specspinTineutrl(Species *spec);
+void specspinTineutrlex(Species *spec);
+void specspinTineutrlex2(Species *spec);
+void specspinTiplus1(Species *spec);
+void specspinTiplus1ex(Species *spec);
+void specspinTiplus2(Species *spec);
+void specspinTiplus2ex(Species *spec);
+void specspinTiplus3(Species *spec);
+
+void specspinVneutrl(Species *spec);
+void specspinVneutrlex(Species *spec);
+void specspinVneutrlex2(Species *spec);
+void specspinVplus1(Species *spec);
+void specspinVplus1ex(Species *spec);
+void specspinVplus2(Species *spec);
+void specspinVplus2ex(Species *spec);
+void specspinVplus3(Species *spec);
+void specspinVplus3ex(Species *spec);
+void specspinVplus4(Species *spec);
+
+void specspinCrneutrl(Species *spec);
+void specspinCrneutrlex(Species *spec);
+void specspinCrplus1(Species *spec);
+void specspinCrplus1ex(Species *spec);
+void specspinCrplus1ex2(Species *spec);
+void specspinCrplus2(Species *spec);
+void specspinCrplus2ex(Species *spec);
+void specspinCrplus2ex2(Species *spec);
+void specspinCrplus3(Species *spec);
+void specspinCrplus3ex(Species *spec);
+void specspinCrplus4(Species *spec);
+void specspinCrplus4ex(Species *spec);
+void specspinCrplus5(Species *spec);
+
+void specspinMnneutrl(Species *spec);
+void specspinMnneutrlex(Species *spec);
+void specspinMnneutrlex2(Species *spec);
+void specspinMnplus1(Species *spec);
+void specspinMnplus1ex(Species *spec);
+void specspinMnplus1ex2(Species *spec);
+void specspinMnplus2(Species *spec);
+void specspinMnplus2ex(Species *spec);
+void specspinMnplus2ex2(Species *spec);
+void specspinMnplus3(Species *spec);
+void specspinMnplus3ex(Species *spec);
+void specspinMnplus4(Species *spec);
+void specspinMnplus4ex(Species *spec);
+void specspinMnplus5(Species *spec);
+void specspinMnplus5ex(Species *spec);
+void specspinMnplus6(Species *spec);
+
+void specspinConeutrl(Species *spec);
+void specspinConeutrlex(Species *spec);
+void specspinCoplus1(Species *spec);
+void specspinCoplus1ex(Species *spec);
+void specspinCoplus1ex2(Species *spec);
+void specspinCoplus2(Species *spec);
+void specspinCoplus2ex(Species *spec);
+void specspinCoplus2ex2(Species *spec);
+void specspinCoplus3(Species *spec);
+void specspinCoplus3ex(Species *spec);
+void specspinCoplus3ex2(Species *spec);
+void specspinCoplus4(Species *spec);
+void specspinCoplus4ex(Species *spec);
+void specspinCoplus4ex2(Species *spec);
+void specspinCoplus5(Species *spec);
+void specspinCoplus5ex(Species *spec);
+void specspinCoplus5ex2(Species *spec);
+void specspinCoplus6(Species *spec);
+void specspinCoplus6ex(Species *spec);
+void specspinCoplus7(Species *spec);
+void specspinCoplus7ex(Species *spec);
+void specspinCoplus8(Species *spec);
+
+void specspinNineutrl(Species *spec);
+void specspinNineutrlex(Species *spec);
+void specspinNiplus1(Species *spec);
+void specspinNiplus1ex(Species *spec);
+void specspinNiplus2(Species *spec);
+void specspinNiplus2ex(Species *spec);
+void specspinNiplus2ex2(Species *spec);
+void specspinNiplus3(Species *spec);
+void specspinNiplus3ex(Species *spec);
+void specspinNiplus3ex2(Species *spec);
+void specspinNiplus4(Species *spec);
+void specspinNiplus4ex(Species *spec);
+void specspinNiplus4ex2(Species *spec);
+void specspinNiplus5(Species *spec);
+void specspinNiplus5ex(Species *spec);
+void specspinNiplus5ex2(Species *spec);
+void specspinNiplus6(Species *spec);
+void specspinNiplus6ex(Species *spec);
+void specspinNiplus7(Species *spec);
+void specspinNiplus7ex(Species *spec);
+void specspinNiplus8(Species *spec);
+void specspinNiplus8ex(Species *spec);
+void specspinNiplus9(Species *spec);
+
+void specspinCuneutrl(Species *spec);
+void specspinCuneutrlex(Species *spec);
+void specspinCuplus1(Species *spec);
+void specspinCuplus1ex(Species *spec);
+void specspinCuplus2(Species *spec);
+void specspinCuplus2ex(Species *spec);
+void specspinCuplus3(Species *spec);
+void specspinCuplus3ex(Species *spec);
+void specspinCuplus3ex2(Species *spec);
+void specspinCuplus4(Species *spec);
+void specspinCuplus4ex(Species *spec);
+void specspinCuplus4ex2(Species *spec);
+void specspinCuplus5(Species *spec);
+void specspinCuplus5ex(Species *spec);
+void specspinCuplus5ex2(Species *spec);
+void specspinCuplus6(Species *spec);
+void specspinCuplus7(Species *spec);
+void specspinCuplus8(Species *spec);
+void specspinCuplus9(Species *spec);
+void specspinCuplus9ex(Species *spec);
+void specspinCuplus10(Species *spec);
+
+void specspinYnneutrl(Species *spec);
+void specspinYnneutrlex(Species *spec);
+void specspinYnplus1(Species *spec);
+void specspinYnplus1ex(Species *spec);
+void specspinYnplus2(Species *spec);
+
+void specspinZrneutrl(Species *spec);
+void specspinZrneutrlex(Species *spec);
+void specspinZrneutrlex2(Species *spec);
+void specspinZrplus1(Species *spec);
+void specspinZrplus1ex(Species *spec);
+void specspinZrplus2(Species *spec);
+void specspinZrplus2ex(Species *spec);
+void specspinZrplus3(Species *spec);
+
+
+
+// Diatomics
+
 void specspinO2_linnett(Species *spec);
 void specspinO2_snglbnd(Species *spec);
 void specspinO2_dblbnd(Species *spec);
@@ -284,6 +552,28 @@ double devspinFeplus6(Species *spec);
 double devspinFeplus6ex(Species *spec);
 double devspinFeplus7(Species *spec);
 
+double devspinC_1(Species *spec);
+double devspinCneutrl(Species *spec);
+double devspinCneutrlex(Species *spec);
+double devspinCneutrlex2(Species *spec);
+double devspinCplus1(Species *spec);
+double devspinCplus1ex(Species *spec);
+double devspinCplus2(Species *spec);
+double devspinCplus2ex(Species *spec);
+double devspinCplus3(Species *spec);
+
+double devspinNneutrl(Species *spec);
+double devspinNneutrlex(Species *spec);
+double devspinNneutrlex2(Species *spec);
+double devspinNplus1(Species *spec);
+double devspinNplus1ex(Species *spec);
+double devspinNplus1ex2(Species *spec);
+double devspinNplus2(Species *spec);
+double devspinNplus2ex(Species *spec);
+double devspinNplus3(Species *spec);
+double devspinNplus3ex(Species *spec);
+double devspinNplus4(Species *spec);
+
 double devspinO2_linnett(Species *spec);
 double devspinO2_snglbnd(Species *spec);
 double devspinO2_dblbnd(Species *spec);
@@ -387,6 +677,28 @@ double ainterspinFeplus5ex(Species *spec);
 double ainterspinFeplus6(Species *spec);
 double ainterspinFeplus6ex(Species *spec);
 double ainterspinFeplus7(Species *spec);
+
+double ainterspinC_1(Species *spec);
+double ainterspinCneutrl(Species *spec);
+double ainterspinCneutrlex(Species *spec);
+double ainterspinCneutrlex2(Species *spec);
+double ainterspinCplus1(Species *spec);
+double ainterspinCplus1ex(Species *spec);
+double ainterspinCplus2(Species *spec);
+double ainterspinCplus2ex(Species *spec);
+double ainterspinCplus3(Species *spec);
+
+double ainterspinNneutrl(Species *spec);
+double ainterspinNneutrlex(Species *spec);
+double ainterspinNneutrlex2(Species *spec);
+double ainterspinNplus1(Species *spec);
+double ainterspinNplus1ex(Species *spec);
+double ainterspinNplus1ex2(Species *spec);
+double ainterspinNplus2(Species *spec);
+double ainterspinNplus2ex(Species *spec);
+double ainterspinNplus3(Species *spec);
+double ainterspinNplus3ex(Species *spec);
+double ainterspinNplus4(Species *spec);
 
 double ainterspinO2_linnett(Species *spec);
 double ainterspinO2_snglbnd(Species *spec);

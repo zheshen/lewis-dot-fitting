@@ -1,22 +1,22 @@
 #include "Structure.h"
 
-extern double U_spinFeplus5ex;					//declare structure energy                           
+extern double U_spinCplus1;					//declare structure energy                           
 
-void specspinFeplus5ex(Species * spec){				//define SPEC function for specific structure
+void specspinCplus1(Species * spec){				//define SPEC function for specific structure
 
 /*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>BELOW CHANGABLE>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 
-	strcpy(spec->fullname, "Feplus5ex");			//Enter full name for the structure
-	strcpy(spec->name, "Fe+5*");				//Enter abbreviation name
+	strcpy(spec->fullname, "Cplus1");			//Enter full name for the structure
+	strcpy(spec->name, "C+1");				//Enter abbreviation name
 	strcpy(spec->spin, "a2b1");		//Enter spin structure
-	spec->type = Feplus5ex;				//Enter type name
+	spec->type = Cplus1;				//Enter type name
 	spec->complete = 0;					//Not used temporarily
 	spec->kernel = 1;					//Not used temporarily
 	spec->degFree = 16;					//Enter degree of freedom for the structure
 	spec->numPart = 4;					//Enter number of particles for the structure
 	spec->stepSize = 0.101;					//Enter the stepsize for optimization, default is 0.101
-	spec->ainter = ainterspinFeplus5ex;			//Enter the function name for "ainter" 
-	spec->dev = devspinFeplus5ex;			//Enter the function name for "dev"
+	spec->ainter = ainterspinCplus1;			//Enter the function name for "ainter" 
+	spec->dev = devspinCplus1;			//Enter the function name for "dev"
 
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<ABOVE CHANGABLE<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 
@@ -89,7 +89,7 @@ void specspinFeplus5ex(Species * spec){				//define SPEC function for specific s
 }
 
 
-double ainterspinFeplus5ex(Species * spec){
+double ainterspinCplus1(Species * spec){
 	
 	int i, part;
 	double Usum;
@@ -123,8 +123,8 @@ double ainterspinFeplus5ex(Species * spec){
         Vin[0].x = 0.0;
         Vin[0].y = 0.0;
         Vin[0].z = 0.0;
-        Vin[0].q = 8;
-        Vin[0].s = 26;
+        Vin[0].q = 4;
+        Vin[0].s = 6;
 
        //a-1 
         Vin[1].x = 0.0;
@@ -161,13 +161,13 @@ double ainterspinFeplus5ex(Species * spec){
         setDvalue(Vin, part);
 
 	//calculate structure energy
-        if((MC_spinFeplus5ex) && (spec->icue ==4)){
+        if((MC_spinCplus1) && (spec->icue ==4)){
                 Usum = metropolis(Vin, part,-3);//fix heavy
         }else{
                 Usum = sumEnergies(Vin, part);
 	}
 	Usum = Usum*1E3;
-	U_spinFeplus5ex = Usum;
+	U_spinCplus1 = Usum;
 
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<ABOVE CHANGABLE<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 
@@ -189,7 +189,7 @@ double ainterspinFeplus5ex(Species * spec){
 }
 
 
-double devspinFeplus5ex(Species *spec){
+double devspinCplus1(Species *spec){
 
         double deviation = 0;
         double wTotal    = 0;
@@ -206,7 +206,7 @@ double devspinFeplus5ex(Species *spec){
 	double complex fd1, fd2;
 
         //Current Positions
-        if (MC_spinFeplus5ex){
+        if (MC_spinCplus1){
 		fr1    = getDistance(spec->coord, 0, 1);
 		fr2    = getDistance(spec->coord, 0, spec->numPart-1);
 		fd1    = spec->coord[1].d;
@@ -225,7 +225,7 @@ double devspinFeplus5ex(Species *spec){
 	if (print){
 		printHeader(spec->fullname, deviation);
 		OutFile = fopen(directory, "a");
-                if (MC_spinFeplus5ex){
+                if (MC_spinCplus1){
                          fprintf(OutFile,"| Lone A1  dist         |      A     |      -         |   -   |                |    %8.5f    |   N/A   |       -       |\n", fr1);
                          fprintf(OutFile,"| Lone B1  dist         |      A     |      -         |   -   |                |    %8.5f    |   N/A   |       -       |\n", fr2);
                          fprintf(OutFile,"| Lone A1 1/radius^2    |    1/A^2   |      -         |   -   |                |%7.3f+%7.3fI|   N/A   |       -       |\n", creal(fd1), cimag(fd1));
@@ -238,12 +238,12 @@ double devspinFeplus5ex(Species *spec){
                 }
                 fprintf(OutFile, "|-------------------------------------------------------------------------------------------------------------------------|\n");
 	    	fclose(OutFile);
-		printEnergy(U_spinFeplus5ex);
+		printEnergy(U_spinCplus1);
 	}
 
 	//structure output
 	sprintf(Out, "MC_spin%s.pdb", spec->fullname);
-        if ((pdbSwitch) && (MC_spinFeplus5ex)){ output(spec->coord, spec->numPart, Out); }
+        if ((pdbSwitch) && (MC_spinCplus1)){ output(spec->coord, spec->numPart, Out); }
 
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<ABOVE CHANGABLE<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 

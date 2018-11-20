@@ -7,8 +7,8 @@
 #include "U.h"
 void test();
 //Declaration of important variables 
-char version[] = "DE5087.071";
-char shelloutput[] = "ws5087";
+char version[] = "DE5090.071";
+char shelloutput[] = "ws5090";
 int printFunctionPlots = 1;
 int pdbSwitch = 0; //the whole trajectory of upnup 
 int finalpdbswitch = 1;
@@ -188,7 +188,33 @@ int main (int argc, char *argv[]) {
 	lowermain(O3_linnett);
 	lowermain(O3trp_linnett);
 
-/*
+	lowermain(C_1);
+	lowermain(Cneutrlex2);
+	lowermain(Cneutrlex);
+	lowermain(Cneutrl);
+	lowermain(Cplus1ex);
+	lowermain(Cplus1);
+	lowermain(Cplus2ex);
+	lowermain(Cplus2);
+	lowermain(Cplus3);
+//        lowermain(C2_trplt);
+//        lowermain(C2_snglt);
+
+//	lowermain(N_1);
+//	lowermain(Nneutrlex2);
+	lowermain(Nneutrlex);
+	lowermain(Nneutrl);
+	lowermain(Nplus1ex2);
+	lowermain(Nplus1ex);
+	lowermain(Nplus1);
+	lowermain(Nplus2ex);
+	lowermain(Nplus2);
+	lowermain(Nplus3ex);
+	lowermain(Nplus3);
+	lowermain(Nplus4);
+//        lowermain(N2_trplt);
+//        lowermain(N2_snglt);
+
 	lowermain(Feplus7);
 	lowermain(Feplus6);
 	lowermain(Feplus6ex);
@@ -210,7 +236,6 @@ int main (int argc, char *argv[]) {
 	lowermain(Feneutrlex);
 	lowermain(Feneutrlex2);
 	lowermain(Feneutrlex3);
-*/
 
 	lowermain(Znplus11);
 	lowermain(Znplus10);
@@ -313,33 +338,6 @@ int main (int argc, char *argv[]) {
 	lowermainspinFplus6();
         lowermainspinF2_trplt();
         lowermainspinF2_snglt();
-
-	lowermainspinC_1();
-	lowermainspinCneutrlex2();
-	lowermainspinCneutrlex();
-	lowermainspinCneutrl();
-	lowermainspinCplusex();
-	lowermainspinCplus();
-	lowermainspinCplus2ex();
-	lowermainspinCplus2();
-	lowermainspinCplus3();
-        lowermainspinC2_trplt();
-        lowermainspinC2_snglt();
-
-	lowermainspinN_1();
-	lowermainspinNneutrlex2();
-	lowermainspinNneutrlex();
-	lowermainspinNneutrl();
-	lowermainspinNplusex2();
-	lowermainspinNplusex();
-	lowermainspinNplus();
-	lowermainspinNplus2ex();
-	lowermainspinNplus2();
-	lowermainspinNplus3ex();
-	lowermainspinNplus3();
-	lowermainspinNplus4();
-        lowermainspinN2_trplt();
-        lowermainspinN2_snglt();
 
 	lowermainspinSi_1();
 	lowermainspinSineutrlex2();

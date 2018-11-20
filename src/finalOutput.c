@@ -232,7 +232,7 @@ void finalOutput(){
 
 
 	fprintf(OutFile, "|=========================================================================================================================|\n");
-        fprintf(OutFile, "|    |  TauCA |  RhoCA | KapCA1 | KapCA2 | KapCA3 |  n.a.  | KapexC1| KapexC2| KapexC3| TauexC | RhoexC |  n.a.  |  SigCA |\n");
+        fprintf(OutFile, "|    |  TauCA |  RhoCA | KapCA1 | KapCA2 | KapCA3 |  n.a.  |TauexCc2| ChiexCc|TauexCc1| TauexC | RhoexC |  n.a.  |  SigCA |\n");
                                                   
 	fprintf(OutFile, "|====|========|========|========|========|========|========|========|========|========|========|========|========|========|\n");
 
@@ -259,7 +259,7 @@ void finalOutput(){
 	fprintf(OutFile, "\n");
 
 	fprintf(OutFile, "|=========================================================================================================================|\n");
-        fprintf(OutFile, "|    |  TauNA |  RhoNA | KapNA1 | KapNA2 | KapNA3 |  n.a.  | ChiexN | KapexN2| KapexN3| TauexN1| TauexN2|  n.a.  |  SigNA |\n");
+        fprintf(OutFile, "|    |  TauNA |  RhoNA | KapNA1 | KapNA2 | KapNA3 |  n.a.  |TauexNc2| ChiexNc|TauexNc1| TauexN1| TauexN2|  n.a.  |  SigNA |\n");
                                                   
 	fprintf(OutFile, "|====|========|========|========|========|========|========|========|========|========|========|========|========|========|\n");
 
@@ -779,7 +779,7 @@ void finalOutput(){
 	fprintf(OutFile, "| O-2                   |   % 7.1f   |           |           |           |           |           |           |           |\n", wspinO_2);
 	fprintf(OutFile, "| O-1                   |   % 7.1f   |           |           |           |           |           |           |           |\n", wspinO_1);
 	fprintf(OutFile, "| O                     |   % 7.1f   |           |           |           |           |           |           |           |\n", wspinOneutrl);
-	fprintf(OutFile, "| O+1                   |   % 7.1f   |           |           |           |           |           |           |           |\n", wspinOplus);
+	fprintf(OutFile, "| O+1                   |   % 7.1f   |           |           |           |           |           |           |           |\n", wspinOplus1);
 	fprintf(OutFile, "| O+2                   |   % 7.1f   |           |           |           |           |           |           |           |\n", wspinOplus2);
 	fprintf(OutFile, "| O+3                   |   % 7.1f   |           |           |           |           |           |           |           |\n", wspinOplus3);
 	fprintf(OutFile, "| O+4                   |   % 7.1f   |           |           |           |           |           |           |           |\n", wspinOplus4);
@@ -787,8 +787,8 @@ void finalOutput(){
 	fprintf(OutFile, "| O*                    |   % 7.1f   |           |           |           |           |           |           |           |\n", wspinOneutrlex);
 
 	fprintf(OutFile, "| O**                   |   % 7.1f   |           |           |           |           |           |           |           |\n", wspinOneutrlex2);
-	fprintf(OutFile, "| O+1*                  |   % 7.1f   |           |           |           |           |           |           |           |\n", wspinOplusex);
-	fprintf(OutFile, "| O+1**                 |   % 7.1f   |           |           |           |           |           |           |           |\n", wspinOplusex2);
+	fprintf(OutFile, "| O+1*                  |   % 7.1f   |           |           |           |           |           |           |           |\n", wspinOplus1ex);
+	fprintf(OutFile, "| O+1**                 |   % 7.1f   |           |           |           |           |           |           |           |\n", wspinOplus1ex2);
 	fprintf(OutFile, "| O+2*                  |   % 7.1f   |           |           |           |           |           |           |           |\n", wspinOplus2ex);
 	fprintf(OutFile, "| O+2**                 |   % 7.1f   |           |           |           |           |           |           |           |\n", wspinOplus2ex2);
 	fprintf(OutFile, "| O+3*                  |   % 7.1f   |           |           |           |           |           |           |           |\n", wspinOplus3ex);
@@ -796,31 +796,31 @@ void finalOutput(){
 
 	fprintf(OutFile, "|C+3                    |   % 7.1f   |           |           |           |           |           |           |           |\n", wspinCplus3);
 	fprintf(OutFile, "|C+2                    |   % 7.1f   |           |           |           |           |           |           |           |\n", wspinCplus2);
-	fprintf(OutFile, "|C+1                    |   % 7.1f   |           |           |           |           |           |           |           |\n", wspinCplus);
+	fprintf(OutFile, "|C+1                    |   % 7.1f   |           |           |           |           |           |           |           |\n", wspinCplus1);
 	fprintf(OutFile, "|C                      |   % 7.1f   |           |           |           |           |           |           |           |\n", wspinCneutrl);
 	fprintf(OutFile, "|C-1                    |   % 7.1f   |           |           |           |           |           |           |           |\n", wspinC_1);
 	fprintf(OutFile, "|N+4                    |   % 7.1f   |           |           |           |           |           |           |           |\n", wspinNplus4);
 	fprintf(OutFile, "|N+3                    |   % 7.1f   |           |           |           |           |           |           |           |\n", wspinNplus3);
 	fprintf(OutFile, "|N+2                    |   % 7.1f   |           |           |           |           |           |           |           |\n", wspinNplus2);
-	fprintf(OutFile, "|N+1                    |   % 7.1f   |           |           |           |           |           |           |           |\n", wspinNplus);
+	fprintf(OutFile, "|N+1                    |   % 7.1f   |           |           |           |           |           |           |           |\n", wspinNplus1);
 	fprintf(OutFile, "|N                      |   % 7.1f   |           |           |           |           |           |           |           |\n", wspinNneutrl);
 	fprintf(OutFile, "|N-1                    |   % 7.1f   |           |           |           |           |           |           |           |\n", wspinN_1);
 	fprintf(OutFile, "|S+5                    |   % 7.1f   |           |           |           |           |           |           |           |\n", wspinSplus5);
 	fprintf(OutFile, "|S+4                    |   % 7.1f   |           |           |           |           |           |           |           |\n", wspinSplus4);
 	fprintf(OutFile, "|S+3                    |   % 7.1f   |           |           |           |           |           |           |           |\n", wspinSplus3);
 	fprintf(OutFile, "|S+2                    |   % 7.1f   |           |           |           |           |           |           |           |\n", wspinSplus2);
-	fprintf(OutFile, "|S+1                    |   % 7.1f   |           |           |           |           |           |           |           |\n", wspinSplus);
+	fprintf(OutFile, "|S+1                    |   % 7.1f   |           |           |           |           |           |           |           |\n", wspinSplus1);
 	fprintf(OutFile, "|S                      |   % 7.1f   |           |           |           |           |           |           |           |\n", wspinSneutrl);
 	fprintf(OutFile, "|S-1                    |   % 7.1f   |           |           |           |           |           |           |           |\n", wspinS_1);
 	fprintf(OutFile, "|P+4                    |   % 7.1f   |           |           |           |           |           |           |           |\n", wspinPplus4);
 	fprintf(OutFile, "|P+3                    |   % 7.1f   |           |           |           |           |           |           |           |\n", wspinPplus3);
 	fprintf(OutFile, "|P+2                    |   % 7.1f   |           |           |           |           |           |           |           |\n", wspinPplus2);
-	fprintf(OutFile, "|P+1                    |   % 7.1f   |           |           |           |           |           |           |           |\n", wspinPplus);
+	fprintf(OutFile, "|P+1                    |   % 7.1f   |           |           |           |           |           |           |           |\n", wspinPplus1);
 	fprintf(OutFile, "|P                      |   % 7.1f   |           |           |           |           |           |           |           |\n", wspinPneutrl);
 	fprintf(OutFile, "|P-1                    |   % 7.1f   |           |           |           |           |           |           |           |\n", wspinP_1);
 	fprintf(OutFile, "|Si+3                   |   % 7.1f   |           |           |           |           |           |           |           |\n", wspinSiplus3);
 	fprintf(OutFile, "|Si+2                   |   % 7.1f   |           |           |           |           |           |           |           |\n", wspinSiplus2);
-	fprintf(OutFile, "|Si+1                   |   % 7.1f   |           |           |           |           |           |           |           |\n", wspinSiplus);
+	fprintf(OutFile, "|Si+1                   |   % 7.1f   |           |           |           |           |           |           |           |\n", wspinSiplus1);
 	fprintf(OutFile, "|Si                     |   % 7.1f   |           |           |           |           |           |           |           |\n", wspinSineutrl);
 	fprintf(OutFile, "|Si-1                   |   % 7.1f   |           |           |           |           |           |           |           |\n", wspinSi_1);
 	fprintf(OutFile, "|F+6                    |   % 7.1f   |           |           |           |           |           |           |           |\n", wspinFplus6);
@@ -828,17 +828,17 @@ void finalOutput(){
 	fprintf(OutFile, "|F+4                    |   % 7.1f   |           |           |           |           |           |           |           |\n", wspinFplus4);
 	fprintf(OutFile, "|F+3                    |   % 7.1f   |           |           |           |           |           |           |           |\n", wspinFplus3);
 	fprintf(OutFile, "|F+2                    |   % 7.1f   |           |           |           |           |           |           |           |\n", wspinFplus2);
-	fprintf(OutFile, "|F+1                    |   % 7.1f   |           |           |           |           |           |           |           |\n", wspinFplus);
+	fprintf(OutFile, "|F+1                    |   % 7.1f   |           |           |           |           |           |           |           |\n", wspinFplus1);
 	fprintf(OutFile, "|F                      |   % 7.1f   |           |           |           |           |           |           |           |\n", wspinFneutrl);
 	fprintf(OutFile, "|F-1                    |   % 7.1f   |           |           |           |           |           |           |           |\n", wspinF_1);
 	fprintf(OutFile, "|C+2*                   |   % 7.1f   |           |           |           |           |           |           |           |\n", wspinCplus2ex);
-	fprintf(OutFile, "|C+1*                   |   % 7.1f   |           |           |           |           |           |           |           |\n", wspinCplusex);
+	fprintf(OutFile, "|C+1*                   |   % 7.1f   |           |           |           |           |           |           |           |\n", wspinCplus1ex);
 	fprintf(OutFile, "|C*                     |   % 7.1f   |           |           |           |           |           |           |           |\n", wspinCneutrlex);
 	fprintf(OutFile, "|C**                    |   % 7.1f   |           |           |           |           |           |           |           |\n", wspinCneutrlex2);
 	fprintf(OutFile, "|N+3*                   |   % 7.1f   |           |           |           |           |           |           |           |\n", wspinNplus3ex);
 	fprintf(OutFile, "|N+2*                   |   % 7.1f   |           |           |           |           |           |           |           |\n", wspinNplus2ex);
-	fprintf(OutFile, "|N+1*                   |   % 7.1f   |           |           |           |           |           |           |           |\n", wspinNplusex);
-	fprintf(OutFile, "|N+1**                  |   % 7.1f   |           |           |           |           |           |           |           |\n", wspinNplusex2);
+	fprintf(OutFile, "|N+1*                   |   % 7.1f   |           |           |           |           |           |           |           |\n", wspinNplus1ex);
+	fprintf(OutFile, "|N+1**                  |   % 7.1f   |           |           |           |           |           |           |           |\n", wspinNplus1ex2);
 	fprintf(OutFile, "|N*                     |   % 7.1f   |           |           |           |           |           |           |           |\n", wspinNneutrlex);
 	fprintf(OutFile, "|N**                    |   % 7.1f   |           |           |           |           |           |           |           |\n", wspinNneutrlex2);
 	fprintf(OutFile, "|F+5*                   |   % 7.1f   |           |           |           |           |           |           |           |\n", wspinFplus5ex);
@@ -847,37 +847,37 @@ void finalOutput(){
 	fprintf(OutFile, "|F+3**                  |   % 7.1f   |           |           |           |           |           |           |           |\n", wspinFplus3ex2);
 	fprintf(OutFile, "|F+2*                   |   % 7.1f   |           |           |           |           |           |           |           |\n", wspinFplus2ex);
 	fprintf(OutFile, "|F+2**                  |   % 7.1f   |           |           |           |           |           |           |           |\n", wspinFplus2ex2);
-	fprintf(OutFile, "|F+1*                   |   % 7.1f   |           |           |           |           |           |           |           |\n", wspinFplusex);
-	fprintf(OutFile, "|F+1**                  |   % 7.1f   |           |           |           |           |           |           |           |\n", wspinFplusex2);
+	fprintf(OutFile, "|F+1*                   |   % 7.1f   |           |           |           |           |           |           |           |\n", wspinFplus1ex);
+	fprintf(OutFile, "|F+1**                  |   % 7.1f   |           |           |           |           |           |           |           |\n", wspinFplus1ex2);
 	fprintf(OutFile, "|F*                     |   % 7.1f   |           |           |           |           |           |           |           |\n", wspinFneutrlex);
 	fprintf(OutFile, "|Si+2*                  |   % 7.1f   |           |           |           |           |           |           |           |\n", wspinSiplus2ex);
-	fprintf(OutFile, "|Si+1*                  |   % 7.1f   |           |           |           |           |           |           |           |\n", wspinSiplusex);
+	fprintf(OutFile, "|Si+1*                  |   % 7.1f   |           |           |           |           |           |           |           |\n", wspinSiplus1ex);
 	fprintf(OutFile, "|Si*                    |   % 7.1f   |           |           |           |           |           |           |           |\n", wspinSineutrlex);
 	fprintf(OutFile, "|Si**                   |   % 7.1f   |           |           |           |           |           |           |           |\n", wspinSineutrlex2);
 	fprintf(OutFile, "|P+3*                   |   % 7.1f   |           |           |           |           |           |           |           |\n", wspinPplus3ex);
 	fprintf(OutFile, "|P+2*                   |   % 7.1f   |           |           |           |           |           |           |           |\n", wspinPplus2ex);
-	fprintf(OutFile, "|P+1*                   |   % 7.1f   |           |           |           |           |           |           |           |\n", wspinPplusex);
-	fprintf(OutFile, "|P+1**                  |   % 7.1f   |           |           |           |           |           |           |           |\n", wspinPplusex2);
+	fprintf(OutFile, "|P+1*                   |   % 7.1f   |           |           |           |           |           |           |           |\n", wspinPplus1ex);
+	fprintf(OutFile, "|P+1**                  |   % 7.1f   |           |           |           |           |           |           |           |\n", wspinPplus1ex2);
 	fprintf(OutFile, "|P*                     |   % 7.1f   |           |           |           |           |           |           |           |\n", wspinPneutrlex);
 	fprintf(OutFile, "|S+4*                   |   % 7.1f   |           |           |           |           |           |           |           |\n", wspinSplus4ex);
 	fprintf(OutFile, "|S+3*                   |   % 7.1f   |           |           |           |           |           |           |           |\n", wspinSplus3ex);
 	fprintf(OutFile, "|S+2*                   |   % 7.1f   |           |           |           |           |           |           |           |\n", wspinSplus2ex);
 	fprintf(OutFile, "|S+2**                  |   % 7.1f   |           |           |           |           |           |           |           |\n", wspinSplus2ex2);
-	fprintf(OutFile, "|S+1*                   |   % 7.1f   |           |           |           |           |           |           |           |\n", wspinSplusex);
+	fprintf(OutFile, "|S+1*                   |   % 7.1f   |           |           |           |           |           |           |           |\n", wspinSplus1ex);
 	fprintf(OutFile, "|S*                     |   % 7.1f   |           |           |           |           |           |           |           |\n", wspinSneutrlex);
 	fprintf(OutFile, "|S**                    |   % 7.1f   |           |           |           |           |           |           |           |\n", wspinSneutrlex2);
 	fprintf(OutFile, "|Bo-1                   |   % 7.1f   |           |           |           |           |           |           |           |\n", wspinB_1);
 	fprintf(OutFile, "|Bo*                    |   % 7.1f   |           |           |           |           |           |           |           |\n", wspinBneutrlex);
 	fprintf(OutFile, "|Bo                     |   % 7.1f   |           |           |           |           |           |           |           |\n", wspinBneutrl);
-	fprintf(OutFile, "|Bo+1*                  |   % 7.1f   |           |           |           |           |           |           |           |\n", wspinBplusex);
-	fprintf(OutFile, "|Bo+1                   |   % 7.1f   |           |           |           |           |           |           |           |\n", wspinBplus);
+	fprintf(OutFile, "|Bo+1*                  |   % 7.1f   |           |           |           |           |           |           |           |\n", wspinBplus1ex);
+	fprintf(OutFile, "|Bo+1                   |   % 7.1f   |           |           |           |           |           |           |           |\n", wspinBplus1);
 	fprintf(OutFile, "|Bo+2                   |   % 7.1f   |           |           |           |           |           |           |           |\n", wspinBplus2);
 	fprintf(OutFile, "|Cl-1                   |   % 7.1f   |           |           |           |           |           |           |           |\n", wspinCl_1);
 	fprintf(OutFile, "|Cl*                    |   % 7.1f   |           |           |           |           |           |           |           |\n", wspinClneutrlex);
 	fprintf(OutFile, "|Cl                     |   % 7.1f   |           |           |           |           |           |           |           |\n", wspinClneutrl);
-	fprintf(OutFile, "|Cl+1**                 |   % 7.1f   |           |           |           |           |           |           |           |\n", wspinClplusex2);
-	fprintf(OutFile, "|Cl+1*                  |   % 7.1f   |           |           |           |           |           |           |           |\n", wspinClplusex);
-	fprintf(OutFile, "|Cl+1                   |   % 7.1f   |           |           |           |           |           |           |           |\n", wspinClplus);
+	fprintf(OutFile, "|Cl+1**                 |   % 7.1f   |           |           |           |           |           |           |           |\n", wspinClplus1ex2);
+	fprintf(OutFile, "|Cl+1*                  |   % 7.1f   |           |           |           |           |           |           |           |\n", wspinClplus1ex);
+	fprintf(OutFile, "|Cl+1                   |   % 7.1f   |           |           |           |           |           |           |           |\n", wspinClplus1);
 	fprintf(OutFile, "|Cl+2*                  |   % 7.1f   |           |           |           |           |           |           |           |\n", wspinClplus2ex);
 	fprintf(OutFile, "|Cl+2                   |   % 7.1f   |           |           |           |           |           |           |           |\n", wspinClplus2);
 	fprintf(OutFile, "|Cl+3**                 |   % 7.1f   |           |           |           |           |           |           |           |\n", wspinClplus3ex2);
@@ -891,19 +891,19 @@ void finalOutput(){
 	fprintf(OutFile, "|Al-1                   |   % 7.1f   |           |           |           |           |           |           |           |\n", wspinAl_1);
 	fprintf(OutFile, "|Al*                    |   % 7.1f   |           |           |           |           |           |           |           |\n", wspinAlneutrlex);
 	fprintf(OutFile, "|Al                     |   % 7.1f   |           |           |           |           |           |           |           |\n", wspinAlneutrl);
-	fprintf(OutFile, "|Al+1*                  |   % 7.1f   |           |           |           |           |           |           |           |\n", wspinAlplusex);
-	fprintf(OutFile, "|Al+1                   |   % 7.1f   |           |           |           |           |           |           |           |\n", wspinAlplus);
+	fprintf(OutFile, "|Al+1*                  |   % 7.1f   |           |           |           |           |           |           |           |\n", wspinAlplus1ex);
+	fprintf(OutFile, "|Al+1                   |   % 7.1f   |           |           |           |           |           |           |           |\n", wspinAlplus1);
 	fprintf(OutFile, "|Al+2                   |   % 7.1f   |           |           |           |           |           |           |           |\n", wspinAlplus2);
 	fprintf(OutFile, "|Li-1                   |   % 7.1f   |           |           |           |           |           |           |           |\n", wspinLi_1);
 	fprintf(OutFile, "|Li                     |   % 7.1f   |           |           |           |           |           |           |           |\n", wspinLineutrl);
 	fprintf(OutFile, "|Be                     |   % 7.1f   |           |           |           |           |           |           |           |\n", wspinBeneutrl);
 	fprintf(OutFile, "|Be*                    |   % 7.1f   |           |           |           |           |           |           |           |\n", wspinBeneutrlex);
-	fprintf(OutFile, "|Be+1                   |   % 7.1f   |           |           |           |           |           |           |           |\n", wspinBeplus);
+	fprintf(OutFile, "|Be+1                   |   % 7.1f   |           |           |           |           |           |           |           |\n", wspinBeplus1);
 	fprintf(OutFile, "|Na-1                   |   % 7.1f   |           |           |           |           |           |           |           |\n", wspinNa_1);
 	fprintf(OutFile, "|Na                     |   % 7.1f   |           |           |           |           |           |           |           |\n", wspinNaneutrl);
 	fprintf(OutFile, "|Mg                     |   % 7.1f   |           |           |           |           |           |           |           |\n", wspinMgneutrl);
 	fprintf(OutFile, "|Mg*                    |   % 7.1f   |           |           |           |           |           |           |           |\n", wspinMgneutrlex);
-	fprintf(OutFile, "|Mg+1                   |   % 7.1f   |           |           |           |           |           |           |           |\n", wspinMgplus);
+	fprintf(OutFile, "|Mg+1                   |   % 7.1f   |           |           |           |           |           |           |           |\n", wspinMgplus1);
 
 
 
@@ -1285,15 +1285,15 @@ void finalOutput(){
 	fprintf(OutFile, "| (O-2) - (O+6)         |   % 7.1f   | Electron affinity     |           |           |           |           |           |\n",wspinO_1eaff);
 	fprintf(OutFile, "| (O-) - (O+6)          |   % 7.1f   | Electron affinity     |           |           |           |           |           |\n",wspinOeaff);
 	fprintf(OutFile, "| (O    ) - (O+6)       |   % 7.1f   | Ionization energy     |           |           |           |           |           |\n",wspinOneutrlion);
-	fprintf(OutFile, "| (O+1  ) - (O+6)       |   % 7.1f   | Ionization energy     |           |           |           |           |           |\n",wspinOplusion);
+	fprintf(OutFile, "| (O+1  ) - (O+6)       |   % 7.1f   | Ionization energy     |           |           |           |           |           |\n",wspinOplus1ion);
 	fprintf(OutFile, "| (O+2  ) - (O+6)       |   % 7.1f   | Ionization energy     |           |           |           |           |           |\n",wspinOplus2ion);
 	fprintf(OutFile, "| (O+3  ) - (O+6)       |   % 7.1f   | Ionization energy     |           |           |           |           |           |\n",wspinOplus3ion);
 	fprintf(OutFile, "| (O+4  ) - (O+6)       |   % 7.1f   | Ionization energy     |           |           |           |           |           |\n",wspinOplus4ion);
 	fprintf(OutFile, "| (O+5  ) - (O+6)       |   % 7.1f   | Ionization energy     |           |           |           |           |           |\n",wspinOplus5ion);
 	fprintf(OutFile, "| (O  * ) - (O+6)       |   % 7.1f   | Excitation energy     |           |           |           |           |           |\n",wspinOneutrlexion);
 	fprintf(OutFile, "| (O  **) - (O  )       |   % 7.1f   | Excitation energy     |           |           |           |           |           |\n",wspinOneutrlex2ion);
-	fprintf(OutFile, "| (O+1* ) - (O+6)       |   % 7.1f   | Excitation energy     |           |           |           |           |           |\n",wspinOplusionex);
-	fprintf(OutFile, "| (O+1**) - (O+6)       |   % 7.1f   | Excitation energy     |           |           |           |           |           |\n",wspinOplusex2ion);
+	fprintf(OutFile, "| (O+1* ) - (O+6)       |   % 7.1f   | Excitation energy     |           |           |           |           |           |\n",wspinOplus1ionex);
+	fprintf(OutFile, "| (O+1**) - (O+6)       |   % 7.1f   | Excitation energy     |           |           |           |           |           |\n",wspinOplus1ex2ion);
 	fprintf(OutFile, "| (O+2 )*- (O+6)        |   % 7.1f   | Excitation energy     |           |           |           |           |           |\n",wspinOplus2ionex);
 	fprintf(OutFile, "| (O+3 )*- (O+6)        |   % 7.1f   | Excitation energy     |           |           |           |           |           |\n",wspinOplus3ionex);
 	fprintf(OutFile, "| (O+4 )*- (O+6)        |   % 7.1f   | Excitation energy     |           |           |           |           |           |\n",wspinOplus4ionex);
@@ -1302,13 +1302,13 @@ void finalOutput(){
 	
 	fprintf(OutFile, "| (C+3 ) - (C+4)        |   % 7.1f   | Ionization energy     |           |           |           |           |           |\n",wspinCplus3ion);
 	fprintf(OutFile, "| (C+2 ) - (C+4)        |   % 7.1f   | Ionization energy     |           |           |           |           |           |\n",wspinCplus2ion);
-	fprintf(OutFile, "| (C+1 ) - (C+4)        |   % 7.1f   | Ionization energy     |           |           |           |           |           |\n",wspinCplusion);
+	fprintf(OutFile, "| (C+1 ) - (C+4)        |   % 7.1f   | Ionization energy     |           |           |           |           |           |\n",wspinCplus1ion);
 	fprintf(OutFile, "| (C   ) - (C+4)        |   % 7.1f   | Ionization energy     |           |           |           |           |           |\n",wspinCneutrlion);
 	fprintf(OutFile, "| (C-1 ) - (C+4)        |   % 7.1f   | Ionization energy     |           |           |           |           |           |\n",wspinC_1ion);
 	fprintf(OutFile, "| (N+4 ) - (N+5)        |   % 7.1f   | Ionization energy     |           |           |           |           |           |\n",wspinNplus4ion);
 	fprintf(OutFile, "| (N+3 ) - (N+5)        |   % 7.1f   | Ionization energy     |           |           |           |           |           |\n",wspinNplus3ion);
 	fprintf(OutFile, "| (N+2 ) - (N+5)        |   % 7.1f   | Ionization energy     |           |           |           |           |           |\n",wspinNplus2ion);
-	fprintf(OutFile, "| (N+1 ) - (N+5)        |   % 7.1f   | Ionization energy     |           |           |           |           |           |\n",wspinNplusion);
+	fprintf(OutFile, "| (N+1 ) - (N+5)        |   % 7.1f   | Ionization energy     |           |           |           |           |           |\n",wspinNplus1ion);
 	fprintf(OutFile, "| (N   ) - (N+5)        |   % 7.1f   | Ionization energy     |           |           |           |           |           |\n",wspinNneutrlion);
 	fprintf(OutFile, "| (N-1 ) - (N+5)        |   % 7.1f   | Ionization energy     |           |           |           |           |           |\n",wspinN_1ion);
 
@@ -1316,20 +1316,20 @@ void finalOutput(){
 	fprintf(OutFile, "| (S+4 ) - (S+6)        |   % 7.1f   | Ionization energy     |           |           |           |           |           |\n",wspinSplus4ion);
 	fprintf(OutFile, "| (S+3 ) - (S+6)        |   % 7.1f   | Ionization energy     |           |           |           |           |           |\n",wspinSplus3ion);
 	fprintf(OutFile, "| (S+2 ) - (S+6)        |   % 7.1f   | Ionization energy     |           |           |           |           |           |\n",wspinSplus2ion);
-	fprintf(OutFile, "| (S+1 ) - (S+6)        |   % 7.1f   | Ionization energy     |           |           |           |           |           |\n",wspinSplusion);
+	fprintf(OutFile, "| (S+1 ) - (S+6)        |   % 7.1f   | Ionization energy     |           |           |           |           |           |\n",wspinSplus1ion);
 	fprintf(OutFile, "| (S   ) - (S+6)        |   % 7.1f   | Ionization energy     |           |           |           |           |           |\n",wspinSneutrlion);
 	fprintf(OutFile, "| (S-1 ) - (S+6)        |   % 7.1f   | Ionization energy     |           |           |           |           |           |\n",wspinS_1ion);
 
 	fprintf(OutFile, "| (P+4 ) - (P+5)        |   % 7.1f   | Ionization energy     |           |           |           |           |           |\n",wspinPplus4ion);
 	fprintf(OutFile, "| (P+3 ) - (P+5)        |   % 7.1f   | Ionization energy     |           |           |           |           |           |\n",wspinPplus3ion);
 	fprintf(OutFile, "| (P+2 ) - (P+5)        |   % 7.1f   | Ionization energy     |           |           |           |           |           |\n",wspinPplus2ion);
-	fprintf(OutFile, "| (P+1 ) - (P+5)        |   % 7.1f   | Ionization energy     |           |           |           |           |           |\n",wspinPplusion);
+	fprintf(OutFile, "| (P+1 ) - (P+5)        |   % 7.1f   | Ionization energy     |           |           |           |           |           |\n",wspinPplus1ion);
 	fprintf(OutFile, "| (P   ) - (P+5)        |   % 7.1f   | Ionization energy     |           |           |           |           |           |\n",wspinPneutrlion);
 	fprintf(OutFile, "| (P-1 ) - (P+5)        |   % 7.1f   | Ionization energy     |           |           |           |           |           |\n",wspinP_1ion);
 
 	fprintf(OutFile, "| (Si+3) - (Si+4)       |   % 7.1f   | Ionization energy     |           |           |           |           |           |\n",wspinSiplus3ion);
 	fprintf(OutFile, "| (Si+2) - (Si+4)       |   % 7.1f   | Ionization energy     |           |           |           |           |           |\n",wspinSiplus2ion);
-	fprintf(OutFile, "| (Si+1) - (Si+4)       |   % 7.1f   | Ionization energy     |           |           |           |           |           |\n",wspinSiplusion);
+	fprintf(OutFile, "| (Si+1) - (Si+4)       |   % 7.1f   | Ionization energy     |           |           |           |           |           |\n",wspinSiplus1ion);
 	fprintf(OutFile, "| (Si  ) - (Si+4)       |   % 7.1f   | Ionization energy     |           |           |           |           |           |\n",wspinSineutrlion);
 	fprintf(OutFile, "| (Si-1) - (Si+4)       |   % 7.1f   | Ionization energy     |           |           |           |           |           |\n",wspinSi_1ion);
 
@@ -1338,12 +1338,12 @@ void finalOutput(){
 	fprintf(OutFile, "| (F+4 ) - (F+7)        |   % 7.1f   | Ionization energy     |           |           |           |           |           |\n",wspinFplus4ion);
 	fprintf(OutFile, "| (F+3 ) - (F+7)        |   % 7.1f   | Ionization energy     |           |           |           |           |           |\n",wspinFplus3ion);
 	fprintf(OutFile, "| (F+2 ) - (F+7)        |   % 7.1f   | Ionization energy     |           |           |           |           |           |\n",wspinFplus2ion);
-	fprintf(OutFile, "| (F+1 ) - (F+7)        |   % 7.1f   | Ionization energy     |           |           |           |           |           |\n",wspinFplusion);
+	fprintf(OutFile, "| (F+1 ) - (F+7)        |   % 7.1f   | Ionization energy     |           |           |           |           |           |\n",wspinFplus1ion);
 	fprintf(OutFile, "| (F   ) - (F+7)        |   % 7.1f   | Ionization energy     |           |           |           |           |           |\n",wspinFneutrlion);
 	fprintf(OutFile, "| (F-1 ) - (F+7)        |   % 7.1f   | Ionization energy     |           |           |           |           |           |\n",wspinF_1ion);
 
 	fprintf(OutFile, "| (C+2* ) - (C+2)       |   % 7.1f   | Excitation energy     |           |           |           |           |           |\n",wspinCplus2exion);
-	fprintf(OutFile, "| (C+1* ) - (C+1)       |   % 7.1f   | Excitation energy     |           |           |           |           |           |\n",wspinCplusexion);
+	fprintf(OutFile, "| (C+1* ) - (C+1)       |   % 7.1f   | Excitation energy     |           |           |           |           |           |\n",wspinCplus1exion);
 	fprintf(OutFile, "| (C  * ) - (C  )       |   % 7.1f   | Excitation energy     |           |           |           |           |           |\n",wspinCneutrlexion);
 	fprintf(OutFile, "| (C ** ) - (C  )       |   % 7.1f   | Excitation energy     |           |           |           |           |           |\n",wspinCneutrlex2ion);
         fprintf(OutFile, "| (C2para) - (C2dia)    |   % 7.1f   | Excitation energy     |           |           |           |           |           |\n",wspinC2ex);
@@ -1351,8 +1351,8 @@ void finalOutput(){
 
 	fprintf(OutFile, "| (N+3* ) - (N+3)       |   % 7.1f   | Excitation energy     |           |           |           |           |           |\n",wspinNplus3exion);
 	fprintf(OutFile, "| (N+2* ) - (N+2)       |   % 7.1f   | Excitation energy     |           |           |           |           |           |\n",wspinNplus2exion);
-	fprintf(OutFile, "| (N+1* ) - (N+1)       |   % 7.1f   | Excitation energy     |           |           |           |           |           |\n",wspinNplusexion);
-	fprintf(OutFile, "| (N+1**) - (N+1)       |   % 7.1f   | Excitation energy     |           |           |           |           |           |\n",wspinNplusex2ion);
+	fprintf(OutFile, "| (N+1* ) - (N+1)       |   % 7.1f   | Excitation energy     |           |           |           |           |           |\n",wspinNplus1exion);
+	fprintf(OutFile, "| (N+1**) - (N+1)       |   % 7.1f   | Excitation energy     |           |           |           |           |           |\n",wspinNplus1ex2ion);
 	fprintf(OutFile, "| (N  * ) - (N  )       |   % 7.1f   | Excitation energy     |           |           |           |           |           |\n",wspinNneutrlexion);
 	fprintf(OutFile, "| (N  **) - (N  )       |   % 7.1f   | Excitation energy     |           |           |           |           |           |\n",wspinNneutrlex2ion);
         fprintf(OutFile, "| (N2para) - (N2dia)    |   % 7.1f   | Excitation energy     |           |           |           |           |           |\n",wspinN2ex);
@@ -1365,14 +1365,14 @@ void finalOutput(){
 	fprintf(OutFile, "| (F+2* ) - (F+2)       |   % 7.1f   | Excitation energy     |           |           |           |           |           |\n",wspinFplus2exion);
 
 	fprintf(OutFile, "| (F+2**) - (F+2)       |   % 7.1f   | Excitation energy     |           |           |           |           |           |\n",wspinFplus2ex2ion);
-	fprintf(OutFile, "| (F+1* ) - (F+1)       |   % 7.1f   | Excitation energy     |           |           |           |           |           |\n",wspinFplusexion);
-	fprintf(OutFile, "| (F+1**) - (F+1)       |   % 7.1f   | Excitation energy     |           |           |           |           |           |\n",wspinFplusex2ion);
+	fprintf(OutFile, "| (F+1* ) - (F+1)       |   % 7.1f   | Excitation energy     |           |           |           |           |           |\n",wspinFplus1exion);
+	fprintf(OutFile, "| (F+1**) - (F+1)       |   % 7.1f   | Excitation energy     |           |           |           |           |           |\n",wspinFplus1ex2ion);
 	fprintf(OutFile, "| (F  * ) - (F  )       |   % 7.1f   | Excitation energy     |           |           |           |           |           |\n",wspinFneutrlexion);
         fprintf(OutFile, "| (F2para) - (F2dia)    |   % 7.1f   | Excitation energy     |           |           |           |           |           |\n",wspinF2ex);
 	fprintf(OutFile, "| F sign mismatch       |   % 7.1f   | Exc. and Ion sign     |           |           |           |           |           |\n", wspinFsign);
 
 	fprintf(OutFile, "| (Si+2* ) - (Si+2)     |   % 7.1f   | Excitation energy     |           |           |           |           |           |\n",wspinSiplus2exion);
-	fprintf(OutFile, "| (Si+1* ) - (Si+1)     |   % 7.1f   | Excitation energy     |           |           |           |           |           |\n",wspinSiplusexion);
+	fprintf(OutFile, "| (Si+1* ) - (Si+1)     |   % 7.1f   | Excitation energy     |           |           |           |           |           |\n",wspinSiplus1exion);
 	fprintf(OutFile, "| (Si  * ) - (Si  )     |   % 7.1f   | Excitation energy     |           |           |           |           |           |\n",wspinSineutrlexion);
 	fprintf(OutFile, "| (Si ** ) - (Si  )     |   % 7.1f   | Excitation energy     |           |           |           |           |           |\n",wspinSineutrlex2ion);
         fprintf(OutFile, "| (Si2dia) - (Si2para)  |   % 7.1f   | Excitation energy     |           |           |           |           |           |\n",wspinSi2ex);
@@ -1380,8 +1380,8 @@ void finalOutput(){
 
 	fprintf(OutFile, "| (P+3* ) - (P+3)       |   % 7.1f   | Excitation energy     |           |           |           |           |           |\n",wspinPplus3exion);
 	fprintf(OutFile, "| (P+2* ) - (P+2)       |   % 7.1f   | Excitation energy     |           |           |           |           |           |\n",wspinPplus2exion);
-	fprintf(OutFile, "| (P+1* ) - (P+2)       |   % 7.1f   | Excitation energy     |           |           |           |           |           |\n",wspinPplusexion);
-	fprintf(OutFile, "| (P+1**) - (P+1)       |   % 7.1f   | Excitation energy     |           |           |           |           |           |\n",wspinPplusex2ion);
+	fprintf(OutFile, "| (P+1* ) - (P+2)       |   % 7.1f   | Excitation energy     |           |           |           |           |           |\n",wspinPplus1exion);
+	fprintf(OutFile, "| (P+1**) - (P+1)       |   % 7.1f   | Excitation energy     |           |           |           |           |           |\n",wspinPplus1ex2ion);
 	fprintf(OutFile, "| (P  * ) - (P  )       |   % 7.1f   | Excitation energy     |           |           |           |           |           |\n",wspinPneutrlexion);
         fprintf(OutFile, "| (P2para) - (P2dia)    |   % 7.1f   | Excitation energy     |           |           |           |           |           |\n",wspinP2ex);
 	fprintf(OutFile, "| P sign mismatch       |   % 7.1f   | Exc. and Ion sign     |           |           |           |           |           |\n", wspinPsign);
@@ -1390,7 +1390,7 @@ void finalOutput(){
 	fprintf(OutFile, "| (S+3* ) - (S+3)       |   % 7.1f   | Excitation energy     |           |           |           |           |           |\n",wspinSplus3exion);
 	fprintf(OutFile, "| (S+2* ) - (S+2)       |   % 7.1f   | Excitation energy     |           |           |           |           |           |\n",wspinSplus2exion);
 	fprintf(OutFile, "| (S+2**) - (S+2)       |   % 7.1f   | Excitation energy     |           |           |           |           |           |\n",wspinSplus2ex2ion);
-	fprintf(OutFile, "| (S+1* ) - (S+1)       |   % 7.1f   | Excitation energy     |           |           |           |           |           |\n",wspinSplusexion);
+	fprintf(OutFile, "| (S+1* ) - (S+1)       |   % 7.1f   | Excitation energy     |           |           |           |           |           |\n",wspinSplus1exion);
 	fprintf(OutFile, "| (S  * ) - (S  )       |   % 7.1f   | Excitation energy     |           |           |           |           |           |\n",wspinSneutrlexion);
 	fprintf(OutFile, "| (S  **) - (S  )       |   % 7.1f   | Excitation energy     |           |           |           |           |           |\n",wspinSneutrlex2ion);
         fprintf(OutFile, "| (S2dia) - (S2para)    |   % 7.1f   | Excitation energy     |           |           |           |           |           |\n",wspinS2ex);
@@ -1399,8 +1399,8 @@ void finalOutput(){
 	fprintf(OutFile, "| (Bo-1  ) - (Bo  )     |   % 7.1f   | Ionization energy     |           |           |           |           |           |\n",wspinB_1ion);
 	fprintf(OutFile, "| (Bo  * ) - (Bo  )     |   % 7.1f   | Excitation energy     |           |           |           |           |           |\n",wspinBneutrlexion);
 	fprintf(OutFile, "| (Bo    ) - (Bo+1)     |   % 7.1f   | Excitation energy     |           |           |           |           |           |\n",wspinBneutrlion);
-	fprintf(OutFile, "| (Bo+1* ) - (Bo+1)     |   % 7.1f   | Ionization energy     |           |           |           |           |           |\n",wspinBplusexion);
-	fprintf(OutFile, "| (Bo+1  ) - (Bo+2)     |   % 7.1f   | Excitation energy     |           |           |           |           |           |\n",wspinBplusion);
+	fprintf(OutFile, "| (Bo+1* ) - (Bo+1)     |   % 7.1f   | Ionization energy     |           |           |           |           |           |\n",wspinBplus1exion);
+	fprintf(OutFile, "| (Bo+1  ) - (Bo+2)     |   % 7.1f   | Excitation energy     |           |           |           |           |           |\n",wspinBplus1ion);
 	fprintf(OutFile, "| (Bo+2  ) - (Bo+3)     |   % 7.1f   | Ionization energy     |           |           |           |           |           |\n",wspinBplus2ion);
         fprintf(OutFile, "| (Bo2dia) - (Bo2para)  |   % 7.1f   | Excitation energy     |           |           |           |           |           |\n",wspinAl2ex);
 	fprintf(OutFile, "| Bo sign mismatch      |   % 7.1f   | Exc. and Ion sign     |           |           |           |           |           |\n", wspinBsign);
@@ -1408,9 +1408,9 @@ void finalOutput(){
 	fprintf(OutFile, "| (Cl-1  ) - (Cl  )     |   % 7.1f   | Ionization energy     |           |           |           |           |           |\n",wspinCl_1ion);
 	fprintf(OutFile, "| (Cl  * ) - (Cl  )     |   % 7.1f   | Excitation energy     |           |           |           |           |           |\n",wspinClneutrlexion);
 	fprintf(OutFile, "| (Cl    ) - (Cl+1)     |   % 7.1f   | Ionization energy     |           |           |           |           |           |\n",wspinClneutrlion);
-	fprintf(OutFile, "| (Cl+1**) - (Cl+1)     |   % 7.1f   | Excitation energy     |           |           |           |           |           |\n",wspinClplusex2ion);
-	fprintf(OutFile, "| (Cl+1* ) - (Cl+1)     |   % 7.1f   | Excitation energy     |           |           |           |           |           |\n",wspinClplusexion);
-	fprintf(OutFile, "| (Cl+1  ) - (Cl+2)     |   % 7.1f   | Ionization energy     |           |           |           |           |           |\n",wspinClplusion);
+	fprintf(OutFile, "| (Cl+1**) - (Cl+1)     |   % 7.1f   | Excitation energy     |           |           |           |           |           |\n",wspinClplus1ex2ion);
+	fprintf(OutFile, "| (Cl+1* ) - (Cl+1)     |   % 7.1f   | Excitation energy     |           |           |           |           |           |\n",wspinClplus1exion);
+	fprintf(OutFile, "| (Cl+1  ) - (Cl+2)     |   % 7.1f   | Ionization energy     |           |           |           |           |           |\n",wspinClplus1ion);
 	fprintf(OutFile, "| (Cl+2* ) - (Cl+2)     |   % 7.1f   | Excitation energy     |           |           |           |           |           |\n",wspinClplus2exion);
 	fprintf(OutFile, "| (Cl+2  ) - (Cl+3)     |   % 7.1f   | Ionization energy     |           |           |           |           |           |\n",wspinClplus2ion);
 	fprintf(OutFile, "| (Cl+3**) - (Cl+3)     |   % 7.1f   | Excitation energy     |           |           |           |           |           |\n",wspinClplus3ex2ion);
@@ -1427,8 +1427,8 @@ void finalOutput(){
 	fprintf(OutFile, "| (Al-1  ) - (Al  )     |   % 7.1f   | Ionization energy     |           |           |           |           |           |\n",wspinAl_1ion);
 	fprintf(OutFile, "| (Al  * ) - (Al  )     |   % 7.1f   | Excitation energy     |           |           |           |           |           |\n",wspinAlneutrlexion);
 	fprintf(OutFile, "| (Al    ) - (Al+1)     |   % 7.1f   | Ionization energy     |           |           |           |           |           |\n",wspinAlneutrlion);
-	fprintf(OutFile, "| (Al+ * ) - (Al+1)     |   % 7.1f   | Excitation energy     |           |           |           |           |           |\n",wspinAlplusexion);
-	fprintf(OutFile, "| (Al+   ) - (Al+2)     |   % 7.1f   | Ionization energy     |           |           |           |           |           |\n",wspinAlplusion);
+	fprintf(OutFile, "| (Al+ * ) - (Al+1)     |   % 7.1f   | Excitation energy     |           |           |           |           |           |\n",wspinAlplus1exion);
+	fprintf(OutFile, "| (Al+   ) - (Al+2)     |   % 7.1f   | Ionization energy     |           |           |           |           |           |\n",wspinAlplus1ion);
 	fprintf(OutFile, "| (Al+2  ) - (Al+3)     |   % 7.1f   | Ionization energy     |           |           |           |           |           |\n",wspinAlplus2ion);
 	fprintf(OutFile, "| (Al2dia) - (Al2para)  |   % 7.1f   | Excitation energy     |           |           |           |           |           |\n",wspinAl2ex);
 	fprintf(OutFile, "| Al sign mismatch      |   % 7.1f   | Exc. and Ion sign     |           |           |           |           |           |\n", wspinAlsign);
@@ -1437,12 +1437,12 @@ void finalOutput(){
 	fprintf(OutFile, "| (Li    ) - (Li+ )     |   % 7.1f   | Ionization energy     |           |           |           |           |           |\n",wspinLineutrlion);
 	fprintf(OutFile, "| (Be    ) - (Be+ )     |   % 7.1f   | Excitation energy     |           |           |           |           |           |\n",wspinBeneutrlion);
 	fprintf(OutFile, "| (Be  * ) - (Be  )     |   % 7.1f   | Ionization energy     |           |           |           |           |           |\n",wspinBeneutrlexion);
-	fprintf(OutFile, "| (Be+   ) - (Be+2)     |   % 7.1f   | Ionization energy     |           |           |           |           |           |\n",wspinBeplusion);
+	fprintf(OutFile, "| (Be+   ) - (Be+2)     |   % 7.1f   | Ionization energy     |           |           |           |           |           |\n",wspinBeplus1ion);
 	fprintf(OutFile, "| (Na-   ) - (Na  )     |   % 7.1f   | Ionization energy     |           |           |           |           |           |\n",wspinNa_1ion);
 	fprintf(OutFile, "| (Na    ) - (Na+ )     |   % 7.1f   | Ionization energy     |           |           |           |           |           |\n",wspinNaneutrlion);
 	fprintf(OutFile, "| (Mg    ) - (Mg+ )     |   % 7.1f   | Ionization energy     |           |           |           |           |           |\n",wspinMgneutrlion);
 	fprintf(OutFile, "| (Mg  * ) - (Mg  )     |   % 7.1f   | Excitation energy     |           |           |           |           |           |\n",wspinMgneutrlexion);
-	fprintf(OutFile, "| (Mg+   ) - (Mg+2)     |   % 7.1f   | Ionization energy     |           |           |           |           |           |\n",wspinMgplusion);
+	fprintf(OutFile, "| (Mg+   ) - (Mg+2)     |   % 7.1f   | Ionization energy     |           |           |           |           |           |\n",wspinMgplus1ion);
 
 	fprintf(OutFile, "| (O- & O-) - (O2-2)    |   % 7.1f   | Dissociation energy   |           |           |           |           |           |\n",wspinO2_2dis);
 	fprintf(OutFile, "| (O- & O) - (O2-)      |   % 7.1f   | Dissociation energy   |           |           |           |           |           |\n",wspinO2_1dis);

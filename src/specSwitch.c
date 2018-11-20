@@ -96,29 +96,29 @@ void specSwitch(Species *spec){
 		case Znplus10 : specspinZnplus10(spec); break;
 		case Znplus10ex : specspinZnplus10ex(spec); break;
 		case Znplus11 : specspinZnplus11(spec); break;
-//
-//		case Feneutrl : specspinFeneutrl(spec); break;
-//		case Feneutrlex : specspinFeneutrlex(spec); break;
-//		case Feneutrlex2 : specspinFeneutrlex2(spec); break;
-//		case Feneutrlex3 : specspinFeneutrlex3(spec); break;
-//		case Feplus1 : specspinFeplus1(spec); break;
-//		case Feplus1ex : specspinFeplus1ex(spec); break;
-//		case Feplus1ex2 : specspinFeplus1ex2(spec); break;
-//		case Feplus2 : specspinFeplus2(spec); break;
-//		case Feplus2ex : specspinFeplus2ex(spec); break;
-//		case Feplus2ex2 : specspinFeplus2ex2(spec); break;
-//		case Feplus3 : specspinFeplus3(spec); break;
-//		case Feplus3ex : specspinFeplus3ex(spec); break;
-//		case Feplus3ex2 : specspinFeplus3ex2(spec); break;
-//		case Feplus4 : specspinFeplus4(spec); break;
-//		case Feplus4ex : specspinFeplus4ex(spec); break;
-//		case Feplus4ex2 : specspinFeplus4ex2(spec); break;
-//		case Feplus5 : specspinFeplus5(spec); break;
-//		case Feplus5ex : specspinFeplus5ex(spec); break;
-//		case Feplus6 : specspinFeplus6(spec); break;
-//		case Feplus6ex : specspinFeplus6ex(spec); break;
-//		case Feplus7 : specspinFeplus7(spec); break;
-//		
+
+		case Feneutrl : specspinFeneutrl(spec); break;
+		case Feneutrlex : specspinFeneutrlex(spec); break;
+		case Feneutrlex2 : specspinFeneutrlex2(spec); break;
+		case Feneutrlex3 : specspinFeneutrlex3(spec); break;
+		case Feplus1 : specspinFeplus1(spec); break;
+		case Feplus1ex : specspinFeplus1ex(spec); break;
+		case Feplus1ex2 : specspinFeplus1ex2(spec); break;
+		case Feplus2 : specspinFeplus2(spec); break;
+		case Feplus2ex : specspinFeplus2ex(spec); break;
+		case Feplus2ex2 : specspinFeplus2ex2(spec); break;
+		case Feplus3 : specspinFeplus3(spec); break;
+		case Feplus3ex : specspinFeplus3ex(spec); break;
+		case Feplus3ex2 : specspinFeplus3ex2(spec); break;
+		case Feplus4 : specspinFeplus4(spec); break;
+		case Feplus4ex : specspinFeplus4ex(spec); break;
+		case Feplus4ex2 : specspinFeplus4ex2(spec); break;
+		case Feplus5 : specspinFeplus5(spec); break;
+		case Feplus5ex : specspinFeplus5ex(spec); break;
+		case Feplus6 : specspinFeplus6(spec); break;
+		case Feplus6ex : specspinFeplus6ex(spec); break;
+		case Feplus7 : specspinFeplus7(spec); break;
+		
 		case O_2 : specspinO_2(spec); break;
 		case O_1 : specspinO_1(spec); break;
 		case Oneutrl : specspinOneutrl(spec); break;
@@ -150,6 +150,33 @@ void specSwitch(Species *spec){
 		case O2qnt_trplbnd : specspinO2qnt_trplbnd(spec); break;
 		case O3_linnett : specspinO3_linnett(spec); break;
 		case O3trp_linnett : specspinO3trp_linnett(spec); break;
+
+		case C_1 : specspinC_1(spec); break;
+		case Cneutrl : specspinCneutrl(spec); break;
+		case Cneutrlex : specspinCneutrlex(spec); break;
+		case Cneutrlex2 : specspinCneutrlex2(spec); break;
+		case Cplus1 : specspinCplus1(spec); break;
+		case Cplus1ex : specspinCplus1ex(spec); break;
+		case Cplus2 : specspinCplus2(spec); break;
+		case Cplus2ex : specspinCplus2ex(spec); break;
+		case Cplus3 : specspinCplus3(spec); break;
+
+//		case N_1 : specspinN_1(spec); break;
+		case Nneutrl : specspinNneutrl(spec); break;
+		case Nneutrlex : specspinNneutrlex(spec); break;
+//		case Nneutrlex2 : specspinNneutrlex2(spec); break;
+		case Nplus1 : specspinNplus1(spec); break;
+		case Nplus1ex : specspinNplus1ex(spec); break;
+		case Nplus1ex2 : specspinNplus1ex2(spec); break;
+		case Nplus2 : specspinNplus2(spec); break;
+		case Nplus2ex : specspinNplus2ex(spec); break;
+		case Nplus3 : specspinNplus3(spec); break;
+		case Nplus3ex : specspinNplus3ex(spec); break;
+		case Nplus4 : specspinNplus4(spec); break;
+		
+
+
+
 /*		case t_H3plus : ainterH3plus(spec); break;
 		case t_C2 : ainterC2(spec); break;
 		case t_N2 : ainterN2(spec); break;

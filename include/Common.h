@@ -31,14 +31,14 @@
 #define FIT_AB_AH		0.0
 #define FIT_AA_AH		0.0
 #define FIT_H3H4                0.0 //for cancel out H3 H4 with AA 
-#define FIT_spinO		1.0
+#define FIT_spinO		0.0
 #define FIT_spinOO		0.0 //for O-O distance changing
-#define FIT_spinO2		1.0
+#define FIT_spinO2		0.0
 #define FIT_spinO3		0.0
 #define FIT_spinH		0.0
 #define FIT_spinHH              0.0
 #define FIT_spinC		0.0
-#define FIT_spinN               0.0
+#define FIT_spinN               1.0
 #define FIT_spinP               0.0
 #define FIT_spinS               0.0
 #define FIT_spinF		0.0
@@ -78,7 +78,7 @@
 #define FIT_spinE		1.0
 #define FIT_triplet		0.0
 #define FIT_ion			1.0
-#define FIT_ex			1.0
+#define FIT_ex			0.0
 #define FIT_polar		1.0//1.0
 #define FIT_SpinSym             1.0//1.0
 #define FIT_diat		0.0
@@ -260,31 +260,31 @@
 #define MC_spinOplus3ex		  ON * MC_ALL
 #define MC_spinCplus3                     ON * MC_ALL
 #define MC_spinCplus2                     ON * MC_ALL
-#define MC_spinCplus                     ON * MC_ALL
+#define MC_spinCplus1                     ON * MC_ALL
 #define MC_spinCneutrl                     ON * MC_ALL
 #define MC_spinC_1                     ON * MC_ALL
 #define MC_spinNplus4                     ON * MC_ALL
 #define MC_spinNplus3                     ON * MC_ALL
 #define MC_spinNplus2                     ON * MC_ALL
-#define MC_spinNplus                     ON * MC_ALL
+#define MC_spinNplus1                     ON * MC_ALL
 #define MC_spinNneutrl                     ON * MC_ALL
 #define MC_spinN_1                     ON * MC_ALL
 #define MC_spinSplus5                     ON * MC_ALL
 #define MC_spinSplus4                     ON * MC_ALL
 #define MC_spinSplus3                     ON * MC_ALL
 #define MC_spinSplus2                     ON * MC_ALL
-#define MC_spinSplus                     ON * MC_ALL
+#define MC_spinSplus1                    ON * MC_ALL
 #define MC_spinSneutrl                     ON * MC_ALL
 #define MC_spinS_1                     ON * MC_ALL
 #define MC_spinPplus4                     ON * MC_ALL
 #define MC_spinPplus3                     ON * MC_ALL
 #define MC_spinPplus2                     ON * MC_ALL
-#define MC_spinPplus                     ON * MC_ALL
+#define MC_spinPplus1                    ON * MC_ALL
 #define MC_spinPneutrl                     ON * MC_ALL
 #define MC_spinP_1                     ON * MC_ALL
 #define MC_spinSiplus3                     ON * MC_ALL
 #define MC_spinSiplus2                     ON * MC_ALL
-#define MC_spinSiplus                     ON * MC_ALL
+#define MC_spinSiplus1                    ON * MC_ALL
 #define MC_spinSineutrl                     ON * MC_ALL
 #define MC_spinSi_1                     ON * MC_ALL
 #define MC_spinFplus6                     ON * MC_ALL
@@ -292,62 +292,62 @@
 #define MC_spinFplus4                     ON * MC_ALL
 #define MC_spinFplus3                     ON * MC_ALL
 #define MC_spinFplus2                     ON * MC_ALL
-#define MC_spinFplus                     ON * MC_ALL
+#define MC_spinFplus1                    ON * MC_ALL
 #define MC_spinFneutrl                     ON * MC_ALL
 #define MC_spinF_1                     ON * MC_ALL
 
 #define MC_spinCplus2ex                     ON * MC_ALL
-#define MC_spinCplusex                     ON * MC_ALL
+#define MC_spinCplus1ex                     ON * MC_ALL
 #define MC_spinCneutrlex                     ON * MC_ALL
 #define MC_spinCneutrlex2                     ON * MC_ALL
 #define MC_spinNplus3ex                     ON * MC_ALL
 #define MC_spinNplus2ex                     ON * MC_ALL
-#define MC_spinNplusex                     ON * MC_ALL
-#define MC_spinNplusex2                     ON * MC_ALL
+#define MC_spinNplus1ex                     ON * MC_ALL
+#define MC_spinNplus1ex2                     ON * MC_ALL
 #define MC_spinNneutrlex                     ON * MC_ALL
 #define MC_spinFplus5ex                     ON * MC_ALL
 #define MC_spinFplus4ex                     ON * MC_ALL
 #define MC_spinFplus3ex                     ON * MC_ALL
 #define MC_spinFplus3ex2                     ON * MC_ALL
 #define MC_spinFplus2ex                     ON * MC_ALL
-#define MC_spinFplusex                     ON * MC_ALL
+#define MC_spinFplus1ex                     ON * MC_ALL
 #define MC_spinSiplus2ex                     ON * MC_ALL
-#define MC_spinSiplusex                     ON * MC_ALL
+#define MC_spinSiplus1ex                     ON * MC_ALL
 #define MC_spinSineutrlex                     ON * MC_ALL
 #define MC_spinSineutrlex2                     ON * MC_ALL
 #define MC_spinPplus3ex                     ON * MC_ALL
 #define MC_spinPplus2ex                     ON * MC_ALL
-#define MC_spinPplusex                     ON * MC_ALL
-#define MC_spinPplusex2                     ON * MC_ALL
+#define MC_spinPplus1ex                     ON * MC_ALL
+#define MC_spinPplus1ex2                     ON * MC_ALL
 #define MC_spinPneutrlex                     ON * MC_ALL
 #define MC_spinSplus4ex                     ON * MC_ALL
 #define MC_spinSplus3ex                     ON * MC_ALL
 #define MC_spinSplus2ex                     ON * MC_ALL
 #define MC_spinSplus2ex2                     ON * MC_ALL
-#define MC_spinSplusex                     ON * MC_ALL
+#define MC_spinSplus1ex                     ON * MC_ALL
 #define MC_spinSneutrlex                     ON * MC_ALL
 
 #define MC_spinOneutrlex2                     ON * MC_ALL
 #define MC_spinOplus1ex2                     ON * MC_ALL
 #define MC_spinNneutrlex2                     ON * MC_ALL
 #define MC_spinFneutrlex                     ON * MC_ALL
-#define MC_spinFplusex2                     ON * MC_ALL
+#define MC_spinFplus1ex2                     ON * MC_ALL
 #define MC_spinFplus2ex2                     ON * MC_ALL
 #define MC_spinSneutrlex2                     ON * MC_ALL
 
 #define MC_spinB_1                     ON * MC_ALL
 #define MC_spinBneutrlex                     ON * MC_ALL
 #define MC_spinBneutrl                     ON * MC_ALL
-#define MC_spinBplusex                     ON * MC_ALL
-#define MC_spinBplus                     ON * MC_ALL
+#define MC_spinBplus1ex                     ON * MC_ALL
+#define MC_spinBplus1                    ON * MC_ALL
 #define MC_spinBplus2                     ON * MC_ALL
 
 #define MC_spinCl_1                     ON * MC_ALL
 #define MC_spinClneutrlex                     ON * MC_ALL
 #define MC_spinClneutrl                     ON * MC_ALL
-#define MC_spinClplusex2                     ON * MC_ALL
-#define MC_spinClplusex                     ON * MC_ALL
-#define MC_spinClplus                     ON * MC_ALL
+#define MC_spinClplus1ex2                     ON * MC_ALL
+#define MC_spinClplus1ex                     ON * MC_ALL
+#define MC_spinClplus1                    ON * MC_ALL
 #define MC_spinClplus2ex                     ON * MC_ALL
 #define MC_spinClplus2                     ON * MC_ALL
 #define MC_spinClplus3ex2                     ON * MC_ALL
@@ -361,20 +361,20 @@
 #define MC_spinAl_1                     ON * MC_ALL
 #define MC_spinAlneutrlex                     ON * MC_ALL
 #define MC_spinAlneutrl                     ON * MC_ALL
-#define MC_spinAlplusex                     ON * MC_ALL
-#define MC_spinAlplus                     ON * MC_ALL
+#define MC_spinAlplus1ex                     ON * MC_ALL
+#define MC_spinAlplus1                    ON * MC_ALL
 #define MC_spinAlplus2                     ON * MC_ALL
 
 #define MC_spinLi_1                     ON * MC_ALL
 #define MC_spinLineutrl                     ON * MC_ALL
 #define MC_spinBeneutrl                     ON * MC_ALL
 #define MC_spinBeneutrlex                     ON * MC_ALL
-#define MC_spinBeplus                     ON * MC_ALL
+#define MC_spinBeplus1                    ON * MC_ALL
 #define MC_spinNa_1                     ON * MC_ALL
 #define MC_spinNaneutrl                     ON * MC_ALL
 #define MC_spinMgneutrl                     ON * MC_ALL
 #define MC_spinMgneutrlex                     ON * MC_ALL
-#define MC_spinMgplus                     ON * MC_ALL
+#define MC_spinMgplus1                    ON * MC_ALL
 
 #define MC_spinZnplus11			ON * MC_ALL
 #define MC_spinZnplus10			ON * MC_ALL
@@ -855,10 +855,10 @@
 
 
 //O+===============================
-#define wspinOplus		 1.0*FIT_spinO
+#define wspinOplus1		 1.0*FIT_spinO
 
 //O+*=============================
-#define wspinOplusex		1.0*FIT_spinO* FIT_ex
+#define wspinOplus1ex		1.0*FIT_spinO* FIT_ex
 
 //O+2=============================
 #define wspinOplus2		1.0*FIT_spinO
@@ -873,7 +873,7 @@
 #define wspinOplus3		1.0*FIT_spinO
 
 //O+3*=============================
-#define wspinOplus3ex           1.0*FIT_spinO
+#define wspinOplus3ex           1.0*FIT_spinO * FIT_ex
 
 //O+4=============================
 #define wspinOplus4		1.0*FIT_spinO
@@ -898,7 +898,7 @@
 //Cplus2===========================
 #define wspinCplus2            1.0*FIT_spinC
 //Cplus===========================
-#define wspinCplus            1.0*FIT_spinC
+#define wspinCplus1           1.0*FIT_spinC
 //Cneutrl===========================
 #define wspinCneutrl            1.0*FIT_spinC
 //C_===========================
@@ -910,11 +910,11 @@
 //Nplus2===========================
 #define wspinNplus2            1.0*FIT_spinN
 //Nplus===========================
-#define wspinNplus            1.0*FIT_spinN
+#define wspinNplus1           1.0*FIT_spinN
 //Nneutrl===========================
 #define wspinNneutrl            1.0*FIT_spinN
 //N_===========================
-#define wspinN_1              1.0*FIT_spinN
+#define wspinN_1              0.0*FIT_spinN
 //Splus5===========================
 #define wspinSplus5            1.0*FIT_spinS
 //Splus4===========================
@@ -924,7 +924,7 @@
 //Splus2===========================
 #define wspinSplus2            1.0*FIT_spinS
 //Splus===========================
-#define wspinSplus            1.0*FIT_spinS
+#define wspinSplus1           1.0*FIT_spinS
 //Sneutrl===========================
 #define wspinSneutrl            1.0*FIT_spinS
 //S_===========================
@@ -936,7 +936,7 @@
 //Pplus2===========================
 #define wspinPplus2            1.0*FIT_spinP
 //Pplus===========================
-#define wspinPplus            1.0*FIT_spinP
+#define wspinPplus1           1.0*FIT_spinP
 //Pneutrl===========================
 #define wspinPneutrl            1.0*FIT_spinP
 //P_===========================
@@ -946,7 +946,7 @@
 //Siplus2===========================
 #define wspinSiplus2            1.0*FIT_spinSi
 //Siplus===========================
-#define wspinSiplus            1.0*FIT_spinSi
+#define wspinSiplus1           1.0*FIT_spinSi
 //Sineutrl===========================
 #define wspinSineutrl            1.0*FIT_spinSi
 //Si_===========================
@@ -962,7 +962,7 @@
 //Fplus2===========================
 #define wspinFplus2            1.0*FIT_spinF
 //Fplus===========================
-#define wspinFplus            1.0*FIT_spinF
+#define wspinFplus1           1.0*FIT_spinF
 //Fneutrl===========================
 #define wspinFneutrl            1.0*FIT_spinF
 //F_===========================
@@ -970,8 +970,8 @@
 
 //Cplus2ex===========================
 #define wspinCplus2ex            1.0*FIT_spinC*FIT_ex
-//Cplusex===========================
-#define wspinCplusex            1.0*FIT_spinC*FIT_ex
+//Cplus1ex===========================
+#define wspinCplus1ex            1.0*FIT_spinC*FIT_ex
 //Cneutrlex===========================
 #define wspinCneutrlex            1.0*FIT_spinC*FIT_ex
 //Cneutrlex2===========================
@@ -980,10 +980,10 @@
 #define wspinNplus3ex            1.0*FIT_spinN*FIT_ex
 //Nplus2ex===========================
 #define wspinNplus2ex            1.0*FIT_spinN*FIT_ex
-//Nplusex===========================
-#define wspinNplusex            1.0*FIT_spinN*FIT_ex
-//Nplusex2===========================
-#define wspinNplusex2            1.0*FIT_spinN*FIT_ex
+//Nplus1ex===========================
+#define wspinNplus1ex            1.0*FIT_spinN*FIT_ex
+//Nplus1ex2===========================
+#define wspinNplus1ex2            1.0*FIT_spinN*FIT_ex
 //Nneutrlex===========================
 #define wspinNneutrlex            1.0*FIT_spinN*FIT_ex
 //Fplus5ex===========================
@@ -996,12 +996,12 @@
 #define wspinFplus3ex2            1.0*FIT_spinF*FIT_ex
 //Fplus2ex===========================
 #define wspinFplus2ex            1.0*FIT_spinF*FIT_ex
-//Fplusex===========================
-#define wspinFplusex            1.0*FIT_spinF*FIT_ex
+//Fplus1ex===========================
+#define wspinFplus1ex            1.0*FIT_spinF*FIT_ex
 //Siplus2ex===========================
 #define wspinSiplus2ex            1.0*FIT_spinSi*FIT_ex
-//Siplusex===========================
-#define wspinSiplusex            1.0*FIT_spinSi*FIT_ex
+//Siplus1ex===========================
+#define wspinSiplus1ex            1.0*FIT_spinSi*FIT_ex
 //Sineutrlex===========================
 #define wspinSineutrlex            1.0*FIT_spinSi*FIT_ex
 //Sineutrlex2===========================
@@ -1010,10 +1010,10 @@
 #define wspinPplus3ex            1.0*FIT_spinP*FIT_ex
 //Pplus2ex===========================
 #define wspinPplus2ex            1.0*FIT_spinP*FIT_ex
-//Pplusex===========================
-#define wspinPplusex            1.0*FIT_spinP*FIT_ex
-//Pplusex2===========================
-#define wspinPplusex2            1.0*FIT_spinP*FIT_ex
+//Pplus1ex===========================
+#define wspinPplus1ex            1.0*FIT_spinP*FIT_ex
+//Pplus1ex2===========================
+#define wspinPplus1ex2            1.0*FIT_spinP*FIT_ex
 //Pneutrlex===========================
 #define wspinPneutrlex            1.0*FIT_spinP*FIT_ex
 //Splus4ex===========================
@@ -1024,21 +1024,21 @@
 #define wspinSplus2ex            1.0*FIT_spinS*FIT_ex
 //Splus2ex2===========================
 #define wspinSplus2ex2            1.0*FIT_spinS*FIT_ex
-//Splusex===========================
-#define wspinSplusex            1.0*FIT_spinS*FIT_ex
+//Splus1ex===========================
+#define wspinSplus1ex            1.0*FIT_spinS*FIT_ex
 //Sneutrlex===========================
 #define wspinSneutrlex            1.0*FIT_spinS*FIT_ex
 
 //Oneutrlex2===========================
 #define wspinOneutrlex2            1.0*FIT_spinO*FIT_polar*FIT_ex
-//Oplusex2===========================
-#define wspinOplusex2            1.0*FIT_spinO*FIT_polar*FIT_ex
+//Oplus1ex2===========================
+#define wspinOplus1ex2            1.0*FIT_spinO*FIT_polar*FIT_ex
 //Nneutrlex2===========================
-#define wspinNneutrlex2            1.0*FIT_spinN*FIT_ex
+#define wspinNneutrlex2            0.0*FIT_spinN*FIT_ex
 //Fneutrlex===========================
 #define wspinFneutrlex            1.0*FIT_spinF*FIT_ex
-//Fplusex2===========================
-#define wspinFplusex2            1.0*FIT_spinF*FIT_ex
+//Fplus1ex2===========================
+#define wspinFplus1ex2            1.0*FIT_spinF*FIT_ex
 //Fplus2ex2===========================
 #define wspinFplus2ex2            1.0*FIT_spinF*FIT_ex
 //Sneutrlex2===========================
@@ -1050,56 +1050,56 @@
 #define wspinBneutrlex            1.0*FIT_spinBo*FIT_ex
 //Bneutrl===========================
 #define wspinBneutrl            1.0*FIT_spinBo
-//Bplusex===========================
-#define wspinBplusex            1.0*FIT_spinBo*FIT_ex
+//Bplus1ex===========================
+#define wspinBplus1ex            1.0*FIT_spinBo*FIT_ex
 //Bplus===========================
-#define wspinBplus            1.0*FIT_spinBo
+#define wspinBplus1           1.0*FIT_spinBo
 //Bplus2===========================
 #define wspinBplus2            1.0*FIT_spinBo
 //Cl_1===========================
-#define wspinCl_1            1.0*FIT_spinCl*FIT_ex
+#define wspinCl_1            1.0*FIT_spinCl
 //Clneutrlex===========================
 #define wspinClneutrlex            1.0*FIT_spinCl*FIT_ex
 //Clneutrl===========================
-#define wspinClneutrl            1.0*FIT_spinCl*FIT_ex
-//Clplusex2===========================
-#define wspinClplusex2            1.0*FIT_spinCl*FIT_ex
-//Clplusex===========================
-#define wspinClplusex            1.0*FIT_spinCl*FIT_ex
+#define wspinClneutrl            1.0*FIT_spinCl
+//Clplus1ex2===========================
+#define wspinClplus1ex2            1.0*FIT_spinCl*FIT_ex
+//Clplus1ex===========================
+#define wspinClplus1ex            1.0*FIT_spinCl*FIT_ex
 //Clplus===========================
-#define wspinClplus            1.0*FIT_spinCl*FIT_ex
+#define wspinClplus1           1.0*FIT_spinCl
 //Clplus2ex===========================
 #define wspinClplus2ex            1.0*FIT_spinCl*FIT_ex
 //Clplus2===========================
-#define wspinClplus2            1.0*FIT_spinCl*FIT_ex
+#define wspinClplus2            1.0*FIT_spinCl
 //Clplus3ex2===========================
 #define wspinClplus3ex2            1.0*FIT_spinCl*FIT_ex
 //Clplus3ex===========================
 #define wspinClplus3ex            1.0*FIT_spinCl*FIT_ex
 //Clplus3===========================
-#define wspinClplus3            1.0*FIT_spinCl*FIT_ex
+#define wspinClplus3            1.0*FIT_spinCl
 //Clplus4ex===========================
 #define wspinClplus4ex            1.0*FIT_spinCl*FIT_ex
 //Clplus4===========================
-#define wspinClplus4            1.0*FIT_spinCl*FIT_ex
+#define wspinClplus4            1.0*FIT_spinCl
 //Clplus5ex===========================
 #define wspinClplus5ex            1.0*FIT_spinCl*FIT_ex
 //Clplus5===========================
-#define wspinClplus5            1.0*FIT_spinCl*FIT_ex
+#define wspinClplus5            1.0*FIT_spinCl
 //Clplus6===========================
-#define wspinClplus6            1.0*FIT_spinCl*FIT_ex
+#define wspinClplus6            1.0*FIT_spinCl
 //Al_1===========================
-#define wspinAl_1            1.0*FIT_spinAl*FIT_ex
+#define wspinAl_1            1.0*FIT_spinAl
 //Alneutrlex===========================
 #define wspinAlneutrlex            1.0*FIT_spinAl*FIT_ex
 //Alneutrl===========================
-#define wspinAlneutrl            1.0*FIT_spinAl*FIT_ex
-//Alplusex===========================
-#define wspinAlplusex            1.0*FIT_spinAl*FIT_ex
+#define wspinAlneutrl            1.0*FIT_spinAl
+//Alplus1ex===========================
+#define wspinAlplus1ex            1.0*FIT_spinAl*FIT_ex
 //Alplus===========================
-#define wspinAlplus            1.0*FIT_spinAl*FIT_ex
+#define wspinAlplus1           1.0*FIT_spinAl
 //Alplus2===========================
-#define wspinAlplus2            1.0*FIT_spinAl*FIT_ex
+#define wspinAlplus2            1.0*FIT_spinAl
 
 
 //Li_1===========================
@@ -1111,7 +1111,7 @@
 //Beneutrlex===========================
 #define wspinBeneutrlex            1.0*FIT_spinBe*FIT_ex
 //Beplus===========================
-#define wspinBeplus            1.0*FIT_spinBe
+#define wspinBeplus1           1.0*FIT_spinBe
 //Na_1===========================
 #define wspinNa_1            1.0*FIT_spinNa
 //Naneutrl===========================
@@ -1121,7 +1121,7 @@
 //Mgneutrlex===========================
 #define wspinMgneutrlex            1.0*FIT_spinMg
 //Mgplus===========================
-#define wspinMgplus            1.0*FIT_spinMg
+#define wspinMgplus1           1.0*FIT_spinMg
 
 
 
@@ -1201,7 +1201,7 @@
 //Znplus10===========================
 #define wspinZnplus10            1.0*FIT_spinZn
 //Znplus10ex===========================
-#define wspinZnplus10ex            1.0*FIT_spinZn
+#define wspinZnplus10ex            1.0*FIT_spinZn * FIT_ex
 //Znplus9===========================
 #define wspinZnplus9            1.0*FIT_spinZn
 //Znplus8===========================
@@ -1211,29 +1211,29 @@
 //Znplus6===========================
 #define wspinZnplus6            1.0*FIT_spinZn
 //Znplus6ex===========================
-#define wspinZnplus6ex            1.0*FIT_spinZn
+#define wspinZnplus6ex            1.0*FIT_spinZn * FIT_ex
 //Znplus6ex2===========================
-#define wspinZnplus6ex2            1.0*FIT_spinZn
+#define wspinZnplus6ex2            1.0*FIT_spinZn * FIT_ex
 //Znplus5===========================
 #define wspinZnplus5            1.0*FIT_spinZn
 //Znplus5ex===========================
-#define wspinZnplus5ex            1.0*FIT_spinZn
+#define wspinZnplus5ex            1.0*FIT_spinZn * FIT_ex
 //Znplus5ex2===========================
-#define wspinZnplus5ex2            1.0*FIT_spinZn
+#define wspinZnplus5ex2            1.0*FIT_spinZn * FIT_ex
 //Znplus4===========================
 #define wspinZnplus4            1.0*FIT_spinZn
 //Znplus4ex===========================
-#define wspinZnplus4ex            1.0*FIT_spinZn
+#define wspinZnplus4ex            1.0*FIT_spinZn * FIT_ex
 //Znplus4ex2===========================
-#define wspinZnplus4ex2            1.0*FIT_spinZn
+#define wspinZnplus4ex2            1.0*FIT_spinZn * FIT_ex
 //Znplus3===========================
 #define wspinZnplus3            1.0*FIT_spinZn
 //Znplus3ex===========================
-#define wspinZnplus3ex            1.0*FIT_spinZn
+#define wspinZnplus3ex            1.0*FIT_spinZn * FIT_ex
 //Znplus2===========================
 #define wspinZnplus2            1.0*FIT_spinZn
 //Znplus2ex===========================
-#define wspinZnplus2ex            1.0*FIT_spinZn
+#define wspinZnplus2ex            1.0*FIT_spinZn * FIT_ex
 //Scplus2===========================
 #define wspinScplus2            1.0*FIT_spinSc
 //Tiplus3===========================
@@ -1241,165 +1241,165 @@
 //Tiplus2===========================
 #define wspinTiplus2            1.0*FIT_spinTi
 //Tiplus2ex===========================
-#define wspinTiplus2ex            1.0*FIT_spinTi
+#define wspinTiplus2ex            1.0*FIT_spinTi * FIT_ex
 //Vplus4===========================
 #define wspinVplus4            1.0*FIT_spinV
 //Vplus3===========================
 #define wspinVplus3            1.0*FIT_spinV
 //Vplus3ex===========================
-#define wspinVplus3ex            1.0*FIT_spinV
+#define wspinVplus3ex            1.0*FIT_spinV * FIT_ex
 //Vplus2===========================
 #define wspinVplus2            1.0*FIT_spinV
 //Vplus2ex===========================
-#define wspinVplus2ex            1.0*FIT_spinV
+#define wspinVplus2ex            1.0*FIT_spinV * FIT_ex
 //Crplus5===========================
 #define wspinCrplus5            1.0*FIT_spinCr
 //Crplus4===========================
 #define wspinCrplus4            1.0*FIT_spinCr
 //Crplus4ex===========================
-#define wspinCrplus4ex            1.0*FIT_spinCr
+#define wspinCrplus4ex            1.0*FIT_spinCr * FIT_ex
 //Crplus3===========================
 #define wspinCrplus3            1.0*FIT_spinCr
 //Crplus3ex===========================
-#define wspinCrplus3ex            1.0*FIT_spinCr
+#define wspinCrplus3ex            1.0*FIT_spinCr * FIT_ex
 //Crplus2===========================
 #define wspinCrplus2            1.0*FIT_spinCr
 //Crplus2ex===========================
-#define wspinCrplus2ex            1.0*FIT_spinCr
+#define wspinCrplus2ex            1.0*FIT_spinCr * FIT_ex
 //Crplus2ex2===========================
-#define wspinCrplus2ex2            1.0*FIT_spinCr
+#define wspinCrplus2ex2            1.0*FIT_spinCr * FIT_ex
 //Crplus1===========================
 #define wspinCrplus1            1.0*FIT_spinCr
 //Crplus1ex===========================
-#define wspinCrplus1ex            1.0*FIT_spinCr
+#define wspinCrplus1ex            1.0*FIT_spinCr * FIT_ex
 //Crplus1ex2===========================
-#define wspinCrplus1ex2            1.0*FIT_spinCr
+#define wspinCrplus1ex2            1.0*FIT_spinCr * FIT_ex
 //Mnplus6===========================
 #define wspinMnplus6            1.0*FIT_spinMn
 //Mnplus5===========================
 #define wspinMnplus5            1.0*FIT_spinMn
 //Mnplus5ex===========================
-#define wspinMnplus5ex            1.0*FIT_spinMn
+#define wspinMnplus5ex            1.0*FIT_spinMn * FIT_ex
 //Mnplus4===========================
 #define wspinMnplus4            1.0*FIT_spinMn
 //Mnplus4ex===========================
-#define wspinMnplus4ex            1.0*FIT_spinMn
+#define wspinMnplus4ex            1.0*FIT_spinMn * FIT_ex
 //Mnplus3===========================
 #define wspinMnplus3            1.0*FIT_spinMn
 //Mnplus3ex===========================
-#define wspinMnplus3ex            1.0*FIT_spinMn
+#define wspinMnplus3ex            1.0*FIT_spinMn * FIT_ex
 //Mnplus2===========================
 #define wspinMnplus2            1.0*FIT_spinMn
 //Mnplus2ex===========================
-#define wspinMnplus2ex            1.0*FIT_spinMn
+#define wspinMnplus2ex            1.0*FIT_spinMn * FIT_ex
 //Mnplus2ex2===========================
-#define wspinMnplus2ex2            1.0*FIT_spinMn
+#define wspinMnplus2ex2            1.0*FIT_spinMn * FIT_ex
 //Feplus7===========================
 #define wspinFeplus7            1.0*FIT_spinFe
 //Feplus6===========================
 #define wspinFeplus6            1.0*FIT_spinFe
 //Feplus6ex===========================
-#define wspinFeplus6ex            1.0*FIT_spinFe
+#define wspinFeplus6ex            1.0*FIT_spinFe * FIT_ex
 //Feplus5===========================
 #define wspinFeplus5            1.0*FIT_spinFe
 //Feplus5ex===========================
-#define wspinFeplus5ex            1.0*FIT_spinFe
+#define wspinFeplus5ex            1.0*FIT_spinFe * FIT_ex
 //Feplus4===========================
 #define wspinFeplus4            1.0*FIT_spinFe
 //Feplus4ex===========================
-#define wspinFeplus4ex            1.0*FIT_spinFe
+#define wspinFeplus4ex            1.0*FIT_spinFe * FIT_ex
 //Feplus4ex2===========================
-#define wspinFeplus4ex2            1.0*FIT_spinFe
+#define wspinFeplus4ex2            1.0*FIT_spinFe * FIT_ex
 //Feplus3===========================
 #define wspinFeplus3            1.0*FIT_spinFe
 //Feplus3ex===========================
-#define wspinFeplus3ex            1.0*FIT_spinFe
+#define wspinFeplus3ex            1.0*FIT_spinFe * FIT_ex
 //Feplus3ex2===========================
-#define wspinFeplus3ex2            1.0*FIT_spinFe
+#define wspinFeplus3ex2            1.0*FIT_spinFe * FIT_ex
 //Feplus2===========================
 #define wspinFeplus2            1.0*FIT_spinFe
 //Feplus2ex===========================
-#define wspinFeplus2ex            1.0*FIT_spinFe
+#define wspinFeplus2ex            1.0*FIT_spinFe * FIT_ex
 //Feplus2ex2===========================
-#define wspinFeplus2ex2            1.0*FIT_spinFe
+#define wspinFeplus2ex2            1.0*FIT_spinFe * FIT_ex
 //Coplus8===========================
 #define wspinCoplus8            1.0*FIT_spinCo
 //Coplus7===========================
 #define wspinCoplus7            1.0*FIT_spinCo
 //Coplus7ex===========================
-#define wspinCoplus7ex            1.0*FIT_spinCo
+#define wspinCoplus7ex            1.0*FIT_spinCo * FIT_ex
 //Coplus6===========================
 #define wspinCoplus6            1.0*FIT_spinCo
 //Coplus6ex===========================
-#define wspinCoplus6ex            1.0*FIT_spinCo
+#define wspinCoplus6ex            1.0*FIT_spinCo * FIT_ex
 //Coplus5===========================
 #define wspinCoplus5            1.0*FIT_spinCo
 //Coplus5ex===========================
-#define wspinCoplus5ex            1.0*FIT_spinCo
+#define wspinCoplus5ex            1.0*FIT_spinCo * FIT_ex
 //Coplus5ex2===========================
-#define wspinCoplus5ex2            1.0*FIT_spinCo
+#define wspinCoplus5ex2            1.0*FIT_spinCo * FIT_ex
 //Coplus4===========================
 #define wspinCoplus4            1.0*FIT_spinCo
 //Coplus4ex===========================
-#define wspinCoplus4ex            1.0*FIT_spinCo
+#define wspinCoplus4ex            1.0*FIT_spinCo * FIT_ex
 //Coplus4ex2===========================
-#define wspinCoplus4ex2            1.0*FIT_spinCo
+#define wspinCoplus4ex2            1.0*FIT_spinCo * FIT_ex
 //Coplus3===========================
 #define wspinCoplus3            1.0*FIT_spinCo
 //Coplus3ex===========================
-#define wspinCoplus3ex            1.0*FIT_spinCo
+#define wspinCoplus3ex            1.0*FIT_spinCo * FIT_ex
 //Coplus3ex2===========================
-#define wspinCoplus3ex2            1.0*FIT_spinCo
+#define wspinCoplus3ex2            1.0*FIT_spinCo * FIT_ex
 //Coplus2===========================
 #define wspinCoplus2            1.0*FIT_spinCo
 //Coplus2ex===========================
-#define wspinCoplus2ex            1.0*FIT_spinCo
+#define wspinCoplus2ex            1.0*FIT_spinCo * FIT_ex
 //Coplus2ex2===========================
-#define wspinCoplus2ex2            1.0*FIT_spinCo
+#define wspinCoplus2ex2            1.0*FIT_spinCo * FIT_ex
 //Niplus9===========================
 #define wspinNiplus9            1.0*FIT_spinNi
 //Niplus8===========================
 #define wspinNiplus8            1.0*FIT_spinNi
 //Niplus8ex===========================
-#define wspinNiplus8ex            1.0*FIT_spinNi
+#define wspinNiplus8ex            1.0*FIT_spinNi * FIT_ex
 //Niplus7===========================
 #define wspinNiplus7            1.0*FIT_spinNi
 //Niplus7ex===========================
-#define wspinNiplus7ex            1.0*FIT_spinNi
+#define wspinNiplus7ex            1.0*FIT_spinNi * FIT_ex
 //Niplus6===========================
 #define wspinNiplus6            1.0*FIT_spinNi
 //Niplus6ex===========================
-#define wspinNiplus6ex            1.0*FIT_spinNi
+#define wspinNiplus6ex            1.0*FIT_spinNi * FIT_ex
 //Niplus5===========================
 #define wspinNiplus5            1.0*FIT_spinNi
 //Niplus5ex===========================
-#define wspinNiplus5ex            1.0*FIT_spinNi
+#define wspinNiplus5ex            1.0*FIT_spinNi * FIT_ex
 //Niplus5ex2===========================
-#define wspinNiplus5ex2            1.0*FIT_spinNi
+#define wspinNiplus5ex2            1.0*FIT_spinNi * FIT_ex
 //Niplus4===========================
 #define wspinNiplus4            1.0*FIT_spinNi
 //Niplus4ex===========================
-#define wspinNiplus4ex            1.0*FIT_spinNi
+#define wspinNiplus4ex            1.0*FIT_spinNi * FIT_ex
 //Niplus4ex2===========================
-#define wspinNiplus4ex2            1.0*FIT_spinNi
+#define wspinNiplus4ex2            1.0*FIT_spinNi * FIT_ex
 //Niplus3===========================
 #define wspinNiplus3            1.0*FIT_spinNi
 //Niplus3ex===========================
-#define wspinNiplus3ex            1.0*FIT_spinNi
+#define wspinNiplus3ex            1.0*FIT_spinNi * FIT_ex
 //Niplus3ex2===========================
-#define wspinNiplus3ex2            1.0*FIT_spinNi
+#define wspinNiplus3ex2            1.0*FIT_spinNi * FIT_ex
 //Niplus2===========================
 #define wspinNiplus2            1.0*FIT_spinNi
 //Niplus2ex===========================
-#define wspinNiplus2ex            1.0*FIT_spinNi
+#define wspinNiplus2ex            1.0*FIT_spinNi * FIT_ex
 //Niplus2ex2===========================
-#define wspinNiplus2ex2            1.0*FIT_spinNi
+#define wspinNiplus2ex2            1.0*FIT_spinNi * FIT_ex
 //Cuplus10===========================
 #define wspinCuplus10            1.0*FIT_spinCu
 //Cuplus9===========================
 #define wspinCuplus9            1.0*FIT_spinCu
 //Cuplus9ex===========================
-#define wspinCuplus9ex            1.0*FIT_spinCu
+#define wspinCuplus9ex            1.0*FIT_spinCu * FIT_ex
 //Cuplus8===========================
 #define wspinCuplus8            1.0*FIT_spinCu
 //Cuplus7===========================
@@ -1409,29 +1409,29 @@
 //Cuplus5===========================
 #define wspinCuplus5            1.0*FIT_spinCu
 //Cuplus5ex===========================
-#define wspinCuplus5ex            1.0*FIT_spinCu
+#define wspinCuplus5ex            1.0*FIT_spinCu * FIT_ex
 //Cuplus5ex2===========================
-#define wspinCuplus5ex2            1.0*FIT_spinCu
+#define wspinCuplus5ex2            1.0*FIT_spinCu * FIT_ex
 //Cuplus4===========================
 #define wspinCuplus4            1.0*FIT_spinCu
 //Cuplus4ex===========================
-#define wspinCuplus4ex            1.0*FIT_spinCu
+#define wspinCuplus4ex            1.0*FIT_spinCu * FIT_ex
 //Cuplus4ex2===========================
-#define wspinCuplus4ex2            1.0*FIT_spinCu
+#define wspinCuplus4ex2            1.0*FIT_spinCu * FIT_ex
 //Cuplus3===========================
 #define wspinCuplus3            1.0*FIT_spinCu
 //Cuplus3ex===========================
-#define wspinCuplus3ex            1.0*FIT_spinCu
+#define wspinCuplus3ex            1.0*FIT_spinCu * FIT_ex
 //Cuplus3ex2===========================
-#define wspinCuplus3ex2            1.0*FIT_spinCu
+#define wspinCuplus3ex2            1.0*FIT_spinCu * FIT_ex
 //Cuplus2===========================
 #define wspinCuplus2            1.0*FIT_spinCu
 //Cuplus2ex===========================
-#define wspinCuplus2ex            1.0*FIT_spinCu
+#define wspinCuplus2ex            1.0*FIT_spinCu * FIT_ex
 //Cuplus1===========================
 #define wspinCuplus1            1.0*FIT_spinCu
 //Cuplus1ex===========================
-#define wspinCuplus1ex            1.0*FIT_spinCu
+#define wspinCuplus1ex            1.0*FIT_spinCu * FIT_ex
 
 //Yplus2===========================
 #define wspinYplus2            1.0*FIT_spinY
@@ -1440,45 +1440,45 @@
 //Zrplus2===========================
 #define wspinZrplus2            1.0*FIT_spinZr
 //Zrplus2ex===========================
-#define wspinZrplus2ex            1.0*FIT_spinZr
+#define wspinZrplus2ex            1.0*FIT_spinZr * FIT_ex
 //Nbplus4===========================
 #define wspinNbplus4            1.0*FIT_spinNb
 //Nbplus3===========================
 #define wspinNbplus3            1.0*FIT_spinNb
 //Nbplus3ex===========================
-#define wspinNbplus3ex            1.0*FIT_spinNb
+#define wspinNbplus3ex            1.0*FIT_spinNb * FIT_ex
 //Nbplus2===========================
 #define wspinNbplus2            1.0*FIT_spinNb
 //Nbplus2ex===========================
-#define wspinNbplus2ex            1.0*FIT_spinNb
+#define wspinNbplus2ex            1.0*FIT_spinNb * FIT_ex
 //Nbplus1===========================
 #define wspinNbplus1            1.0*FIT_spinNb
 //Nbplus1ex===========================
-#define wspinNbplus1ex            1.0*FIT_spinNb
+#define wspinNbplus1ex            1.0*FIT_spinNb * FIT_ex
 //Nbplus1ex2===========================
-#define wspinNbplus1ex2            1.0*FIT_spinNb
+#define wspinNbplus1ex2            1.0*FIT_spinNb * FIT_ex
 //Moplus5===========================
 #define wspinMoplus5            1.0*FIT_spinMo
 //Moplus4===========================
 #define wspinMoplus4            1.0*FIT_spinMo
 //Moplus4ex===========================
-#define wspinMoplus4ex            1.0*FIT_spinMo
+#define wspinMoplus4ex            1.0*FIT_spinMo * FIT_ex
 //Moplus3===========================
 #define wspinMoplus3            1.0*FIT_spinMo
 //Moplus3ex===========================
-#define wspinMoplus3ex            1.0*FIT_spinMo
+#define wspinMoplus3ex            1.0*FIT_spinMo * FIT_ex
 //Moplus2===========================
 #define wspinMoplus2            1.0*FIT_spinMo
 //Moplus2ex===========================
-#define wspinMoplus2ex            1.0*FIT_spinMo
+#define wspinMoplus2ex            1.0*FIT_spinMo * FIT_ex
 //Moplus2ex2===========================
-#define wspinMoplus2ex2            1.0*FIT_spinMo
+#define wspinMoplus2ex2            1.0*FIT_spinMo * FIT_ex
 //Moplus1===========================
 #define wspinMoplus1            1.0*FIT_spinMo
 //Moplus1ex===========================
-#define wspinMoplus1ex            1.0*FIT_spinMo
+#define wspinMoplus1ex            1.0*FIT_spinMo * FIT_ex
 //Moplus1ex2===========================
-#define wspinMoplus1ex2            1.0*FIT_spinMo
+#define wspinMoplus1ex2            1.0*FIT_spinMo * FIT_ex
 //Tcplus6===========================
 #define wspinTcplus6            1.0*FIT_spinTc
 //Tcplus5===========================
@@ -1502,13 +1502,13 @@
 //Ruplus2===========================
 #define wspinRuplus2            1.0*FIT_spinRu
 //Ruplus2ex===========================
-#define wspinRuplus2ex            1.0*FIT_spinRu
+#define wspinRuplus2ex            1.0*FIT_spinRu * FIT_ex
 //Ruplus1===========================
 #define wspinRuplus1            1.0*FIT_spinRu
 //Ruplus1ex===========================
-#define wspinRuplus1ex            1.0*FIT_spinRu
+#define wspinRuplus1ex            1.0*FIT_spinRu * FIT_ex
 //Ruplus1ex2===========================
-#define wspinRuplus1ex2            1.0*FIT_spinRu
+#define wspinRuplus1ex2            1.0*FIT_spinRu * FIT_ex
 //Rhplus8===========================
 #define wspinRhplus8            1.0*FIT_spinRh
 //Rhplus7===========================
@@ -1524,15 +1524,15 @@
 //Rhplus2===========================
 #define wspinRhplus2            1.0*FIT_spinRh
 //Rhplus2ex===========================
-#define wspinRhplus2ex            1.0*FIT_spinRh
+#define wspinRhplus2ex            1.0*FIT_spinRh * FIT_ex
 //Rhplus2ex2===========================
-#define wspinRhplus2ex2            1.0*FIT_spinRh
+#define wspinRhplus2ex2            1.0*FIT_spinRh * FIT_ex
 //Rhplus1===========================
 #define wspinRhplus1            1.0*FIT_spinRh
 //Rhplus1ex===========================
-#define wspinRhplus1ex            1.0*FIT_spinRh
+#define wspinRhplus1ex            1.0*FIT_spinRh * FIT_ex
 //Rhplus1ex2===========================
-#define wspinRhplus1ex2            1.0*FIT_spinRh
+#define wspinRhplus1ex2            1.0*FIT_spinRh * FIT_ex
 //Pdplus9===========================
 #define wspinPdplus9            1.0*FIT_spinPd
 //Pdplus8===========================
@@ -1550,17 +1550,17 @@
 //Pdplus2===========================
 #define wspinPdplus2            1.0*FIT_spinPd
 //Pdplus2ex===========================
-#define wspinPdplus2ex            1.0*FIT_spinPd
+#define wspinPdplus2ex            1.0*FIT_spinPd * FIT_ex
 //Pdplus2ex2===========================
-#define wspinPdplus2ex2            1.0*FIT_spinPd
+#define wspinPdplus2ex2            1.0*FIT_spinPd * FIT_ex
 //Pdplus1===========================
 #define wspinPdplus1            1.0*FIT_spinPd
 //Pdplus1ex===========================
-#define wspinPdplus1ex            1.0*FIT_spinPd
+#define wspinPdplus1ex            1.0*FIT_spinPd * FIT_ex
 //Pdneutrl===========================
 #define wspinPdneutrl            1.0*FIT_spinPd
 //Pdneutrlex===========================
-#define wspinPdneutrlex            1.0*FIT_spinPd
+#define wspinPdneutrlex            1.0*FIT_spinPd * FIT_ex
 //Agplus10===========================
 #define wspinAgplus10            1.0*FIT_spinAg
 //Agplus9===========================
@@ -1580,11 +1580,11 @@
 //Agplus2===========================
 #define wspinAgplus2            1.0*FIT_spinAg
 //Agplus2ex===========================
-#define wspinAgplus2ex            1.0*FIT_spinAg
+#define wspinAgplus2ex            1.0*FIT_spinAg * FIT_ex
 //Agplus1===========================
 #define wspinAgplus1            1.0*FIT_spinAg
 //Agplus1ex===========================
-#define wspinAgplus1ex            1.0*FIT_spinAg
+#define wspinAgplus1ex            1.0*FIT_spinAg * FIT_ex
 //Cdplus11===========================
 #define wspinCdplus11            1.0*FIT_spinCd
 //Cdplus10===========================
@@ -1604,178 +1604,178 @@
 //Cdplus3===========================
 #define wspinCdplus3            1.0*FIT_spinCd
 //Cdplus3ex===========================
-#define wspinCdplus3ex            1.0*FIT_spinCd
+#define wspinCdplus3ex            1.0*FIT_spinCd * FIT_ex
 //Cdplus2===========================
 #define wspinCdplus2            1.0*FIT_spinCd
 //Cdplus2ex===========================
-#define wspinCdplus2ex            1.0*FIT_spinCd
+#define wspinCdplus2ex            1.0*FIT_spinCd * FIT_ex
 
 
 //Znplus1===========================
 #define wspinZnplus1            1.0*FIT_spinZn
 //Znplus1ex===========================
-#define wspinZnplus1ex            1.0*FIT_spinZn
+#define wspinZnplus1ex            1.0*FIT_spinZn * FIT_ex
 //Znneutrl===========================
 #define wspinZnneutrl            1.0*FIT_spinZn
 //Znneutrlex===========================
-#define wspinZnneutrlex            1.0*FIT_spinZn
+#define wspinZnneutrlex            1.0*FIT_spinZn * FIT_ex
 //Cuneutrl===========================
 #define wspinCuneutrl            1.0*FIT_spinCu
 //Cuneutrlex===========================
-#define wspinCuneutrlex            1.0*FIT_spinCu
+#define wspinCuneutrlex            1.0*FIT_spinCu * FIT_ex
 //Niplus1===========================
 #define wspinNiplus1            1.0*FIT_spinNi
 //Niplus1ex===========================
-#define wspinNiplus1ex            1.0*FIT_spinNi
+#define wspinNiplus1ex            1.0*FIT_spinNi * FIT_ex
 //Nineutrl===========================
 #define wspinNineutrl            1.0*FIT_spinNi
 //Nineutrlex===========================
-#define wspinNineutrlex            1.0*FIT_spinNi
+#define wspinNineutrlex            1.0*FIT_spinNi * FIT_ex
 //Coplus1===========================
 #define wspinCoplus1            1.0*FIT_spinCo
 //Coplus1ex===========================
-#define wspinCoplus1ex            1.0*FIT_spinCo
+#define wspinCoplus1ex            1.0*FIT_spinCo * FIT_ex
 //Coplus1ex2===========================
-#define wspinCoplus1ex2            1.0*FIT_spinCo
+#define wspinCoplus1ex2            1.0*FIT_spinCo * FIT_ex
 //Coneutrl===========================
 #define wspinConeutrl            1.0*FIT_spinCo
 //Coneutrlex===========================
-#define wspinConeutrlex            1.0*FIT_spinCo
+#define wspinConeutrlex            1.0*FIT_spinCo * FIT_ex
 //Feplus1===========================
 #define wspinFeplus1            1.0*FIT_spinFe
 //Feplus1ex===========================
-#define wspinFeplus1ex            1.0*FIT_spinFe
+#define wspinFeplus1ex            1.0*FIT_spinFe * FIT_ex
 //Feplus1ex2===========================
-#define wspinFeplus1ex2            1.0*FIT_spinFe
+#define wspinFeplus1ex2            1.0*FIT_spinFe * FIT_ex
 //Feneutrl===========================
 #define wspinFeneutrl            1.0*FIT_spinFe
 //Feneutrlex===========================
-#define wspinFeneutrlex            1.0*FIT_spinFe
+#define wspinFeneutrlex            1.0*FIT_spinFe * FIT_ex
 //Feneutrlex2===========================
-#define wspinFeneutrlex2            1.0*FIT_spinFe
+#define wspinFeneutrlex2            1.0*FIT_spinFe * FIT_ex
 //Feneutrlex3===========================
-#define wspinFeneutrlex3            1.0*FIT_spinFe
+#define wspinFeneutrlex3            1.0*FIT_spinFe * FIT_ex
 //Mnplus1===========================
 #define wspinMnplus1            1.0*FIT_spinMn
 //Mnplus1ex===========================
-#define wspinMnplus1ex            1.0*FIT_spinMn
+#define wspinMnplus1ex            1.0*FIT_spinMn * FIT_ex
 //Mnplus1ex2===========================
-#define wspinMnplus1ex2            1.0*FIT_spinMn
+#define wspinMnplus1ex2            1.0*FIT_spinMn * FIT_ex
 //Mnplus1ex3===========================
-#define wspinMnplus1ex3            1.0*FIT_spinMn
+#define wspinMnplus1ex3            1.0*FIT_spinMn * FIT_ex
 //Mnneutrl===========================
 #define wspinMnneutrl            1.0*FIT_spinMn
 //Mnneutrlex===========================
-#define wspinMnneutrlex            1.0*FIT_spinMn
+#define wspinMnneutrlex            1.0*FIT_spinMn * FIT_ex
 //Mnneutrlex2===========================
-#define wspinMnneutrlex2            1.0*FIT_spinMn
+#define wspinMnneutrlex2            1.0*FIT_spinMn * FIT_ex
 //Mnneutrlex3===========================
-#define wspinMnneutrlex3            1.0*FIT_spinMn
+#define wspinMnneutrlex3            1.0*FIT_spinMn * FIT_ex
 //Crneutrl===========================
 #define wspinCrneutrl            1.0*FIT_spinCr
 //Crneutrlex===========================
-#define wspinCrneutrlex            1.0*FIT_spinCr
+#define wspinCrneutrlex            1.0*FIT_spinCr * FIT_ex
 //Crneutrlex2===========================
-#define wspinCrneutrlex2            1.0*FIT_spinCr
+#define wspinCrneutrlex2            1.0*FIT_spinCr * FIT_ex
 //Crneutrlex3===========================
-#define wspinCrneutrlex3            1.0*FIT_spinCr
+#define wspinCrneutrlex3            1.0*FIT_spinCr * FIT_ex
 //Vplus1===========================
 #define wspinVplus1            1.0*FIT_spinV
 //Vplus1ex===========================
-#define wspinVplus1ex            1.0*FIT_spinV
+#define wspinVplus1ex            1.0*FIT_spinV * FIT_ex
 //Vplus1ex2===========================
-#define wspinVplus1ex2            1.0*FIT_spinV
+#define wspinVplus1ex2            1.0*FIT_spinV * FIT_ex
 //Vneutrl===========================
 #define wspinVneutrl            1.0*FIT_spinV
 //Vneutrlex===========================
-#define wspinVneutrlex            1.0*FIT_spinV
+#define wspinVneutrlex            1.0*FIT_spinV * FIT_ex
 //Vneutrlex2===========================
-#define wspinVneutrlex2            1.0*FIT_spinV
+#define wspinVneutrlex2            1.0*FIT_spinV * FIT_ex
 //Tiplus1===========================
 #define wspinTiplus1            1.0*FIT_spinTi
 //Tiplus1ex===========================
-#define wspinTiplus1ex            1.0*FIT_spinTi
+#define wspinTiplus1ex            1.0*FIT_spinTi * FIT_ex
 //Tineutrl===========================
 #define wspinTineutrl            1.0*FIT_spinTi
 //Tineutrlex===========================
-#define wspinTineutrlex            1.0*FIT_spinTi
+#define wspinTineutrlex            1.0*FIT_spinTi * FIT_ex
 //Tineutrlex2===========================
-#define wspinTineutrlex2            1.0*FIT_spinTi
+#define wspinTineutrlex2            1.0*FIT_spinTi * FIT_ex
 //Scplus1===========================
 #define wspinScplus1            1.0*FIT_spinSc
 //Scplus1ex===========================
-#define wspinScplus1ex            1.0*FIT_spinSc
+#define wspinScplus1ex            1.0*FIT_spinSc * FIT_ex
 //Scneutrl===========================
 #define wspinScneutrl            1.0*FIT_spinSc
 //Scneutrlex===========================
-#define wspinScneutrlex            1.0*FIT_spinSc
+#define wspinScneutrlex            1.0*FIT_spinSc * FIT_ex
 
 //Cdplus1===========================
 #define wspinCdplus1            1.0*FIT_spinCd
 //Cdplus1ex===========================
-#define wspinCdplus1ex            1.0*FIT_spinCd
+#define wspinCdplus1ex            1.0*FIT_spinCd * FIT_ex
 //Cdneutrl===========================
 #define wspinCdneutrl            1.0*FIT_spinCd
 //Cdneutrlex===========================
-#define wspinCdneutrlex            1.0*FIT_spinCd
+#define wspinCdneutrlex            1.0*FIT_spinCd * FIT_ex
 //Agneutrl===========================
 #define wspinAgneutrl            1.0*FIT_spinAg
 //Agneutrlex===========================
-#define wspinAgneutrlex            1.0*FIT_spinAg
+#define wspinAgneutrlex            1.0*FIT_spinAg * FIT_ex
 //Rhneutrl===========================
 #define wspinRhneutrl            1.0*FIT_spinRh
 //Rhneutrlex===========================
-#define wspinRhneutrlex            1.0*FIT_spinRh
+#define wspinRhneutrlex            1.0*FIT_spinRh * FIT_ex
 //Runeutrl===========================
 #define wspinRuneutrl            1.0*FIT_spinRu
 //Runeutrlex===========================
-#define wspinRuneutrlex            1.0*FIT_spinRu
+#define wspinRuneutrlex            1.0*FIT_spinRu * FIT_ex
 //Runeutrlex2===========================
-#define wspinRuneutrlex2            1.0*FIT_spinRu
+#define wspinRuneutrlex2            1.0*FIT_spinRu * FIT_ex
 //Tcplus1===========================
 #define wspinTcplus1            1.0*FIT_spinTc
 //Tcplus1ex===========================
-#define wspinTcplus1ex            1.0*FIT_spinTc
+#define wspinTcplus1ex            1.0*FIT_spinTc * FIT_ex
 //Tcneutrl===========================
 #define wspinTcneutrl            1.0*FIT_spinTc
 //Tcneutrlex===========================
-#define wspinTcneutrlex            1.0*FIT_spinTc
+#define wspinTcneutrlex            1.0*FIT_spinTc * FIT_ex
 //Tcneutrlex2===========================
-#define wspinTcneutrlex2            1.0*FIT_spinTc
+#define wspinTcneutrlex2            1.0*FIT_spinTc * FIT_ex
 //Tcneutrlex3===========================
-#define wspinTcneutrlex3            1.0*FIT_spinTc
+#define wspinTcneutrlex3            1.0*FIT_spinTc * FIT_ex
 //Moneutrl===========================
 #define wspinMoneutrl            1.0*FIT_spinMo
 //Moneutrlex===========================
-#define wspinMoneutrlex            1.0*FIT_spinMo
+#define wspinMoneutrlex            1.0*FIT_spinMo * FIT_ex
 //Moneutrlex2===========================
-#define wspinMoneutrlex2            1.0*FIT_spinMo
+#define wspinMoneutrlex2            1.0*FIT_spinMo * FIT_ex
 //Moneutrlex3===========================
-#define wspinMoneutrlex3            1.0*FIT_spinMo
+#define wspinMoneutrlex3            1.0*FIT_spinMo * FIT_ex
 //Nbneutrl===========================
 #define wspinNbneutrl            1.0*FIT_spinNb
 //Nbneutrlex===========================
-#define wspinNbneutrlex            1.0*FIT_spinNb
+#define wspinNbneutrlex            1.0*FIT_spinNb * FIT_ex
 //Nbneutrlex2===========================
-#define wspinNbneutrlex2            1.0*FIT_spinNb
+#define wspinNbneutrlex2            1.0*FIT_spinNb * FIT_ex
 //Zrplus1===========================
 #define wspinZrplus1            1.0*FIT_spinZr
 //Zrplus1ex===========================
-#define wspinZrplus1ex            1.0*FIT_spinZr
+#define wspinZrplus1ex            1.0*FIT_spinZr * FIT_ex
 //Zrneutrl===========================
 #define wspinZrneutrl            1.0*FIT_spinZr
 //Zrneutrlex===========================
-#define wspinZrneutrlex            1.0*FIT_spinZr
+#define wspinZrneutrlex            1.0*FIT_spinZr * FIT_ex
 //Zrneutrlex2===========================
-#define wspinZrneutrlex2            1.0*FIT_spinZr
+#define wspinZrneutrlex2            1.0*FIT_spinZr * FIT_ex
 //Yplus1===========================
 #define wspinYplus1            1.0*FIT_spinY
 //Yplus1ex===========================
-#define wspinYplus1ex            1.0*FIT_spinY
+#define wspinYplus1ex            1.0*FIT_spinY * FIT_ex
 //Yneutrl===========================
 #define wspinYneutrl            1.0*FIT_spinY
 //Yneutrlex===========================
-#define wspinYneutrlex            1.0*FIT_spinY
+#define wspinYneutrlex            1.0*FIT_spinY * FIT_ex
 
 
 
@@ -1887,9 +1887,9 @@
 #define n_spinOneutrlex2                4
 #define n_spinOneutrlex                 5
 #define n_spinOneutrl                   5
-#define n_spinOplusex2                  3
-#define n_spinOplusex                   4
-#define n_spinOplus                     4
+#define n_spinOplus1ex2                  3
+#define n_spinOplus1ex                   4
+#define n_spinOplus1                    4
 #define n_spinOplus2ex2                 3
 #define n_spinOplus2ex                  4
 #define n_spinOplus2                    5
@@ -1902,8 +1902,8 @@
 #define n_spinSneutrlex2                4
 #define n_spinSneutrlex                 5
 #define n_spinSneutrl                   5
-#define n_spinSplusex                   4
-#define n_spinSplus                     4
+#define n_spinSplus1ex                   4
+#define n_spinSplus1                    4
 #define n_spinSplus2ex2                 3
 #define n_spinSplus2ex                  4
 #define n_spinSplus2                    5
@@ -1916,9 +1916,9 @@
 #define n_spinNneutrlex2                3
 #define n_spinNneutrlex                 4
 #define n_spinNneutrl                   4
-#define n_spinNplusex2                  3
-#define n_spinNplusex                   4
-#define n_spinNplus                     5
+#define n_spinNplus1ex2                  3
+#define n_spinNplus1ex                   4
+#define n_spinNplus1                    5
 #define n_spinNplus2ex                  2
 #define n_spinNplus2                    5
 #define n_spinNplus3ex                  2
@@ -1927,9 +1927,9 @@
 #define n_spinP_1                       5
 #define n_spinPneutrlex                 4
 #define n_spinPneutrl                   4
-#define n_spinPplusex2                  3
-#define n_spinPplusex                   4
-#define n_spinPplus                     5
+#define n_spinPplus1ex2                  3
+#define n_spinPplus1ex                   4
+#define n_spinPplus1                    5
 #define n_spinPplus2ex                  2
 #define n_spinPplus2                    5
 #define n_spinPplus3ex                  2
@@ -1939,8 +1939,8 @@
 #define n_spinCneutrlex2                3
 #define n_spinCneutrlex                 4
 #define n_spinCneutrl                   5
-#define n_spinCplusex                   2
-#define n_spinCplus                     5
+#define n_spinCplus1ex                   2
+#define n_spinCplus1                    5
 #define n_spinCplus2ex                  2
 #define n_spinCplus2                    2
 #define n_spinCplus3                    1
@@ -1948,24 +1948,24 @@
 #define n_spinSineutrlex2               3
 #define n_spinSineutrlex                4
 #define n_spinSineutrl                  5
-#define n_spinSiplusex                  2
-#define n_spinSiplus                    5
+#define n_spinSiplus1ex                  2
+#define n_spinSiplus1                   5
 #define n_spinSiplus2ex                 2
 #define n_spinSiplus2                   2
 #define n_spinSiplus3                   1
 #define n_spinB_1                       5
 #define n_spinBneutrlex                 2
 #define n_spinBneutrl                   5
-#define n_spinBplusex                   2
-#define n_spinBplus                     2
+#define n_spinBplus1ex                   2
+#define n_spinBplus1                    2
 #define n_spinBplus2                    1
 
 #define n_spinF_1                       2
 #define n_spinFneutrl                   8
 #define n_spinFneutrlex                 5
-#define n_spinFplus                     5
-#define n_spinFplusex                   5
-#define n_spinFplusex2                  4
+#define n_spinFplus1                    5
+#define n_spinFplus1ex                   5
+#define n_spinFplus1ex2                  4
 #define n_spinFplus2                    4
 #define n_spinFplus2ex                  4
 #define n_spinFplus2ex2                 3
@@ -1981,9 +1981,9 @@
 #define n_spinCl_1                 2
 #define n_spinClneutrlex                 5
 #define n_spinClneutrl                 8
-#define n_spinClplusex2                 4
-#define n_spinClplusex                 5
-#define n_spinClplus                 5
+#define n_spinClplus1ex2                 4
+#define n_spinClplus1ex                 5
+#define n_spinClplus1                5
 #define n_spinClplus2ex                 4
 #define n_spinClplus2                 4
 #define n_spinClplus3ex2                 3
@@ -1997,20 +1997,20 @@
 #define n_spinAl_1                 5
 #define n_spinAlneutrlex                 2
 #define n_spinAlneutrl                 5
-#define n_spinAlplusex                 2
-#define n_spinAlplus                 2
+#define n_spinAlplus1ex                 2
+#define n_spinAlplus1                2
 #define n_spinAlplus2                 1
 
 #define n_spinLi_1                 4
 #define n_spinLineutrl                 1
 #define n_spinBeneutrl                 4
 #define n_spinBeneutrlex                 2
-#define n_spinBeplus                 1
+#define n_spinBeplus1                1
 #define n_spinNa_1                 4
 #define n_spinNaneutrl                 1
 #define n_spinMgneutrl                 4
 #define n_spinMgneutrlex                 2
-#define n_spinMgplus                 1
+#define n_spinMgplus1                1
 
 #define n_spinZnplus11			1
 #define n_spinZnplus10			4
@@ -2363,31 +2363,31 @@
 #define m_spindimer		 22
 #define m_spinCplus3                       2
 #define m_spinCplus2                       3
-#define m_spinCplus                       4
+#define m_spinCplus1                      4
 #define m_spinCneutrl                       5
 #define m_spinC_1                       6
 #define m_spinNplus4                       2
 #define m_spinNplus3                       3
 #define m_spinNplus2                       4
-#define m_spinNplus                       5
+#define m_spinNplus1                      5
 #define m_spinNneutrl                       6
 #define m_spinN_1                       7
 #define m_spinSplus5                       2
 #define m_spinSplus4                       3
 #define m_spinSplus3                       4
 #define m_spinSplus2                       5
-#define m_spinSplus                       6
+#define m_spinSplus1                      6
 #define m_spinSneutrl                       7
 #define m_spinS_1                       8
 #define m_spinPplus4                       2
 #define m_spinPplus3                       3
 #define m_spinPplus2                       4
-#define m_spinPplus                       5
+#define m_spinPplus1                      5
 #define m_spinPneutrl                       6
 #define m_spinP_1                       7
 #define m_spinSiplus3                       2
 #define m_spinSiplus2                       3
-#define m_spinSiplus                       4
+#define m_spinSiplus1                      4
 #define m_spinSineutrl                       5
 #define m_spinSi_1                       6
 #define m_spinFplus6                       2
@@ -2395,63 +2395,63 @@
 #define m_spinFplus4                       4
 #define m_spinFplus3                       5
 #define m_spinFplus2                       6
-#define m_spinFplus                       7
+#define m_spinFplus1                      7
 #define m_spinFneutrl                       8
 #define m_spinF_1                       9
 
 #define m_spinCplus2ex                       3
-#define m_spinCplusex                       4
+#define m_spinCplus1ex                       4
 #define m_spinCneutrlex                       5
 #define m_spinCneutrlex2                       5
 #define m_spinNplus3ex                       3
 #define m_spinNplus2ex                       4
-#define m_spinNplusex                       5
-#define m_spinNplusex2                       5
+#define m_spinNplus1ex                       5
+#define m_spinNplus1ex2                       5
 #define m_spinNneutrlex                       6
 #define m_spinFplus5ex                       3
 #define m_spinFplus4ex                       4
 #define m_spinFplus3ex                       5
 #define m_spinFplus3ex2                       5
 #define m_spinFplus2ex                       6
-#define m_spinFplusex                       7
+#define m_spinFplus1ex                       7
 #define m_spinSiplus2ex                       3
-#define m_spinSiplusex                       4
+#define m_spinSiplus1ex                       4
 #define m_spinSineutrlex                       5
 #define m_spinSineutrlex2                       5
 #define m_spinPplus3ex                       3
 #define m_spinPplus2ex                       4
-#define m_spinPplusex                       5
-#define m_spinPplusex2                       5
+#define m_spinPplus1ex                       5
+#define m_spinPplus1ex2                       5
 #define m_spinPneutrlex                       6
 #define m_spinSplus4ex                       3
 #define m_spinSplus3ex                       4
 #define m_spinSplus2ex                       5
 #define m_spinSplus2ex2                       5
-#define m_spinSplusex                       6
+#define m_spinSplus1ex                       6
 #define m_spinSneutrlex                       7
 
 #define m_spinOneutrlex2                       7
-#define m_spinOplusex2                       6
+#define m_spinOplus1ex2                       6
 #define m_spinNneutrlex2                       6
 #define m_spinFneutrlex                       8
-#define m_spinFplusex2                       7
+#define m_spinFplus1ex2                       7
 #define m_spinFplus2ex2                       6
 #define m_spinSneutrlex2                       7
 
 #define m_spinB_1                           5
 #define m_spinBneutrlex                     4
 #define m_spinBneutrl                       4
-#define m_spinBplusex                       3
-#define m_spinBplus                         3
+#define m_spinBplus1ex                       3
+#define m_spinBplus1                        3
 #define m_spinBplus2                        2
 
 
 #define m_spinCl_1                       9
 #define m_spinClneutrlex                       8
 #define m_spinClneutrl                       8
-#define m_spinClplusex2                       7
-#define m_spinClplusex                       7
-#define m_spinClplus                       7
+#define m_spinClplus1ex2                       7
+#define m_spinClplus1ex                       7
+#define m_spinClplus1                      7
 #define m_spinClplus2ex                       6
 #define m_spinClplus2                       6
 #define m_spinClplus3ex2                       5
@@ -2465,8 +2465,8 @@
 #define m_spinAl_1                       5
 #define m_spinAlneutrlex                       4
 #define m_spinAlneutrl                       4
-#define m_spinAlplusex                       3
-#define m_spinAlplus                       3
+#define m_spinAlplus1ex                       3
+#define m_spinAlplus1                      3
 #define m_spinAlplus2                       2
 
 #define m_spinAl2_trplt                       8
@@ -2476,12 +2476,12 @@
 #define m_spinLineutrl                       2
 #define m_spinBeneutrl                       3
 #define m_spinBeneutrlex                       3
-#define m_spinBeplus                       2
+#define m_spinBeplus1                      2
 #define m_spinNa_1                       3
 #define m_spinNaneutrl                       2
 #define m_spinMgneutrl                       3
 #define m_spinMgneutrlex                       3
-#define m_spinMgplus                       2
+#define m_spinMgplus1                      2
 
 #define m_spinB2_trplt                       8
 #define m_spinB2_snglt                       8
@@ -2597,7 +2597,7 @@
 
 #define m_spinOneutrlex		m_spinOneutrl
 #define m_spinOplus2ex		m_spinOplus2
-#define m_spinOplusex		m_spinOplus
+#define m_spinOplus1ex		m_spinOplus1
 #define m_spinOplus4ex		m_spinOplus4
 #define m_spinOplus3ex		m_spinOplus3
 #define m_spinOplus2ex2          m_spinOplus2
@@ -2927,7 +2927,7 @@
 
 #define wspinOeaff            200.0*FIT_spinthermo * FIT_spinO
 #define wspinOneutrlion       184.3*FIT_spinthermo * FIT_spinO
-#define wspinOplusion          138.0*FIT_spinthermo * FIT_spinO //80.0
+#define wspinOplus1ion          138.0*FIT_spinthermo * FIT_spinO //80.0
 #define wspinOplus2ion         105.4*FIT_spinthermo * FIT_spinO //80.0
 #define wspinOplus3ion         84.3*FIT_spinthermo * FIT_spinO  //50.0
 #define wspinOplus4ion         68.4*FIT_spinthermo * FIT_spinO  //50.0
@@ -2936,27 +2936,27 @@
 
 #define wspinOneutrlexion      171.3* FIT_spinthermo * FIT_spinO * FIT_ex
 #define wspinOneutrlex2ion     146.9* FIT_spinthermo * FIT_spinO*FIT_ex     //200.0
-#define wspinOplusionex       132.8* FIT_spinthermo * FIT_spinO * FIT_ex  //100.0
-#define wspinOplusex2ion      108.1* FIT_spinthermo * FIT_spinO*FIT_ex   //80.0
+#define wspinOplus1ionex       132.8* FIT_spinthermo * FIT_spinO * FIT_ex  //100.0
+#define wspinOplus1ex2ion      108.1* FIT_spinthermo * FIT_spinO*FIT_ex   //80.0
 #define wspinOplus2ionex      104.0* FIT_spinthermo * FIT_spinO * FIT_ex  //60.0
 #define wspinOplus2ionex2     101.4* FIT_spinthermo * FIT_spinO * FIT_ex  //50.0
 #define wspinOplus3ionex      82.0* FIT_spinthermo * FIT_spinO * FIT_ex  //10.0
 #define wspinOplus4ionex      66.8* FIT_spinthermo * FIT_spinO * FIT_ex  //10.0
-#define wspinOsign            2000.0* FIT_spinthermo * FIT_spinO * FIT_ex  //2000.0
+#define wspinOsign            0.0* FIT_spinthermo * FIT_spinO * FIT_ex  //2000.0
 
 
 
 #define wspinCplus3ion            30.0*FIT_spinthermo * FIT_spinC
 #define wspinCplus2ion            50.0*FIT_spinthermo * FIT_spinC
-#define wspinCplusion            100.0*FIT_spinthermo * FIT_spinC
+#define wspinCplus1ion            100.0*FIT_spinthermo * FIT_spinC
 #define wspinCneutrlion          300.0*FIT_spinthermo * FIT_spinC
 #define wspinC_1ion              300.0*FIT_spinthermo * FIT_spinC
 
 #define wspinCplus2exion             10.0*FIT_spinthermo * FIT_spinC*FIT_ex
-#define wspinCplusexion              50.0*FIT_spinthermo * FIT_spinC*FIT_ex
+#define wspinCplus1exion              50.0*FIT_spinthermo * FIT_spinC*FIT_ex
 #define wspinCneutrlexion           150.0*FIT_spinthermo * FIT_spinC*FIT_ex
 #define wspinCneutrlex2ion          150.0*FIT_spinthermo * FIT_spinC*FIT_ex
-#define wspinCsign                 2000.0*FIT_spinthermo * FIT_spinC*FIT_ex
+#define wspinCsign                 0.0*FIT_spinthermo * FIT_spinC*FIT_ex
 #define wspinC2ex                0.0*FIT_spinthermo * FIT_spinC
 
 
@@ -2964,19 +2964,19 @@
 #define wspinNplus4ion            30.0*FIT_spinthermo * FIT_spinN
 #define wspinNplus3ion            50.0*FIT_spinthermo * FIT_spinN
 #define wspinNplus2ion            80.0*FIT_spinthermo * FIT_spinN
-#define wspinNplusion            300.0*FIT_spinthermo * FIT_spinN
+#define wspinNplus1ion            300.0*FIT_spinthermo * FIT_spinN
 #define wspinNneutrlion          300.0*FIT_spinthermo * FIT_spinN
 
 #define wspinN_1ion                0.0*FIT_spinthermo * FIT_spinN
 
 #define wspinNplus3exion              10.0*FIT_spinthermo * FIT_spinN*FIT_ex
 #define wspinNplus2exion              30.0*FIT_spinthermo * FIT_spinN*FIT_ex
-#define wspinNplusexion               50.0*FIT_spinthermo * FIT_spinN*FIT_ex
-#define wspinNplusex2ion              80.0*FIT_spinthermo * FIT_spinN*FIT_ex
+#define wspinNplus1exion               50.0*FIT_spinthermo * FIT_spinN*FIT_ex
+#define wspinNplus1ex2ion              80.0*FIT_spinthermo * FIT_spinN*FIT_ex
 #define wspinNneutrlexion            200.0*FIT_spinthermo * FIT_spinN*FIT_ex
 #define wspinNneutrlex2ion             0.0*FIT_spinthermo * FIT_spinN*FIT_ex
-#define wspinNsign		    2000.0* FIT_spinthermo * FIT_spinN * FIT_ex
-#define wspinN2ex                100.0*FIT_spinthermo * FIT_spinN
+#define wspinNsign		    0.0* FIT_spinthermo * FIT_spinN * FIT_ex
+#define wspinN2ex                0.0*FIT_spinthermo * FIT_spinN //100.0
 
 
 
@@ -2986,7 +2986,7 @@
 #define wspinFplus4ion            50.0*FIT_spinthermo * FIT_spinF
 #define wspinFplus3ion            50.0*FIT_spinthermo * FIT_spinF
 #define wspinFplus2ion            80.0*FIT_spinthermo * FIT_spinF
-#define wspinFplusion             80.0*FIT_spinthermo * FIT_spinF
+#define wspinFplus1ion             80.0*FIT_spinthermo * FIT_spinF
 #define wspinFneutrlion          300.0*FIT_spinthermo * FIT_spinF
 #define wspinF_1ion              300.0*FIT_spinthermo * FIT_spinF
 
@@ -2996,8 +2996,8 @@
 #define wspinFplus3ex2ion            30.0*FIT_spinthermo * FIT_spinF*FIT_ex
 #define wspinFplus2exion             50.0*FIT_spinthermo * FIT_spinF*FIT_ex
 #define wspinFplus2ex2ion            50.0*FIT_spinthermo * FIT_spinF*FIT_ex
-#define wspinFplusexion             100.0*FIT_spinthermo * FIT_spinF*FIT_ex
-#define wspinFplusex2ion            100.0*FIT_spinthermo * FIT_spinF*FIT_ex
+#define wspinFplus1exion             100.0*FIT_spinthermo * FIT_spinF*FIT_ex
+#define wspinFplus1ex2ion            100.0*FIT_spinthermo * FIT_spinF*FIT_ex
 #define wspinFneutrlexion           200.0*FIT_spinthermo * FIT_spinF*FIT_ex
 #define wspinFsign		   2000.0*FIT_spinthermo * FIT_spinF * FIT_ex	
 #define wspinF2ex                100.0*FIT_spinthermo * FIT_spinF
@@ -3005,12 +3005,12 @@
 
 #define wspinSiplus3ion           30.0*FIT_spinthermo * FIT_spinSi
 #define wspinSiplus2ion           50.0*FIT_spinthermo * FIT_spinSi
-#define wspinSiplusion            80.0*FIT_spinthermo * FIT_spinSi
+#define wspinSiplus1ion            80.0*FIT_spinthermo * FIT_spinSi
 #define wspinSineutrlion         300.0*FIT_spinthermo * FIT_spinSi
 #define wspinSi_1ion             300.0*FIT_spinthermo * FIT_spinSi
 
 #define wspinSiplus2exion             10.0*FIT_spinthermo * FIT_spinSi*FIT_ex
-#define wspinSiplusexion              50.0*FIT_spinthermo * FIT_spinSi*FIT_ex
+#define wspinSiplus1exion              50.0*FIT_spinthermo * FIT_spinSi*FIT_ex
 #define wspinSineutrlexion            80.0*FIT_spinthermo * FIT_spinSi*FIT_ex
 #define wspinSineutrlex2ion          200.0*FIT_spinthermo * FIT_spinSi*FIT_ex
 #define wspinSisign		    2000.0* FIT_spinthermo * FIT_spinSi* FIT_ex
@@ -3020,14 +3020,14 @@
 #define wspinPplus4ion            30.0*FIT_spinthermo * FIT_spinP
 #define wspinPplus3ion            30.0*FIT_spinthermo * FIT_spinP
 #define wspinPplus2ion            50.0*FIT_spinthermo * FIT_spinP
-#define wspinPplusion             80.0*FIT_spinthermo * FIT_spinP
+#define wspinPplus1ion             80.0*FIT_spinthermo * FIT_spinP
 #define wspinPneutrlion          300.0*FIT_spinthermo * FIT_spinP
 #define wspinP_1ion              300.0*FIT_spinthermo * FIT_spinP
 
 #define wspinPplus3exion             10.0*FIT_spinthermo * FIT_spinP*FIT_ex
 #define wspinPplus2exion             30.0*FIT_spinthermo * FIT_spinP*FIT_ex
-#define wspinPplusexion              50.0*FIT_spinthermo * FIT_spinP*FIT_ex
-#define wspinPplusex2ion             80.0*FIT_spinthermo * FIT_spinP*FIT_ex
+#define wspinPplus1exion              50.0*FIT_spinthermo * FIT_spinP*FIT_ex
+#define wspinPplus1ex2ion             80.0*FIT_spinthermo * FIT_spinP*FIT_ex
 #define wspinPneutrlexion           200.0*FIT_spinthermo * FIT_spinP*FIT_ex
 #define wspinPsign		   2000.0*FIT_spinthermo * FIT_spinP * FIT_ex
 #define wspinP2ex                0.0*FIT_spinthermo * FIT_spinP
@@ -3038,7 +3038,7 @@
 #define wspinSplus4ion            10.0*FIT_spinthermo * FIT_spinS
 #define wspinSplus3ion            30.0*FIT_spinthermo * FIT_spinS
 #define wspinSplus2ion            50.0*FIT_spinthermo * FIT_spinS
-#define wspinSplusion             80.0*FIT_spinthermo * FIT_spinS
+#define wspinSplus1ion             80.0*FIT_spinthermo * FIT_spinS
 #define wspinSneutrlion          300.0*FIT_spinthermo * FIT_spinS
 #define wspinS_1ion              300.0*FIT_spinthermo * FIT_spinS
 
@@ -3046,7 +3046,7 @@
 #define wspinSplus3exion              10.0*FIT_spinthermo * FIT_spinS*FIT_ex
 #define wspinSplus2exion              30.0*FIT_spinthermo * FIT_spinS*FIT_ex
 #define wspinSplus2ex2ion             50.0*FIT_spinthermo * FIT_spinS*FIT_ex
-#define wspinSplusexion               80.0*FIT_spinthermo * FIT_spinS*FIT_ex
+#define wspinSplus1exion               80.0*FIT_spinthermo * FIT_spinS*FIT_ex
 #define wspinSneutrlexion            200.0*FIT_spinthermo * FIT_spinS*FIT_ex
 #define wspinSneutrlex2ion           200.0*FIT_spinthermo * FIT_spinS*FIT_ex
 #define wspinSsign		    2000.0*FIT_spinthermo * FIT_spinS * FIT_ex
@@ -3056,8 +3056,8 @@
 #define wspinB_1ion             300.0*FIT_spinthermo * FIT_spinBo
 #define wspinBneutrlexion       200.0*FIT_spinthermo * FIT_spinBo*FIT_ex
 #define wspinBneutrlion         300.0*FIT_spinthermo * FIT_spinBo
-#define wspinBplusexion          80.0*FIT_spinthermo * FIT_spinBo*FIT_ex
-#define wspinBplusion            50.0*FIT_spinthermo * FIT_spinBo
+#define wspinBplus1exion          80.0*FIT_spinthermo * FIT_spinBo*FIT_ex
+#define wspinBplus1ion            50.0*FIT_spinthermo * FIT_spinBo
 #define wspinBplus2ion           10.0*FIT_spinthermo * FIT_spinBo
 #define wspinBsign	       2000.0*FIT_spinthermo * FIT_spinBo*FIT_ex
 #define wspinB2ex                0.0*FIT_spinthermo * FIT_spinBo
@@ -3065,7 +3065,7 @@
 
 #define wspinCl_1ion             300.0*FIT_spinthermo * FIT_spinCl
 #define wspinClneutrlion         300.0*FIT_spinthermo * FIT_spinCl
-#define wspinClplusion            80.0*FIT_spinthermo * FIT_spinCl
+#define wspinClplus1ion            80.0*FIT_spinthermo * FIT_spinCl
 #define wspinClplus2ion           80.0*FIT_spinthermo * FIT_spinCl
 #define wspinClplus3ion           50.0*FIT_spinthermo * FIT_spinCl
 #define wspinClplus4ion           50.0*FIT_spinthermo * FIT_spinCl
@@ -3074,8 +3074,8 @@
 
 
 #define wspinClneutrlexion       200.0*FIT_spinthermo * FIT_spinCl*FIT_ex
-#define wspinClplusex2ion        200.0*FIT_spinthermo * FIT_spinCl*FIT_ex
-#define wspinClplusexion          80.0*FIT_spinthermo * FIT_spinCl*FIT_ex
+#define wspinClplus1ex2ion        200.0*FIT_spinthermo * FIT_spinCl*FIT_ex
+#define wspinClplus1exion          80.0*FIT_spinthermo * FIT_spinCl*FIT_ex
 #define wspinClplus2exion         80.0*FIT_spinthermo * FIT_spinCl*FIT_ex
 #define wspinClplus3ex2ion        50.0*FIT_spinthermo * FIT_spinCl*FIT_ex
 #define wspinClplus3exion         50.0*FIT_spinthermo * FIT_spinCl*FIT_ex
@@ -3168,7 +3168,7 @@
 #define wspinFeneutrlexion	184.2*FIT_spinthermo * FIT_spinFe * FIT_ex
 #define wspinFeneutrlex2ion	177.5*FIT_spinthermo * FIT_spinFe * FIT_ex
 #define wspinFeneutrlex3ion	171.5*FIT_spinthermo * FIT_spinFe * FIT_ex
-#define wspinFesign		400.0*FIT_spinthermo * FIT_spinFe*FIT_ex
+#define wspinFesign		0.0*FIT_spinthermo * FIT_spinFe*FIT_ex
 #define wspinCoplus8ion		10.0*FIT_spinthermo * FIT_spinCo
 #define wspinCoplus7ion		20.0*FIT_spinthermo * FIT_spinCo
 #define wspinCoplus7exion	10.0*FIT_spinthermo * FIT_spinCo * FIT_ex
@@ -3262,7 +3262,7 @@
 #define wspinZnplus1exion	127.8*FIT_spinthermo * FIT_spinZn * FIT_ex  //100
 #define wspinZnneutrlion	200.0*FIT_spinthermo * FIT_spinZn * FIT_ion            //200
 #define wspinZnneutrlexion	168.5*FIT_spinthermo * FIT_spinZn * FIT_ex  //110
-#define wspinZnsign		2000.0*FIT_spinthermo * FIT_spinZn*FIT_ex  //2000.0
+#define wspinZnsign		0.0*FIT_spinthermo * FIT_spinZn*FIT_ex  //2000.0
 #define wspinYplus2ion		10.0*FIT_spinthermo * FIT_spinY
 #define wspinYplus1ion		20.0*FIT_spinthermo * FIT_spinY
 #define wspinYplus1exion	10.0*FIT_spinthermo * FIT_spinY * FIT_ex
@@ -3400,8 +3400,8 @@
 #define wspinAl_1ion             300.0*FIT_spinthermo * FIT_spinAl
 #define wspinAlneutrlexion       150.0*FIT_spinthermo * FIT_spinAl*FIT_ex
 #define wspinAlneutrlion         300.0*FIT_spinthermo * FIT_spinAl
-#define wspinAlplusexion          80.0*FIT_spinthermo * FIT_spinAl*FIT_ex
-#define wspinAlplusion           150.0*FIT_spinthermo * FIT_spinAl
+#define wspinAlplus1exion          80.0*FIT_spinthermo * FIT_spinAl*FIT_ex
+#define wspinAlplus1ion           150.0*FIT_spinthermo * FIT_spinAl
 #define wspinAlplus2ion           50.0*FIT_spinthermo * FIT_spinAl
 
 #define wspinAl2ex		  0.0*FIT_spinthermo * FIT_spinAl
@@ -3413,14 +3413,14 @@
 
 #define wspinBeneutrlion         200.0*FIT_spinthermo * FIT_spinBe
 #define wspinBeneutrlexion        50.0*FIT_spinthermo * FIT_spinBe*FIT_ex
-#define wspinBeplusion           200.0*FIT_spinthermo * FIT_spinBe
+#define wspinBeplus1ion           200.0*FIT_spinthermo * FIT_spinBe
 
 #define wspinNa_1ion             200.0*FIT_spinthermo * FIT_spinNa
 #define wspinNaneutrlion         200.0*FIT_spinthermo * FIT_spinNa
 
 #define wspinMgneutrlion         200.0*FIT_spinthermo * FIT_spinMg
 #define wspinMgneutrlexion        50.0*FIT_spinthermo * FIT_spinMg*FIT_ex
-#define wspinMgplusion           200.0*FIT_spinthermo * FIT_spinMg
+#define wspinMgplus1ion           200.0*FIT_spinthermo * FIT_spinMg
 
 
 #define wspinO2_2dis          1.0*FIT_spinthermo * FIT_spinOO

@@ -22,7 +22,10 @@ spinZnneutrlex2.o spinZnplus1ex2.o spinZnplus2ex2.o spinZnplus3ex2.o spinZnplus4
 spinO_2.o spinO_1.o spinOneutrl.o spinOneutrlex.o spinOneutrlex2.o spinOplus1.o spinOplus1ex.o spinOplus1ex2.o spinOplus2.o spinOplus2ex.o spinOplus2ex2.o spinOplus3.o spinOplus3ex.o \
 spinOplus4.o spinOplus4ex.o spinOplus5.o \
 spinO2_linnett.o spinO2_snglbnd.o spinO2_dblbnd.o spinO2_trplbnd.o spinO2dia_linnett.o spinO2dia_snglbnd.o spinO2dia_dblbnd.o spinO2dia_trplbnd.o spinO2qnt_linnett.o spinO2qnt_snglbnd.o spinO2qnt_dblbnd.o spinO2qnt_trplbnd.o \
-spinO3_linnett.o spinO3trp_linnett.o
+spinO3_linnett.o spinO3trp_linnett.o \
+spinC_1.o spinCneutrl.o spinCneutrlex.o spinCneutrlex2.o spinCplus1.o spinCplus1ex.o spinCplus2.o spinCplus2ex.o spinCplus3.o \
+spinNneutrl.o spinNneutrlex.o spinNplus1.o spinNplus1ex.o spinNplus1ex2.o spinNplus2.o spinNplus2ex.o spinNplus3.o spinNplus3ex.o spinNplus4.o \
+spinFeplus7.o spinFeplus6.o spinFeplus6ex.o spinFeplus5.o spinFeplus5ex.o spinFeplus4.o spinFeplus4ex.o spinFeplus4ex2.o spinFeplus3.o spinFeplus3ex.o spinFeplus3ex2.o spinFeplus2.o spinFeplus2ex.o spinFeplus2ex2.o spinFeplus1.o spinFeplus1ex.o spinFeplus1ex2.o spinFeneutrl.o spinFeneutrlex.o spinFeneutrlex2.o spinFeneutrlex3.o
 #spinH.o spinH_.o spinH2.o spinH2trp.o spinH2minus.o spinH2plus.o spinH3.o spinH3linear.o spinH3plus.o \
 
 LOWERMAINS = lowermain.o lowermainspinO2.o lowermainspinO2dia.o lowermainspinO2qnt.o
@@ -36,7 +39,7 @@ UTILITIES = main.o status.o energy_reader.o energy_interactions.o energy_library
 printer.o spinthermo.o setWspinthermo.o LEcuyer.o de.o evaluate.o \
 StructureFunctions.o restartOutput.o finalOutput.o specSwitch.o test.o Faddeeva.o 
 
-_DEPS = Common.h
+_DEPS = Common.h U.h Structure.h
 DEPS = $(patsubst %,$(IDIR)/%,$(_DEPS))
 
 _OBJECTS = $(SPINS) $(LOWERMAINS) $(UPNUPS) $(MC) $(UTILITIES) 
@@ -46,6 +49,18 @@ $(ODIR)/%.o: %.c $(DEPS)
 	$(CC) -c -o $@ $< $(CFLAGS)
 
 ballet: $(OBJECTS)
+	$(CC) -o $@ $^ $(CFLAGS) $(LIBS)
+
+ballet_ionization: $(OBJECTS)
+	$(CC) -o $@ $^ $(CFLAGS) $(LIBS)
+
+ballet_ionization_Fe: $(OBJECTS)
+	$(CC) -o $@ $^ $(CFLAGS) $(LIBS)
+
+ballet_ionization_C: $(OBJECTS)
+	$(CC) -o $@ $^ $(CFLAGS) $(LIBS)
+
+ballet_ionization_N: $(OBJECTS)
 	$(CC) -o $@ $^ $(CFLAGS) $(LIBS)
 
 ballet_no_se: $(OBJECTS)

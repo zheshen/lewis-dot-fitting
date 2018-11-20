@@ -24,6 +24,7 @@ double formOfKE(double e_const, double complex d, double eta, double zeta, doubl
 
 //UexA formula
 double formOfAAX(V *a, V *b, V *R, double pAB2, double pAB5, double pAB6, double pAB7, double pAB8, double pAB9, double pAB10, double pAB11, double pAB12, double pAB20, double pAB21, double pAB22, double pAB23, double pAB24, double pAB25, double p1, double p2, double p3, double p4, double p5, double p6, double p7, double p8, double p9, double p10, double p11, double p12, double p13, int n1, int n2, int E_or_F, double *items){
+/*
 	double u=0;
 	double uA=0;
 	double uN=0;
@@ -107,7 +108,8 @@ double formOfAAX(V *a, V *b, V *R, double pAB2, double pAB5, double pAB6, double
 //	diagnose_print = 0;
 	if (items != NULL)
 	items[5] += u;
-	return u;
+*/
+	return 0.0;
 }
 
 //UexK and UexR and U_AB
@@ -150,13 +152,13 @@ double formOfAA(V *a, V *b, double p1, double p2, double p3, double p4, double p
 //	uexK = E_const/Omega(d_a, r_a, d_b, r_b)*Delta_K(d_a, r_a, d_b, r_b);
 //	uexR = E2_const/Omega(d_a, r_a, d_b, r_b)*Delta_M(d_a, r_a, d_b, r_b);
 //	uAB = E2_const*M(d_a, r_a, d_b, r_b);	
-	uexK = E_const*p14*Rbar*exp(-p15*Rbar*r2)*exp(-p16*(Eta_a+Eta_b));
-	uexR = -E2_const*2.0/rootpi*p17*sqrt(Rbar) * exp(-p18*Rbar*r2) * exp(-p19*(Zeta_a+Zeta_b));
+//	uexK = E_const*p14*Rbar*exp(-p15*Rbar*r2)*exp(-p16*(Eta_a+Eta_b));
+//	uexR = -E2_const*2.0/rootpi*p17*sqrt(Rbar) * exp(-p18*Rbar*r2) * exp(-p19*(Zeta_a+Zeta_b));
 //	uAB = E2_const/deff/sqrt(reff*reff+p3*reff+1.0);
 //	uAB = E2_const*Dsmooth8Coulomb4ParReff(reff2,reff,deff,q,p3,p4,p5,1.0,E_or_F);
 	uAB = E2_const*InvPoly8Par142(reff2,reff,deff,q,p3,p4,p5,1.0,E_or_F);
 
-        u = uAB + uexK + uexR;
+        u = uAB;
 
 	extern int diagnose_print;
 	//diagnose_print = 1;
@@ -312,7 +314,7 @@ double formOfXA(V *a, V *R, double p1, double p2, double p3, double p4, double p
 	double Zeta_a;	
 	Eta_a = a->eta;
 	Zeta_a = a->zeta;
-	deff = p1 * (1.0/sqrt(creal(d_a))/sqrt(1.0+p9*Zeta_a)+p2/sqrt(1.0+p7*Eta_a));
+	deff = p1 * (1.0/sqrt(creal(d_a))/sqrt(1.0+p9*Eta_a)+p2/sqrt(1.0+p7*Eta_a));
 	reff = r/deff;
 	reff2 = reff * reff;
 

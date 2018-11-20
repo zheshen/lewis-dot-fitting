@@ -73,6 +73,7 @@ double sumEnergies_split(V * Vin,  int part,  double *items){
 //			sum += energy(&Vin[i], &Vin[j], r2, r, Vin[i].dr, Vin[j].dr, Vin[i].di, Vin[j].di, Vin[i].q, Vin[j].q, Vin[i].s, Vin[j].s, ENERGY);
 			sum += energy_split(&Vin[i], &Vin[j], ENERGY, items);
 
+
                         //AA & BB midpoint coordinate calculation
                         if((Vin[i].s==Vin[j].s)&&(Vin[j].q==-1)){
                                 mid_x=(Vin[i].x + Vin[j].x)*0.5;

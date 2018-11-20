@@ -1,22 +1,22 @@
 #include "Structure.h"
 
-extern double U_spinFeplus5ex;					//declare structure energy                           
+extern double U_spinNplus1ex;					//declare structure energy                           
 
-void specspinFeplus5ex(Species * spec){				//define SPEC function for specific structure
+void specspinNplus1ex(Species * spec){				//define SPEC function for specific structure
 
 /*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>BELOW CHANGABLE>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 
-	strcpy(spec->fullname, "Feplus5ex");			//Enter full name for the structure
-	strcpy(spec->name, "Fe+5*");				//Enter abbreviation name
-	strcpy(spec->spin, "a2b1");		//Enter spin structure
-	spec->type = Feplus5ex;				//Enter type name
+	strcpy(spec->fullname, "Nplus1ex");			//Enter full name for the structure
+	strcpy(spec->name, "N+1*");				//Enter abbreviation name
+	strcpy(spec->spin, "a2b2");		//Enter spin structure
+	spec->type = Nplus1ex;				//Enter type name
 	spec->complete = 0;					//Not used temporarily
 	spec->kernel = 1;					//Not used temporarily
 	spec->degFree = 16;					//Enter degree of freedom for the structure
-	spec->numPart = 4;					//Enter number of particles for the structure
+	spec->numPart = 5;					//Enter number of particles for the structure
 	spec->stepSize = 0.101;					//Enter the stepsize for optimization, default is 0.101
-	spec->ainter = ainterspinFeplus5ex;			//Enter the function name for "ainter" 
-	spec->dev = devspinFeplus5ex;			//Enter the function name for "dev"
+	spec->ainter = ainterspinNplus1ex;			//Enter the function name for "ainter" 
+	spec->dev = devspinNplus1ex;			//Enter the function name for "dev"
 
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<ABOVE CHANGABLE<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 
@@ -58,6 +58,7 @@ void specspinFeplus5ex(Species * spec){				//define SPEC function for specific s
 	spec->key[8] = 1;
 	spec->key[10] = 1;
 
+	spec->key[1] = 1;
 	spec->key[5] = 1;
 	spec->key[7] = 1;
 	spec->key[9] = 1;
@@ -89,7 +90,7 @@ void specspinFeplus5ex(Species * spec){				//define SPEC function for specific s
 }
 
 
-double ainterspinFeplus5ex(Species * spec){
+double ainterspinNplus1ex(Species * spec){
 	
 	int i, part;
 	double Usum;
@@ -123,8 +124,8 @@ double ainterspinFeplus5ex(Species * spec){
         Vin[0].x = 0.0;
         Vin[0].y = 0.0;
         Vin[0].z = 0.0;
-        Vin[0].q = 8;
-        Vin[0].s = 26;
+        Vin[0].q = 5;
+        Vin[0].s = 7;
 
        //a-1 
         Vin[1].x = 0.0;
@@ -147,27 +148,37 @@ double ainterspinFeplus5ex(Species * spec){
         Vin[2].zeta = da3;
 
        //b-1 
-        Vin[2+1].x = rot(0.0, 0.0, 0.0, a, b, c, 0);
-        Vin[2+1].y = rot(0.0, 0.0, 0.0, a, b, c, 1);
-        Vin[2+1].z = rot(0.0, 0.0, 0.0, a, b, c, 2);
+        Vin[2+1].x = rot(0.0, rb1, 0.0, a, b, c, 0);
+        Vin[2+1].y = rot(0.0, rb1, 0.0, a, b, c, 1);
+        Vin[2+1].z = rot(0.0, rb1, 0.0, a, b, c, 2);
         Vin[2+1].q = -1;
         Vin[2+1].s = -2;
         Vin[2+1].d = db1_r+db1_i*I;
         Vin[2+1].eta = db2;
         Vin[2+1].zeta = db3;
 
+       //b-2 
+        Vin[2+2].x = rot(0.0, -rb1, 0.0, a, b, c, 0);
+        Vin[2+2].y = rot(0.0, -rb1, 0.0, a, b, c, 1);
+        Vin[2+2].z = rot(0.0, -rb1, 0.0, a, b, c, 2);
+        Vin[2+2].q = -1;
+        Vin[2+2].s = -2;
+        Vin[2+2].d = db1_r+db1_i*I;
+        Vin[2+2].eta = db2;
+        Vin[2+2].zeta = db3;
+
 
         //set d value
         setDvalue(Vin, part);
 
 	//calculate structure energy
-        if((MC_spinFeplus5ex) && (spec->icue ==4)){
+        if((MC_spinNplus1ex) && (spec->icue ==4)){
                 Usum = metropolis(Vin, part,-3);//fix heavy
         }else{
                 Usum = sumEnergies(Vin, part);
 	}
 	Usum = Usum*1E3;
-	U_spinFeplus5ex = Usum;
+	U_spinNplus1ex = Usum;
 
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<ABOVE CHANGABLE<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 
@@ -189,7 +200,7 @@ double ainterspinFeplus5ex(Species * spec){
 }
 
 
-double devspinFeplus5ex(Species *spec){
+double devspinNplus1ex(Species *spec){
 
         double deviation = 0;
         double wTotal    = 0;
@@ -206,7 +217,7 @@ double devspinFeplus5ex(Species *spec){
 	double complex fd1, fd2;
 
         //Current Positions
-        if (MC_spinFeplus5ex){
+        if (MC_spinNplus1ex){
 		fr1    = getDistance(spec->coord, 0, 1);
 		fr2    = getDistance(spec->coord, 0, spec->numPart-1);
 		fd1    = spec->coord[1].d;
@@ -225,7 +236,7 @@ double devspinFeplus5ex(Species *spec){
 	if (print){
 		printHeader(spec->fullname, deviation);
 		OutFile = fopen(directory, "a");
-                if (MC_spinFeplus5ex){
+                if (MC_spinNplus1ex){
                          fprintf(OutFile,"| Lone A1  dist         |      A     |      -         |   -   |                |    %8.5f    |   N/A   |       -       |\n", fr1);
                          fprintf(OutFile,"| Lone B1  dist         |      A     |      -         |   -   |                |    %8.5f    |   N/A   |       -       |\n", fr2);
                          fprintf(OutFile,"| Lone A1 1/radius^2    |    1/A^2   |      -         |   -   |                |%7.3f+%7.3fI|   N/A   |       -       |\n", creal(fd1), cimag(fd1));
@@ -238,12 +249,12 @@ double devspinFeplus5ex(Species *spec){
                 }
                 fprintf(OutFile, "|-------------------------------------------------------------------------------------------------------------------------|\n");
 	    	fclose(OutFile);
-		printEnergy(U_spinFeplus5ex);
+		printEnergy(U_spinNplus1ex);
 	}
 
 	//structure output
 	sprintf(Out, "MC_spin%s.pdb", spec->fullname);
-        if ((pdbSwitch) && (MC_spinFeplus5ex)){ output(spec->coord, spec->numPart, Out); }
+        if ((pdbSwitch) && (MC_spinNplus1ex)){ output(spec->coord, spec->numPart, Out); }
 
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<ABOVE CHANGABLE<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 
