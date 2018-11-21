@@ -31,14 +31,14 @@
 #define FIT_AB_AH		0.0
 #define FIT_AA_AH		0.0
 #define FIT_H3H4                0.0 //for cancel out H3 H4 with AA 
-#define FIT_spinO		0.0
+#define FIT_spinO		1.0
 #define FIT_spinOO		0.0 //for O-O distance changing
-#define FIT_spinO2		0.0
+#define FIT_spinO2		1.0
 #define FIT_spinO3		0.0
 #define FIT_spinH		0.0
 #define FIT_spinHH              0.0
 #define FIT_spinC		0.0
-#define FIT_spinN               1.0
+#define FIT_spinN               0.0
 #define FIT_spinP               0.0
 #define FIT_spinS               0.0
 #define FIT_spinF		0.0
@@ -78,7 +78,7 @@
 #define FIT_spinE		1.0
 #define FIT_triplet		0.0
 #define FIT_ion			1.0
-#define FIT_ex			0.0
+#define FIT_ex			1.0
 #define FIT_polar		1.0//1.0
 #define FIT_SpinSym             1.0//1.0
 #define FIT_diat		0.0
@@ -2942,7 +2942,7 @@
 #define wspinOplus2ionex2     101.4* FIT_spinthermo * FIT_spinO * FIT_ex  //50.0
 #define wspinOplus3ionex      82.0* FIT_spinthermo * FIT_spinO * FIT_ex  //10.0
 #define wspinOplus4ionex      66.8* FIT_spinthermo * FIT_spinO * FIT_ex  //10.0
-#define wspinOsign            0.0* FIT_spinthermo * FIT_spinO * FIT_ex  //2000.0
+#define wspinOsign            2000.0* FIT_spinthermo * FIT_spinO * FIT_ex  //2000.0
 
 
 

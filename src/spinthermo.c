@@ -3137,17 +3137,23 @@ double spinthermo(){
 	dev235 = maxi_float(-dev235, 0.0); 
 	dev236 = perdev236 / (ESCALE * fabs(LitThermo236) + KT);
 	dev236 = maxi_float(-dev236, 0.0); 
-        dev238=perdev238 / (ESCALE * fabs(LitThermo238) + KT);
+	dev238 = 0.0;
+	dev239 = 0.0;
+	dev240 = 0.0;
+	dev241 = 0.0;
+	dev242 = 0.0;
+	dev243 = 0.0;
+//      dev238=perdev238 / (ESCALE * fabs(LitThermo238) + KT);
 //	dev238 = maxi_float(-dev238, 0.0); 
-        dev239=perdev239 / (ESCALE * fabs(LitThermo239) + KT);
+//      dev239=perdev239 / (ESCALE * fabs(LitThermo239) + KT);
 //	dev239 = maxi_float(-dev239, 0.0); 
-        dev240=perdev240 / (ESCALE * fabs(LitThermo240) + KT);
+//      dev240=perdev240 / (ESCALE * fabs(LitThermo240) + KT);
 //	dev240 = maxi_float(-dev240, 0.0); 
-        dev241=perdev241 / (ESCALE * fabs(LitThermo241) + KT);
+//      dev241=perdev241 / (ESCALE * fabs(LitThermo241) + KT);
 //	dev241 = maxi_float(-dev241, 0.0); 
-        dev242=perdev242 / (ESCALE * fabs(LitThermo242) + KT);
+//      dev242=perdev242 / (ESCALE * fabs(LitThermo242) + KT);
 //	dev242 = maxi_float(-dev242, 0.0); 
-        dev243=perdev243 / (ESCALE * fabs(LitThermo243) + KT);
+//      dev243=perdev243 / (ESCALE * fabs(LitThermo243) + KT);
 //	dev243 = maxi_float(-dev243, 0.0); 
         dev244 = perdev244 / (ESCALE * fabs(LitThermo244) + KT);  
         dev245 = perdev245 / (ESCALE * fabs(LitThermo245) + KT);  
@@ -4323,8 +4329,8 @@ double spinthermo(){
 	deviation += fabs(dev26) * wspinOplus4ion;
 	deviation += fabs(dev27) * wspinOplus5ion;
 	deviation += fabs(dev28) * wspinOplus6ion;
-	deviation += fabs(dev29) * wspinO2ex;
-	deviation += fabs(dev252) * wspinO2ex2;
+//	deviation += fabs(dev29) * wspinO2ex;
+//	deviation += fabs(dev252) * wspinO2ex2;
 
 	//total energies of molecules
 	deviation += fabs(dev32) * wspinOeaff;

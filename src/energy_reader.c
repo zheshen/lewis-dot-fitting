@@ -20,8 +20,8 @@ double kineticEnergy(double complex d, double eta, double zeta, int E_or_F){
 	return kineticEnergy_split(d, eta, zeta, E_or_F, NULL);
 }
 
-double TBenergy(V * a, V * b, V * R, int E_or_F){
-	return TBenergy_split(a, b, R, E_or_F, NULL);
+double TBenergy(V * a, V * b, V * R, double r2, double Rn2, int E_or_F){
+	return TBenergy_split(a, b, R, r2, Rn2, E_or_F, NULL);
 }
 
 double energy(V *a, V *b, int E_or_F) {
@@ -46,7 +46,7 @@ double kineticEnergy_split(double complex d, double eta, double zeta, int E_or_F
 
 }
 
-double TBenergy_split(V * a, V * b, V * R, int E_or_F, double *items){
+double TBenergy_split(V * a, V * b, V * R, double r2, double Rn2, int E_or_F, double *items){
 	extern int diagnose_print;
         extern double dlewis[];
 	extern double parAB[];
@@ -437,7 +437,7 @@ double TBenergy_split(V * a, V * b, V * R, int E_or_F, double *items){
 //                printf("energy_read r %f, dr1 %f, di1 %f\n", r, dr1, di1);
 //        diagnose_print = 0;
 	
-	return formOfAAX(a, b, R, pAB2, pAB5, pAB6, pAB7, pAB8, pAB9, pAB10, pAB11, pAB12, pAB20, pAB21, pAB22, pAB23, pAB24, pAB25, p1, p2, p3, p4, p5, p6, p7, p8, p9, p10, p11, p12, p13, n1, n2, E_or_F, items);
+	return formOfAAX(a, b, R, r2, Rn2, pAB2, pAB5, pAB6, pAB7, pAB8, pAB9, pAB10, pAB11, pAB12, pAB20, pAB21, pAB22, pAB23, pAB24, pAB25, p1, p2, p3, p4, p5, p6, p7, p8, p9, p10, p11, p12, p13, n1, n2, E_or_F, items);
 
 }
 
@@ -561,8 +561,7 @@ double energy_split(V *a, V *b, int E_or_F, double *items) {
                                 int    n2  = (int) dlewis[n_potentials + 1];
                                 int    n3  = (int) dlewis[n_potentials + 2];
 
-                        //      u = formOfAA(a, b, p1, p2, p3, p4, p5, p6, p7, p8, p9, p10, p11, p12, p13, p14, p15, p16, p17, p18, p19, p20, p21, p22, p23, p24, p25, p26, n1, n2, n3, E_or_F, items);
-                                u = formOfAB(a, b, p1, p2, p3, p4, p5, p6, p13, n1, n2, n3, E_or_F, items);
+                                u = formOfAA(a, b, p1, p2, p3, p4, p5, p6, p7, p8, p9, p10, p11, p12, p13, p14, p15, p16, p17, p18, p19, p20, p21, p22, p23, p24, p25, p26, n1, n2, n3, E_or_F, items);
 
 			//	if((print)&&(icue_spinO>1))
 			//		printf("AA energy at r %f is %f\n",r,u);

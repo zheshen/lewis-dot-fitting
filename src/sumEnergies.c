@@ -73,7 +73,6 @@ double sumEnergies_split(V * Vin,  int part,  double *items){
 //			sum += energy(&Vin[i], &Vin[j], r2, r, Vin[i].dr, Vin[j].dr, Vin[i].di, Vin[j].di, Vin[i].q, Vin[j].q, Vin[i].s, Vin[j].s, ENERGY);
 			sum += energy_split(&Vin[i], &Vin[j], ENERGY, items);
 
-
                         //AA & BB midpoint coordinate calculation
                         if((Vin[i].s==Vin[j].s)&&(Vin[j].q==-1)){
                                 mid_x=(Vin[i].x + Vin[j].x)*0.5;
@@ -109,9 +108,9 @@ double sumEnergies_split(V * Vin,  int part,  double *items){
 //						sum += TBenergy(r2,r, Rn2, Rn, Ri, Rj, Vin[l].x, Vin[l].y, Vin[l].z, Vin[i].x, Vin[i].y, Vin[i].z, Vin[j].x, Vin[j].y, \
 //Vin[j].z, Vin[i].dr, Vin[j].dr, Vin[i].di, Vin[j].di, Vin[l].q, Vin[l].s, ENERGY);
 						if (Vin[l].q != -1)
-							sum += TBenergy_split(&Vin[i], &Vin[j], &Vin[l], ENERGY, items);
+							sum += TBenergy_split(&Vin[i], &Vin[j], &Vin[l], r2, Rn2, ENERGY, items);
 						else
-							sum += TBenergy_split(&Vin[i], &Vin[j], &Vin[l], ENERGY, items);
+							sum += TBenergy_split(&Vin[i], &Vin[j], &Vin[l], r2, Rn2, ENERGY, items);
 					}
 				}
                         }
