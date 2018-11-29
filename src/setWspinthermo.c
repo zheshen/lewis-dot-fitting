@@ -21,6 +21,8 @@ double setWspinthermo(){
 	sum += wspinOeaff;
 	sum += wspinO_1eaff;
 	sum += wspinO2ex;
+	sum += wspinO2eaff;
+	sum += wspinO2ion;
 	sum += wspinOneutrlion;
 	sum += wspinOplus1ion;
 	sum += wspinO2_2dis;

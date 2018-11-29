@@ -3172,8 +3172,8 @@ double spinthermo(){
 	dev251 = perdev251 / (ESCALE * fabs(LitThermo251) + KT);
 	dev252 = perdev252 / (ESCALE * fabs(LitThermo251 + LitThermo29) + KT);
 
-//	dev253 = perdev253 / (ESCALE * fabs(LitThermo253) + KT);  
-//	dev254 = perdev254 / (ESCALE * fabs(LitThermo254) + KT);  
+	dev253 = perdev253 / (ESCALE * fabs(LitThermo253) + KT);  
+	dev254 = perdev254 / (ESCALE * fabs(LitThermo254) + KT);  
 	dev256 = perdev256 / (ESCALE * fabs(LitThermo256) + KT);  
 	dev257 = perdev257 / (ESCALE * fabs(LitThermo257) + KT);  
 	dev258 = perdev258 / (ESCALE * fabs(LitThermo258) + KT);  
@@ -4585,6 +4585,8 @@ double spinthermo(){
 	deviation += fabs(dev243) * wspinO2dia_trplbnd;
 	deviation += fabs(dev244) * wspinH3lin;
 
+	deviation += fabs(dev253) * wspinO2eaff;
+	deviation += fabs(dev254) * wspinO2ion;
 	deviation += fabs(dev256) * wspinScplus2ion;
 	deviation += fabs(dev257) * wspinScplus1ion;
 	deviation += fabs(dev258) * wspinScplus1exion;

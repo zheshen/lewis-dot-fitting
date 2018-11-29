@@ -844,7 +844,7 @@
 #define wspinO2qnt_trplbnd         1.0*FIT_spinO*FIT_spinO2
 
 //O2_1=============================
-#define wspinO2_1		 100.0*FIT_spinO2
+#define wspinO2_1		 0.0*FIT_spinO2  //100.0
 
 //O2_2=============================
 #define wspinO2_2		 0.0*FIT_spinOO
@@ -853,7 +853,7 @@
 #define wspinO2_2v                0.0*FIT_spinOO
 
 //O2^+============================
-#define wspinO2plus1		 100.0*FIT_spinO2
+#define wspinO2plus1		 0.0*FIT_spinO2  //100.0
 
 
 //O+===============================
@@ -2925,7 +2925,8 @@
 #define wspinO_1eaff         0.0*FIT_spinthermo * FIT_spinO
 #define wspinO2ex	      100 *  FIT_spinthermo * FIT_spinO * FIT_spinO2
 #define wspinO2ex2            50 *  FIT_spinthermo * FIT_spinO * FIT_spinO2
-  
+#define wspinO2eaff           50 * FIT_spinthermo * FIT_spinO * FIT_spinO2		
+#define wspinO2ion            50 * FIT_spinthermo * FIT_spinO * FIT_spinO2
 
 #define wspinOeaff            200.0*FIT_spinthermo * FIT_spinO
 #define wspinOneutrlion       184.3*FIT_spinthermo * FIT_spinO

@@ -910,6 +910,7 @@ void finalOutput(){
 	fprintf(OutFile, "| O2-2                  |   % 7.1f   |           |           |           |           |           |           |           |\n", wspinO2_2);
 	fprintf(OutFile, "| O2-2  (v)             |   % 7.1f   |           |           |           |           |           |           |           |\n", wspinO2_2v);
 	fprintf(OutFile, "| O2-1                  |   % 7.1f   |           |           |           |           |           |           |           |\n", wspinO2_1);
+	fprintf(OutFile, "| O2+1                  |   % 7.1f   |           |           |           |           |           |           |           |\n", wspinO2plus1);
 	fprintf(OutFile, "| O2                    |   % 7.1f   |           |           |           |           |           |           |           |\n", wspinO2);
 	fprintf(OutFile, "| O2dia                 |   % 7.1f   |           |           |           |           |           |           |           |\n", wspinO2dia);
         fprintf(OutFile, "| O2 linnett            |   % 7.1f   |           |           |           |           |           |           |           |\n", wspinO2_linnett);
@@ -923,7 +924,6 @@ void finalOutput(){
 	fprintf(OutFile, "| O2qnt                 |   % 7.1f   |           |           |           |           |           |           |           |\n", wspinO2qnt);
 
 
-	fprintf(OutFile, "| O2+1                  |   % 7.1f   |           |           |           |           |           |           |           |\n", wspinO2plus1);
 
 	fprintf(OutFile, "| Al2                   |   % 7.1f   |           |           |           |           |           |           |           |\n", wspinAl2_trplt);
 	fprintf(OutFile, "| Al2dia                |   % 7.1f   |           |           |           |           |           |           |           |\n", wspinAl2_snglt);
