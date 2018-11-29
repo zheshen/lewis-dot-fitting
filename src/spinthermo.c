@@ -152,6 +152,7 @@ double spinthermo(){
 	extern double U_spinOplus2;
 	extern double U_spinO2;
 	extern double U_spinO2dia;
+	extern double U_spinO2plus1;
 	extern double U_spinO2_1;
 	extern double U_spinO2_2;
 //	extern double U_spinH2Oplus;
@@ -1013,6 +1014,8 @@ double spinthermo(){
 	const double LitThermo251 = 50.0;//just to show it needs to be positive
 	//LitThermo252 used up but doesn't need a value (using a prev defined value)
 
+	const double LitThermo253 = 1175; //Wiki
+	const double LitThermo254 = 43.42; //Wiki
 	const double LitThermo256 = 2388.711; //Experimental value calculated from atomic spectra values obtained from NIST
 	const double LitThermo257 = 1235.711; //Experimental value calculated from atomic spectra values obtained from NIST
 	const double LitThermo258 = 30.39704; //Experimental value calculated from atomic spectra values obtained from NIST
@@ -1525,6 +1528,8 @@ double spinthermo(){
 	thermo251= U_spinO2qnt - U_spinO2dia;
 	thermo252= U_spinO2qnt - U_spinO2;
 //	thermo29 = thermo250 - thermo249;
+	thermo253= U_spinO2plus1 - U_spinO2;
+	thermo254= U_spinO2 - U_spinO2_1;
 
 //	thermo31 = U_spinO_2;
 	thermo32 = U_spinO_1;
@@ -2448,6 +2453,8 @@ double spinthermo(){
 //	perdev250=0.0;
 	perdev251=thermo251 - LitThermo251;
 	perdev252=thermo252 - LitThermo29 - LitThermo251;
+	perdev253 = thermo253 - LitThermo253;
+	perdev254 = thermo254 - LitThermo254;
 	
 	perdev256 = thermo256 - LitThermo256;
 	perdev257 = thermo257 - LitThermo257;
@@ -3165,6 +3172,8 @@ double spinthermo(){
 	dev251 = perdev251 / (ESCALE * fabs(LitThermo251) + KT);
 	dev252 = perdev252 / (ESCALE * fabs(LitThermo251 + LitThermo29) + KT);
 
+//	dev253 = perdev253 / (ESCALE * fabs(LitThermo253) + KT);  
+//	dev254 = perdev254 / (ESCALE * fabs(LitThermo254) + KT);  
 	dev256 = perdev256 / (ESCALE * fabs(LitThermo256) + KT);  
 	dev257 = perdev257 / (ESCALE * fabs(LitThermo257) + KT);  
 	dev258 = perdev258 / (ESCALE * fabs(LitThermo258) + KT);  
@@ -3636,6 +3645,8 @@ double spinthermo(){
 	perdev29 /= LitThermo29;
 	perdev251 /= LitThermo251;
 	perdev252 /= (LitThermo29 + LitThermo251);
+	perdev253 /= LitThermo253;
+	perdev254 /= LitThermo254;
 
 //	perdev31 /= LitThermo31;
 	perdev32 /= LitThermo32;
@@ -5509,8 +5520,10 @@ double spinthermo(){
 	prod[26]= 10 - fabs(thermo242);
 	prod[27]= 10 - fabs(thermo243);
 //	prod[28]= thermo711 - LitThermo711; // O3trp - O3
+//	prod[29]= LitThermo253* thermo253;
+//	prod[30]= LitThermo254* thermo254;
 
-        for (i=0; i<29; i++){ //O2 energy conversion
+        for (i=0; i<28; i++){ //O2 energy conversion
 		if (prod[i]<0){
 //			if (i==0){ 
 //				deviation += wspinOsign*100*wspinOeaff;
@@ -6672,6 +6685,8 @@ double spinthermo(){
 		fprintf(OutFile, "| (O2dia) - (O2para)                 | kJ/mol |  >% 10.2f    |    % 10.2f    |    % 10.2f    |    % 10.2f     |\n", LitThermo29, thermo29, perdev29*100, dev29*100);
 //		fprintf(OutFile, "| (O2qnt) - (O2dia)                  | kJ/mol |   % 10.2f    |    % 10.2f    |    % 10.2f    |    % 10.2f     |\n", LitThermo251, thermo251, perdev251*100, dev251*100);
 		fprintf(OutFile, "| (O2qnt) - (O2para)                 | kJ/mol |  >% 10.2f    |    % 10.2f    |    % 10.2f    |    % 10.2f     |\n", 0.0, thermo252, perdev252*100, dev252*100);
+		fprintf(OutFile, "| (O2+1 ) - (O2    )                 | kJ/mol |   % 10.2f    |    % 10.2f    |    % 10.2f    |    % 10.2f     |\n", LitThermo253, thermo253, perdev253*100, dev253*100);
+		fprintf(OutFile, "| (O2   ) - (O2-1  )                 | kJ/mol |   % 10.2f    |    % 10.2f    |    % 10.2f    |    % 10.2f     |\n", LitThermo254, thermo254, perdev254*100, dev254*100);
 		fprintf(OutFile, "| (O3trp) - (O3)                     | kJ/mol |  >% 10.2f    |    % 10.2f    |    % 10.2f    |    % 10.2f     |\n", LitThermo711, thermo711, perdev711*100, dev711*100);
                 fprintf(OutFile, "| Lowest energy starting pt for O2   |  lwst  |   % 10d    |       n.a.       |        n.a.      |       n.a.        |\n", O2_id);
                 fprintf(OutFile, "| Lowest energy starting pt for O2dia|  lwst  |   % 10d    |       n.a.       |        n.a.      |       n.a.        |\n", O2dia_id);

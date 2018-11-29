@@ -24,19 +24,19 @@ void specspinH2trp(Species * spec){				//define SPEC function for specific struc
 	Initialize(spec);
 
         //Initial Values expressed in Radians and Angstroms
-        spec->ist[0] = 1.000000;					//distance of electron to the center 
+        spec->ist[0] = 1.000000;					// distance of electron to the center 
         spec->ist[1] = 1.000000; 
         spec->ist[2] = 1.000000; 
         spec->ist[3] = 1.000000; 		
-        spec->ist[4] = 3.000000;					//diameter of electron
+        spec->ist[4] = 3.000000;					// 1/radius^2
         spec->ist[5] = 3.000000;
         spec->ist[6] = 3.000000; 
         spec->ist[7] = 3.000000; 
-        spec->ist[8] = 3.000000;					//diameter of electron
-        spec->ist[9] = 3.000000;
-        spec->ist[10] = 3.000000; 
-        spec->ist[11] = 3.000000; 
-        spec->ist[12] = 0.001;					//rotation angle
+        spec->ist[8] = 1.000000;					// eta
+        spec->ist[9] = 1.000000;
+        spec->ist[10] = 1.000000; 					// zeta
+        spec->ist[11] = 1.000000; 
+        spec->ist[12] = 0.001;						// rotation angle
         spec->ist[13] = 0.001; 
         spec->ist[14] = 0.001; 
         spec->ist[15] = 0.494500; 
@@ -44,7 +44,7 @@ void specspinH2trp(Species * spec){				//define SPEC function for specific struc
         //translate initial values into log10 form for upnup, set Key
         int i;
         for(i = 0; i < spec->degFree; i++){
-                spec->key[i] = 1;
+                spec->key[i] = 0;
                 spec->sym[i] = log10(spec->ist[i]);
         }
 
@@ -52,24 +52,28 @@ void specspinH2trp(Species * spec){				//define SPEC function for specific struc
         spec->sym[13] = log10((pi / spec->ist[0]) - 1);
         spec->sym[14] = log10((pi / spec->ist[0]) - 1);
 
-        if (fix_d){
-                spec->key[4] = 0;
-                spec->key[5] = 0;
-                spec->key[6] = 0;
-                spec->key[7] = 0;
-                spec->sym[4] = log10(d_value);
-                spec->sym[5] = log10(d_value);
-                spec->sym[6] = log10(d_value);
-                spec->sym[7] = log10(d_value);
-                spec->key[8] = 0;
-                spec->key[9] = 0;
-                spec->key[10] = 0;
-                spec->key[11] = 0;
-                spec->sym[8] = log10(d_value);
-                spec->sym[9] = log10(d_value);
-                spec->sym[10] = log10(d_value);
-                spec->sym[11] = log10(d_value);
-        }
+	spec->key[12] = 1;
+	spec->key[13] = 1;
+	spec->key[14] = 1;
+
+	if (fix_d){
+		spec->key[4] = 0;
+		spec->key[5] = 0;
+		spec->key[6] = 0;
+		spec->key[7] = 0;
+		spec->sym[4] = log10(d_value);
+		spec->sym[5] = log10(d_value);
+		spec->sym[6] = log10(d_value);
+		spec->sym[7] = log10(d_value);
+		spec->key[8] = 0;
+		spec->key[9] = 0;
+		spec->key[10] = 0;
+		spec->key[11] = 0;
+		spec->sym[8] = log10(d_value);
+		spec->sym[9] = log10(d_value);
+		spec->sym[10] = log10(d_value);
+		spec->sym[11] = log10(d_value);
+	}
 
 }
 
@@ -82,36 +86,27 @@ double ainterspinH2trp(Species * spec){
         V Vin[part];
 
         double ra1	=	pow(10, spec->sym[0]);			//distance from O to electron alpha1's
-        double ra2	=	pow(10, spec->sym[1]);			//distance from O to electron alpha2's
-        double rb1	=	pow(10, spec->sym[2]);			//distance from O to electron beta1's
-        double rb2	=	pow(10, spec->sym[3]);			//distance from O to electron beta2's
+        double rb1	=	pow(10, spec->sym[1]);			//distance from O to electron beta1's
+        double ra2	=	pow(10, spec->sym[2]);			//distance from O to electron alpha1's
+        double rb2	=	pow(10, spec->sym[3]);			//distance from O to electron beta1's
         
         double da1_r	=	pow(10, spec->sym[4]);			//diameter of electron alpha1's
-        double da2_r	=	pow(10, spec->sym[5]);			//diameter of electron alpha2's
-        double db1_r	=	pow(10, spec->sym[6]);			//diameter of electron beta1's
-        double db2_r	=	pow(10, spec->sym[7]);			//diameter of electron beta2's
+        double db1_r	=	pow(10, spec->sym[5]);			//diameter of electron beta1's
+        double da1_i	=	pow(10, spec->sym[6]);			//diameter of electron alpha2's
+        double db1_i	=	pow(10, spec->sym[7]);			//diameter of electron beta2's
 
-        double da1_i	=	pow(10, spec->sym[8]);			//diameter of electron alpha1's
-        double da2_i	=	pow(10, spec->sym[9]);			//diameter of electron alpha2's
-        double db1_i	=	pow(10, spec->sym[10]);			//diameter of electron beta1's
-        double db2_i	=	pow(10, spec->sym[11]);			//diameter of electron beta2's
+        double da2	=	pow(10, spec->sym[8]);			//eta of electron alpha1's
+        double db2	=	pow(10, spec->sym[9]);			//eta of electron alpha2's
+        double da3	=	pow(10, spec->sym[10]);			//zeta of electron beta1's
+        double db3	=	pow(10, spec->sym[11]);			//zeta of electron beta2's
 
 	double a	=	pi / (1 + pow(10, spec->sym[12]));	//rotation angle a
 	double b	=	pi / (1 + pow(10, spec->sym[13]));	//rotation angle b
 	double c	=	pi / (1 + pow(10, spec->sym[14]));	//rotation angle c
 
-	double r_kernel	=	pow(10, spec->sym[15]);			//distance of kernel to center	
+	double r_kernel	=	pow(10, spec->sym[15]);			//distance of kernel to center, half of bond length	
 
 /*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>BELOW CHANGABLE>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
-/*##################################################
-#                                                  #
-#                                                  #
-#                                                  #
-# Replaced With Costomized Structure Coordinates!  #
-#                                                  #
-#                                                  #
-#                                                  #
-##################################################*/
 
         //Particle Positions
 
@@ -136,6 +131,8 @@ double ainterspinH2trp(Species * spec){
         Vin[2].q = -1;
 	Vin[2].s = 2;
 	Vin[2].d = da1_r+da1_i*I;
+	Vin[2].eta = da2;
+	Vin[2].zeta = da3;
 
 	//A2
         Vin[3].x = 0.0;
@@ -144,14 +141,18 @@ double ainterspinH2trp(Species * spec){
         Vin[3].q = -1;
 	Vin[3].s = 2;
 	Vin[3].d = da1_r+da1_i*I;
+	Vin[3].eta = da2;
+	Vin[3].zeta = da3;
 
+        //set d value
+        setDvalue(Vin, part);
 
 	//calculate structure energy
         if((MC_spinH2trp) && (spec->icue ==4)){
 		for(i=0;i<4;i++){
-                	metropolis(Vin, part,-2);//fix heavy
+                	metropolis(Vin, part,-1);//move everything
 		}
-                Usum = metropolis(Vin, part,-2);//fix heavy
+                Usum = metropolis(Vin, part,-1);//move everything
         }else{
                 Usum = sumEnergies(Vin, part);
 	}
@@ -166,6 +167,8 @@ double ainterspinH2trp(Species * spec){
         spec->coord[i].y = Vin[i].y;
         spec->coord[i].z = Vin[i].z;
         spec->coord[i].d = Vin[i].d;
+        spec->coord[i].eta = Vin[i].eta;
+        spec->coord[i].zeta = Vin[i].zeta;
         spec->coord[i].q = Vin[i].q;
         spec->coord[i].s = Vin[i].s;
         }
@@ -209,6 +212,8 @@ double devspinH2trp(Species *spec){
                 if (MC_spinH2trp){
 			fprintf(OutFile,"| Kernel  dist          |      A     |    % 8.2f    |   -   |        -       |    %8.5f    |   N/A   |       -       |\n", real_bl, fr1);
 			fprintf(OutFile,"| Ex.  A1 1/radius^2    |    1/A^2   |      -         |   -   |        -       |%7.3f+%7.3fI|   N/A   |       -       |\n", creal(spec->coord[2].d), cimag(spec->coord[2].d));
+			fprintf(OutFile,"| Lone A1  eta          |            |      -         |   -   |                |    %8.5f    |   N/A   |       -       |\n", spec->coord[2].eta);
+			fprintf(OutFile,"| Lone A1  zeta         |            |      -         |   -   |                |    %8.5f    |   N/A   |       -       |\n", spec->coord[2].zeta);
 			//fprintf(OutFile,"| Bond Order            |      -     |   % 8.2f     |   -   |        -       |    %8.2f    |   N/A   |  % 8.2e    |\n", real_bo, bo,deviation*100);
                 }
                 fprintf(OutFile, "|-------------------------------------------------------------------------------------------------------------------------|\n");
@@ -222,6 +227,8 @@ double devspinH2trp(Species *spec){
 
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<ABOVE CHANGABLE<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 
-	return deviation;
+	double scaledDev;
+	scaledDev = 100*deviation;
+	return scaledDev;
 
 }

@@ -83,8 +83,9 @@ void output(V * Out, int part, char * pdb_file){
 
 		if (fabs(cimag(Out[p].d)) >= 10) {fprintf(OutFile, "% 2.2f", cimag(Out[p].d)); }
 		else {fprintf(OutFile, "% 1.3f", cimag(Out[p].d)); }
+		fprintf(OutFile, "  ");
 
-		if (fabs(Out[p].eta) >= 10) {fprintf(OutFile, "% 2.2f", creal(Out[p].eta)); }
+		if (fabs(Out[p].eta) >= 10) {fprintf(OutFile, "% 2.2f", Out[p].eta); }
 		else {fprintf(OutFile, "% 1.3f", Out[p].eta); }
 		fprintf(OutFile, "  ");
 
@@ -107,11 +108,13 @@ void output(V * Out, int part, char * pdb_file){
 
 		if (fabs(creal(Out[p].d)) >= 10) {fprintf(OutFile, "% 2.2f", creal(Out[p].d)); }
 		else {fprintf(OutFile, "% 1.3f", creal(Out[p].d)); }
+		fprintf(OutFile, "  ");
 
 		if (fabs(cimag(Out[p].d)) >= 10) {fprintf(OutFile, "% 2.2f", cimag(Out[p].d)); }
 		else {fprintf(OutFile, "% 1.3f", cimag(Out[p].d)); }
+		fprintf(OutFile, "  ");
 
-		if (fabs(Out[p].eta) >= 10) {fprintf(OutFile, "% 2.2f", creal(Out[p].eta)); }
+		if (fabs(Out[p].eta) >= 10) {fprintf(OutFile, "% 2.2f", Out[p].eta); }
 		else {fprintf(OutFile, "% 1.3f", Out[p].eta); }
 		fprintf(OutFile, "  ");
 

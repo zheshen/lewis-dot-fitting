@@ -292,7 +292,7 @@ void getVx(struct V *vv, struct V *Vx, int p,int *NumNuc){
 	int i, k;
 	k=0;
         for (i = 0; i < p; i++){
-                Vx[i].s=-3;//Setting Vx so that we don't have old values messing things up
+                Vx[k].s=-3;//Setting Vx so that we don't have old values messing things up
 		if(vv[i].q>0){
                         Vx[k].x=vv[i].x;
                         Vx[k].y=vv[i].y;

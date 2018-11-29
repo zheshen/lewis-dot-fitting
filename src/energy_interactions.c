@@ -74,7 +74,7 @@ double formOfAAX(V *a, V *b, V *R, double r2, double Rn2, double pAB2, double pA
 	double RnUV2 = RnUV[0]*RnUV[0] + RnUV[1]*RnUV[1] + RnUV[2]*RnUV[2];
 	double rDotR = rr[0]*RnUV[0] + rr[1]*RnUV[1] + rr[2]*RnUV[2];	
 	double rAbsR = r2*RnUV2;
-	double C = 3.0*rDotR*rDotR / rAbsR;
+	double C = 3.0 * rDotR*rDotR / rAbsR;
 	
 	double anglePart = 1 + sin(pi / 2 + pi * C);//newly added in DE5045
 	uA = E2_const*2.0/rootpi*pAB20*sqrt(2*Rhat)*exp(-pAB21*Rbar*r2)*exp(-pAB24*(Eta_a+Eta_b));
@@ -82,7 +82,8 @@ double formOfAAX(V *a, V *b, V *R, double r2, double Rn2, double pAB2, double pA
 	if (q != -1)
 		uN = q * ((1-C) * exp(-pAB22 * 2*Rhat * Rn2)+ C * exp(-pAB22 * (1.0+pAB23) * 2*Rhat * Rn2)) ;
 	else
-		uN = q * ((1-C) * exp(-pAB22 * 2*Rhat * Rn2)+ C * exp(-pAB22 * (1.0+pAB23) * 2*Rhat * Rn2)) ;
+//		uN = q * ((1-C) * exp(-pAB22 * 2*Rhat * Rn2)+ C * exp(-pAB22 * (1.0+pAB23) * 2*Rhat * Rn2)) ;
+		uN = 0.0;
 	uexA = uA*uN;
 //	uexA = -E2_const/Omega(d_a, r_a, d_b, r_b)*q*Delta_U(d_a, r_a, d_b, r_b, R_X);
 //	uexR = E2_const/Omega(d_a, r_a, d_b, r_b)*(s-q)*Delta_C(d_a, r_a, d_b, r_b, p2, R_X);

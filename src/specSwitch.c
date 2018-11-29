@@ -148,6 +148,8 @@ void specSwitch(Species *spec){
 		case O2qnt_snglbnd : specspinO2qnt_snglbnd(spec); break;
 		case O2qnt_dblbnd : specspinO2qnt_dblbnd(spec); break;
 		case O2qnt_trplbnd : specspinO2qnt_trplbnd(spec); break;
+		case O2plus1 : specspinO2plus1(spec); break;
+		case O2_1 : specspinO2_1(spec); break;
 		case O3_linnett : specspinO3_linnett(spec); break;
 		case O3trp_linnett : specspinO3trp_linnett(spec); break;
 

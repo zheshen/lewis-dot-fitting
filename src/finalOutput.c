@@ -923,7 +923,7 @@ void finalOutput(){
 	fprintf(OutFile, "| O2qnt                 |   % 7.1f   |           |           |           |           |           |           |           |\n", wspinO2qnt);
 
 
-	fprintf(OutFile, "| O2+1                  |   % 7.1f   |           |           |           |           |           |           |           |\n", wspinO2plus);
+	fprintf(OutFile, "| O2+1                  |   % 7.1f   |           |           |           |           |           |           |           |\n", wspinO2plus1);
 
 	fprintf(OutFile, "| Al2                   |   % 7.1f   |           |           |           |           |           |           |           |\n", wspinAl2_trplt);
 	fprintf(OutFile, "| Al2dia                |   % 7.1f   |           |           |           |           |           |           |           |\n", wspinAl2_snglt);

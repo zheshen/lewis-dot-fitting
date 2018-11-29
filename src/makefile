@@ -21,7 +21,7 @@ spinZnplus5.o spinZnplus5ex.o spinZnplus5ex2.o spinZnplus6.o spinZnplus6ex.o spi
 spinZnneutrlex2.o spinZnplus1ex2.o spinZnplus2ex2.o spinZnplus3ex2.o spinZnplus4ex3.o spinZnplus5ex3.o spinZnplus6ex3.o spinZnplus7ex.o spinZnplus8ex.o spinZnplus9ex.o \
 spinO_2.o spinO_1.o spinOneutrl.o spinOneutrlex.o spinOneutrlex2.o spinOplus1.o spinOplus1ex.o spinOplus1ex2.o spinOplus2.o spinOplus2ex.o spinOplus2ex2.o spinOplus3.o spinOplus3ex.o \
 spinOplus4.o spinOplus4ex.o spinOplus5.o \
-spinO2_linnett.o spinO2_snglbnd.o spinO2_dblbnd.o spinO2_trplbnd.o spinO2dia_linnett.o spinO2dia_snglbnd.o spinO2dia_dblbnd.o spinO2dia_trplbnd.o spinO2qnt_linnett.o spinO2qnt_snglbnd.o spinO2qnt_dblbnd.o spinO2qnt_trplbnd.o \
+spinO2_linnett.o spinO2_snglbnd.o spinO2_dblbnd.o spinO2_trplbnd.o spinO2dia_linnett.o spinO2dia_snglbnd.o spinO2dia_dblbnd.o spinO2dia_trplbnd.o spinO2qnt_linnett.o spinO2qnt_snglbnd.o spinO2qnt_dblbnd.o spinO2qnt_trplbnd.o spinO2plus1.o spinO2_1.o \
 spinO3_linnett.o spinO3trp_linnett.o \
 spinC_1.o spinCneutrl.o spinCneutrlex.o spinCneutrlex2.o spinCplus1.o spinCplus1ex.o spinCplus2.o spinCplus2ex.o spinCplus3.o \
 spinNneutrl.o spinNneutrlex.o spinNplus1.o spinNplus1ex.o spinNplus1ex2.o spinNplus2.o spinNplus2ex.o spinNplus3.o spinNplus3ex.o spinNplus4.o \

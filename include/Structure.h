@@ -460,6 +460,8 @@ void specspinO2qnt_linnett(Species *spec);
 void specspinO2qnt_snglbnd(Species *spec);
 void specspinO2qnt_dblbnd(Species *spec);
 void specspinO2qnt_trplbnd(Species *spec);
+void specspinO2plus1(Species *spec);
+void specspinO2_1(Species *spec);
 void spicspinO3_linnett(Species *spec);
 void spicspinO3trp_linnett(Species *spec);
 
@@ -586,6 +588,8 @@ double devspinO2qnt_linnett(Species *spec);
 double devspinO2qnt_snglbnd(Species *spec);
 double devspinO2qnt_dblbnd(Species *spec);
 double devspinO2qnt_trplbnd(Species *spec);
+double devspinO2plus1(Species *spec);
+double devspinO2_1(Species *spec);
 double devspinO3_linnett(Species *spec);
 double devspinO3trp_linnett(Species *spec);
 
@@ -712,6 +716,8 @@ double ainterspinO2qnt_linnett(Species *spec);
 double ainterspinO2qnt_snglbnd(Species *spec);
 double ainterspinO2qnt_dblbnd(Species *spec);
 double ainterspinO2qnt_trplbnd(Species *spec);
+double ainterspinO2plus1(Species *spec);
+double ainterspinO2_1(Species *spec);
 double ainterspinO3_linnett(Species *spec);
 double ainterspinO3trp_linnett(Species *spec);
 

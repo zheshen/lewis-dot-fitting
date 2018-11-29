@@ -34,7 +34,7 @@ typedef enum MoName{
 	//O
 	O_2, O_1, Oneutrl, Oneutrlex, Oneutrlex2, Oplus1, Oplus1ex, Oplus1ex2, Oplus2, Oplus2ex, Oplus2ex2, Oplus3, Oplus3ex, Oplus4, Oplus4ex, Oplus5,
 	//O2
-	O2, O2dia, O2qnt, O2_linnett, O2_snglbnd, O2_dblbnd, O2_trplbnd, O2dia_linnett, O2dia_snglbnd, O2dia_dblbnd, O2dia_trplbnd, O2qnt_linnett, O2qnt_snglbnd, O2qnt_dblbnd, O2qnt_trplbnd,
+	O2plus1, O2_1, O2, O2dia, O2qnt, O2_linnett, O2_snglbnd, O2_dblbnd, O2_trplbnd, O2dia_linnett, O2dia_snglbnd, O2dia_dblbnd, O2dia_trplbnd, O2qnt_linnett, O2qnt_snglbnd, O2qnt_dblbnd, O2qnt_trplbnd,
 	//O3
 	O3_linnett, O3trp_linnett,
 	//C

@@ -101,8 +101,8 @@ double ainterspinFeplus6ex(Species * spec){
         double rb2	=	pow(10, spec->sym[3]);			//distance from O to electron beta1's
         
         double da1_r	=	pow(10, spec->sym[4]);			//diameter of electron alpha1's
-        double db1_r	=	pow(10, spec->sym[6]);			//diameter of electron beta1's
-        double da1_i	=	pow(10, spec->sym[5]);			//diameter of electron alpha2's
+        double db1_r	=	pow(10, spec->sym[5]);			//diameter of electron beta1's
+        double da1_i	=	pow(10, spec->sym[6]);			//diameter of electron alpha2's
         double db1_i	=	pow(10, spec->sym[7]);			//diameter of electron beta2's
 
         double da2	=	pow(10, spec->sym[8]);			//eta of electron alpha1's

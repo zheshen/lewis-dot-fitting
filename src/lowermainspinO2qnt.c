@@ -153,8 +153,8 @@ double lowermainspinO2qnt(){
 					spec.coord[i].y = linnett.coord[i].y;
 					spec.coord[i].z = linnett.coord[i].z;
 					spec.coord[i].d = linnett.coord[i].d;
-					spec.coord[i].eta = trplbnd.coord[i].eta;
-					spec.coord[i].zeta = trplbnd.coord[i].zeta;
+					spec.coord[i].eta = linnett.coord[i].eta;
+					spec.coord[i].zeta = linnett.coord[i].zeta;
 					spec.coord[i].q = linnett.coord[i].q;
 					spec.coord[i].s = linnett.coord[i].s;
 				}                         
@@ -166,8 +166,8 @@ double lowermainspinO2qnt(){
 					spec.coord[i].y = snglbnd.coord[i].y;
 					spec.coord[i].z = snglbnd.coord[i].z;
 					spec.coord[i].d = snglbnd.coord[i].d;
-					spec.coord[i].eta = trplbnd.coord[i].eta;
-					spec.coord[i].zeta = trplbnd.coord[i].zeta;
+					spec.coord[i].eta = snglbnd.coord[i].eta;
+					spec.coord[i].zeta = snglbnd.coord[i].zeta;
 					spec.coord[i].q = snglbnd.coord[i].q;
 					spec.coord[i].s = snglbnd.coord[i].s;
 				}
@@ -179,8 +179,8 @@ double lowermainspinO2qnt(){
 					spec.coord[i].y = dblbnd.coord[i].y;
 					spec.coord[i].z = dblbnd.coord[i].z;
 					spec.coord[i].d = dblbnd.coord[i].d;
-					spec.coord[i].eta = trplbnd.coord[i].eta;
-					spec.coord[i].zeta = trplbnd.coord[i].zeta;
+					spec.coord[i].eta = dblbnd.coord[i].eta;
+					spec.coord[i].zeta = dblbnd.coord[i].zeta;
 					spec.coord[i].q = dblbnd.coord[i].q;
 					spec.coord[i].s = dblbnd.coord[i].s;
 				}

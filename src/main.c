@@ -7,8 +7,8 @@
 #include "U.h"
 void test();
 //Declaration of important variables 
-char version[] = "DE5094.071";
-char shelloutput[] = "ws5094";
+char version[] = "DE5096.072";
+char shelloutput[] = "ws5096";
 int printFunctionPlots = 1;
 int pdbSwitch = 0; //the whole trajectory of upnup 
 int finalpdbswitch = 1;
@@ -184,6 +184,8 @@ int main (int argc, char *argv[]) {
 	lowermain(O2dia_snglbnd);
 	lowermain(O2dia_dblbnd);
 	lowermain(O2dia_trplbnd);
+	lowermain(O2plus1);
+	lowermain(O2_1);
 
 	lowermain(O3_linnett);
 	lowermain(O3trp_linnett);

@@ -106,7 +106,7 @@ double status(){
 #pragma omp section
 			{
 				if (wspinO2_1) {
-					term = lowermainspinO2_1(); //217
+					term = lowermain(O2_1); //217
 					z_arr[217] = wspinO2_1 * term;
 					w_arr[217] = wspinO2_1;
 				}
@@ -585,14 +585,14 @@ double status(){
 //					w_arr[223] = wspinH_trp;
 //				}
 //			}
-//#pragma omp section
-//			{
-//				if (wspinO2plus) {
-//					term = lowermainspinO2plus(); //223
-//					z_arr[223] = wspinO2plus * term;
-//					w_arr[223] = wspinO2plus;
-//				}
-//			}
+#pragma omp section
+			{
+				if (wspinO2plus1) {
+					term = lowermain(O2plus1); //223
+					z_arr[223] = wspinO2plus1 * term;
+					w_arr[223] = wspinO2plus1;
+				}
+			}
 //#pragma omp section
 //			{
 //				if (wspinH2Oplus) {

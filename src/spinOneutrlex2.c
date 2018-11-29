@@ -102,20 +102,20 @@ double ainterspinOneutrlex2(Species * spec){
         double rb2	=	pow(10, spec->sym[3]);			//distance from O to electron beta1's
         
         double da1_r	=	pow(10, spec->sym[4]);			//diameter of electron alpha1's
-        double db1_r	=	pow(10, spec->sym[6]);			//diameter of electron beta1's
-        double da1_i	=	pow(10, spec->sym[5]);			//diameter of electron alpha2's
+        double db1_r	=	pow(10, spec->sym[5]);			//diameter of electron beta1's
+        double da1_i	=	pow(10, spec->sym[6]);			//diameter of electron alpha2's
         double db1_i	=	pow(10, spec->sym[7]);			//diameter of electron beta2's
 
-        double da2	=	pow(10, spec->sym[8]);			//diameter of electron alpha1's
-        double db2	=	pow(10, spec->sym[9]);			//diameter of electron alpha2's
-        double da3	=	pow(10, spec->sym[10]);			//diameter of electron beta1's
-        double db3	=	pow(10, spec->sym[11]);			//diameter of electron beta2's
+        double da2	=	pow(10, spec->sym[8]);			//eta of electron alpha1's
+        double db2	=	pow(10, spec->sym[9]);			//eta of electron alpha2's
+        double da3	=	pow(10, spec->sym[10]);			//zeta of electron beta1's
+        double db3	=	pow(10, spec->sym[11]);			//zeta of electron beta2's
 
 	double a	=	pi / (1 + pow(10, spec->sym[12]));	//rotation angle a
 	double b	=	pi / (1 + pow(10, spec->sym[13]));	//rotation angle b
 	double c	=	pi / (1 + pow(10, spec->sym[14]));	//rotation angle c
 
-	double r_kernel	=	pow(10, spec->sym[15]);			//distance of kernel to center	
+	double r_kernel	=	pow(10, spec->sym[15]);			//distance of kernel to center, half of bond length	
 
 /*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>BELOW CHANGABLE>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
         //Particle Positions
@@ -192,7 +192,7 @@ double ainterspinOneutrlex2(Species * spec){
 
 	//calculate structure energy
         if((MC_spinOneutrlex2) && (spec->icue ==4)){
-                Usum = metropolis(Vin, part,-2);//fix heavy
+                Usum = metropolis(Vin, part,-3);//fix heavy
         }else{
                 Usum = sumEnergies(Vin, part);
 	}
@@ -247,9 +247,9 @@ double devspinOneutrlex2(Species *spec){
 		fd6    = spec->coord[spec->numPart-1].zeta;
         }
 
-	double dipole=0.0;
-	dipole=getPolar(spec->coord,spec->numPart);
-        deviation = 100*dipole*exp(10*dipole);
+	double polar=0.0;
+	polar=getPolar(spec->coord,spec->numPart);
+        deviation = polar*exp(10*polar);
 
 	// main output
 	if (print){
@@ -264,7 +264,7 @@ double devspinOneutrlex2(Species *spec){
                          fprintf(OutFile,"| Lone B1  eta          |            |      -         |   -   |                |    %8.5f    |   N/A   |       -       |\n", fd4);
                          fprintf(OutFile,"| Lone A1  zeta         |            |      -         |   -   |                |    %8.5f    |   N/A   |       -       |\n", fd5);
                          fprintf(OutFile,"| Lone B1  zeta         |            |      -         |   -   |                |    %8.5f    |   N/A   |       -       |\n", fd6);
-                         fprintf(OutFile,"| Polarity              |      -     |      -         |   -   |                |    %8.2f    |   N/A   |       -       |\n", dipole);
+                         fprintf(OutFile,"| Polarity              |      -     |      -         |   -   |                |    %8.2f    |   N/A   |       -       |\n", polar);
                 }
                 fprintf(OutFile, "|-------------------------------------------------------------------------------------------------------------------------|\n");
 	    	fclose(OutFile);
@@ -277,6 +277,8 @@ double devspinOneutrlex2(Species *spec){
 
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<ABOVE CHANGABLE<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 
-	return deviation;
+	double scaledDev;
+	scaledDev = 100*deviation;
+	return scaledDev;
 
 }

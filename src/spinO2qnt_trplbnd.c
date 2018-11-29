@@ -91,20 +91,20 @@ double ainterspinO2qnt_trplbnd(Species * spec){
         double rb2	=	pow(10, spec->sym[3]);			//distance from O to electron beta1's
         
         double da1_r	=	pow(10, spec->sym[4]);			//diameter of electron alpha1's
-        double db1_r	=	pow(10, spec->sym[6]);			//diameter of electron beta1's
-        double da1_i	=	pow(10, spec->sym[5]);			//diameter of electron alpha2's
+        double db1_r	=	pow(10, spec->sym[5]);			//diameter of electron beta1's
+        double da1_i	=	pow(10, spec->sym[6]);			//diameter of electron alpha2's
         double db1_i	=	pow(10, spec->sym[7]);			//diameter of electron beta2's
 
-        double da2	=	pow(10, spec->sym[8]);			//diameter of electron alpha1's
-        double db2	=	pow(10, spec->sym[9]);			//diameter of electron alpha2's
-        double da3	=	pow(10, spec->sym[10]);			//diameter of electron beta1's
-        double db3	=	pow(10, spec->sym[11]);			//diameter of electron beta2's
+        double da2	=	pow(10, spec->sym[8]);			//eta of electron alpha1's
+        double db2	=	pow(10, spec->sym[9]);			//eta of electron alpha2's
+        double da3	=	pow(10, spec->sym[10]);			//zeta of electron beta1's
+        double db3	=	pow(10, spec->sym[11]);			//zeta of electron beta2's
 
 	double a	=	pi / (1 + pow(10, spec->sym[12]));	//rotation angle a
 	double b	=	pi / (1 + pow(10, spec->sym[13]));	//rotation angle b
 	double c	=	pi / (1 + pow(10, spec->sym[14]));	//rotation angle c
 
-	double r_kernel	=	pow(10, spec->sym[15]);			//distance of kernel to center	
+	double r_kernel	=	pow(10, spec->sym[15]);			//distance of kernel to center, half of bond length	
 
 /*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>BELOW CHANGABLE>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 
@@ -127,8 +127,8 @@ double ainterspinO2qnt_trplbnd(Species * spec){
 	Vin[2].y = 0.317;
 	Vin[2].z = 0.001;
 	Vin[2].d = 1.4;
-	Vin[2].eta = 1;
-	Vin[2].zeta = 1;
+	Vin[2].eta = 0;
+	Vin[2].zeta = 0;
 	Vin[2].q = -1;
 	Vin[2].s = 2;
 	
@@ -136,8 +136,8 @@ double ainterspinO2qnt_trplbnd(Species * spec){
 	Vin[3].y = 0.323;
 	Vin[3].z = 0.000;
 	Vin[3].d = 1.4;
-	Vin[3].eta = 1;
-	Vin[3].zeta = 1;
+	Vin[3].eta = 0;
+	Vin[3].zeta = 0;
 	Vin[3].q = -1;
 	Vin[3].s = 2;
 	
@@ -145,8 +145,8 @@ double ainterspinO2qnt_trplbnd(Species * spec){
 	Vin[4].y = -0.319;
 	Vin[4].z = 0.000;
 	Vin[4].d = 1.4;
-	Vin[4].eta = 1;
-	Vin[4].zeta = 1;
+	Vin[4].eta = 0;
+	Vin[4].zeta = 0;
 	Vin[4].q = -1;
 	Vin[4].s = 2;
 	
@@ -154,8 +154,8 @@ double ainterspinO2qnt_trplbnd(Species * spec){
 	Vin[5].y = -0.304;
 	Vin[5].z = 0.000;
 	Vin[5].d = 1.4;
-	Vin[5].eta = 1;
-	Vin[5].zeta = 1;
+	Vin[5].eta = 0;
+	Vin[5].zeta = 0;
 	Vin[5].q = -1;
 	Vin[5].s = 2;
 	
@@ -163,8 +163,8 @@ double ainterspinO2qnt_trplbnd(Species * spec){
 	Vin[6].y = -0.500;
 	Vin[6].z = 0.000;
 	Vin[6].d = 1.4;
-	Vin[6].eta = 1;
-	Vin[6].zeta = 1;
+	Vin[6].eta = 0;
+	Vin[6].zeta = 0;
 	Vin[6].q = -1;
 	Vin[6].s = -2;
 	
@@ -172,8 +172,8 @@ double ainterspinO2qnt_trplbnd(Species * spec){
 	Vin[7].y = 0.524;
 	Vin[7].z = 0.001;
 	Vin[7].d = 1.4;
-	Vin[7].eta = 1;
-	Vin[7].zeta = 1;
+	Vin[7].eta = 0;
+	Vin[7].zeta = 0;
 	Vin[7].q = -1;
 	Vin[7].s = -2;
 	
@@ -181,8 +181,8 @@ double ainterspinO2qnt_trplbnd(Species * spec){
 	Vin[8].y = 0.000;
 	Vin[8].z = 0.605;
 	Vin[8].d = 3;
-	Vin[8].eta = 1;
-	Vin[8].zeta = 1;
+	Vin[8].eta = 0;
+	Vin[8].zeta = 0;
 	Vin[8].q = -1;
 	Vin[8].s = 2;
 	
@@ -190,8 +190,8 @@ double ainterspinO2qnt_trplbnd(Species * spec){
 	Vin[9].y = 0.000;
 	Vin[9].z = 0.896;
 	Vin[9].d = 3;
-	Vin[9].eta = 1;
-	Vin[9].zeta = 1;
+	Vin[9].eta = 0;
+	Vin[9].zeta = 0;
 	Vin[9].q = -1;
 	Vin[9].s = -2;
 	
@@ -199,8 +199,8 @@ double ainterspinO2qnt_trplbnd(Species * spec){
 	Vin[10].y = 0.000;
 	Vin[10].z = 1.374;
 	Vin[10].d = 1.4;
-	Vin[10].eta = 1;
-	Vin[10].zeta = 1;
+	Vin[10].eta = 0;
+	Vin[10].zeta = 0;
 	Vin[10].q = -1;
 	Vin[10].s = 2;
 	
@@ -208,8 +208,8 @@ double ainterspinO2qnt_trplbnd(Species * spec){
 	Vin[11].y = 0.000;
 	Vin[11].z = -0.895;
 	Vin[11].d = 3;
-	Vin[11].eta = 1;
-	Vin[11].zeta = 1;
+	Vin[11].eta = 0;
+	Vin[11].zeta = 0;
 	Vin[11].q = -1;
 	Vin[11].s = -2;
 	
@@ -217,8 +217,8 @@ double ainterspinO2qnt_trplbnd(Species * spec){
 	Vin[12].y = 0.000;
 	Vin[12].z = -0.605;
 	Vin[12].d = 3;
-	Vin[12].eta = 1;
-	Vin[12].zeta = 1;
+	Vin[12].eta = 0;
+	Vin[12].zeta = 0;
 	Vin[12].q = -1;
 	Vin[12].s = 2;
 	
@@ -226,18 +226,20 @@ double ainterspinO2qnt_trplbnd(Species * spec){
 	Vin[13].y = 0.000;
 	Vin[13].z = -1.373;
 	Vin[13].d = 1.4;
-	Vin[13].eta = 1;
-	Vin[13].zeta = 1;
+	Vin[13].eta = 0;
+	Vin[13].zeta = 0;
 	Vin[13].q = -1;
 	Vin[13].s = 2;
 
+        //set d value
+        setDvalue(Vin, part);
 
 	//calculate structure energy
         if((MC_spinO2qnt_trplbnd) && (spec->icue ==4)){
 		for(i=0;i<4;i++){
-                	metropolis(Vin, part,-2);//fix heavy
+                	metropolis(Vin, part,-3);
 		}
-                Usum = metropolis(Vin, part,-2);//fix heavy
+                Usum = metropolis(Vin, part,-3);
         }else{
                 Usum = sumEnergies(Vin, part);
 	}
@@ -311,6 +313,8 @@ double devspinO2qnt_trplbnd(Species *spec){
 
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<ABOVE CHANGABLE<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 
-	return deviation;
+	double scaledDev;
+	scaledDev = 100*deviation;
+	return scaledDev;
 
 }

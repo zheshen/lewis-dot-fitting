@@ -106,6 +106,8 @@
 #define MC_spinO2qnt_snglbnd		ON*MC_ALL
 #define MC_spinO2qnt_dblbnd		ON*MC_ALL
 #define MC_spinO2qnt_trplbnd		ON*MC_ALL
+#define MC_spinO2plus1			ON*MC_ALL
+#define MC_spinO2_1			ON*MC_ALL
 #define MC_spinO3_linnett		ON*MC_ALL
 #define MC_spinO3trp_linnett		ON*MC_ALL
 
@@ -842,7 +844,7 @@
 #define wspinO2qnt_trplbnd         1.0*FIT_spinO*FIT_spinO2
 
 //O2_1=============================
-#define wspinO2_1		 0.0*FIT_spinOO
+#define wspinO2_1		 100.0*FIT_spinO2
 
 //O2_2=============================
 #define wspinO2_2		 0.0*FIT_spinOO
@@ -851,7 +853,7 @@
 #define wspinO2_2v                0.0*FIT_spinOO
 
 //O2^+============================
-#define wspinO2plus		 20.0*FIT_spinOO
+#define wspinO2plus1		 100.0*FIT_spinO2
 
 
 //O+===============================

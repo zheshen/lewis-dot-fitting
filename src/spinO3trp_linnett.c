@@ -91,46 +91,46 @@ double ainterspinO3trp_linnett(Species * spec){
         double rb2	=	pow(10, spec->sym[3]);			//distance from O to electron beta1's
         
         double da1_r	=	pow(10, spec->sym[4]);			//diameter of electron alpha1's
-        double db1_r	=	pow(10, spec->sym[6]);			//diameter of electron beta1's
-        double da1_i	=	pow(10, spec->sym[5]);			//diameter of electron alpha2's
+        double db1_r	=	pow(10, spec->sym[5]);			//diameter of electron beta1's
+        double da1_i	=	pow(10, spec->sym[6]);			//diameter of electron alpha2's
         double db1_i	=	pow(10, spec->sym[7]);			//diameter of electron beta2's
 
-        double da2	=	pow(10, spec->sym[8]);			//diameter of electron alpha1's
-        double db2	=	pow(10, spec->sym[9]);			//diameter of electron alpha2's
-        double da3	=	pow(10, spec->sym[10]);			//diameter of electron beta1's
-        double db3	=	pow(10, spec->sym[11]);			//diameter of electron beta2's
+        double da2	=	pow(10, spec->sym[8]);			//eta of electron alpha1's
+        double db2	=	pow(10, spec->sym[9]);			//eta of electron alpha2's
+        double da3	=	pow(10, spec->sym[10]);			//zeta of electron beta1's
+        double db3	=	pow(10, spec->sym[11]);			//zeta of electron beta2's
 
 	double a	=	pi / (1 + pow(10, spec->sym[12]));	//rotation angle a
 	double b	=	pi / (1 + pow(10, spec->sym[13]));	//rotation angle b
 	double c	=	pi / (1 + pow(10, spec->sym[14]));	//rotation angle c
 
-	double r_kernel	=	pow(10, spec->sym[15]);			//distance of kernel to center	
+	double r_kernel	=	pow(10, spec->sym[15]);			//distance of kernel to center, half of bond length	
 
 /*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>BELOW CHANGABLE>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 
         //Particle Positions
         //O
-        Vin[0].x = 0.0;
+        Vin[0].x = 0.670;
         Vin[0].y = 0.0;
-        Vin[0].z = 1.088;
+        Vin[0].z = 0.0;
         Vin[0].q = 6;
         Vin[0].s = 8;
-
+	
         //O
         Vin[1].x = 0.0;
         Vin[1].y = 0.0;
-        Vin[1].z = -1.088;
+        Vin[1].z = 1.088;
         Vin[1].q = 6;
         Vin[1].s = 8;
 
         //O
-        Vin[2].x = 0.670;
+        Vin[2].x = 0.0;
         Vin[2].y = 0.0;
-        Vin[2].z = 0.0;
+        Vin[2].z = -1.088;
         Vin[2].q = 6;
         Vin[2].s = 8;
-	
-	Vin[3].x = 0.670;
+
+	Vin[3].x = 0.70;
 	Vin[3].y = 0.5;
 	Vin[3].z = 0.0;
 	Vin[3].d = 3.0;
@@ -139,7 +139,7 @@ double ainterspinO3trp_linnett(Species * spec){
 	Vin[3].q = -1;
 	Vin[3].s = 2;
 	
-	Vin[4].x = 0.670;
+	Vin[4].x = 0.70;
 	Vin[4].y = -0.5;
 	Vin[4].z = 0.0;
 	Vin[4].d = 3.0;
@@ -168,7 +168,7 @@ double ainterspinO3trp_linnett(Species * spec){
 
 	Vin[7].x = 0.335;
 	Vin[7].y = 0.0;
-	Vin[7].z = 0.75;
+	Vin[7].z = 1.294;
 	Vin[7].d = 3;
 	Vin[7].eta = 1;
 	Vin[7].zeta = 1;
@@ -177,7 +177,7 @@ double ainterspinO3trp_linnett(Species * spec){
 
 	Vin[8].x = -0.335;
 	Vin[8].y = 0.0;
-	Vin[8].z = 0.338;
+	Vin[8].z = 0.882;
 	Vin[8].d = 3;
 	Vin[8].eta = 1;
 	Vin[8].zeta = 1;
@@ -240,7 +240,7 @@ double ainterspinO3trp_linnett(Species * spec){
 
 	Vin[15].x = 0.335;
 	Vin[15].y = 0.0;
-	Vin[15].z = -0.75;
+	Vin[15].z = -1.294;
 	Vin[15].d = 3;
 	Vin[15].eta = 1;
 	Vin[15].zeta = 1;
@@ -249,7 +249,7 @@ double ainterspinO3trp_linnett(Species * spec){
 
 	Vin[16].x = -0.335;
 	Vin[16].y = 0.0;
-	Vin[16].z = -0.338;
+	Vin[16].z = -0.882;
 	Vin[16].d = 3;
 	Vin[16].eta = 1;
 	Vin[16].zeta = 1;
@@ -292,13 +292,15 @@ double ainterspinO3trp_linnett(Species * spec){
 	Vin[20].q = -1;
 	Vin[20].s = 2;
 
+        //set d value
+        setDvalue(Vin, part);
 
 	//calculate structure energy
         if((MC_spinO3trp_linnett) && (spec->icue ==4)){
 		for(i=0;i<4;i++){
-                	metropolis(Vin, part,-2);//fix heavy
+                	metropolis(Vin, part,-3);//fix heavy
 		}
-                Usum = metropolis(Vin, part,-2);//fix heavy
+                Usum = metropolis(Vin, part,-3);//fix heavy
         }else{
                 Usum = sumEnergies(Vin, part);
 	}
@@ -340,16 +342,17 @@ double devspinO3trp_linnett(Species *spec){
 
 	double fr1, bo;
 	const double real_bl = 1.28;
-	const double real_bo = 1.0; 
+//	const double real_bo = 1.0; 
 
         //Current Positions
         if (MC_spinO3trp_linnett){
-		fr1    = getDistance(spec->coord, 0, 2);
-		bo     = getBondOrder(spec->coord, spec->numPart, real_bl);
+		fr1    = getDistance(spec->coord, 0, 1);
+		//bo     = getBondOrder(spec->coord, spec->numPart, real_bl);
         }
 	
-//	deviation = fabs(real_bo-bo)/LENGTH;
-	deviation = 0.0;
+	//deviation = fabs(real_bl-fr1)/LENGTH;
+	//deviation = fabs(real_bo-bo)/LENGTH;
+	deviation = 0;	
 
 	// main output
 	if (print){
@@ -357,10 +360,10 @@ double devspinO3trp_linnett(Species *spec){
 		OutFile = fopen(directory, "a");
                 if (MC_spinO3trp_linnett){
 			fprintf(OutFile,"| Kernel  dist          |      A     |   % 8.2f     |   -   |        -       |    %8.5f    |   N/A   |       -       |\n", real_bl, fr1);
-			fprintf(OutFile,"| A1 1/radius^2         |    1/A^2   |      -         |   -   |        -       |%7.3f+%7.3fI|   N/A   |       -       |\n", creal(spec->coord[3].d), cimag(spec->coord[3].d));
+			fprintf(OutFile,"| A1 1/radius^2         |      A     |      -         |   -   |        -       |%7.3f+%7.3fI|   N/A   |       -       |\n", creal(spec->coord[3].d), cimag(spec->coord[3].d));
 			fprintf(OutFile,"| Lone A1  eta          |            |      -         |   -   |                |    %8.5f    |   N/A   |       -       |\n", spec->coord[3].eta);
 			fprintf(OutFile,"| Lone A1  zeta         |            |      -         |   -   |                |    %8.5f    |   N/A   |       -       |\n", spec->coord[3].zeta);
-//			fprintf(OutFile,"| Bond Order            |      -     |   % 8.2f     |   -   |        -       |    %8.2f    |   N/A   |  % 8.2e    |\n", real_bo, bo,deviation*100);
+			//fprintf(OutFile,"| Bond Order            |      -     |   % 8.2f     |   -   |        -       |    %8.2f    |   N/A   |  % 8.2e    |\n", real_bo, bo,deviation*100);
                 }
                 fprintf(OutFile, "|-------------------------------------------------------------------------------------------------------------------------|\n");
 	    	fclose(OutFile);
@@ -373,6 +376,8 @@ double devspinO3trp_linnett(Species *spec){
 
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<ABOVE CHANGABLE<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 
-	return deviation;
+	double scaledDev;
+	scaledDev = 100*deviation;
+	return scaledDev;
 
 }

@@ -154,6 +154,7 @@ double U_spinOplus1;
 double U_spinOplus2;
 double U_spinO2;
 double U_spinO2dia;
+double U_spinO2plus1;
 double U_spinO2_1;
 double U_spinO2_2;
 double U_spinH2Oplus;
