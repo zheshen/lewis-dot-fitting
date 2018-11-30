@@ -240,18 +240,26 @@ double metropolis(V *V_in, int p, int mc_type){
 				V_t[c].y += disty;
 				V_t[c].z += distz;
 			} else{  //If it's an electron size move vary size of electron
-				whichSize = rand_r(&myseed) % 3;
-                                //FRA 
-                                if (whichSize == 0)
-                                	V_t[c].d = fabs(creal(V_t[c].d) + ((drnd_r(&myseed) - 0.500) * mxj2radius)); // + (cimag(V_t[c].d) + ((drnd_r(&myseed) - 0.500) * mxj2radius))*I;
-				else if (whichSize == 1)
-					V_t[c].eta = fabs(V_t[c].eta + ((drnd_r(&myseed) - 0.500) * mxj2radius));
-				else if (whichSize == 2)
-					V_t[c].zeta = fabs(V_t[c].zeta + ((drnd_r(&myseed) - 0.500) * mxj2radius));
-				//V_t[c].d = fabs(V_t[c].d + ((drnd() - 0.500) * mxj2radius));
-                                //V_t[c].d = fabs(V_t[c].d * (1+((drnd() - 0.500) * mxj2radius)));
-
-				//V_t[c].d = fabs(V_t[c].d + ((ran2(&u) - 0.500) * mxj2radius));
+				if (MC_numDynamicVar == 6){
+					whichSize = rand_r(&myseed) % 3;
+                                	//FRA 
+                                	if (whichSize == 0)
+                                		V_t[c].d = fabs(creal(V_t[c].d) + ((drnd_r(&myseed) - 0.500) * mxj2radius)); // + (cimag(V_t[c].d) + ((drnd_r(&myseed) - 0.500) * mxj2radius))*I;
+					else if (whichSize == 1)
+						V_t[c].eta = fabs(V_t[c].eta + ((drnd_r(&myseed) - 0.500) * mxj2radius));
+					else if (whichSize == 2)
+						V_t[c].zeta = fabs(V_t[c].zeta + ((drnd_r(&myseed) - 0.500) * mxj2radius));
+				}
+				else if (MC_numDynamicVar == 5){
+					whichSize = rand_r(&myseed) % 2;
+                                	if (whichSize == 0)
+                                		V_t[c].d = fabs(creal(V_t[c].d) + ((drnd_r(&myseed) - 0.500) * mxj2radius)); // + (cimag(V_t[c].d) + ((drnd_r(&myseed) - 0.500) * mxj2radius))*I;
+					else if (whichSize == 1)
+						V_t[c].eta = fabs(V_t[c].eta + ((drnd_r(&myseed) - 0.500) * mxj2radius));
+				}
+				else if (MC_numDynamicVar == 4){
+                                	V_t[c].d = fabs(creal(V_t[c].d) + ((drnd_r(&myseed) - 0.500) * mxj2radius)) + (cimag(V_t[c].d) + ((drnd_r(&myseed) - 0.500) * mxj2radius))*I;
+				}
 			}
 			//Mark particle c as 'moved'
 			isMoved[c] = 1;		

@@ -45,46 +45,45 @@ double formOfAAX(V *a, V *b, V *R, double r2, double Rn2, double pAB2, double pA
 	R_X[1] = R->y;
 	R_X[2] = R->z;
 	double unitVector[3] = {0.000001, 0.000001, 0.000001};
-	q = R->q;
-	s = R->s;
 	double Rhat, Rbar;
 	double Eta_a, Eta_b;
-	Rhat = 0.5*(creal(d_a)+creal(d_b));
-	Rbar = creal(d_a)*creal(d_b)/(creal(d_a)+creal(d_b));
-//	Ihat = 0.5*(cimag(d_a)*cimag(d_a)/creal(d_a)+cimag(d_b)*cimag(d_b)/creal(d_b));
-	Eta_a = a->eta;
-	Eta_b = b->eta;
-	double rr[3];
-	rr[0] = r_a[0] - r_b[0]; rr[1] = r_a[1] - r_b[1]; rr[2] = r_a[2]-r_b[2];
-	r2 = rr[0]*rr[0] + rr[1] * rr[1] + rr[2] * rr[2];
-	double r_m[3];
-	r_m[0] = 0.5*(r_a[0]+r_b[0]);
-	r_m[1] = 0.5*(r_a[1]+r_b[1]);
-	r_m[2] = 0.5*(r_a[2]+r_b[2]);
-	double Rnn[3];
-	Rnn[0] = r_m[0]-R_X[0]; Rnn[1] = r_m[1]-R_X[1]; Rnn[2] = r_m[2]-R_X[2]; 
-//	//Rn2 = (r_m[0]-R_X[0])*(r_m[0]-R_X[0]) + (r_m[1]-R_X[1])*(r_m[1]-R_X[1]) + (r_m[2]-R_X[2])*(r_m[2]-R_X[2]);
-//	Rn2 = Rnn[0]*Rnn[0] + Rnn[1]*Rnn[1] + Rnn[2]*Rnn[2];
-//	Rn = sqrt(Rn2);
+	q = R->q;
+	s = R->s;
+	if (q == -1) uexA = 0.0;
+	else{
+		Rhat = 0.5*(creal(d_a)+creal(d_b));
+		Rbar = creal(d_a)*creal(d_b)/(creal(d_a)+creal(d_b));
+//		Ihat = 0.5*(cimag(d_a)*cimag(d_a)/creal(d_a)+cimag(d_b)*cimag(d_b)/creal(d_b));
+		Eta_a = a->eta;
+		Eta_b = b->eta;
+		double rr[3];
+		rr[0] = r_a[0] - r_b[0]; rr[1] = r_a[1] - r_b[1]; rr[2] = r_a[2]-r_b[2];
+		r2 = rr[0]*rr[0] + rr[1] * rr[1] + rr[2] * rr[2];
+		double r_m[3];
+		r_m[0] = 0.5*(r_a[0]+r_b[0]);
+		r_m[1] = 0.5*(r_a[1]+r_b[1]);
+		r_m[2] = 0.5*(r_a[2]+r_b[2]);
+		double Rnn[3];
+		Rnn[0] = r_m[0]-R_X[0]; Rnn[1] = r_m[1]-R_X[1]; Rnn[2] = r_m[2]-R_X[2]; 
+//		//Rn2 = (r_m[0]-R_X[0])*(r_m[0]-R_X[0]) + (r_m[1]-R_X[1])*(r_m[1]-R_X[1]) + (r_m[2]-R_X[2])*(r_m[2]-R_X[2]);
+//		Rn2 = Rnn[0]*Rnn[0] + Rnn[1]*Rnn[1] + Rnn[2]*Rnn[2];
+//		Rn = sqrt(Rn2);
 //
-	double RnUV[3];//adding unitvector to prevent donominator from going to zero, whole block newly added in DE5045 
-	for (int ii = 0; ii < 3; ii++){
-		RnUV[ii] = Rnn[ii] + unitVector[ii];
-	}
-	double RnUV2 = RnUV[0]*RnUV[0] + RnUV[1]*RnUV[1] + RnUV[2]*RnUV[2];
-	double rDotR = rr[0]*RnUV[0] + rr[1]*RnUV[1] + rr[2]*RnUV[2];	
-	double rAbsR = r2*RnUV2;
-	double C = 3.0 * rDotR*rDotR / rAbsR;
-	
-	double anglePart = 1 + sin(pi / 2 + pi * C);//newly added in DE5045
-	uA = E2_const*2.0/rootpi*pAB20*sqrt(2*Rhat)*exp(-pAB21*Rbar*r2)*exp(-pAB24*(Eta_a+Eta_b));
-//	uN = p6*q*sqrt(2.0*Rhat)*anglePart/((1+p10*2.0*Rhat*Rn2)+(p11*Ihat*r2))
-	if (q != -1)
+		double RnUV[3];//adding unitvector to prevent donominator from going to zero, whole block newly added in DE5045 
+		for (int ii = 0; ii < 3; ii++){
+			RnUV[ii] = Rnn[ii] + unitVector[ii];
+		}
+		double RnUV2 = RnUV[0]*RnUV[0] + RnUV[1]*RnUV[1] + RnUV[2]*RnUV[2];
+		double rDotR = rr[0]*RnUV[0] + rr[1]*RnUV[1] + rr[2]*RnUV[2];	
+		double rAbsR = r2*RnUV2;
+		double C = 3.0 * rDotR*rDotR / rAbsR;
+		
+		double anglePart = 1 + sin(pi / 2 + pi * C);//newly added in DE5045
+		uA = E2_const*2.0/rootpi*pAB20*sqrt(2*Rhat)*exp(-pAB21*Rbar*r2)*exp(-pAB24*(Eta_a+Eta_b));
+//		uN = p6*q*sqrt(2.0*Rhat)*anglePart/((1+p10*2.0*Rhat*Rn2)+(p11*Ihat*r2))
 		uN = q * ((1-C) * exp(-pAB22 * 2*Rhat * Rn2)+ C * exp(-pAB22 * (1.0+pAB23) * 2*Rhat * Rn2)) ;
-	else
-//		uN = q * ((1-C) * exp(-pAB22 * 2*Rhat * Rn2)+ C * exp(-pAB22 * (1.0+pAB23) * 2*Rhat * Rn2)) ;
-		uN = 0.0;
-	uexA = uA*uN;
+		uexA = uA*uN;
+	}
 //	uexA = -E2_const/Omega(d_a, r_a, d_b, r_b)*q*Delta_U(d_a, r_a, d_b, r_b, R_X);
 //	uexR = E2_const/Omega(d_a, r_a, d_b, r_b)*(s-q)*Delta_C(d_a, r_a, d_b, r_b, p2, R_X);
 //	uexA = uA*q;
@@ -149,8 +148,8 @@ double formOfAA(V *a, V *b, double p1, double p2, double p3, double p4, double p
 //	uexK = E_const/Omega(d_a, r_a, d_b, r_b)*Delta_K(d_a, r_a, d_b, r_b);
 //	uexR = E2_const/Omega(d_a, r_a, d_b, r_b)*Delta_M(d_a, r_a, d_b, r_b);
 //	uAB = E2_const*M(d_a, r_a, d_b, r_b);	
-	uexK = E_const*p14*Rbar*exp(-p15*Rbar*r2)*exp(-p16*(Eta_a+Eta_b+Zeta_a+Zeta_b));
-	uexR = -E2_const*2.0/rootpi*p17*sqrt(Rbar)*exp(-p18*Rbar*r2)*exp(-p19*(Zeta_a+Zeta_b));
+	uexK = E_const*p14*Rbar*exp(-p15*Rbar*r2)*exp(-p16*(Eta_a+Eta_b));
+	uexR = -E2_const*2.0/rootpi*p17*sqrt(Rbar)*exp(-p18*Rbar*r2);
 //	uAB = E2_const/deff/sqrt(reff*reff+p3*reff+1.0);
 //	uAB = E2_const*Dsmooth8Coulomb4ParReff(reff2,reff,deff,q,p3,p4,p5,1.0,E_or_F);
 	uAB = E2_const*InvPoly8Par142(reff2,reff,deff,q,p3,p4,p5,1.0,E_or_F);
@@ -311,7 +310,7 @@ double formOfXA(V *a, V *R, double p1, double p2, double p3, double p4, double p
 	double Zeta_a;	
 	Eta_a = a->eta;
 	Zeta_a = a->zeta;
-	deff = p1 * (1.0/sqrt(creal(d_a))/sqrt(1.0+p9*Eta_a)+p2/sqrt(1.0+p7*Eta_a+p7*Zeta_a));
+	deff = p1 * (1.0/sqrt(creal(d_a))/sqrt(1.0+p9*Eta_a)+p2/sqrt(1.0+p7*Eta_a));
 	reff = r/deff;
 	reff2 = reff * reff;
 

@@ -6687,8 +6687,8 @@ double spinthermo(){
 		fprintf(OutFile, "| (O2dia) - (O2para)                 | kJ/mol |  >% 10.2f    |    % 10.2f    |    % 10.2f    |    % 10.2f     |\n", LitThermo29, thermo29, perdev29*100, dev29*100);
 //		fprintf(OutFile, "| (O2qnt) - (O2dia)                  | kJ/mol |   % 10.2f    |    % 10.2f    |    % 10.2f    |    % 10.2f     |\n", LitThermo251, thermo251, perdev251*100, dev251*100);
 		fprintf(OutFile, "| (O2qnt) - (O2para)                 | kJ/mol |  >% 10.2f    |    % 10.2f    |    % 10.2f    |    % 10.2f     |\n", 0.0, thermo252, perdev252*100, dev252*100);
-		fprintf(OutFile, "| (O2+1 ) - (O2    )                 | kJ/mol |   % 10.2f    |    % 10.2f    |    % 10.2f    |    % 10.2f     |\n", LitThermo253, thermo253, perdev253*100, dev253*100);
-		fprintf(OutFile, "| (O2   ) - (O2-1  )                 | kJ/mol |   % 10.2f    |    % 10.2f    |    % 10.2f    |    % 10.2f     |\n", LitThermo254, thermo254, perdev254*100, dev254*100);
+//		fprintf(OutFile, "| (O2+1 ) - (O2    )                 | kJ/mol |   % 10.2f    |    % 10.2f    |    % 10.2f    |    % 10.2f     |\n", LitThermo253, thermo253, perdev253*100, dev253*100);
+//		fprintf(OutFile, "| (O2   ) - (O2-1  )                 | kJ/mol |   % 10.2f    |    % 10.2f    |    % 10.2f    |    % 10.2f     |\n", LitThermo254, thermo254, perdev254*100, dev254*100);
 		fprintf(OutFile, "| (O3trp) - (O3)                     | kJ/mol |  >% 10.2f    |    % 10.2f    |    % 10.2f    |    % 10.2f     |\n", LitThermo711, thermo711, perdev711*100, dev711*100);
                 fprintf(OutFile, "| Lowest energy starting pt for O2   |  lwst  |   % 10d    |       n.a.       |        n.a.      |       n.a.        |\n", O2_id);
                 fprintf(OutFile, "| Lowest energy starting pt for O2dia|  lwst  |   % 10d    |       n.a.       |        n.a.      |       n.a.        |\n", O2dia_id);
