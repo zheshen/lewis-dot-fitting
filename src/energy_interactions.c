@@ -149,17 +149,17 @@ double formOfAA(V *a, V *b, double p1, double p2, double p3, double p4, double p
 //	uexR = E2_const/Omega(d_a, r_a, d_b, r_b)*Delta_M(d_a, r_a, d_b, r_b);
 //	uAB = E2_const*M(d_a, r_a, d_b, r_b);	
 	uexK = E_const*p14*Rbar*exp(-p15*Rbar*r2)*exp(-p16*(Eta_a+Eta_b));
-	uexR = -E2_const*2.0/rootpi*p17*sqrt(Rbar)*exp(-p18*Rbar*r2);
+	uexR = -E2_const*2.0/rootpi*p17*sqrt(Rbar)*exp(-p18*Rbar*r2)*exp(-p19*(Eta_a+Eta_b));
 //	uAB = E2_const/deff/sqrt(reff*reff+p3*reff+1.0);
 //	uAB = E2_const*Dsmooth8Coulomb4ParReff(reff2,reff,deff,q,p3,p4,p5,1.0,E_or_F);
 	uAB = E2_const*InvPoly8Par142(reff2,reff,deff,q,p3,p4,p5,1.0,E_or_F);
 
         u = uAB + uexK + uexR;
 
-	extern int diagnose_print;
+//	extern int diagnose_print;
 	//diagnose_print = 1;
-	if (diagnose_print == 1)
-		printf("AA r %f, omega %f, d_a %f+%fI, d_b %f+%fI, uexK %f, uexR %f, uAB %f, u %f\n", r, Omega(d_a, r_a, d_b, r_b), creal(d_a), cimag(d_a), creal(d_b), cimag(d_b), uexK, uexR, uAB, u);
+//	if (diagnose_print == 1)
+//		printf("AA r %f, omega %f, d_a %f+%fI, d_b %f+%fI, uexK %f, uexR %f, uAB %f, u %f\n", r, Omega(d_a, r_a, d_b, r_b), creal(d_a), cimag(d_a), creal(d_b), cimag(d_b), uexK, uexR, uAB, u);
 	//diagnose_print = 0;
  
 //	extern int diagnose_print;     
@@ -169,9 +169,9 @@ double formOfAA(V *a, V *b, double p1, double p2, double p3, double p4, double p
 //	diagnose_print = 0;
 
 	if (items != NULL){
-	items[2] += uAB;
-	items[3] += uexK;
-	items[4] += uexR;
+		items[2] += uAB;
+		items[3] += uexK;
+		items[4] += uexR;
 	}
         return u;
 }
