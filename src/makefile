@@ -66,6 +66,9 @@ ballet_ionization_N: $(OBJECTS)
 ballet_no_se: $(OBJECTS)
 	$(CC) -o $@ $^ $(CFLAGS) $(LIBS)
 
+oxygenrun_no_se: $(OBJECTS)
+	$(CC) -o $@ $^ $(CFLAGS) $(LIBS)
+
 oxygenrun: $(OBJECTS)
 	$(CC) -o $@ $^ $(CFLAGS) $(LIBS)
 
