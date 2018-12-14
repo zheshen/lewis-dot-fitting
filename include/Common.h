@@ -95,7 +95,7 @@
 #define MC_TEMP                  100
 #define MC_R2_MAX                0.25
 #define MC_D_INIT               3.0// 0.60
-#define MC_numDynamicVar	5
+#define MC_numDynamicVar	6
 
 #define MC_ALL                    ON
 

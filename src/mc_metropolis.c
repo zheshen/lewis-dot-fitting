@@ -267,10 +267,10 @@ double metropolis(V *V_in, int p, int mc_type){
 		}
 			
 		//Calculation of test energy
-		if (isBigStep)
+//		if (isBigStep)
 			e_t = sumEnergiesRegular(V_t, ee_in, ee_t, isMoved, e_in, p);
-		else
-			e_t = sumEnergiesSmallParticle(V_t, ee_in, ee_t, e_in, c, p);
+//		else
+//			e_t = sumEnergiesSmallParticle(V_t, ee_in, ee_t, e_in, c, p);
 
 //	if(debug)	
 //	printf("1e_min=%f\n",e_t);

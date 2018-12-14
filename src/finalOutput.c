@@ -286,7 +286,7 @@ void finalOutput(){
 	fprintf(OutFile, "\n");
 
 	fprintf(OutFile, "|=========================================================================================================================|\n");
-        fprintf(OutFile, "|    |  TauOA |  RhoOA | KapOA1 | KapOA2 | KapOA3 | ChiexO |TauexOc2| ChiexOc|TauexOc1| TauexO1| TauexO2| TauexO3| TauexO0|\n");
+        fprintf(OutFile, "|    |  TauOA |  RhoOA | KapOA1 | KapOA2 | KapOA3 | ChiexO |TauexOc1|TauexOc2|TauexOc3| TauexO1| TauexO2| TauexO3| TauexO0|\n");
                                                   
 	fprintf(OutFile, "|====|========|========|========|========|========|========|========|========|========|========|========|========|========|\n");
 
