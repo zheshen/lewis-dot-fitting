@@ -75,6 +75,9 @@ oxygenrun: $(OBJECTS)
 oxygenrun_no_O3: $(OBJECTS)
 	$(CC) -o $@ $^ $(CFLAGS) $(LIBS)
 
+oxygenrun_no_O3_net: $(OBJECTS)
+	$(CC) -o $@ $^ $(CFLAGS) $(LIBS)
+
 oxygenrun_no_di: $(OBJECTS)
 	$(CC) -o $@ $^ $(CFLAGS) $(LIBS)
 

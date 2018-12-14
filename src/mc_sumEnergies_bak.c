@@ -25,7 +25,7 @@ double sumEnergiesOne(struct V *vin, double **e_in, double **e_test, int p){
 				if((vin[i].q==-1)&&(vin[i].s==vin[j].s)){//3 body term for likespin
 		                	//printf("Pairwise i %i j %i ein %f etest %f \n", i, j, e_in[i][j], e_test[i][j]);
 					//printf("Enter 3body term with %d nuclei and %d particles in total\n",NumNuc,p);
-					e_in[i][j] += getTBenergy(vin,Vx,i,j,p);
+					e_in[i][j] += getTBenergy(vin,Vx,i,j,NumNuc);
 					//printf("3body value: %f\n",getTBenergy(vin,Vx,i,j,NumNuc));
 		                	//printf("Pairwise i %i j %i ein %f etest %f \n", i, j, e_in[i][j], e_test[i][j]);
 				}
@@ -66,7 +66,7 @@ double sumEnergiesAll(struct V *vin, double **e_in, double **e_test, int p){
                 for (j = i+1; j < p; j++){
                         e_test[i][j] = getPairwiseEnergy(vin, i, j);
                                 if((vin[i].q==-1)&&(vin[i].s==vin[j].s)){//3 body term for likespin
-                                        e_test[i][j] += getTBenergy(vin,Vx,i,j,p);
+                                        e_test[i][j] += getTBenergy(vin,Vx,i,j,NumNuc);
                                 }
                 }
         }
@@ -129,7 +129,7 @@ double sumEnergiesSmallParticle(struct V *vin, double **e_in, double **e_test, d
                if((vin[c].q==-1)&&(vin[i].s==vin[c].s)){//3 body term for likespin
 //		if (debug==1)
 //                        printf("Moved Energy: Enter 3body term with %d nuclei and %d particles in total\n",NumNuc,p);
-			e_test[i][c] += getTBenergy(vin,Vx,i,c,p);
+			e_test[i][c] += getTBenergy(vin,Vx,i,c,NumNuc);
 //		if (debug==1)
 //                        printf("Moved 3body value: %f\n",getTBenergy(vin,Vx,i,c,NumNuc));
 //		if (debug==1)
@@ -144,7 +144,7 @@ double sumEnergiesSmallParticle(struct V *vin, double **e_in, double **e_test, d
                 e_test[c][i] = getPairwiseEnergy(vin, i, c);
 
                if((vin[c].q==-1)&&(vin[i].s==vin[c].s)){//3 body term for likespin
-                        e_test[c][i] += getTBenergy(vin,Vx,i,c,p);
+                        e_test[c][i] += getTBenergy(vin,Vx,i,c,NumNuc);
                }
 
                 temp += e_test[c][i];
@@ -253,7 +253,7 @@ double getPairwiseEnergy(struct V *vv, int i, int j){
 	
 }
 
-double getTBenergy(struct V *vv, struct V *Vx, int i, int j, int p){
+double getTBenergy(struct V *vv, struct V *Vx, int i, int j, int NumNuc){
 
 	int k;
 	double sum=0;
@@ -271,20 +271,18 @@ double getTBenergy(struct V *vv, struct V *Vx, int i, int j, int p){
         mid_y=(vv[i].y + vv[j].y)*0.5;
         mid_z=(vv[i].z + vv[j].z)*0.5;
 
-	for(k=0; k<p; k++){
-		if ((k!=i)&&(k!=j)){
-                	d_x = vv[k].x - mid_x;
-                	d_y = vv[k].y - mid_y;
-                	d_z = vv[k].z - mid_z;
-                	Rn2 = d_x * d_x + d_y * d_y + d_z * d_z;
-                	Rn = sqrt(Rn2);
-			Ri = getR2Dist(vv,i,vv,k);
-			Rj = getR2Dist(vv,j,vv,k);
+	for(k=0; k<NumNuc; k++){
+                d_x = Vx[k].x - mid_x;
+                d_y = Vx[k].y - mid_y;
+                d_z = Vx[k].z - mid_z;
+                Rn2 = d_x * d_x + d_y * d_y + d_z * d_z;
+                Rn = sqrt(Rn2);
+		Ri = getR2Dist(vv,i,Vx,k);
+		Rj = getR2Dist(vv,j,Vx,k);
 	
-			temp=TBenergy(&vv[i], &vv[j], &vv[k], r2, Rn2, ENERGY);
-                	//printf("Threebody energy value for i %d j %d and k %d gives AAX dist %f with energy %f\n",i,j,k,r,temp);
-                	sum+= temp;
-		}
+		temp=TBenergy(&vv[i], &vv[j], &Vx[k], r2, Rn2, ENERGY);
+                //printf("Threebody energy value for i %d j %d and k %d gives AAX dist %f with energy %f\n",i,j,k,r,temp);
+                sum+= temp;
 	}
 
 	return sum;
@@ -294,12 +292,14 @@ void getVx(struct V *vv, struct V *Vx, int p,int *NumNuc){
 	int i, k;
 	k=0;
         for (i = 0; i < p; i++){
-                Vx[i].s=-3;//Setting Vx so that we don't have old values messing things up
+                Vx[k].s=-3;//Setting Vx so that we don't have old values messing things up
 		if(vv[i].q>0){
                         Vx[k].x=vv[i].x;
                         Vx[k].y=vv[i].y;
                         Vx[k].z=vv[i].z;
                         Vx[k].d=vv[i].d;
+                        Vx[k].eta=vv[i].eta;
+                        Vx[k].zeta=vv[i].zeta;
                         Vx[k].s=vv[i].s;
 			Vx[k].q=vv[i].q;
                         k++;

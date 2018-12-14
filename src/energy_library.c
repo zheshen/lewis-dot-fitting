@@ -59,7 +59,7 @@ double scaledKE_complex(double e_const, double complex d, double eta, double zet
 
         if (E_or_F == ENERGY){          //ENERGY
 //                return (double) u * 3.0 * d * conj(d) / (d + conj(d));
-     		return (double) u * 3.0 / 2.0  * creal(d) * ( 1.0 + tau1*eta*eta );
+     		return (double) u * 3.0 / 2.0  * creal(d) * ( 1.0 + eta + zeta );
         }
         if (E_or_F == FORCE_D){         //ELECTRON RADIUS 1st DERIVATIVE
                 return 0;

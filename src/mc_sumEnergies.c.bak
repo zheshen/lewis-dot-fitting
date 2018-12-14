@@ -98,13 +98,13 @@ double sumEnergiesRegular(struct V *vv, double **ee_in, double **ee_t, int *isMo
 		if((isMoved[i]==1)&&(vv[i].q>0))
 			Xmove=1;
 
-	if(Xmove)//This is not the most efficient way, and in the future might need to change, when simulating bulk and etc.
+//	if(Xmove)//This is not the most efficient way, and in the future might need to change, when simulating bulk and etc.
 		temp=sumEnergiesAll(vv, ee_in, ee_t, p);
 	
-	else
-		for (i = 0; i < p; i++)
-			if (isMoved[i])
-				temp = sumEnergiesSmallParticle(vv, ee_in, ee_t, temp, i, p);
+//	else
+//		for (i = 0; i < p; i++)
+//			if (isMoved[i])
+//				temp = sumEnergiesSmallParticle(vv, ee_in, ee_t, temp, i, p);
 	
 	return temp;
 }
@@ -123,6 +123,7 @@ double sumEnergiesSmallParticle(struct V *vin, double **e_in, double **e_test, d
         //Pairwise energies
         for (i = 0; i < c; i++){
                 e_test[i][c] = getPairwiseEnergy(vin, i, c);
+		e_test[i][c] += getTBenergy_center();
 //		if (debug==1)
 //		printf("Pairwise i %i c %i ein %f etest %f \n", i, c, e_in[i][c], e_test[i][c]);
 
@@ -142,6 +143,7 @@ double sumEnergiesSmallParticle(struct V *vin, double **e_in, double **e_test, d
 	
         for (i = c+1; i < p; i++){
                 e_test[c][i] = getPairwiseEnergy(vin, i, c);
+		e_test[c][i] += getTBenergy_center();
 
                if((vin[c].q==-1)&&(vin[i].s==vin[c].s)){//3 body term for likespin
                         e_test[c][i] += getTBenergy(vin,Vx,i,c,p);
@@ -272,18 +274,18 @@ double getTBenergy(struct V *vv, struct V *Vx, int i, int j, int p){
         mid_z=(vv[i].z + vv[j].z)*0.5;
 
 	for(k=0; k<p; k++){
-		if ((k!=i)&&(k!=j)){
-                	d_x = vv[k].x - mid_x;
-                	d_y = vv[k].y - mid_y;
-                	d_z = vv[k].z - mid_z;
-                	Rn2 = d_x * d_x + d_y * d_y + d_z * d_z;
-                	Rn = sqrt(Rn2);
+		if((k!=i)&&(k!=j)){
+	                d_x = vv[k].x - mid_x;
+	                d_y = vv[k].y - mid_y;
+	                d_z = vv[k].z - mid_z;
+	                Rn2 = d_x * d_x + d_y * d_y + d_z * d_z;
+	                Rn = sqrt(Rn2);
 			Ri = getR2Dist(vv,i,vv,k);
 			Rj = getR2Dist(vv,j,vv,k);
-	
+		
 			temp=TBenergy(&vv[i], &vv[j], &vv[k], r2, Rn2, ENERGY);
-                	//printf("Threebody energy value for i %d j %d and k %d gives AAX dist %f with energy %f\n",i,j,k,r,temp);
-                	sum+= temp;
+	                //printf("Threebody energy value for i %d j %d and k %d gives AAX dist %f with energy %f\n",i,j,k,r,temp);
+	                sum+= temp;
 		}
 	}
 
@@ -294,12 +296,14 @@ void getVx(struct V *vv, struct V *Vx, int p,int *NumNuc){
 	int i, k;
 	k=0;
         for (i = 0; i < p; i++){
-                Vx[i].s=-3;//Setting Vx so that we don't have old values messing things up
+                Vx[k].s=-3;//Setting Vx so that we don't have old values messing things up
 		if(vv[i].q>0){
                         Vx[k].x=vv[i].x;
                         Vx[k].y=vv[i].y;
                         Vx[k].z=vv[i].z;
                         Vx[k].d=vv[i].d;
+                        Vx[k].eta=vv[i].eta;
+                        Vx[k].zeta=vv[i].zeta;
                         Vx[k].s=vv[i].s;
 			Vx[k].q=vv[i].q;
                         k++;
