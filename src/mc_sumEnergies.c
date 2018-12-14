@@ -22,13 +22,13 @@ double sumEnergiesOne(struct V *vin, double **e_in, double **e_test, int p){
                 for (j = i+1; j < p; j++){
                         e_in[i][j] = getPairwiseEnergy(vin, i, j);
 			//printf("Pairwise i %i j %i ein %f etest %f \n", i, j, e_in[i][j], e_test[i][j]);
-				if((vin[i].q==-1)&&(vin[i].s==vin[j].s)){//3 body term for likespin
+				//if((vin[i].q==-1)&&(vin[i].s==vin[j].s)){//3 body term for likespin
 		                	//printf("Pairwise i %i j %i ein %f etest %f \n", i, j, e_in[i][j], e_test[i][j]);
 					//printf("Enter 3body term with %d nuclei and %d particles in total\n",NumNuc,p);
-					e_in[i][j] += getTBenergy(vin,Vx,i,j,NumNuc);
+					//e_in[i][j] += getTBenergy(vin,Vx,i,j,NumNuc);
 					//printf("3body value: %f\n",getTBenergy(vin,Vx,i,j,NumNuc));
 		                	//printf("Pairwise i %i j %i ein %f etest %f \n", i, j, e_in[i][j], e_test[i][j]);
-				}
+				//}
 		}
 	}
         //Kinetic energies (diagonal elements, electrons only)
@@ -65,9 +65,9 @@ double sumEnergiesAll(struct V *vin, double **e_in, double **e_test, int p){
         for (i = 0; i < p; i++){
                 for (j = i+1; j < p; j++){
                         e_test[i][j] = getPairwiseEnergy(vin, i, j);
-                                if((vin[i].q==-1)&&(vin[i].s==vin[j].s)){//3 body term for likespin
-                                        e_test[i][j] += getTBenergy(vin,Vx,i,j,NumNuc);
-                                }
+//                                if((vin[i].q==-1)&&(vin[i].s==vin[j].s)){//3 body term for likespin
+//                                        e_test[i][j] += getTBenergy(vin,Vx,i,j,NumNuc);
+//                                }
                 }
         }
         //Kinetic energies (diagonal elements, electrons only)
@@ -126,15 +126,15 @@ double sumEnergiesSmallParticle(struct V *vin, double **e_in, double **e_test, d
 //		if (debug==1)
 //		printf("Pairwise i %i c %i ein %f etest %f \n", i, c, e_in[i][c], e_test[i][c]);
 
-               if((vin[c].q==-1)&&(vin[i].s==vin[c].s)){//3 body term for likespin
+//               if((vin[c].q==-1)&&(vin[i].s==vin[c].s)){//3 body term for likespin
 //		if (debug==1)
 //                        printf("Moved Energy: Enter 3body term with %d nuclei and %d particles in total\n",NumNuc,p);
-			e_test[i][c] += getTBenergy(vin,Vx,i,c,NumNuc);
+//			e_test[i][c] += getTBenergy(vin,Vx,i,c,NumNuc);
 //		if (debug==1)
 //                        printf("Moved 3body value: %f\n",getTBenergy(vin,Vx,i,c,NumNuc));
 //		if (debug==1)
 //                        printf("Moved Pairwise i %i c %i ein %f etest %f \n", i, c, e_in[i][c], e_test[i][c]);
-             }
+//             }
 
                 temp += e_test[i][c];
                 temp -= e_in[i][c];
@@ -143,9 +143,9 @@ double sumEnergiesSmallParticle(struct V *vin, double **e_in, double **e_test, d
         for (i = c+1; i < p; i++){
                 e_test[c][i] = getPairwiseEnergy(vin, i, c);
 
-               if((vin[c].q==-1)&&(vin[i].s==vin[c].s)){//3 body term for likespin
-                        e_test[c][i] += getTBenergy(vin,Vx,i,c,NumNuc);
-               }
+//               if((vin[c].q==-1)&&(vin[i].s==vin[c].s)){//3 body term for likespin
+//                        e_test[c][i] += getTBenergy(vin,Vx,i,c,NumNuc);
+//               }
 
                 temp += e_test[c][i];
                 temp -= e_in[c][i];

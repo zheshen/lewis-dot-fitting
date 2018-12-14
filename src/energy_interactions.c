@@ -115,6 +115,7 @@ double formOfAA(V *a, V *b, double p1, double p2, double p3, double p4, double p
 	double u=0;
 	double uexK;
 	double uexR;
+	double uexA;
 	double r_a[3], r_b[3];
 	double complex d_a, d_b;
 	d_a = a->d;
@@ -148,13 +149,14 @@ double formOfAA(V *a, V *b, double p1, double p2, double p3, double p4, double p
 //	uexK = E_const/Omega(d_a, r_a, d_b, r_b)*Delta_K(d_a, r_a, d_b, r_b);
 //	uexR = E2_const/Omega(d_a, r_a, d_b, r_b)*Delta_M(d_a, r_a, d_b, r_b);
 //	uAB = E2_const*M(d_a, r_a, d_b, r_b);	
-	uexK = E_const*p14*Rbar*exp(-p15*Rbar*r2)*exp(-p16*(Eta_a*Eta_a+Eta_b*Eta_b));
-	uexR = -E2_const*2.0/rootpi*p17*sqrt(Rbar)*exp(-p18*Rbar*r2)*exp(-p19*(Eta_a*Eta_a+Eta_b*Eta_b));
+	uexK = E_const*p14*Rbar*exp(-p15*Rbar*r2)*exp(-p16*(Eta_a+Eta_b));
+	uexR = -E2_const*2.0/rootpi*p17*sqrt(Rbar)*exp(-p18*Rbar*r2)*exp(-p19*(Eta_a+Eta_b));
+	uexA = E2_const*2.0/rootpi*p20*sqrt(2.0*Rhat)*exp(-p21*Rbar*r2)*exp(-p24*(Eta_a+Eta_b));
 //	uAB = E2_const/deff/sqrt(reff*reff+p3*reff+1.0);
 //	uAB = E2_const*Dsmooth8Coulomb4ParReff(reff2,reff,deff,q,p3,p4,p5,1.0,E_or_F);
 	uAB = E2_const*InvPoly8Par142(reff2,reff,deff,q,p3,p4,p5,1.0,E_or_F);
 
-        u = uAB + uexK + uexR;
+        u = uAB + uexK + uexR + uexA;
 
 //	extern int diagnose_print;
 	//diagnose_print = 1;
@@ -172,6 +174,7 @@ double formOfAA(V *a, V *b, double p1, double p2, double p3, double p4, double p
 		items[2] += uAB;
 		items[3] += uexK;
 		items[4] += uexR;
+		items[5] += uexA;
 	}
         return u;
 }
@@ -310,7 +313,7 @@ double formOfXA(V *a, V *R, double p1, double p2, double p3, double p4, double p
 	double Zeta_a;	
 	Eta_a = a->eta;
 	Zeta_a = a->zeta;
-	deff = p1 * (1.0/sqrt(creal(d_a))/sqrt(1.0+p9*Eta_a)+p2/sqrt(1.0+p7*Eta_a));
+	deff = p1 * (1.0/sqrt(creal(d_a))/sqrt(1.0+p7*Eta_a)+p2/sqrt(1.0+p8*Eta_a));
 	reff = r/deff;
 	reff2 = reff * reff;
 
