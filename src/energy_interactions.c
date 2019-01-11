@@ -140,7 +140,7 @@ double formOfAA(V *a, V *b, double p1, double p2, double p3, double p4, double p
 	r2 = (r_a[0]-r_b[0])*(r_a[0]-r_b[0]) + (r_a[1]-r_b[1])*(r_a[1]-r_b[1]) + (r_a[2]-r_b[2])*(r_a[2]-r_b[2]);
 	r = sqrt(r2);
 	double deff, reff, reff2;
-	deff = p1*sqrt(1.0/Rbar)*sqrt(1.0+p2*(Eta_a+Eta_b));
+	deff = p1*sqrt(1.0/Rbar)/sqrt(1.0+p2*(Eta_a+Eta_b));
 	reff = r/deff;
 	reff2 = reff*reff;
 	double q;
@@ -209,7 +209,7 @@ double formOfAB(V *a, V *b, double p1, double p2, double p3, double p4, \
 	r2 = (r_a[0]-r_b[0])*(r_a[0]-r_b[0]) + (r_a[1]-r_b[1])*(r_a[1]-r_b[1]) + (r_a[2]-r_b[2])*(r_a[2]-r_b[2]);
 	r = sqrt(r2);
 	double deff, reff, reff2;
-	deff = p1*sqrt(1.0/Rbar)*sqrt(1.0+p2*(Eta_a+Eta_b));
+	deff = p1*sqrt(1.0/Rbar)/sqrt(1.0+p2*(Eta_a+Eta_b));
 	reff = r/deff;
 	reff2 = reff*reff;
 	double q;
