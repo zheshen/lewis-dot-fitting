@@ -267,7 +267,7 @@ void printEndLine(){
 void printEnergyTermsHead(){
         FILE *EnergyOutFile;
         EnergyOutFile = fopen(directorySplitEnergies,"a");
-        fprintf(EnergyOutFile, "\n%12s %12s %8s %8s %8s %8s %8s %8s %8s %8s %8s %8s %8s %8s %8s %8s %8s %8s %8s", "Item","Spin","a_d","a_eta","a_zeta","b_d","b_eta","b_zeta","KE","U_AB","U_AA(AB)","UexK","UexR","UexX","Uex","U_AX_c","U_AX_ex","U_AX","U_XY");
+        fprintf(EnergyOutFile, "\n%12s %12s %8s %8s %8s %8s %8s %8s %8s %8s %8s %8s %8s %8s %8s %8s %8s %8s %8s", "Item","Spin","a_R","a_eta","a_zeta","b_R","b_eta","b_zeta","KE","U_AB","U_AA(AB)","UexK","UexR","UexX","Uex","U_AX_c","U_AX_ex","U_AX","U_XY");
         fclose(EnergyOutFile);
 	
 }
