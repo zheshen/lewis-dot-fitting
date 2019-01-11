@@ -959,9 +959,9 @@ DEV1	='''
 	//calculate structure energy
         if((MC_spin%(fullname)s) && (spec->icue ==4)){
 		for(i=0;i<4;i++){
-                	metropolis(Vin, part,-3);
+                	metropolis(Vin, part,-1);
 		}
-                Usum = metropolis(Vin, part,-3);
+                Usum = metropolis(Vin, part,-1);
         }else{
                 Usum = sumEnergies(Vin, part);
 	}

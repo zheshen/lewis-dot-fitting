@@ -74,19 +74,19 @@ double sumEnergies_split(V * Vin,  int part,  double *items){
 			sum += energy_split(&Vin[i], &Vin[j], ENERGY, items);
 
                         //AA & BB midpoint coordinate calculation
-//                        if((Vin[i].s==Vin[j].s)&&(Vin[j].q==-1)){
-//                                mid_x=(Vin[i].x + Vin[j].x)*0.5;
-//                                mid_y=(Vin[i].y + Vin[j].y)*0.5;
-//                                mid_z=(Vin[i].z + Vin[j].z)*0.5;
-//				for(l=0; l<part; l++){
-//					if ((l!=i)&&(l!=j)){
-//						d_x = Vin[l].x - mid_x;
-//						d_y = Vin[l].y - mid_y;
-//						d_z = Vin[l].z - mid_z;
-//						Rn2 = d_x * d_x + d_y * d_y + d_z * d_z;
-//						Rn = sqrt(Rn2);
-//						Ri = getR2Dist(Vin,i,Vin,l);
-//						Rj = getR2Dist(Vin,j,Vin,l);
+                        if((Vin[i].s==Vin[j].s)&&(Vin[j].q==-1)){
+                                mid_x=(Vin[i].x + Vin[j].x)*0.5;
+                                mid_y=(Vin[i].y + Vin[j].y)*0.5;
+                                mid_z=(Vin[i].z + Vin[j].z)*0.5;
+				for(l=0; l<part; l++){
+					if ((l!=i)&&(l!=j)){
+						d_x = Vin[l].x - mid_x;
+						d_y = Vin[l].y - mid_y;
+						d_z = Vin[l].z - mid_z;
+						Rn2 = d_x * d_x + d_y * d_y + d_z * d_z;
+						Rn = sqrt(Rn2);
+						Ri = getR2Dist(Vin,i,Vin,l);
+						Rj = getR2Dist(Vin,j,Vin,l);
 //        extern int diagnose_print;
 //        diagnose_print = 1;
 //        if (diagnose_print == 1)
@@ -96,13 +96,13 @@ double sumEnergies_split(V * Vin,  int part,  double *items){
 //						sum += TBenergy(r2,r, Rn2, Rn, Ri, Rj, Vin[l].x, Vin[l].y, Vin[l].z, Vin[i].x, Vin[i].y, Vin[i].z, Vin[j].x, Vin[j].y, \
 //Vin[j].z, Vin[i].dr, Vin[j].dr, Vin[i].di, Vin[j].di, Vin[l].q, Vin[l].s, ENERGY);
 //						if (Vin[l].q != -1)
-//						sum += TBenergy_split(&Vin[i], &Vin[j], &Vin[l], r2, Rn2, ENERGY, items);
+						sum += TBenergy_split(&Vin[i], &Vin[j], &Vin[l], r2, Rn2, ENERGY, items);
 //						else
 //							sum += TBenergy_split(&Vin[i], &Vin[j], &Vin[l], r2, Rn2, ENERGY, items);
 //							sum += 0;
-//					}
-//				}
-//                        }
+					}
+				}
+                        }
 			
 		
 	/*		if((print)&&(r<0.0001))
