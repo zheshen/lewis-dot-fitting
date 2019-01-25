@@ -7,8 +7,8 @@
 #include "U.h"
 void test();
 //Declaration of important variables 
-char version[] = "DE6007.072";
-char shelloutput[] = "ws6007";
+char version[] = "DE6008.073";
+char shelloutput[] = "ws6008";
 int printFunctionPlots = 1;
 int pdbSwitch = 0; //the whole trajectory of upnup 
 int finalpdbswitch = 1;

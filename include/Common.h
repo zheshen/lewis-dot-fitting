@@ -78,7 +78,7 @@
 #define FIT_spinE		1.0
 #define FIT_triplet		0.0
 #define FIT_ion			1.0
-#define FIT_ex			1.0//1.0
+#define FIT_ex			1.0
 #define FIT_polar		1.0//1.0
 #define FIT_SpinSym             1.0//1.0
 #define FIT_diat		0.0

@@ -161,7 +161,7 @@ void printEnergyPlot(double q1, double q2, int s1, int s2){
                 r      += dr;
                 r2      = r * r;
 		b.z     = r;
-                fprintf(OutFile, "%f %f \n", r, energy(&a, &b, ENERGY));
+                fprintf(OutFile, "%f %f \n", r, energy(&a, &b, 1.0, ENERGY));
         }
         fprintf(OutFile, "\n");
         fclose(OutFile);

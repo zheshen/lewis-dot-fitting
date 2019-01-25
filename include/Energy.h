@@ -9,7 +9,7 @@
 
 //Declaration of interaction types================================================================
 double formOfAAX(V *, V *, V *, double, double, double, double, double, double, double, double, double, double, double, double, double, double, double, double, double,double, double, double, double, double, double, double, double, double, double, double, double, double, int, int, int, double *);
-double formOfAA(V *, V *, double, double, double, double, double, double, double, double, double, double, double, double, double, double, double, double, double, double, double, double, double, double, double, double, double, double, int, int, int, int, double *);
+double formOfAA(V *, V *, double, double, double, double, double, double, double, double, double, double, double, double, double, double, double, double, double, double, double, double, double, double, double, double, double, double, double, int, int, int, int, double *);
 double formOfAB(V *, V *, double, double, double, double, double, double, double, int, int, int, int, double *);
 double formOfAV(double, double, double, double, double, double, double, double, double, double, \
         int, int, int, int, double *);
@@ -27,7 +27,7 @@ double formOfKE(double, double complex, double, double, double, double, double, 
 //double formOfMV(double, double, double, double, double, double, double, int, int, int);
 //double formOfXM(double, double, double, double, double, double, double, int, int, int, int, int);
 //double formOfMM(double, double, double, double, double, double, double, int, int, int, int, int);
-double formOfAA_split(V *, V *, double, double, double, double, double, double, double, double, double, double, double, double, double, int, int, int, int, double *);
+double formOfAA_split(V *, V *, double, double, double, double, double, double, double, double, double, double, double, double, double, double, int, int, int, int, double *);
 double formOfAB_split(V *, V *, double, double, double, double, double, double, double, int, int, int, int, double *);
 double formOfXA_split(V *, V *, double, double, double, double, double, double, double, double, double, double, double, double, double, int, int, int, int, double *);
 //================================================================================================
@@ -35,8 +35,8 @@ double formOfXA_split(V *, V *, double, double, double, double, double, double, 
 //Primary energy call=============================================================================
 double kineticEnergy_split(double complex, double, double, int, double *);
 double kineticEnergy(double complex, double, double, int);
-double energy_split(V *, V *, int, double *);
-double energy(V *, V *, int);
+double energy_split(V *, V *, double, int, double *);
+double energy(V *, V *, double, int);
 //int energy_split(V *, V *, int, double *);
 double TBenergy_split(V *, V *, V *, double, double, int, double *);//3-body energy
 double TBenergy(V *, V *, V *, double, double, int);//3-body energy

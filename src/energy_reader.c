@@ -24,8 +24,8 @@ double TBenergy(V * a, V * b, V * R, double r2, double Rn2, int E_or_F){
 	return TBenergy_split(a, b, R, r2, Rn2, E_or_F, NULL);
 }
 
-double energy(V *a, V *b, int E_or_F) {
-	return energy_split(a, b, E_or_F, NULL);
+double energy(V *a, V *b, double Qtot, int E_or_F) {
+	return energy_split(a, b, Qtot, E_or_F, NULL);
 }
 
 double kineticEnergy_split(double complex d, double eta, double zeta, int E_or_F, double *items){
@@ -442,7 +442,7 @@ double TBenergy_split(V * a, V * b, V * R, double r2, double Rn2, int E_or_F, do
 }
 
 
-double energy_split(V *a, V *b, int E_or_F, double *items) {
+double energy_split(V *a, V *b, double Qtot, int E_or_F, double *items) {
 	extern diagnose_print;
 	extern double dlewis[];
 	extern double parAB[];
@@ -561,7 +561,7 @@ double energy_split(V *a, V *b, int E_or_F, double *items) {
                                 int    n2  = (int) dlewis[n_potentials + 1];
                                 int    n3  = (int) dlewis[n_potentials + 2];
 
-                                u = formOfAA(a, b, p1, p2, p3, p4, p5, p6, p7, p8, p9, p10, p11, p12, p13, p14, p15, p16, p17, p18, p19, p20, p21, p22, p23, p24, p25, p26, n1, n2, n3, E_or_F, items);
+                                u = formOfAA(a, b, Qtot, p1, p2, p3, p4, p5, p6, p7, p8, p9, p10, p11, p12, p13, p14, p15, p16, p17, p18, p19, p20, p21, p22, p23, p24, p25, p26, n1, n2, n3, E_or_F, items);
 
 			//	if((print)&&(icue_spinO>1))
 			//		printf("AA energy at r %f is %f\n",r,u);

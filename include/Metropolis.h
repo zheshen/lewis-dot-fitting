@@ -32,7 +32,7 @@ int isAllowed(struct V *, int, int);
 //void updateArrays(struct V *, struct V *, double **, double **, int, int, int);
 //void updatePositions(struct V *, struct V *, int, int);
 //void updateEnergyArrays(double **, double **, int, int, int);
-double getPairwiseEnergy(struct V *, int, int);
+double getPairwiseEnergy(struct V *, double, int, int);
 double getKineticEnergy(struct V *, int);
 double getTBenergy(struct V *, struct V *, int, int, int);
 
