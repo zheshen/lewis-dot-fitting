@@ -39,7 +39,7 @@ void specspinO2_linnett(Species * spec){				//define SPEC function for specific 
         spec->ist[12] = 0.001;						// rotation angle
         spec->ist[13] = 0.001; 
         spec->ist[14] = 0.001; 
-        spec->ist[15] = 0.605000; 
+        spec->ist[15] = 0.603500; 
 
         //translate initial values into log10 form for upnup, set Key
         int i;
@@ -112,14 +112,14 @@ double ainterspinO2_linnett(Species * spec){
         //O
         Vin[0].x = 0.0;
         Vin[0].y = 0.0;
-        Vin[0].z = 0.605;
+        Vin[0].z = 0.6035;
         Vin[0].q = 6;
         Vin[0].s = 8;
 
         //O
         Vin[1].x = 0.0;
         Vin[1].y = 0.0;
-        Vin[1].z = -0.605;
+        Vin[1].z = -0.6035;
         Vin[1].q = 6;
         Vin[1].s = 8;
 
@@ -127,8 +127,8 @@ double ainterspinO2_linnett(Species * spec){
 	Vin[2].y = 0.500;
 	Vin[2].z = -0.670;
 	Vin[2].d = 3;
-	Vin[2].eta = 1.0;
-	Vin[2].zeta = 1.0;
+	Vin[2].eta = 1;
+	Vin[2].zeta = 1;
 	Vin[2].q = -1;
 	Vin[2].s = 2;
 	
@@ -136,8 +136,8 @@ double ainterspinO2_linnett(Species * spec){
 	Vin[3].y = -0.250;
 	Vin[3].z = -0.670;
 	Vin[3].d = 3;
-	Vin[3].eta = 1.0;
-	Vin[3].zeta = 1.0;
+	Vin[3].eta = 1;
+	Vin[3].zeta = 1;
 	Vin[3].q = -1;
 	Vin[3].s = 2;
 	
@@ -145,8 +145,8 @@ double ainterspinO2_linnett(Species * spec){
 	Vin[4].y = -0.250;
 	Vin[4].z = -0.670;
 	Vin[4].d = 3;
-	Vin[4].eta = 1.0;
-	Vin[4].zeta = 1.0;
+	Vin[4].eta = 1;
+	Vin[4].zeta = 1;
 	Vin[4].q = -1;
 	Vin[4].s = 2;
 	
@@ -154,8 +154,8 @@ double ainterspinO2_linnett(Species * spec){
 	Vin[5].y = 0.000;
 	Vin[5].z = -0.650;
 	Vin[5].d = 4.4;
-	Vin[5].eta = 1.0;
-	Vin[5].zeta = 1.0;
+	Vin[5].eta = 1;
+	Vin[5].zeta = 1;
 	Vin[5].q = -1;
 	Vin[5].s = -2;
 	
@@ -163,8 +163,8 @@ double ainterspinO2_linnett(Species * spec){
 	Vin[6].y = 0.500;
 	Vin[6].z = 0.000;
 	Vin[6].d = 1.4;
-	Vin[6].eta = 1.0;
-	Vin[6].zeta = 1.0;
+	Vin[6].eta = 1;
+	Vin[6].zeta = 1;
 	Vin[6].q = -1;
 	Vin[6].s = -2;
 	
@@ -172,8 +172,8 @@ double ainterspinO2_linnett(Species * spec){
 	Vin[7].y = -0.250;
 	Vin[7].z = 0.000;
 	Vin[7].d = 1.4;
-	Vin[7].eta = 1.0;
-	Vin[7].zeta = 1.0;
+	Vin[7].eta = 1;
+	Vin[7].zeta = 1;
 	Vin[7].q = -1;
 	Vin[7].s = -2;
 	
@@ -181,8 +181,8 @@ double ainterspinO2_linnett(Species * spec){
 	Vin[8].y = -0.250;
 	Vin[8].z = 0.001;
 	Vin[8].d = 1.4;
-	Vin[8].eta = 1.0;
-	Vin[8].zeta = 1.0;
+	Vin[8].eta = 1;
+	Vin[8].zeta = 1;
 	Vin[8].q = -1;
 	Vin[8].s = -2;
 	
@@ -190,8 +190,8 @@ double ainterspinO2_linnett(Species * spec){
 	Vin[9].y = 0.000;
 	Vin[9].z = 0.000;
 	Vin[9].d = 2.4;
-	Vin[9].eta = 1.0;
-	Vin[9].zeta = 1.0;
+	Vin[9].eta = 1;
+	Vin[9].zeta = 1;
 	Vin[9].q = -1;
 	Vin[9].s = 2;
 	
@@ -199,8 +199,8 @@ double ainterspinO2_linnett(Species * spec){
 	Vin[10].y = 0.503;
 	Vin[10].z = 0.669;
 	Vin[10].d = 3;
-	Vin[10].eta = 1.0;
-	Vin[10].zeta = 1.0;
+	Vin[10].eta = 1;
+	Vin[10].zeta = 1;
 	Vin[10].q = -1;
 	Vin[10].s = 2;
 	
@@ -208,8 +208,8 @@ double ainterspinO2_linnett(Species * spec){
 	Vin[11].y = -0.250;
 	Vin[11].z = 0.671;
 	Vin[11].d = 3;
-	Vin[11].eta = 1.0;
-	Vin[11].zeta = 1.0;
+	Vin[11].eta = 1;
+	Vin[11].zeta = 1;
 	Vin[11].q = -1;
 	Vin[11].s = 2;
 	
@@ -217,8 +217,8 @@ double ainterspinO2_linnett(Species * spec){
 	Vin[12].y = -0.250;
 	Vin[12].z = 0.669;
 	Vin[12].d = 3;
-	Vin[12].eta = 1.0;
-	Vin[12].zeta = 1.0;
+	Vin[12].eta = 1;
+	Vin[12].zeta = 1;
 	Vin[12].q = -1;
 	Vin[12].s = 2;
 	
@@ -226,8 +226,8 @@ double ainterspinO2_linnett(Species * spec){
 	Vin[13].y = 0.000;
 	Vin[13].z = 0.651;
 	Vin[13].d = 4.4;
-	Vin[13].eta = 1.0;
-	Vin[13].zeta = 1.0;
+	Vin[13].eta = 1;
+	Vin[13].zeta = 1;
 	Vin[13].q = -1;
 	Vin[13].s = -2;
 
@@ -280,7 +280,7 @@ double devspinO2_linnett(Species *spec){
 /*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>BELOW CHANGABLE>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 
 	double fr1, bo;
-	const double real_bl = 1.21;
+	const double real_bl = 1.207;
 	const double real_bo = 2.0; 
 
         //Current Positions
@@ -296,7 +296,7 @@ double devspinO2_linnett(Species *spec){
 		printHeader(spec->fullname, deviation);
 		OutFile = fopen(directory, "a");
                 if (MC_spinO2_linnett){
-			fprintf(OutFile,"| Kernel  dist          |      A     |   % 8.2f     |   -   |        -       |    %8.5f    |   N/A   |       -       |\n", real_bl, fr1);
+			fprintf(OutFile,"| Kernel  dist          |      A     |   % 8.5f     |   -   |        -       |    %8.5f    |   N/A   |       -       |\n", real_bl, fr1);
 			fprintf(OutFile,"| A1 1/radius^2         |    1/A^2   |      -         |   -   |        -       |%7.3f+%7.3fI|   N/A   |       -       |\n", creal(spec->coord[2].d), cimag(spec->coord[2].d));
 			fprintf(OutFile,"| Lone A1  eta          |            |      -         |   -   |                |    %8.5f    |   N/A   |       -       |\n", spec->coord[2].eta);
 			fprintf(OutFile,"| Lone A1  zeta         |            |      -         |   -   |                |    %8.5f    |   N/A   |       -       |\n", spec->coord[2].zeta);

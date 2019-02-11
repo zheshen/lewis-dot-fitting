@@ -150,8 +150,8 @@ double formOfAA(V *a, V *b, double Qtot, double p1, double p2, double p3, double
 //	uexR = E2_const/Omega(d_a, r_a, d_b, r_b)*Delta_M(d_a, r_a, d_b, r_b);
 //	uAB = E2_const*M(d_a, r_a, d_b, r_b);	
 	uexK = E_const*p14*Rbar*exp(-p15*sqrt(Rbar)*r)*exp(-p16*(Eta_a+Eta_b));
-	uexR = -E2_const*2.0/rootpi*p17*sqrt(Rbar)*exp(-p18*sqrt(Rbar)*r)*exp(-p19*(Eta_a+Eta_b));
-	uexA = E2_const*2.0/rootpi*p20*sqrt(2.0*Rhat)*exp(-p21*sqrt(Rbar)*r)*exp(-p24*(Eta_a+Eta_b))*Qtot;
+	uexR = -E2_const*2.0/rootpi*p17*sqrt(Rbar)*exp(-p18*Rbar*r2)*exp(-p19*(Eta_a+Eta_b));
+	uexA = E2_const*2.0/rootpi*p20*sqrt(2.0*Rhat)*exp(-p21*Rbar*r2)*exp(-p24*(Eta_a+Eta_b))*2.0;
 //	uAB = E2_const/deff/sqrt(reff*reff+p3*reff+1.0);
 //	uAB = E2_const*Dsmooth8Coulomb4ParReff(reff2,reff,deff,q,p3,p4,p5,1.0,E_or_F);
 	uAB = E2_const*InvPoly8Par142(reff2,reff,deff,q,p3,p4,p5,1.0,E_or_F);
