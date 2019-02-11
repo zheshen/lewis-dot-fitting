@@ -909,7 +909,7 @@ double devspin%(fullname)s(Species *spec){
 /*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>BELOW CHANGABLE>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 
 	double fr1, bo;
-	const double real_bl = %(real_bl).2f;
+	const double real_bl = %(real_bl).3f;
 //	const double real_bo = %(real_bo).1f; 
 
         //Current Positions
@@ -927,7 +927,7 @@ double devspin%(fullname)s(Species *spec){
 		printHeader(spec->fullname, deviation);
 		OutFile = fopen(directory, "a");
                 if (MC_spin%(fullname)s){
-			fprintf(OutFile,"| Kernel  dist          |      A     |   %% 8.2f     |   -   |        -       |    %%8.5f    |   N/A   |       -       |\\n", real_bl, fr1);
+			fprintf(OutFile,"| Kernel  dist          |      A     |   %% 8.5f     |   -   |        -       |    %%8.5f    |   N/A   |       -       |\\n", real_bl, fr1);
 			fprintf(OutFile,"| A1 1/radius^2         |      A     |      -         |   -   |        -       |%%7.3f+%%7.3fI|   N/A   |       -       |\\n", creal(spec->coord[%(kernel)d].d), cimag(spec->coord[%(kernel)d].d));
 			fprintf(OutFile,"| Lone A1  eta          |            |      -         |   -   |                |    %%8.5f    |   N/A   |       -       |\\n", spec->coord[%(kernel)d].eta);
 			fprintf(OutFile,"| Lone A1  zeta         |            |      -         |   -   |                |    %%8.5f    |   N/A   |       -       |\\n", spec->coord[%(kernel)d].zeta);
@@ -951,7 +951,7 @@ double devspin%(fullname)s(Species *spec){
 }
 '''
 
-# Fix all atoms, include bond order in deviation
+# Fix all heavy atoms, include bond order in deviation
 DEV1	='''
         //set d value
         setDvalue(Vin, part);
@@ -959,9 +959,9 @@ DEV1	='''
 	//calculate structure energy
         if((MC_spin%(fullname)s) && (spec->icue ==4)){
 		for(i=0;i<4;i++){
-                	metropolis(Vin, part,-1);
+                	metropolis(Vin, part,-3);
 		}
-                Usum = metropolis(Vin, part,-1);
+                Usum = metropolis(Vin, part,-3);
         }else{
                 Usum = sumEnergies(Vin, part);
 	}
@@ -1002,7 +1002,7 @@ double devspin%(fullname)s(Species *spec){
 /*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>BELOW CHANGABLE>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 
 	double fr1, bo;
-	const double real_bl = %(real_bl).2f;
+	const double real_bl = %(real_bl).3f;
 	const double real_bo = %(real_bo).1f; 
 
         //Current Positions
@@ -1018,7 +1018,7 @@ double devspin%(fullname)s(Species *spec){
 		printHeader(spec->fullname, deviation);
 		OutFile = fopen(directory, "a");
                 if (MC_spin%(fullname)s){
-			fprintf(OutFile,"| Kernel  dist          |      A     |   %% 8.2f     |   -   |        -       |    %%8.5f    |   N/A   |       -       |\\n", real_bl, fr1);
+			fprintf(OutFile,"| Kernel  dist          |      A     |   %% 8.5f     |   -   |        -       |    %%8.5f    |   N/A   |       -       |\\n", real_bl, fr1);
 			fprintf(OutFile,"| A1 1/radius^2         |    1/A^2   |      -         |   -   |        -       |%%7.3f+%%7.3fI|   N/A   |       -       |\\n", creal(spec->coord[%(kernel)d].d), cimag(spec->coord[%(kernel)d].d));
 			fprintf(OutFile,"| Lone A1  eta          |            |      -         |   -   |                |    %%8.5f    |   N/A   |       -       |\\n", spec->coord[%(kernel)d].eta);
 			fprintf(OutFile,"| Lone A1  zeta         |            |      -         |   -   |                |    %%8.5f    |   N/A   |       -       |\\n", spec->coord[%(kernel)d].zeta);
@@ -1093,7 +1093,7 @@ double devspin%(fullname)s(Species *spec){
 /*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>BELOW CHANGABLE>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 
 	double fr1, bo;
-	const double real_bl = %(real_bl).2f;
+	const double real_bl = %(real_bl).3f;
 	const double real_bo = %(real_bo).1f; 
 
         //Current Positions
@@ -1110,7 +1110,7 @@ double devspin%(fullname)s(Species *spec){
 		printHeader(spec->fullname, deviation);
 		OutFile = fopen(directory, "a");
                 if (MC_spin%(fullname)s){
-			fprintf(OutFile,"| Kernel  dist          |      A     |    %% 8.2f    |   -   |        -       |    %%8.5f    |   N/A   |       -       |\\n", real_bl, fr1);
+			fprintf(OutFile,"| Kernel  dist          |      A     |    %% 8.5f    |   -   |        -       |    %%8.5f    |   N/A   |       -       |\\n", real_bl, fr1);
 			fprintf(OutFile,"| Ex.  A1 1/radius^2    |    1/A^2   |      -         |   -   |        -       |%%7.3f+%%7.3fI|   N/A   |       -       |\\n", creal(spec->coord[%(kernel)d].d), cimag(spec->coord[%(kernel)d].d));
 			fprintf(OutFile,"| Lone A1  eta          |            |      -         |   -   |                |    %%8.5f    |   N/A   |       -       |\\n", spec->coord[%(kernel)d].eta);
 			fprintf(OutFile,"| Lone A1  zeta         |            |      -         |   -   |                |    %%8.5f    |   N/A   |       -       |\\n", spec->coord[%(kernel)d].zeta);
@@ -1185,7 +1185,7 @@ double devspin%(fullname)s(Species *spec){
 /*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>BELOW CHANGABLE>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 
 	double fr1, bo, dp;
-	const double real_bl = %(real_bl).2f;
+	const double real_bl = %(real_bl).3f;
 	const double real_bo = %(real_bo).1f; 
 	const double real_dp = %%DipoleMoment%%; 
 
@@ -1205,7 +1205,7 @@ double devspin%(fullname)s(Species *spec){
 		printHeader(spec->fullname, deviation);
 		OutFile = fopen(directory, "a");
                 if (MC_spin%(fullname)s){
-			fprintf(OutFile,"| Kernel  dist          |      A     |   %% 8.2f     |   -   |        -       |    %%8.5f    |   N/A   |       -       |\\n", real_bl, fr1);
+			fprintf(OutFile,"| Kernel  dist          |      A     |   %% 8.5f     |   -   |        -       |    %%8.5f    |   N/A   |       -       |\\n", real_bl, fr1);
 			fprintf(OutFile,"| A1 1/radius^2         |    1/A^2   |      -         |   -   |        -       |%%7.3f+%%7.3fI|   N/A   |       -       |\\n", creal(spec->coord[%(kernel)d].d), cimag(spec->coord[%(kernel)d].d));
 			fprintf(OutFile,"| Lone A1  eta          |            |      -         |   -   |                |    %%8.5f    |   N/A   |       -       |\\n", spec->coord[%(kernel)d].eta);
 			fprintf(OutFile,"| Lone A1  zeta         |            |      -         |   -   |                |    %%8.5f    |   N/A   |       -       |\\n", spec->coord[%(kernel)d].zeta);

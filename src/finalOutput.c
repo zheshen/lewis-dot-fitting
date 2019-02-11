@@ -121,7 +121,7 @@ void finalOutput(){
 	fprintf(OutFile, "\n");
 
 	fprintf(OutFile, "|=========================================================================================================================|\n");
-        fprintf(OutFile, "|    |  TauAH |  RhoAH | KapAH1 | KapAH2 | KapAH3 | ChiexH |TauexHc2| ChiexHc|TauexHc1| TauexH1| TauexH2| TauexH3| TauexH0|\n");
+        fprintf(OutFile, "|    |  TauAH |  RhoAH | KapAH1 | KapAH2 | KapAH3 | ChiexH |TauexHc1|TauexHc2|TauexHc1| TauexH1| TauexH2| TauexH3| TauexH0|\n");
                                                   
 	fprintf(OutFile, "|====|========|========|========|========|========|========|========|========|========|========|========|========|========|\n");
 
@@ -557,7 +557,7 @@ void finalOutput(){
 	fprintf(OutFile, "\n");
 
 	fprintf(OutFile, "|=========================================================================================================================|\n");
-        fprintf(OutFile, "|    |  TauMA |  RhoMA | KapMA1 | KapMA2 | KapMA3 | ChiexM |TauexMc2| ChiexMc|TauexMc1| TauexM1| TauexM2| TauexM3| TauexM0|\n");
+        fprintf(OutFile, "|    |  TauMA |  RhoMA | KapMA1 | KapMA2 | KapMA3 | ChiexM |TauexMc1|TauexMc2|TauexMc1| TauexM1| TauexM2| TauexM3| TauexM0|\n");
                                                   
 	fprintf(OutFile, "|====|========|========|========|========|========|========|========|========|========|========|========|========|========|\n");
 

@@ -95,7 +95,7 @@
 #define MC_TEMP                  100
 #define MC_R2_MAX                0.25
 #define MC_D_INIT               3.0// 0.60
-#define MC_numDynamicVar	5
+#define MC_numDynamicVar	4
 
 #define MC_ALL                    ON
 
@@ -2917,7 +2917,7 @@
 #define wspinH4squ   	    100.0*FIT_spinthermo * FIT_spinH * FIT_spinEE*FIT_spinHH * FIT_H3H4
 #define wspinH4lin   	    100.0*FIT_spinthermo * FIT_spinH * FIT_spinEE*FIT_spinHH * FIT_H3H4
 
-#define wspinHsign	   300.0*FIT_spinthermo * FIT_spinH * FIT_spinEE*FIT_spinHH * FIT_AA_AH 
+#define wspinHsign	   2000.0*FIT_spinthermo * FIT_spinH * FIT_spinEE*FIT_spinHH * FIT_AA_AH 
 
 //#define wspinH2plusdis        0.0*FIT_spinthermo * FIT_spinH * FIT_spinE
 

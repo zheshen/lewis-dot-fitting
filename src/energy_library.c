@@ -4666,6 +4666,35 @@ double InvPoly8Par142(double r2, double r, double d, double Q,
                 return (double) 0;
         }
 }
+
+//E = q/deff(reff8 + reff4/(Ra+Rb+Rc)^4 + reff2/(Ra+Rb)^2 + reff/Ra + 1)^1/8==========================
+double NewInvPoly8Par24(double r2, double r, double d, double Q,
+        double Ra, double Rb, double Rc, double Rd, int E_or_F){
+
+        /*Ra = Ra * d;
+        Rb = Rb * d;
+        Rc = Rc * d;
+        Rd = Rd * d;*/
+
+        double r4       = r2 * r2;
+        double r6       = r4 * r2;
+        double r8       = r4 * r4;
+	double Ra2	= Ra * Ra;
+	double RaRb	= Ra + Rb;
+        double RaRb2    = RaRb * RaRb;
+        double RaRb4    = RaRb2 * RaRb2;
+        double t8       = r8 + r4/RaRb4 + r2/Ra2 + Rd;
+        double t4       = sqrt(t8);
+        double t2       = sqrt(t4);
+        double t        = sqrt(t2);
+
+        if (E_or_F == ENERGY) {         //ENERGY
+                return Q / (d*t);
+        }
+        else{                           //FORCE / DISTANCE
+                return (double) 0;
+        }
+}
 //=============================================================================
 	
 //C gammainc(double a, double b)

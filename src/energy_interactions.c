@@ -150,11 +150,11 @@ double formOfAA(V *a, V *b, double Qtot, double p1, double p2, double p3, double
 //	uexR = E2_const/Omega(d_a, r_a, d_b, r_b)*Delta_M(d_a, r_a, d_b, r_b);
 //	uAB = E2_const*M(d_a, r_a, d_b, r_b);	
 	uexK = E_const*p14*Rbar*exp(-p15*sqrt(Rbar)*r)*exp(-p16*(Eta_a+Eta_b));
-	uexR = -E2_const*2.0/rootpi*p17*sqrt(Rbar)*exp(-p18*Rbar*r2)*exp(-p19*(Eta_a+Eta_b));
-	uexA = E2_const*2.0/rootpi*p20*sqrt(2.0*Rhat)*exp(-p21*Rbar*r2)*exp(-p24*(Eta_a+Eta_b))*2.0;
+	uexR = -E2_const*2.0/rootpi*p17*sqrt(Rbar)*exp(-(p15+p18)*Rbar*r2)*exp(-p19*(Eta_a+Eta_b));
+	uexA = E2_const*2.0/rootpi*p20*sqrt(2.0*Rhat)*exp(-(p15+p18+p21)*Rbar*r2)*exp(-p24*(Eta_a+Eta_b))*2.0;
 //	uAB = E2_const/deff/sqrt(reff*reff+p3*reff+1.0);
 //	uAB = E2_const*Dsmooth8Coulomb4ParReff(reff2,reff,deff,q,p3,p4,p5,1.0,E_or_F);
-	uAB = E2_const*InvPoly8Par142(reff2,reff,deff,q,p3,p4,p5,1.0,E_or_F);
+	uAB = E2_const*NewInvPoly8Par24(reff2,reff,deff,q,p3,p4,p5,1.0,E_or_F);
 
         u = uAB + uexK + uexR + uexA;
 
@@ -217,7 +217,7 @@ double formOfAB(V *a, V *b, double p1, double p2, double p3, double p4, \
 //	u = p1*(1.0/sqrt((2*dr1*dr1)/(dr1+dr1)+r));
 //	u = E2_const/deff/sqrt(reff*reff+p3*reff+1.0);
 //	u = E2_const*Dsmooth8Coulomb4ParReff(reff2,reff,deff,q,p3,p4,p5,1.0,E_or_F);
-	u = E2_const*InvPoly8Par142(reff2,reff,deff,q,p3,p4,p5,1.0,E_or_F);
+	u = E2_const*NewInvPoly8Par24(reff2,reff,deff,q,p3,p4,p5,1.0,E_or_F);
 //	u = E2_const*M(d_a, r_a, d_b, r_b);	
 //	u = p1*(2/rootpi*sqrt((2*dr1*dr1)/(dr1+dr1))*BoysF0(2*dr1*dr1/(dr1+dr1)*r2));
 
@@ -336,7 +336,7 @@ double formOfXA(V *a, V *R, double p1, double p2, double p3, double p4, double p
 //	uex = (s-q)/2.0/Omega(d_a, r_a, d_c, R_X) * (E_const/2.0*Delta_K(d_a, r_a, d_c, R_X) + E2_const*Delta_M(d_a, r_a, d_c, R_X) - E2_const*s/2.0*Delta_U(d_a, r_a, d_c, R_X, R_X));
 //	uex = E2_const*(s-q)/2.0*2.0/rootpi*p8*sqrt(conj(d_a)+d_a)*exp(1.0*p9*(conj(d_a)-d_a)*(conj(d_a)-d_a)/2.0/(conj(d_a)+d_a)*r2);
 //	ucore = E2_const*Dsmooth8Coulomb4ParReff(reff2,reff,deff,q,p3,p4,p5,1.0,E_or_F); 
-	ucore = E2_const*InvPoly8Par142(reff2,reff,deff,q,p3,p4,p5,1.0,E_or_F);
+	ucore = E2_const*NewInvPoly8Par24(reff2,reff,deff,q,p3,p4,p5,1.0,E_or_F);
 //	uex = E_const*creal(d_a)*p8*exp(-p9*creal(d_a)*creal(d_a)*r2)*exp(-p7*Eta_a);
 //	printf("3Rq = %f, aq = %f, q = %f\n", R->q, a->q, q);
 	u = ucore + uex;

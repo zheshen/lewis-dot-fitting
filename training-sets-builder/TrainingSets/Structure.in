@@ -58,18 +58,18 @@ H_		H-1	1	1	1	1
 
 Fullname	Name		Fix	Charge	Kernel	Charge	Kernel	Spin_a	Spin_b	BL	BO
 #O2                             	
-O2_linnett	O2_li		1 	6	8	6	8	7	5	1.21	2      
-O2_snglbnd	O2_sn		1 	6	8	6	8	7	5	1.21	2 
-O2_dblbnd	O2_db		1 	6	8	6	8	7	5	1.21	2 
-O2_trplbnd	O2_tr		1 	6	8	6	8	7	5	1.21	2 
-O2dia_linnett	O2dia_li	1 	6	8	6	8	6	6	1.21	2 
-O2dia_snglbnd	O2dia_sn	1 	6	8	6	8	6	6	1.21	2 
-O2dia_dblbnd	O2dia_db	1 	6	8	6	8	6	6	1.21	2 
-O2dia_trplbnd	O2dia_tr	1 	6	8	6	8	6	6	1.21	2 
-O2qnt_linnett	O2qnt_li	1 	6	8	6	8	8	4	1.21	1 
-O2qnt_snglbnd	O2qnt_sn	1 	6	8	6	8	8	4	1.21	1 
-O2qnt_dblbnd	O2qnt_db	1 	6	8	6	8	8	4	1.21	1 
-O2qnt_trplbnd	O2qnt_tr	1 	6	8	6	8	8	4	1.21	1 
+O2_linnett	O2_li		1 	6	8	6	8	7	5	1.207	2      
+O2_snglbnd	O2_sn		1 	6	8	6	8	7	5	1.207	2 
+O2_dblbnd	O2_db		1 	6	8	6	8	7	5	1.207	2 
+O2_trplbnd	O2_tr		1 	6	8	6	8	7	5	1.207	2 
+O2dia_linnett	O2dia_li	1 	6	8	6	8	6	6	1.207	2 
+O2dia_snglbnd	O2dia_sn	1 	6	8	6	8	6	6	1.207	2 
+O2dia_dblbnd	O2dia_db	1 	6	8	6	8	6	6	1.207	2 
+O2dia_trplbnd	O2dia_tr	1 	6	8	6	8	6	6	1.207	2 
+O2qnt_linnett	O2qnt_li	1 	6	8	6	8	8	4	1.207	1 
+O2qnt_snglbnd	O2qnt_sn	1 	6	8	6	8	8	4	1.207	1 
+O2qnt_dblbnd	O2qnt_db	1 	6	8	6	8	8	4	1.207	1 
+O2qnt_trplbnd	O2qnt_tr	1 	6	8	6	8	8	4	1.207	1 
 O2plus1		O2+1		1	6	8	6	8	6	5	1.123	2.5
 O2_1		O2-1		1	6	8	6	8	7	6	1.33	1.5
                                   

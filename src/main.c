@@ -7,8 +7,8 @@
 #include "U.h"
 void test();
 //Declaration of important variables 
-char version[] = "DE6012.074";
-char shelloutput[] = "ws6012";
+char version[] = "DE6014.074";
+char shelloutput[] = "ws6014";
 int printFunctionPlots = 1;
 int pdbSwitch = 0; //the whole trajectory of upnup 
 int finalpdbswitch = 1;
@@ -146,15 +146,15 @@ int main (int argc, char *argv[]) {
 		writefinalpdb = 1;
 	}
 
-//	lowermain(H);
-//	lowermain(H_);
-//	lowermain(H2);
-//	lowermain(H2trp);
-//	lowermain(H2plus);
-//	lowermain(H2minus);
-//	lowermain(H3);
-//	lowermain(H3plus);
-//        lowermain(H3linear);
+	lowermain(H);
+	lowermain(H_);
+	lowermain(H2);
+	lowermain(H2trp);
+	lowermain(H2plus);
+	lowermain(H2minus);
+	lowermain(H3);
+	lowermain(H3plus);
+        lowermain(H3linear);
 
 	lowermain(O_1);
 	lowermain(Oneutrl);

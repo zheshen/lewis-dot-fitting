@@ -53,15 +53,15 @@ void specSwitch(Species *spec){
 //		case t_H2 : specspinH2(spec); break;
 //		case t_H2trp : specspinH2trp(spec); break;
 //
-//		case H: specspinH(spec); break;
-//		case H_: specspinH_(spec); break;
-//		case H2: specspinH2(spec); break;
-//		case H2trp: specspinH2trp(spec); break;
-//		case H2minus: specspinH2minus(spec); break;
-//		case H2plus: specspinH2plus(spec); break;
-//		case H3: specspinH3(spec); break;
-//		case H3plus: specspinH3plus(spec); break;
-//		case H3linear: specspinH3linear(spec); break;
+		case H: specspinH(spec); break;
+		case H_: specspinH_(spec); break;
+		case H2: specspinH2(spec); break;
+		case H2trp: specspinH2trp(spec); break;
+		case H2minus: specspinH2minus(spec); break;
+		case H2plus: specspinH2plus(spec); break;
+		case H3: specspinH3(spec); break;
+		case H3plus: specspinH3plus(spec); break;
+		case H3linear: specspinH3linear(spec); break;
 
 		case Znneutrl : specspinZnneutrl(spec); break;
 		case Znneutrlex : specspinZnneutrlex(spec); break;

@@ -120,7 +120,7 @@ double ainterspinH3plus(Species * spec){
         //H2
         Vin[1].x = 0.0;
         Vin[1].y = -r_kernel;
-        Vin[1].z = -r_kernel/sqrt(3..0);
+        Vin[1].z = -r_kernel/sqrt(3.0);
         Vin[1].q = 1;
         Vin[1].s = 1;
 

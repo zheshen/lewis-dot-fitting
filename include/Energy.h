@@ -264,6 +264,7 @@ double FAA8(double, double);
 double FAA83Par(double, double, double, double);
 double FAA62Par(double, double, double);
 double InvPoly8Par142(double, double, double,double,double,double,double,double,int);
+double NewInvPoly8Par24(double, double, double,double,double,double,double,double,int);
 
 //Routine operational functions===================================================================
 int maxi(int, int);

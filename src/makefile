@@ -16,6 +16,7 @@ endif
 
 
 SPINS = spinDielectron.o spinDielectronex.o \
+spinH.o spinH_.o spinH2.o spinH2plus.o spinH2minus.o spinH2trp.o spinH3.o spinH3plus.o spinH3linear.o \
 spinZnneutrl.o spinZnneutrlex.o spinZnplus1.o spinZnplus1ex.o spinZnplus2.o spinZnplus2ex.o spinZnplus3.o spinZnplus3ex.o spinZnplus4.o spinZnplus4ex.o spinZnplus4ex2.o \
 spinZnplus5.o spinZnplus5ex.o spinZnplus5ex2.o spinZnplus6.o spinZnplus6ex.o spinZnplus6ex2.o spinZnplus7.o spinZnplus8.o spinZnplus9.o spinZnplus10.o spinZnplus10ex.o spinZnplus11.o \
 spinZnneutrlex2.o spinZnplus1ex2.o spinZnplus2ex2.o spinZnplus3ex2.o spinZnplus4ex3.o spinZnplus5ex3.o spinZnplus6ex3.o spinZnplus7ex.o spinZnplus8ex.o spinZnplus9ex.o \
@@ -88,6 +89,9 @@ oxygenrun_no_loc_min: $(OBJECTS)
 	$(CC) -o $@ $^ $(CFLAGS) $(LIBS)
 
 zincrun: $(OBJECTS)
+	$(CC) -o $@ $^ $(CFLAGS) $(LIBS)
+
+hydrogenrun: $(OBJECTS)
 	$(CC) -o $@ $^ $(CFLAGS) $(LIBS)
 
 clean:
