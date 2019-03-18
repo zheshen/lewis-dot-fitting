@@ -31,9 +31,9 @@
 #define FIT_AB_AH		0.0
 #define FIT_AA_AH		0.0
 #define FIT_H3H4                0.0 //for cancel out H3 H4 with AA 
-#define FIT_spinO		1.0
+#define FIT_spinO		0.0
 #define FIT_spinOO		0.0 //for O-O distance changing
-#define FIT_spinO2		1.0
+#define FIT_spinO2		0.0
 #define FIT_spinO3		0.0
 #define FIT_spinH		0.0
 #define FIT_spinHH              0.0
@@ -50,7 +50,7 @@
 #define FIT_spinLi		0.0
 #define FIT_spinBe		0.0
 #define FIT_spinMg		0.0
-#define FIT_spinZn              0.0
+#define FIT_spinZn              1.0
 #define FIT_spinSc		0.0
 #define FIT_spinTi		0.0
 #define FIT_spinV		0.0
@@ -95,7 +95,7 @@
 #define MC_TEMP                  100
 #define MC_R2_MAX                0.25
 #define MC_D_INIT               3.0// 0.60
-#define MC_numDynamicVar	4
+#define MC_numDynamicVar	5
 
 #define MC_ALL                    ON
 

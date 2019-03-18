@@ -113,6 +113,40 @@ double getDipole(struct V *Vin, int n){
         return dipoleMoment;
 }
 
+double getSpinDipole(struct V *Vin, int n){
+
+        double dipoleMomentA = 0;
+        double dipoleMomentB = 0;
+        double dipoleMomentA_x = 0;
+        double dipoleMomentA_y = 0;
+        double dipoleMomentA_z = 0;
+        double dipoleMomentB_x = 0;
+        double dipoleMomentB_y = 0;
+        double dipoleMomentB_z = 0;
+        int i;
+
+        for (i = 0; i < n; i++){
+		if (Vin[i].s == 2){
+                	dipoleMomentA_x += (Vin[i].x * Vin[i].q);
+                	dipoleMomentA_y += (Vin[i].y * Vin[i].q);
+                	dipoleMomentA_z += (Vin[i].z * Vin[i].q);
+		}
+		else if (Vin[i].s == -2){
+                	dipoleMomentB_x += (Vin[i].x * Vin[i].q);
+                	dipoleMomentB_y += (Vin[i].y * Vin[i].q);
+                	dipoleMomentB_z += (Vin[i].z * Vin[i].q);
+		}
+        }
+	dipoleMomentA = distance(dipoleMomentA_x,dipoleMomentA_y,dipoleMomentA_z,0,0,0);
+	dipoleMomentA *= debye; 
+	dipoleMomentA = fabs(dipoleMomentA); 
+	dipoleMomentB = distance(dipoleMomentB_x,dipoleMomentB_y,dipoleMomentB_z,0,0,0);
+	dipoleMomentB *= debye; 
+	dipoleMomentB = fabs(dipoleMomentB); 
+
+        return dipoleMomentA + dipoleMomentB, dipoleMomentA, dipoleMomentB;
+}
+
 double distance(const double x1, const double y1, const double z1, const double x2, const double y2, const double z2 ){
 	double rvector;
 	rvector = sqrt ( (x2-x1)*(x2-x1) + (y2-y1)*(y2-y1) + (z2-z1)*(z2-z1) );

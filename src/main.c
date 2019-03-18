@@ -7,7 +7,7 @@
 #include "U.h"
 void test();
 //Declaration of important variables 
-char version[] = "DE6014.074";
+char version[] = "DE6014.075";
 char shelloutput[] = "ws6014";
 int printFunctionPlots = 1;
 int pdbSwitch = 0; //the whole trajectory of upnup 

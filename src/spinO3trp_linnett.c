@@ -341,7 +341,7 @@ double devspinO3trp_linnett(Species *spec){
 /*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>BELOW CHANGABLE>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 
 	double fr1, bo;
-	const double real_bl = 1.28;
+	const double real_bl = 1.278;
 //	const double real_bo = 1.0; 
 
         //Current Positions
@@ -359,7 +359,7 @@ double devspinO3trp_linnett(Species *spec){
 		printHeader(spec->fullname, deviation);
 		OutFile = fopen(directory, "a");
                 if (MC_spinO3trp_linnett){
-			fprintf(OutFile,"| Kernel  dist          |      A     |   % 8.2f     |   -   |        -       |    %8.5f    |   N/A   |       -       |\n", real_bl, fr1);
+			fprintf(OutFile,"| Kernel  dist          |      A     |   % 8.5f     |   -   |        -       |    %8.5f    |   N/A   |       -       |\n", real_bl, fr1);
 			fprintf(OutFile,"| A1 1/radius^2         |      A     |      -         |   -   |        -       |%7.3f+%7.3fI|   N/A   |       -       |\n", creal(spec->coord[3].d), cimag(spec->coord[3].d));
 			fprintf(OutFile,"| Lone A1  eta          |            |      -         |   -   |                |    %8.5f    |   N/A   |       -       |\n", spec->coord[3].eta);
 			fprintf(OutFile,"| Lone A1  zeta         |            |      -         |   -   |                |    %8.5f    |   N/A   |       -       |\n", spec->coord[3].zeta);

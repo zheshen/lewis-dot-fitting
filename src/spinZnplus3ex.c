@@ -278,9 +278,9 @@ double devspinZnplus3ex(Species *spec){
 		fd6    = spec->coord[spec->numPart-1].zeta;
         }
 
-	double polar=0.0;
-	polar=getPolar(spec->coord,spec->numPart);
-        deviation = polar*exp(10*polar);
+	double dipole_A=0.0, dipole_B=0.0, dipole_sum=0.0;
+	dipole_sum, dipole_A, dipole_B=getSpinDipole(spec->coord,spec->numPart);
+        deviation = dipole_sum*exp(2*dipole_sum);
 
 	// main output
 	if (print){
@@ -295,7 +295,8 @@ double devspinZnplus3ex(Species *spec){
                          fprintf(OutFile,"| Lone B1  eta          |            |      -         |   -   |                |    %8.5f    |   N/A   |       -       |\n", fd4);
                          fprintf(OutFile,"| Lone A1  zeta         |            |      -         |   -   |                |    %8.5f    |   N/A   |       -       |\n", fd5);
                          fprintf(OutFile,"| Lone B1  zeta         |            |      -         |   -   |                |    %8.5f    |   N/A   |       -       |\n", fd6);
-                         fprintf(OutFile,"| Polarity              |      -     |      -         |   -   |                |    %8.2f    |   N/A   |       -       |\n", polar);
+                         fprintf(OutFile,"| Dipole A              |      -     |      -         |   -   |                |    %8.2f    |   N/A   |       -       |\n", dipole_A);
+                         fprintf(OutFile,"| Dipole B              |      -     |      -         |   -   |                |    %8.2f    |   N/A   |       -       |\n", dipole_B);
                 }
                 fprintf(OutFile, "|-------------------------------------------------------------------------------------------------------------------------|\n");
 	    	fclose(OutFile);

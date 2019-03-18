@@ -388,7 +388,7 @@ double formOfHH(double r2, double r, double q, double p1, double p2, double p3, 
 	
         double u = 0;
 
-	u  = simpleCoulomb(r2, r, q, E_or_F);
+	u  = E2_const*simpleCoulomb(r2, r, q, E_or_F);
 
 	if (items != NULL)
 	items[8] += u;
