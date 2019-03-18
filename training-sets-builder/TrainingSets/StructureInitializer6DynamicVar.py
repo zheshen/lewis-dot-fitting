@@ -822,8 +822,8 @@ double devspin%(fullname)s(Species *spec){
         }
 
 	double polar=0.0;
-	polar=getPolar(spec->coord,spec->numPart);
-        deviation = polar*exp(10*polar);
+	polar=getSpinDipole(spec->coord,spec->numPart);
+        deviation = polar*exp(2*polar);
 
 	// main output
 	if (print){
