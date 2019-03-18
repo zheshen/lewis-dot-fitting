@@ -75,7 +75,7 @@ double raddeg(double);
 double degrad(double);
 double rot(double, double, double, double, double, double, int);
 double getDipole(V *, int);
-double getSpinDipole(V *, int);
+double getSpinDipole(V *, int, double *, double *);
 //double getQuadrupole(V *, int, int);
 double getDihedral(struct V *, int, int, int, int);
 double smaller(double, double);

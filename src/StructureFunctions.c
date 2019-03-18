@@ -113,7 +113,7 @@ double getDipole(struct V *Vin, int n){
         return dipoleMoment;
 }
 
-double getSpinDipole(struct V *Vin, int n){
+double getSpinDipole(struct V *Vin, int n, double *dipole_A, double *dipole_B){
 
         double dipoleMomentA = 0;
         double dipoleMomentB = 0;
@@ -144,7 +144,10 @@ double getSpinDipole(struct V *Vin, int n){
 	dipoleMomentB *= debye; 
 	dipoleMomentB = fabs(dipoleMomentB); 
 
-        return dipoleMomentA + dipoleMomentB, dipoleMomentA, dipoleMomentB;
+	*dipole_A = dipoleMomentA;
+	*dipole_B = dipoleMomentB;
+
+        return dipoleMomentA+dipoleMomentB;
 }
 
 double distance(const double x1, const double y1, const double z1, const double x2, const double y2, const double z2 ){

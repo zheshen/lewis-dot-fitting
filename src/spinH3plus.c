@@ -199,19 +199,17 @@ double devspinH3plus(Species *spec){
 
 /*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>BELOW CHANGABLE>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 
-	double fr1, fr2, bo;
-	const double real_bl = 0.88;
+	double fr1, bo;
+	const double real_bl = 0.877;
 	const double real_bo = 1.0; 
 
         //Current Positions
         if (MC_spinH3plus){
 		fr1    = getDistance(spec->coord, 0, 1);
-		fr2    = getDistance(spec->coord, 0, 2);
 		//bo     = getBondOrder(spec->coord, spec->numPart, real_bl);
         }
 	
 	deviation = fabs(real_bl-fr1)/LENGTH;
-	deviation += fabs(real_bl-fr2)/LENGTH;
 	//deviation = fabs(real_bo-bo)/LENGTH;
 	
 	// main output
@@ -219,8 +217,7 @@ double devspinH3plus(Species *spec){
 		printHeader(spec->fullname, deviation);
 		OutFile = fopen(directory, "a");
                 if (MC_spinH3plus){
-			fprintf(OutFile,"| Kernel  dist1         |      A     |    % 8.2f    |   -   |        -       |    %8.5f    |   N/A   |       -       |\n", real_bl, fr1);
-			fprintf(OutFile,"| Kernel  dist2         |      A     |    % 8.2f    |   -   |        -       |    %8.5f    |   N/A   |       -       |\n", real_bl, fr2);
+			fprintf(OutFile,"| Kernel  dist          |      A     |    % 8.5f    |   -   |        -       |    %8.5f    |   N/A   |       -       |\n", real_bl, fr1);
 			fprintf(OutFile,"| Ex.  A1 1/radius^2    |    1/A^2   |      -         |   -   |        -       |%7.3f+%7.3fI|   N/A   |       -       |\n", creal(spec->coord[3].d), cimag(spec->coord[3].d));
 			fprintf(OutFile,"| Lone A1  eta          |            |      -         |   -   |                |    %8.5f    |   N/A   |       -       |\n", spec->coord[3].eta);
 			fprintf(OutFile,"| Lone A1  zeta         |            |      -         |   -   |                |    %8.5f    |   N/A   |       -       |\n", spec->coord[3].zeta);

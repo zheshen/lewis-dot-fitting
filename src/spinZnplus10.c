@@ -203,7 +203,7 @@ double devspinZnplus10(Species *spec){
         }
 
 	double dipole_A=0.0, dipole_B=0.0, dipole_sum=0.0;
-	dipole_sum, dipole_A, dipole_B=getSpinDipole(spec->coord,spec->numPart);
+	dipole_sum=getSpinDipole(spec->coord,spec->numPart,&dipole_A,&dipole_B);
         deviation = dipole_sum*exp(2*dipole_sum);
 
 	// main output
