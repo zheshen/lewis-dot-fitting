@@ -108,7 +108,7 @@ double formOfAAX(V *a, V *b, V *R, double r2, double Rn2, double pAB2, double pA
 	return u;
 }
 
-//UexK and UexR and U_AB
+//UexK and UexR UexA and U_AB
 double formOfAA(V *a, V *b, double Qtot, double p1, double p2, double p3, double p4, double p5, double p6, double p7, double p8, double p9, double p10, double p11, double p12, double p13, double p14, double p15, double p16, double p17, double p18, double p19, double p20, double p21, double p22, double p23, double p24, double p25, double p26, int n1, int n2, int n3, int E_or_F, double *items){
 
 	double uAB=0;
@@ -149,9 +149,9 @@ double formOfAA(V *a, V *b, double Qtot, double p1, double p2, double p3, double
 //	uexK = E_const/Omega(d_a, r_a, d_b, r_b)*Delta_K(d_a, r_a, d_b, r_b);
 //	uexR = E2_const/Omega(d_a, r_a, d_b, r_b)*Delta_M(d_a, r_a, d_b, r_b);
 //	uAB = E2_const*M(d_a, r_a, d_b, r_b);	
-	uexK = E_const*p14*Rbar*exp(-p15*sqrt(Rbar)*r)*exp(-p16*(Eta_a+Eta_b));
-	uexR = -E2_const*2.0/rootpi*p17*sqrt(Rbar)*exp(-(p15+p18)*Rbar*r2)*exp(-p19*(Eta_a+Eta_b));
-	uexA = E2_const*2.0/rootpi*p20*sqrt(2.0*Rhat)*exp(-(p15+p18+p21)*Rbar*r2)*exp(-p24*(Eta_a+Eta_b))*2.0;
+	uexK = E_const*p14*Rbar*exp(-p15*sqrt(Rbar)*r)*(1.0+p16*(Eta_a+Eta_b));
+	uexR = -E2_const*2.0/rootpi*p17*sqrt(Rbar)*exp(-p18*Rbar*r2)*sqrt(1.0+p19*(Eta_a+Eta_b));
+	uexA = E2_const*2.0/rootpi*p20*sqrt(2.0*Rhat)*exp(-p21*Rbar*r2)*sqrt(1.0+p24*(Eta_a+Eta_b))*2.0;
 //	uAB = E2_const/deff/sqrt(reff*reff+p3*reff+1.0);
 //	uAB = E2_const*Dsmooth8Coulomb4ParReff(reff2,reff,deff,q,p3,p4,p5,1.0,E_or_F);
 	uAB = E2_const*NewInvPoly8Par24(reff2,reff,deff,q,p3,p4,p5,1.0,E_or_F);
@@ -388,7 +388,7 @@ double formOfHH(double r2, double r, double q, double p1, double p2, double p3, 
 	
         double u = 0;
 
-	u  = E2_const*simpleCoulomb(r2, r, q, E_or_F);
+	u  = simpleCoulomb(r2, r, q, E_or_F);
 
 	if (items != NULL)
 	items[8] += u;

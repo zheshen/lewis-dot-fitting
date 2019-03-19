@@ -40,7 +40,7 @@ UTILITIES = main.o status.o energy_reader.o energy_interactions.o energy_library
 printer.o spinthermo.o setWspinthermo.o LEcuyer.o de.o evaluate.o \
 StructureFunctions.o restartOutput.o finalOutput.o specSwitch.o test.o Faddeeva.o 
 
-_DEPS = Common.h U.h Structure.h
+_DEPS = Common.h U.h Structure.h main.h de.h Energy.h Lowermain.h Metropolis.h Print.h Species.h U.h Utilities.h
 DEPS = $(patsubst %,$(IDIR)/%,$(_DEPS))
 
 _OBJECTS = $(SPINS) $(LOWERMAINS) $(UPNUPS) $(MC) $(UTILITIES) 

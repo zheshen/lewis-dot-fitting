@@ -37,7 +37,7 @@ void finalOutput(){
 	OutFile = fopen(directory, "a+");
 	fprintf(OutFile, "|=========================================================================================================================|\n");
 	fprintf(OutFile, "|                                                  POTENTIAL PARAMETERS                                                   |\n");
-	fprintf(OutFile, "|						 bash %s.%02d.sh 1 %d %d 0                                                |\n", shelloutput, shellversion, simulation, shellkey);
+	fprintf(OutFile, "|						 bash %s 1 %d %d 0                                                |\n", shellname, simulation, shellkey);
 	fprintf(OutFile, "|                                                %s", asctime (timeinfo));
 	fprintf(OutFile, "|Suite Total Deviation (Structural and Thermodynamics)...................................................%8.2e percent |\n", (finaldev)*100);
 	fprintf(OutFile, "|Suite Structural Deviation .............................................................................%8.2e percent |\n", zStructfinal*100);		
@@ -1272,9 +1272,7 @@ void finalOutput(){
 	fprintf(OutFile, "| (H & H) - (H2*)       |   % 7.1f   | Dissociation energy   |           |           |           |           |           |\n",wspinH2exdis);
 //	fprintf(OutFile, "| (H & H+) - (H2+)      |   % 7.1f   | Dissociation energy   |           |           |           |           |           |\n",wspinH2plusdis);
 	fprintf(OutFile, "| (H2+ & e) - (H2) > 0  |   % 7.1f   | Dissociation energy   |           |           |           |           |           |\n",wspinH2ion);
-	fprintf(OutFile, "| (H2-) - (H2 & e))     |   % 7.1f   | Electron affinity     |           |           |           |           |           |\n",wspinH2aff);
 	fprintf(OutFile, "| (H2 & H+) - (H3+)     |   % 7.1f   | Proton affinity       |           |           |           |           |           |\n",wspinH2aff);
-        fprintf(OutFile, "| (H3linear) - (H & H2) |   % 7.1f   | Structural constr.    |           |           |           |           |           |\n",wspinH3lin);
         fprintf(OutFile, "| (H3trig) - (H3linear) |   % 7.1f   | Structural constr.    |           |           |           |           |           |\n",wspinH3lin);
         fprintf(OutFile, "| (H4tetra) - (H4square)|   % 7.1f   | Structural constr.    |           |           |           |           |           |\n",wspinH4squ);
         fprintf(OutFile, "| (H4square) - (H3lin)  |   % 7.1f   | Structural constr.    |           |           |           |           |           |\n",wspinH4lin);

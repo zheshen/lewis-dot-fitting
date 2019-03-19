@@ -7,8 +7,8 @@
 #include "U.h"
 void test();
 //Declaration of important variables 
-char version[] = "DE6014.075";
-char shelloutput[] = "ws6014";
+char version[] = "DE6019.075";
+//char shelloutput[] = "ws6019";
 int printFunctionPlots = 1;
 int pdbSwitch = 0; //the whole trajectory of upnup 
 int finalpdbswitch = 1;
@@ -87,9 +87,11 @@ int main (int argc, char *argv[]) {
 		sprintf(stringSimulation, "00%i", simulation);
 	}
 
-	shellversion         = atoi(argv[argc - 3]);
+	shellname            = argv[argc - 3];
+	printf("%s\n", shellname);
 	shellkey	     = atoi(argv[argc - 2]);	
 	optim		     = argv[argc - 1];	
+	printf("%s\n", optim);
 
 	strcpy(directory, version);
 	strcat(directory, "#");

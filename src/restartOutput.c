@@ -4,11 +4,23 @@
 #include "main.h"
 #include "de.h"
 
+int EndsWith(const char *str, const char *suffix)
+{
+    if (!str || !suffix)
+        return 0;
+    size_t lenstr = strlen(str);
+    size_t lensuffix = strlen(suffix);
+    if (lensuffix >  lenstr)
+        return 0;
+    return strncmp(str + lenstr - lensuffix, suffix, lensuffix) == 0;
+}
+
 void restartOutput(double tmp[]){
 	int i;
 //	extern char version[];
 	extern char shelloutput[];
-	extern int shellversion;
+	extern char *shellname;
+//	extern int shellversion;
 	extern int simulation;
 	char Shell_Ver[10];
 	char Simu_Num[10];
@@ -32,16 +44,19 @@ void restartOutput(double tmp[]){
 	size_t nbytes = 200;
 	char *line;
 	line = malloc(nbytes);
+	strcpy(input, shellname);
+	strcpy(output, shellname);
+	if (EndsWith(shellname,".sh")){
+//	strcat(input, ".");
+//	sprintf(Shell_Ver, "%02d", shellversion);
+//	strcat(input, Shell_Ver);
+//	strcat(input, ".sh");
+//	strcpy(output, input);
+		strcat(output, ".");
+		sprintf(Simu_Num, "%d", simulation);
+		strcat(output, Simu_Num);
+	}
 
-	strcpy(input, shelloutput);
-	strcat(input, ".");
-	sprintf(Shell_Ver, "%02d", shellversion);
-	strcat(input, Shell_Ver);
-	strcat(input, ".sh");
-	strcpy(output, input);
-	strcat(output, ".");
-	sprintf(Simu_Num, "%d", simulation);
-	strcat(output, Simu_Num);
 	InFile = fopen(input, "r");
 	OutFile = fopen(output, "w");
 
