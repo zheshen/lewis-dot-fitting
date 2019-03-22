@@ -1,7 +1,10 @@
-//getEnergies.c
-//by Seyit on March, 17 2009
-//WS139.84
 
+ /**************************************************************
+ * Purpose                                                     *
+ * This program is intended to calculate the total energy of   *
+ * a particular fixed structure given a set of parameters.     *
+ **************************************************************/
+ 
 #include "Energy.h"
 
 //double energy(double, double, double, int, int, int);

@@ -1,10 +1,11 @@
-/*
- *  interactions.c
- *  		
- *  by Seyit Kale
- *  Sept 23, 2009
- *
- */
+
+ /**************************************************************
+ * Purpose:		   			  	       *
+ * This program includes functions for all the terms of        *
+ * particle interactions. Most of the potential form updates   * 
+ * can be done by modifying the coresponding function in this  *
+ * file.                                                       *
+ **************************************************************/
 
 #include "Energy.h"
 

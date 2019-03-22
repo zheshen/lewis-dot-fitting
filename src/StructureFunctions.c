@@ -1,3 +1,12 @@
+
+ /**************************************************************
+ * Purpose:                                                    *
+ * This program includes some functions related to the training*
+ * set structure, such as initializing the species structure by*
+ * allocating memory and deleting the species structure by free*
+ * the memory.		   			  	       *
+ **************************************************************/
+ 
 #include "Structure.h"
 
 void Initialize(Species * spec){

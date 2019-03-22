@@ -1,3 +1,10 @@
+
+ /**************************************************************
+ * Purpose:                                                    *
+ * This program is intended to calculated the summation of     *
+ * weights for all the training structures.	  	       *
+ **************************************************************/
+ 
 #include "Common.h"
 
 double setWspinthermo(){

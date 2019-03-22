@@ -1,19 +1,12 @@
-/*
- *  Met.c
- *  
- *
- *  Created by Mike on Wed Sep 14 2005.
- *  Copyright (c) 2005 __MyCompanyName__. All rights reserved.
- *
- */
-/*Metropolis Algorithm*/
-/*returns 1 if accept, 0 if reject*/
-// modified by Seyit Kale on Dec 6, 2006 
-// for reasons of oxygen priority implementation in a computationally inexpensive way
-// (MC 19.60.04)
 
+ /**************************************************************
+ * Purpose:		   			  	       *
+ * This program implements the MC acceptance criterion. Input  *
+ * are energies before and after MC move, temperature and      *
+ * random number seed. Output is 1 or 0, indicating accept or  *
+ * reject.                                                     * 
+ **************************************************************/
 
-//#include "Common.h"
 #include "Metropolis.h"
 #define RANDMAX 2147483647
 

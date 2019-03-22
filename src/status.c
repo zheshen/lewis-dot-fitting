@@ -1,14 +1,12 @@
-/*
- *  status.c
- WS 26.10.3
- Rewritten by Seyit
- *	
- *	Edited by Mason on 1-15-2009 (added OpenMP)
- *  Created by Mike on 1/20/06.
- *  Copyright 2006 __MyCompanyName__. All rights reserved.
- *
- */
 
+ /**************************************************************
+ * Purpose:                                                    *
+ * The status() function takes the current parameters to       *
+ * perform optimization on all the training structures, then   *
+ * calculate the total cost function based on the pre-set      *
+ * weights for each training structure.		  	       *
+ **************************************************************/
+ 
 #include "Common.h" 
 #include "Lowermain.h"
 #include <omp.h>

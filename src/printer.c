@@ -1,10 +1,11 @@
-/*           printer.c                      
- * Printing functions for lowermains
- *
- * By Seyit Kale 
- * February 27, 2010
- * *******************************************/
 
+ /**************************************************************
+ * Purpose:                                                    *
+ * This program includes some print functions, such as the     *
+ * templates of headline and endline for output of each        *
+ * training structure.  			  	       *
+ **************************************************************/
+ 
 #include "Energy.h"
 #include "Print.h"
 

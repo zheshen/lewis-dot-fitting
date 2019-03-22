@@ -1,3 +1,12 @@
+
+ /**************************************************************
+ * Purpose:		   			  	       *
+ * This programe evaluates the total deviation for a particular*
+ * set of parameters. First, all the paramters should be       *
+ * assigned to the coresponding varaibles, then status() will  *
+ * be involked to calculate the total deviation.               * 
+ **************************************************************/
+ 
 # include "Common.h"
 double status();
 //void updateDarray();

@@ -1,7 +1,10 @@
-//Distance, angle and dihedral measure functions for MC structures
-//
-//by Seyit Kale
-//
+
+ /**************************************************************
+ * Purpose:                                                    *
+ * This program includes some useful tool functions for MC     *
+ * optimization process, such as distance, angle and dihedral  *
+ * measure functions.		   			       *
+ **************************************************************/
 
 #include <math.h>
 #include "Metropolis.h"

@@ -1,4 +1,13 @@
 
+ /**************************************************************
+ * Purpose:		   			  	       *
+ * This is the main function of the whole package. The program * 
+ * starts with importing parameters (including initial         *
+ * potential parameters, fix control parameters, etc.),        *
+ * followed by fitting using DE, writing output files, and one *
+ * final optimization for each training structure.	       *
+ **************************************************************/
+ 
 #include "Lowermain.h"
 #include <string.h>
 #include "main.h" 

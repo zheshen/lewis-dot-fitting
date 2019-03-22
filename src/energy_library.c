@@ -1,10 +1,11 @@
-/*
- *  energy_library.c
- *  		
- *  by Seyit Kale
- *  Sept 23, 2009
- *
- */
+
+ /**************************************************************
+ * Purpose:		   			  	       *
+ * This program includes all the user-defined functions at     *
+ * lower leverl. It would be a good idea to define the function*
+ * here first and invoke the function elsewhere especially when*
+ * the function is used multiple times at multiple places      *
+ **************************************************************/
 
 #include "Energy.h"
 //#include "libgammainc.h"

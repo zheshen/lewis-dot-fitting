@@ -1,5 +1,17 @@
-//metropolis.c
-//Written by Seyit
+ 
+ /**************************************************************
+ * Purpose:                                                    *
+ * This program is the main function of MC optimization. It    *
+ * takes the initial structure coordinates as input and outputs*
+ * the final energy after MC optimization.                     *
+ * Within the MC loop, first the program will randomly choose  *
+ * and identify a particle, then decide what move will be      *
+ * applied to that particle based on the pre-set ratio of      *
+ * various moving strategies, at last calculate the structure  *
+ * energy after the move and invoke mc_Met.c to decide whether *
+ * or not to accept the current MC move. If the move is        *
+ * accepted, the structure coordinates should also be updated. *
+ **************************************************************/
  
 #include "Metropolis.h"
 //#include "Common.h"

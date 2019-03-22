@@ -1,3 +1,12 @@
+
+ /**************************************************************
+ * Purpose:                                                    *
+ * This program is intended to store intermediate fitting      *
+ * results every certain steps in a *.sh.<output_number> file, *
+ * so that each interupted fitting will restart from the       *
+ * recorded point.                                             *
+ **************************************************************/
+ 
 #include "Common.h"
 #include "Lowermain.h"
 #include <string.h>

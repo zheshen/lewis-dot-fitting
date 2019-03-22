@@ -83,10 +83,10 @@ Fullname	Name		Fix     Charge	Kernel	Charge	Kernel	Charge	Kernel	Spin_a	Spin_b	B
 #H3                                     
 H3		H3		0       1	1	1	1	1	1	2	1	0.877	1 
 H3linear	H3linear	0       1	1	1	1	1	1	2	1	0.9299	1 
-H3plus		H3+1		2	1	1	1	1	1	1	1	1	0.877	1 
+#H3plus		H3+1		2	1	1	1	1	1	1	1	1	0.877	1  #need to take 3 H-H distances into cost function calculation  
                                         
-O3_linnett	O3_li		3	6	8	6	8	6	8	9	9	1.278	1 
-O3trp_linnett	O3trp_li	0	6	8	6	8	6	8	10	8	1.278	1
+#O3_linnett	O3_li		3	6	8	6	8	6	8	9	9	1.278	1  #mannualy change the reference dipole moment
+#O3trp_linnett	O3trp_li	0	6	8	6	8	6	8	10	8	1.278	1
 
 
 
