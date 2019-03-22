@@ -1,4 +1,14 @@
 
+ /**************************************************************
+ * Purpose:                                                    *
+ * This program implements the process of upnup optimization.  *
+ * The upnupspin() function takes in a species structure as    *
+ * input then follows the upnup flow and finally will return   *
+ * an index number to spec.icue, indicating different          *
+ * optimization results. Note that '4' indicates converged     *
+ * optimization.  		   			       *
+ **************************************************************/
+ 
 #include "Structure.h"
 
 //extern double spec->sym[];

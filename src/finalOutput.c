@@ -1,3 +1,10 @@
+
+ /**************************************************************
+ * Purpose:                                                    *
+ * This program prints out the final output including total    *
+ * deviation, final parameters, weight setting etc. 	       *
+ **************************************************************/
+ 
 #include "Common.h"
 #include "Lowermain.h"
 #include <string.h>

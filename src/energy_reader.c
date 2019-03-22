@@ -1,19 +1,12 @@
-/*
- *  Energy.c AKA "acase"
- *  		
- *
- *  Created by Mike on 1/20/06.
- *
- * Corrected by Seyit, June 7 - 2007
- * Totally changed by Seyit, May 18 - 2009
- * -the reason of change was the excessive number of 
- * new particles..
- *
- * Again, totally changed by Seyit, Jun 1 - 2009
- * -This time the reason is easier interconversion 
- * between WS and MD, yes not MC, MD.
- *
- */
+
+ /**************************************************************
+ * Purpose:                                                    *
+ * This program includes the general pair interaction and      *
+ * three-body interaction functions. Within those functions,   *
+ * different parameters will be transfered based on the        *
+ * identity of each particle.		   		       *
+ **************************************************************/
+
 #include "Energy.h"
 
 double kineticEnergy(double complex d, double eta, double zeta, int E_or_F){
@@ -30,7 +23,7 @@ double energy(V *a, V *b, double Qtot, int E_or_F) {
 
 double kineticEnergy_split(double complex d, double eta, double zeta, int E_or_F, double *items){
 
-//        extern double parKE[];
+//	extern double parKE[];
 	extern double parAB[];
 	double pAB2 = parAB[1];
 	double pAB3 = parAB[2];
@@ -50,22 +43,22 @@ double TBenergy_split(V * a, V * b, V * R, double r2, double Rn2, int E_or_F, do
 	extern int diagnose_print;
         extern double dlewis[];
 	extern double parAB[];
-//        extern double parAA[];
+//	extern double parAA[];
         extern double parAH[];
         extern double parCA[];
         extern double parNA[];
         extern double parOA[];
-//        extern double parCH[];
-//        extern double parNH[];
-//        extern double parOH[];
-//        extern double parCC[];
-//        extern double parNN[];
-//        extern double parOO[];
-//        extern double parCN[];
-//        extern double parCO[];
-//        extern double parNO[];
+//	extern double parCH[];
+//	extern double parNH[];
+//	extern double parOH[];
+//	extern double parCC[];
+//	extern double parNN[];
+//	extern double parOO[];
+//	extern double parCN[];
+//	extern double parCO[];
+//	extern double parNO[];
         extern double parHH[];
-//	  extern double parKE[];
+//	extern double parKE[];
         extern double parSA[];
         extern double parPA[];
         extern double parFA[];

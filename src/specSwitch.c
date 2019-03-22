@@ -1,12 +1,4 @@
-/*
- * Name: ainterSwitch.c
- * By: Geoffry Conklin
- * September 16th, 2016
- *
-*/
-#include <stdio.h>
-#include <string.h>
-#include "Structure.h"
+
  /**************************************************************
  * Purpose:		   			  	       *
  * This program ainterSwitch.c is inteneded to consolidate     * 
@@ -37,6 +29,9 @@
  *             |	  | match character strings.
  **************************************************************/
 
+#include <stdio.h>
+#include <string.h>
+#include "Structure.h"
 /* Copy and paste this format then add species
 		case t_ : ainter(spec); break;
 */

@@ -1,12 +1,9 @@
-/*
- *  L'Ecuyer.c
- *  MonteCarlo
- *
- *  Created by Mike on 10/3/05.
- *  Copyright 2005 __MyCompanyName__. All rights reserved.
- *
- */
 
+ /**************************************************************
+ * Purpose:		   			  	       *
+ * This program is a random seed generator for parallel running* 
+ **************************************************************/
+ 
 #include "Metropolis.h"
 
 

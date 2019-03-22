@@ -1,8 +1,12 @@
-/*************************************************************************************
- *                                   sumEnergies.c                                   *
- *                                                                                   *
- ************************************************************************************/
 
+ /**************************************************************
+ * Purpose:                                                    *
+ * This program includes a series of functions to calculate    *
+ * the energy change when MC move is applied to a particular   *
+ * structure. This way of calculation is more efficient than   *
+ * calculating energy from scratch every time.                 *
+ **************************************************************/
+ 
 //#include "Common.h"
 #include "Metropolis.h"
 //#include "Wolf.h"

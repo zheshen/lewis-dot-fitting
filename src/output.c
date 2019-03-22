@@ -1,6 +1,11 @@
-//output.c
-//by Seyit, March 17 2009
 
+ /**************************************************************
+ * Purpose:                                                    *
+ * This program is intended to output the final *pdb files of  *
+ * optimized trainining structures, including particle         *
+ * coordinates, electron radii and shape variables.  	       *
+ **************************************************************/
+ 
 #include "Common.h"
 #include "Structure.h"
 

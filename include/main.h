@@ -19,7 +19,8 @@ double dummy[10];
 
 
 int simulation;
-int shellversion, shellkey;
+int shellkey;
+char *shellname;
 char stringSimulation[8];
 double wspinThermo;
 int neu_potentials;

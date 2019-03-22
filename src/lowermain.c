@@ -2,6 +2,15 @@
 //by Zhe Shen on June, 28 2017.
 //Integrated all lowermain***.c into to one lowermain.c
 
+ /**************************************************************
+ * Purpose:		   			  	       *
+ * This program integrated all the lowermain***.c files for    *
+ * monoatmic training sets into one file. Different structure  *
+ * information will be imported through a Species structure.   *
+ * For diatomics, each training set has its own coresponding   *
+ * lowermain file.                                             *
+ **************************************************************/
+ 
 
 #include "Lowermain.h"
 

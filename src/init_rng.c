@@ -1,3 +1,9 @@
+
+ /**************************************************************
+ * Purpose:		   			  	       *
+ * This is a test file, which is not being used at this point. * 
+ **************************************************************/
+ 
 #include "Common.h"
 #include <omp.h>
 
