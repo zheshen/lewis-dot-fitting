@@ -772,7 +772,7 @@ double status(){
 #pragma omp section
 			{
 				if(wspinSplus5){
-					term = lowermainspinSplus5();//248
+					term = lowermain(Splus5);//248
 					z_arr[248] = wspinSplus5 * term;
 					w_arr[248] = wspinSplus5;}
 			}
@@ -780,7 +780,7 @@ double status(){
 #pragma omp section
 			{
 				if(wspinSplus4){
-					term = lowermainspinSplus4();//249
+					term = lowermain(Splus4);//249
 					z_arr[249] = wspinSplus4 * term;
 					w_arr[249] = wspinSplus4;}
 			}
@@ -788,7 +788,7 @@ double status(){
 #pragma omp section
 			{
 				if(wspinSplus3){
-					term = lowermainspinSplus3();//250
+					term = lowermain(Splus3);//250
 					z_arr[250] = wspinSplus3 * term;
 					w_arr[250] = wspinSplus3;}
 			}
@@ -796,7 +796,7 @@ double status(){
 #pragma omp section
 			{
 				if(wspinSplus2){
-					term = lowermainspinSplus2();//251
+					term = lowermain(Splus2);//251
 					z_arr[251] = wspinSplus2 * term;
 					w_arr[251] = wspinSplus2;}
 			}
@@ -804,7 +804,7 @@ double status(){
 #pragma omp section
 			{
 				if(wspinSplus1){
-					term = lowermainspinSplus1();//252
+					term = lowermain(Splus1);//252
 					z_arr[252] = wspinSplus1 * term;
 					w_arr[252] = wspinSplus1;}
 			}
@@ -812,7 +812,7 @@ double status(){
 #pragma omp section
 			{
 				if(wspinSneutrl){
-					term = lowermainspinSneutrl();//253
+					term = lowermain(Sneutrl);//253
 					z_arr[253] = wspinSneutrl * term;
 					w_arr[253] = wspinSneutrl;}
 			}
@@ -820,7 +820,7 @@ double status(){
 #pragma omp section
 			{
 				if(wspinS_1){
-					term = lowermainspinS_1();//254
+					term = lowermain(S_1);//254
 					z_arr[254] = wspinS_1 * term;
 					w_arr[254] = wspinS_1;}
 			}
@@ -828,7 +828,7 @@ double status(){
 #pragma omp section
 			{
 				if(wspinPplus4){
-					term = lowermainspinPplus4();//255
+					term = lowermain(Pplus4);//255
 					z_arr[255] = wspinPplus4 * term;
 					w_arr[255] = wspinPplus4;}
 			}
@@ -836,7 +836,7 @@ double status(){
 #pragma omp section
 			{
 				if(wspinPplus3){
-					term = lowermainspinPplus3();//256
+					term = lowermain(Pplus3);//256
 					z_arr[256] = wspinPplus3 * term;
 					w_arr[256] = wspinPplus3;}
 			}
@@ -844,7 +844,7 @@ double status(){
 #pragma omp section
 			{
 				if(wspinPplus2){
-					term = lowermainspinPplus2();//257
+					term = lowermain(Pplus2);//257
 					z_arr[257] = wspinPplus2 * term;
 					w_arr[257] = wspinPplus2;}
 			}
@@ -852,7 +852,7 @@ double status(){
 #pragma omp section
 			{
 				if(wspinPplus1){
-					term = lowermainspinPplus1();//258
+					term = lowermain(Pplus1);//258
 					z_arr[258] = wspinPplus1 * term;
 					w_arr[258] = wspinPplus1;}
 			}
@@ -860,7 +860,7 @@ double status(){
 #pragma omp section
 			{
 				if(wspinPneutrl){
-					term = lowermainspinPneutrl();//259
+					term = lowermain(Pneutrl);//259
 					z_arr[259] = wspinPneutrl * term;
 					w_arr[259] = wspinPneutrl;}
 			}
@@ -868,7 +868,7 @@ double status(){
 #pragma omp section
 			{
 				if(wspinP_1){
-					term = lowermainspinP_1();//260
+					term = lowermain(P_1);//260
 					z_arr[260] = wspinP_1 * term;
 					w_arr[260] = wspinP_1;}
 			}
@@ -876,7 +876,7 @@ double status(){
 #pragma omp section
 			{
 				if(wspinSiplus3){
-					term = lowermainspinSiplus3();//261
+					term = lowermain(Siplus3);//261
 					z_arr[261] = wspinSiplus3 * term;
 					w_arr[261] = wspinSiplus3;}
 			}
@@ -884,7 +884,7 @@ double status(){
 #pragma omp section
 			{
 				if(wspinSiplus2){
-					term = lowermainspinSiplus2();//262
+					term = lowermain(Siplus2);//262
 					z_arr[262] = wspinSiplus2 * term;
 					w_arr[262] = wspinSiplus2;}
 			}
@@ -892,7 +892,7 @@ double status(){
 #pragma omp section
 			{
 				if(wspinSiplus1){
-					term = lowermainspinSiplus1();//263
+					term = lowermain(Siplus1);//263
 					z_arr[263] = wspinSiplus1 * term;
 					w_arr[263] = wspinSiplus1;}
 			}
@@ -900,7 +900,7 @@ double status(){
 #pragma omp section
 			{
 				if(wspinSineutrl){
-					term = lowermainspinSineutrl();//264
+					term = lowermain(Sineutrl);//264
 					z_arr[264] = wspinSineutrl * term;
 					w_arr[264] = wspinSineutrl;}
 			}
@@ -908,7 +908,7 @@ double status(){
 #pragma omp section
 			{
 				if(wspinSi_1){
-					term = lowermainspinSi_1();//265
+					term = lowermain(Si_1);//265
 					z_arr[265] = wspinSi_1 * term;
 					w_arr[265] = wspinSi_1;}
 			}
@@ -916,7 +916,7 @@ double status(){
 #pragma omp section
 			{
 				if(wspinFplus6){
-					term = lowermainspinFplus6();//266
+					term = lowermain(Fplus6);//266
 					z_arr[266] = wspinFplus6 * term;
 					w_arr[266] = wspinFplus6;}
 			}
@@ -924,7 +924,7 @@ double status(){
 #pragma omp section
 			{
 				if(wspinFplus5){
-					term = lowermainspinFplus5();//267
+					term = lowermain(Fplus5);//267
 					z_arr[267] = wspinFplus5 * term;
 					w_arr[267] = wspinFplus5;}
 			}
@@ -932,7 +932,7 @@ double status(){
 #pragma omp section
 			{
 				if(wspinFplus4){
-					term = lowermainspinFplus4();//268
+					term = lowermain(Fplus4);//268
 					z_arr[268] = wspinFplus4 * term;
 					w_arr[268] = wspinFplus4;}
 			}
@@ -940,7 +940,7 @@ double status(){
 #pragma omp section
 			{
 				if(wspinFplus3){
-					term = lowermainspinFplus3();//269
+					term = lowermain(Fplus3);//269
 					z_arr[269] = wspinFplus3 * term;
 					w_arr[269] = wspinFplus3;}
 			}
@@ -948,7 +948,7 @@ double status(){
 #pragma omp section
 			{
 				if(wspinFplus2){
-					term = lowermainspinFplus2();//270
+					term = lowermain(Fplus2);//270
 					z_arr[270] = wspinFplus2 * term;
 					w_arr[270] = wspinFplus2;}
 			}
@@ -956,7 +956,7 @@ double status(){
 #pragma omp section
 			{
 				if(wspinFplus1){
-					term = lowermainspinFplus1();//271
+					term = lowermain(Fplus1);//271
 					z_arr[271] = wspinFplus1 * term;
 					w_arr[271] = wspinFplus1;}
 			}
@@ -964,7 +964,7 @@ double status(){
 #pragma omp section
 			{
 				if(wspinFneutrl){
-					term = lowermainspinFneutrl();//272
+					term = lowermain(Fneutrl);//272
 					z_arr[272] = wspinFneutrl * term;
 					w_arr[272] = wspinFneutrl;}
 			}
@@ -972,7 +972,7 @@ double status(){
 #pragma omp section
 			{
 				if(wspinF_1){
-					term = lowermainspinF_1();//273
+					term = lowermain(F_1);//273
 					z_arr[273] = wspinF_1 * term;
 					w_arr[273] = wspinF_1;}
 			}
@@ -1059,147 +1059,147 @@ double status(){
 #pragma omp section
 			{
 				if(wspinFplus5ex){
-					term = lowermainspinFplus5ex();//285
+					term = lowermain(Fplus5ex);//285
 					z_arr[285] = wspinFplus5ex * term;
 					w_arr[285] = wspinFplus5ex;}
 			}
 #pragma omp section
 			{
 				if(wspinFplus4ex){
-					term = lowermainspinFplus4ex();//286
+					term = lowermain(Fplus4ex);//286
 					z_arr[286] = wspinFplus4ex * term;
 					w_arr[286] = wspinFplus4ex;}
 			}
 #pragma omp section
 			{
 				if(wspinFplus3ex){
-					term = lowermainspinFplus3ex();//287
+					term = lowermain(Fplus3ex);//287
 					z_arr[287] = wspinFplus3ex * term;
 					w_arr[287] = wspinFplus3ex;}
 			}
 #pragma omp section
 			{
 				if(wspinFplus3ex2){
-					term = lowermainspinFplus3ex2();//288
+					term = lowermain(Fplus3ex2);//288
 					z_arr[288] = wspinFplus3ex2 * term;
 					w_arr[288] = wspinFplus3ex2;}
 			}
 #pragma omp section
 			{
 				if(wspinFplus2ex){
-					term = lowermainspinFplus2ex();//289
+					term = lowermain(Fplus2ex);//289
 					z_arr[289] = wspinFplus2ex * term;
 					w_arr[289] = wspinFplus2ex;}
 			}
 #pragma omp section
 			{
 				if(wspinFplus1ex){
-					term = lowermainspinFplus1ex();//290
+					term = lowermain(Fplus1ex);//290
 					z_arr[290] = wspinFplus1ex * term;
 					w_arr[290] = wspinFplus1ex;}
 			}
 #pragma omp section
 			{
 				if(wspinSiplus2ex){
-					term = lowermainspinSiplus2ex();//291
+					term = lowermain(Siplus2ex);//291
 					z_arr[291] = wspinSiplus2ex * term;
 					w_arr[291] = wspinSiplus2ex;}
 			}
 #pragma omp section
 			{
 				if(wspinSiplus1ex){
-					term = lowermainspinSiplus1ex();//292
+					term = lowermain(Siplus1ex);//292
 					z_arr[292] = wspinSiplus1ex * term;
 					w_arr[292] = wspinSiplus1ex;}
 			}
 #pragma omp section
 			{
 				if(wspinSineutrlex){
-					term = lowermainspinSineutrlex();//293
+					term = lowermain(Sineutrlex);//293
 					z_arr[293] = wspinSineutrlex * term;
 					w_arr[293] = wspinSineutrlex;}
 			}
 #pragma omp section
 			{
 				if(wspinSineutrlex2){
-					term = lowermainspinSineutrlex2();//294
+					term = lowermain(Sineutrlex2);//294
 					z_arr[294] = wspinSineutrlex2 * term;
 					w_arr[294] = wspinSineutrlex2;}
 			}
 #pragma omp section
 			{
 				if(wspinPplus3ex){
-					term = lowermainspinPplus3ex();//295
+					term = lowermain(Pplus3ex);//295
 					z_arr[295] = wspinPplus3ex * term;
 					w_arr[295] = wspinPplus3ex;}
 			}
 #pragma omp section
 			{
 				if(wspinPplus2ex){
-					term = lowermainspinPplus2ex();//296
+					term = lowermain(Pplus2ex);//296
 					z_arr[296] = wspinPplus2ex * term;
 					w_arr[296] = wspinPplus2ex;}
 			}
 #pragma omp section
 			{
 				if(wspinPplus1ex){
-					term = lowermainspinPplus1ex();//297
+					term = lowermain(Pplus1ex);//297
 					z_arr[297] = wspinPplus1ex * term;
 					w_arr[297] = wspinPplus1ex;}
 			}
 #pragma omp section
 			{
 				if(wspinPplus1ex2){
-					term = lowermainspinPplus1ex2();//298
+					term = lowermain(Pplus1ex2);//298
 					z_arr[298] = wspinPplus1ex2 * term;
 					w_arr[298] = wspinPplus1ex2;}
 			}
 #pragma omp section
 			{
 				if(wspinPneutrlex){
-					term = lowermainspinPneutrlex();//299
+					term = lowermain(Pneutrlex);//299
 					z_arr[299] = wspinPneutrlex * term;
 					w_arr[299] = wspinPneutrlex;}
 			}
 #pragma omp section
 			{
 				if(wspinSplus4ex){
-					term = lowermainspinSplus4ex();//300
+					term = lowermain(Splus4ex);//300
 					z_arr[300] = wspinSplus4ex * term;
 					w_arr[300] = wspinSplus4ex;}
 			}
 #pragma omp section
 			{
 				if(wspinSplus3ex){
-					term = lowermainspinSplus3ex();//301
+					term = lowermain(Splus3ex);//301
 					z_arr[301] = wspinSplus3ex * term;
 					w_arr[301] = wspinSplus3ex;}
 			}
 #pragma omp section
 			{
 				if(wspinSplus2ex){
-					term = lowermainspinSplus2ex();//302
+					term = lowermain(Splus2ex);//302
 					z_arr[302] = wspinSplus2ex * term;
 					w_arr[302] = wspinSplus2ex;}
 			}
 #pragma omp section
 			{
 				if(wspinSplus2ex2){
-					term = lowermainspinSplus2ex2();//303
+					term = lowermain(Splus2ex2);//303
 					z_arr[303] = wspinSplus2ex2 * term;
 					w_arr[303] = wspinSplus2ex2;}
 			}
 #pragma omp section
 			{
 				if(wspinSplus1ex){
-					term = lowermainspinSplus1ex();//304
+					term = lowermain(Splus1ex);//304
 					z_arr[304] = wspinSplus1ex * term;
 					w_arr[304] = wspinSplus1ex;}
 			}
 #pragma omp section
 			{
 				if(wspinSneutrlex){
-					term = lowermainspinSneutrlex();//305
+					term = lowermain(Sneutrlex);//305
 					z_arr[305] = wspinSneutrlex * term;
 					w_arr[305] = wspinSneutrlex;}
 			}
@@ -1228,28 +1228,28 @@ double status(){
 #pragma omp section
 			{
 				if(wspinFneutrlex){
-					term = lowermainspinFneutrlex();//309
+					term = lowermains(Fneutrlex);//309
 					z_arr[309] = wspinFneutrlex * term;
 					w_arr[309] = wspinFneutrlex;}
 			}
 #pragma omp section
 			{
 				if(wspinFplus1ex2){
-					term = lowermainspinFplus1ex2();//310
+					term = lowermain(Fplus1ex2);//310
 					z_arr[310] = wspinFplus1ex2 * term;
 					w_arr[310] = wspinFplus1ex2;}
 			}
 #pragma omp section
 			{
 				if(wspinFplus2ex2){
-					term = lowermainspinFplus2ex2();//311
+					term = lowermain(Fplus2ex2);//311
 					z_arr[311] = wspinFplus2ex2 * term;
 					w_arr[311] = wspinFplus2ex2;}
 			}
 #pragma omp section
 			{
 				if(wspinSneutrlex2){
-					term = lowermainspinSneutrlex2();//312
+					term = lowermain(Sneutrlex2);//312
 					z_arr[312] = wspinSneutrlex2 * term;
 					w_arr[312] = wspinSneutrlex2;}
 			}
@@ -1257,196 +1257,196 @@ double status(){
 #pragma omp section
 			{
 				if(wspinB_1){
-					term = lowermainspinB_1();//313
+					term = lowermain(B_1);//313
 					z_arr[313] = wspinB_1 * term;
 					w_arr[313] = wspinB_1;}
 			}
 #pragma omp section
 			{
 				if(wspinBneutrlex){
-					term = lowermainspinBneutrlex();//314
+					term = lowermain(Bneutrlex);//314
 					z_arr[314] = wspinBneutrlex * term;
 					w_arr[314] = wspinBneutrlex;}
 			}
 #pragma omp section
 			{
 				if(wspinBneutrl){
-					term = lowermainspinBneutrl();//315
+					term = lowermain(Bneutrl);//315
 					z_arr[315] = wspinBneutrl * term;
 					w_arr[315] = wspinBneutrl;}
 			}
 #pragma omp section
 			{
 				if(wspinBplus1ex){
-					term = lowermainspinBplus1ex();//316
+					term = lowermain(Bplus1ex);//316
 					z_arr[316] = wspinBplus1ex * term;
 					w_arr[316] = wspinBplus1ex;}
 			}
 #pragma omp section
 			{
 				if(wspinBplus1){
-					term = lowermainspinBplus1();//317
+					term = lowermain(Bplus1);//317
 					z_arr[317] = wspinBplus1 * term;
 					w_arr[317] = wspinBplus1;}
 			}
 #pragma omp section
 			{
 				if(wspinBplus2){
-					term = lowermainspinBplus2();//318
+					term = lowermain(Bplus2);//318
 					z_arr[318] = wspinBplus2 * term;
 					w_arr[318] = wspinBplus2;}
 			}
 #pragma omp section
 			{
 				if(wspinCl_1){
-					term = lowermainspinCl_1();//319
+					term = lowermain(Cl_1);//319
 					z_arr[319] = wspinCl_1 * term;
 					w_arr[319] = wspinCl_1;}
 			}
 #pragma omp section
 			{
 				if(wspinClneutrlex){
-					term = lowermainspinClneutrlex();//320
+					term = lowermain(Clneutrlex);//320
 					z_arr[320] = wspinClneutrlex * term;
 					w_arr[320] = wspinClneutrlex;}
 			}
 #pragma omp section
 			{
 				if(wspinClneutrl){
-					term = lowermainspinClneutrl();//321
+					term = lowermain(Clneutrl);//321
 					z_arr[321] = wspinClneutrl * term;
 					w_arr[321] = wspinClneutrl;}
 			}
 #pragma omp section
 			{
 				if(wspinClplus1ex2){
-					term = lowermainspinClplus1ex2();//322
+					term = lowermain(Clplus1ex2);//322
 					z_arr[322] = wspinClplus1ex2 * term;
 					w_arr[322] = wspinClplus1ex2;}
 			}
 #pragma omp section
 			{
 				if(wspinClplus1ex){
-					term = lowermainspinClplus1ex();//323
+					term = lowermain(Clplus1ex);//323
 					z_arr[323] = wspinClplus1ex * term;
 					w_arr[323] = wspinClplus1ex;}
 			}
 #pragma omp section
 			{
 				if(wspinClplus1){
-					term = lowermainspinClplus1();//324
+					term = lowermain(Clplus1);//324
 					z_arr[324] = wspinClplus1 * term;
 					w_arr[324] = wspinClplus1;}
 			}
 #pragma omp section
 			{
 				if(wspinClplus2ex){
-					term = lowermainspinClplus2ex();//325
+					term = lowermain(Clplus2ex);//325
 					z_arr[325] = wspinClplus2ex * term;
 					w_arr[325] = wspinClplus2ex;}
 			}
 #pragma omp section
 			{
 				if(wspinClplus2){
-					term = lowermainspinClplus2();//326
+					term = lowermain(Clplus2);//326
 					z_arr[326] = wspinClplus2 * term;
 					w_arr[326] = wspinClplus2;}
 			}
 #pragma omp section
 			{
 				if(wspinClplus3ex2){
-					term = lowermainspinClplus3ex2();//327
+					term = lowermain(Clplus3ex2);//327
 					z_arr[327] = wspinClplus3ex2 * term;
 					w_arr[327] = wspinClplus3ex2;}
 			}
 #pragma omp section
 			{
 				if(wspinClplus3ex){
-					term = lowermainspinClplus3ex();//328
+					term = lowermain(Clplus3ex);//328
 					z_arr[328] = wspinClplus3ex * term;
 					w_arr[328] = wspinClplus3ex;}
 			}
 #pragma omp section
 			{
 				if(wspinClplus3){
-					term = lowermainspinClplus3();//329
+					term = lowermain(Clplus3);//329
 					z_arr[329] = wspinClplus3 * term;
 					w_arr[329] = wspinClplus3;}
 			}
 #pragma omp section
 			{
 				if(wspinClplus4ex){
-					term = lowermainspinClplus4ex();//330
+					term = lowermain(Clplus4ex);//330
 					z_arr[330] = wspinClplus4ex * term;
 					w_arr[330] = wspinClplus4ex;}
 			}
 #pragma omp section
 			{
 				if(wspinClplus4){
-					term = lowermainspinClplus4();//331
+					term = lowermain(Clplus4);//331
 					z_arr[331] = wspinClplus4 * term;
 					w_arr[331] = wspinClplus4;}
 			}
 #pragma omp section
 			{
 				if(wspinClplus5ex){
-					term = lowermainspinClplus5ex();//332
+					term = lowermain(Clplus5ex);//332
 					z_arr[332] = wspinClplus5ex * term;
 					w_arr[332] = wspinClplus5ex;}
 			}
 #pragma omp section
 			{
 				if(wspinClplus5){
-					term = lowermainspinClplus5();//333
+					term = lowermain(Clplus5);//333
 					z_arr[333] = wspinClplus5 * term;
 					w_arr[333] = wspinClplus5;}
 			}
 #pragma omp section
 			{
 				if(wspinClplus6){
-					term = lowermainspinClplus6();//334
+					term = lowermain(Clplus6);//334
 					z_arr[334] = wspinClplus6 * term;
 					w_arr[334] = wspinClplus6;}
 			}
 #pragma omp section
 			{
 				if(wspinAl_1){
-					term = lowermainspinAl_1();//335
+					term = lowermain(Al_1);//335
 					z_arr[335] = wspinAl_1 * term;
 					w_arr[335] = wspinAl_1;}
 			}
 #pragma omp section
 			{
 				if(wspinAlneutrlex){
-					term = lowermainspinAlneutrlex();//336
+					term = lowermain(Alneutrlex);//336
 					z_arr[336] = wspinAlneutrlex * term;
 					w_arr[336] = wspinAlneutrlex;}
 			}
 #pragma omp section
 			{
 				if(wspinAlneutrl){
-					term = lowermainspinAlneutrl();//337
+					term = lowermain(Alneutrl);//337
 					z_arr[337] = wspinAlneutrl * term;
 					w_arr[337] = wspinAlneutrl;}
 			}
 #pragma omp section
 			{
 				if(wspinAlplus1ex){
-					term = lowermainspinAlplus1ex();//338
+					term = lowermain(Alplus1ex);//338
 					z_arr[338] = wspinAlplus1ex * term;
 					w_arr[338] = wspinAlplus1ex;}
 			}
 #pragma omp section
 			{
 				if(wspinAlplus1){
-					term = lowermainspinAlplus1();//339
+					term = lowermain(Alplus1);//339
 					z_arr[339] = wspinAlplus1 * term;
 					w_arr[339] = wspinAlplus1;}
 			}
 #pragma omp section
 			{
 				if(wspinAlplus2){
-					term = lowermainspinAlplus2();//340
+					term = lowermain(Alplus2);//340
 					z_arr[340] = wspinAlplus2 * term;
 					w_arr[340] = wspinAlplus2;}
 			}
@@ -1469,70 +1469,70 @@ double status(){
 #pragma omp section
 			{
 				if(wspinLi_1){
-					term = lowermainspinLi_1();//343
+					term = lowermain(Li_1);//343
 					z_arr[343] = wspinLi_1 * term;
 					w_arr[343] = wspinLi_1;}
 			}
 #pragma omp section
 			{
 				if(wspinLineutrl){
-					term = lowermainspinLineutrl();//344
+					term = lowermain(Lineutrl);//344
 					z_arr[344] = wspinLineutrl * term;
 					w_arr[344] = wspinLineutrl;}
 			}
 #pragma omp section
 			{
 				if(wspinBeneutrl){
-					term = lowermainspinBeneutrl();//345
+					term = lowermain(Beneutrl);//345
 					z_arr[345] = wspinBeneutrl * term;
 					w_arr[345] = wspinBeneutrl;}
 			}
 #pragma omp section
 			{
 				if(wspinBeneutrlex){
-					term = lowermainspinBeneutrlex();//346
+					term = lowermain(Beneutrlex);//346
 					z_arr[346] = wspinBeneutrlex * term;
 					w_arr[346] = wspinBeneutrlex;}
 			}
 #pragma omp section
 			{
 				if(wspinBeplus1){
-					term = lowermainspinBeplus1();//347
+					term = lowermain(Beplus1);//347
 					z_arr[347] = wspinBeplus1 * term;
 					w_arr[347] = wspinBeplus1;}
 			}
 #pragma omp section
 			{
 				if(wspinNa_1){
-					term = lowermainspinNa_1();//348
+					term = lowermain(Na_1);//348
 					z_arr[348] = wspinNa_1 * term;
 					w_arr[348] = wspinNa_1;}
 			}
 #pragma omp section
 			{
 				if(wspinNaneutrl){
-					term = lowermainspinNaneutrl();//349
+					term = lowermain(Naneutrl);//349
 					z_arr[349] = wspinNaneutrl * term;
 					w_arr[349] = wspinNaneutrl;}
 			}
 #pragma omp section
 			{
 				if(wspinMgneutrl){
-					term = lowermainspinMgneutrl();//350
+					term = lowermain(Mgneutrl);//350
 					z_arr[350] = wspinMgneutrl * term;
 					w_arr[350] = wspinMgneutrl;}
 			}
 #pragma omp section
 			{
 				if(wspinMgneutrlex){
-					term = lowermainspinMgneutrlex();//351
+					term = lowermain(Mgneutrlex);//351
 					z_arr[351] = wspinMgneutrlex * term;
 					w_arr[351] = wspinMgneutrlex;}
 			}
 #pragma omp section
 			{
 				if(wspinMgplus1){
-					term = lowermainspinMgplus1();//352
+					term = lowermain(Mgplus1);//352
 					z_arr[352] = wspinMgplus1 * term;
 					w_arr[352] = wspinMgplus1;}
 			}
@@ -1676,56 +1676,56 @@ double status(){
 #pragma omp section
 			{
 				if(wspinScplus2){
-					term = lowermainspinScplus2();
+					term = lowermain(Scplus2);
 					z_arr[518] = wspinScplus2 * term;
 					w_arr[518] = wspinScplus2;}
 			}
 #pragma omp section
 			{
 				if(wspinTiplus3){
-					term = lowermainspinTiplus3();
+					term = lowermain(Tiplus3);
 					z_arr[519] = wspinTiplus3 * term;
 					w_arr[519] = wspinTiplus3;}
 			}
 #pragma omp section
 			{
 				if(wspinTiplus2){
-					term = lowermainspinTiplus2();
+					term = lowermain(Tiplus2);
 					z_arr[520] = wspinTiplus2 * term;
 					w_arr[520] = wspinTiplus2;}
 			}
 #pragma omp section
 			{
 				if(wspinTiplus2ex){
-					term = lowermainspinTiplus2ex();
+					term = lowermain(Tiplus2ex);
 					z_arr[521] = wspinTiplus2ex * term;
 					w_arr[521] = wspinTiplus2ex;}
 			}
 #pragma omp section
 			{
 				if(wspinVplus4){
-					term = lowermainspinVplus4();
+					term = lowermain(Vplus4);
 					z_arr[522] = wspinVplus4 * term;
 					w_arr[522] = wspinVplus4;}
 			}
 #pragma omp section
 			{
 				if(wspinVplus3){
-					term = lowermainspinVplus3();
+					term = lowermain(Vplus3);
 					z_arr[523] = wspinVplus3 * term;
 					w_arr[523] = wspinVplus3;}
 			}
 #pragma omp section
 			{
 				if(wspinVplus3ex){
-					term = lowermainspinVplus3ex();
+					term = lowermain(Vplus3ex);
 					z_arr[524] = wspinVplus3ex * term;
 					w_arr[524] = wspinVplus3ex;}
 			}
 #pragma omp section
 			{
 				if(wspinVplus2){
-					term = lowermainspinVplus2();
+					term = lowermain(Vplus2);
 					z_arr[525] = wspinVplus2 * term;
 					w_arr[525] = wspinVplus2;}
 			}
@@ -1739,147 +1739,147 @@ double status(){
 #pragma omp section
 			{
 				if(wspinCrplus5){
-					term = lowermainspinCrplus5();
+					term = lowermain(Crplus5);
 					z_arr[527] = wspinCrplus5 * term;
 					w_arr[527] = wspinCrplus5;}
 			}
 #pragma omp section
 			{
 				if(wspinCrplus4){
-					term = lowermainspinCrplus4();
+					term = lowermain(Crplus4);
 					z_arr[528] = wspinCrplus4 * term;
 					w_arr[528] = wspinCrplus4;}
 			}
 #pragma omp section
 			{
 				if(wspinCrplus4ex){
-					term = lowermainspinCrplus4ex();
+					term = lowermain(Crplus4ex);
 					z_arr[529] = wspinCrplus4ex * term;
 					w_arr[529] = wspinCrplus4ex;}
 			}
 #pragma omp section
 			{
 				if(wspinCrplus3){
-					term = lowermainspinCrplus3();
+					term = lowermain(Crplus3);
 					z_arr[530] = wspinCrplus3 * term;
 					w_arr[530] = wspinCrplus3;}
 			}
 #pragma omp section
 			{
 				if(wspinCrplus3ex){
-					term = lowermainspinCrplus3ex();
+					term = lowermain(Crplus3ex);
 					z_arr[531] = wspinCrplus3ex * term;
 					w_arr[531] = wspinCrplus3ex;}
 			}
 #pragma omp section
 			{
 				if(wspinCrplus2){
-					term = lowermainspinCrplus2();
+					term = lowermain(Crplus2);
 					z_arr[532] = wspinCrplus2 * term;
 					w_arr[532] = wspinCrplus2;}
 			}
 #pragma omp section
 			{
 				if(wspinCrplus2ex){
-					term = lowermainspinCrplus2ex();
+					term = lowermain(Crplus2ex);
 					z_arr[533] = wspinCrplus2ex * term;
 					w_arr[533] = wspinCrplus2ex;}
 			}
 #pragma omp section
 			{
 				if(wspinCrplus2ex2){
-					term = lowermainspinCrplus2ex2();
+					term = lowermain(Crplus2ex2);
 					z_arr[534] = wspinCrplus2ex2 * term;
 					w_arr[534] = wspinCrplus2ex2;}
 			}
 #pragma omp section
 			{
 				if(wspinCrplus1){
-					term = lowermainspinCrplus1();
+					term = lowermain(Crplus1);
 					z_arr[535] = wspinCrplus1 * term;
 					w_arr[535] = wspinCrplus1;}
 			}
 #pragma omp section
 			{
 				if(wspinCrplus1ex){
-					term = lowermainspinCrplus1ex();
+					term = lowermain(Crplus1ex);
 					z_arr[536] = wspinCrplus1ex * term;
 					w_arr[536] = wspinCrplus1ex;}
 			}
 #pragma omp section
 			{
 				if(wspinCrplus1ex2){
-					term = lowermainspinCrplus1ex2();
+					term = lowermain(Crplus1ex2);
 					z_arr[537] = wspinCrplus1ex2 * term;
 					w_arr[537] = wspinCrplus1ex2;}
 			}
 #pragma omp section
 			{
 				if(wspinMnplus6){
-					term = lowermainspinMnplus6();
+					term = lowermain(Mnplus6);
 					z_arr[538] = wspinMnplus6 * term;
 					w_arr[538] = wspinMnplus6;}
 			}
 #pragma omp section
 			{
 				if(wspinMnplus5){
-					term = lowermainspinMnplus5();
+					term = lowermain(Mnplus5);
 					z_arr[539] = wspinMnplus5 * term;
 					w_arr[539] = wspinMnplus5;}
 			}
 #pragma omp section
 			{
 				if(wspinMnplus5ex){
-					term = lowermainspinMnplus5ex();
+					term = lowermain(Mnplus5ex);
 					z_arr[540] = wspinMnplus5ex * term;
 					w_arr[540] = wspinMnplus5ex;}
 			}
 #pragma omp section
 			{
 				if(wspinMnplus4){
-					term = lowermainspinMnplus4();
+					term = lowermain(Mnplus4);
 					z_arr[541] = wspinMnplus4 * term;
 					w_arr[541] = wspinMnplus4;}
 			}
 #pragma omp section
 			{
 				if(wspinMnplus4ex){
-					term = lowermainspinMnplus4ex();
+					term = lowermain(Mnplus4ex);
 					z_arr[542] = wspinMnplus4ex * term;
 					w_arr[542] = wspinMnplus4ex;}
 			}
 #pragma omp section
 			{
 				if(wspinMnplus3){
-					term = lowermainspinMnplus3();
+					term = lowermain(Mnplus3);
 					z_arr[543] = wspinMnplus3 * term;
 					w_arr[543] = wspinMnplus3;}
 			}
 #pragma omp section
 			{
 				if(wspinMnplus3ex){
-					term = lowermainspinMnplus3ex();
+					term = lowermain(Mnplus3ex);
 					z_arr[544] = wspinMnplus3ex * term;
 					w_arr[544] = wspinMnplus3ex;}
 			}
 #pragma omp section
 			{
 				if(wspinMnplus2){
-					term = lowermainspinMnplus2();
+					term = lowermain(Mnplus2);
 					z_arr[545] = wspinMnplus2 * term;
 					w_arr[545] = wspinMnplus2;}
 			}
 #pragma omp section
 			{
 				if(wspinMnplus2ex){
-					term = lowermainspinMnplus2ex();
+					term = lowermain(Mnplus2ex);
 					z_arr[546] = wspinMnplus2ex * term;
 					w_arr[546] = wspinMnplus2ex;}
 			}
 #pragma omp section
 			{
 				if(wspinMnplus2ex2){
-					term = lowermainspinMnplus2ex2();
+					term = lowermain(Mnplus2ex2);
 					z_arr[547] = wspinMnplus2ex2 * term;
 					w_arr[547] = wspinMnplus2ex2;}
 			}
@@ -1984,427 +1984,427 @@ double status(){
 #pragma omp section
 			{
 				if(wspinCoplus8){
-					term = lowermainspinCoplus8();
+					term = lowermain(Coplus8);
 					z_arr[562] = wspinCoplus8 * term;
 					w_arr[562] = wspinCoplus8;}
 			}
 #pragma omp section
 			{
 				if(wspinCoplus7){
-					term = lowermainspinCoplus7();
+					term = lowermain(Coplus7);
 					z_arr[563] = wspinCoplus7 * term;
 					w_arr[563] = wspinCoplus7;}
 			}
 #pragma omp section
 			{
 				if(wspinCoplus7ex){
-					term = lowermainspinCoplus7ex();
+					term = lowermain(Coplus7ex);
 					z_arr[564] = wspinCoplus7ex * term;
 					w_arr[564] = wspinCoplus7ex;}
 			}
 #pragma omp section
 			{
 				if(wspinCoplus6){
-					term = lowermainspinCoplus6();
+					term = lowermain(Coplus6);
 					z_arr[565] = wspinCoplus6 * term;
 					w_arr[565] = wspinCoplus6;}
 			}
 #pragma omp section
 			{
 				if(wspinCoplus6ex){
-					term = lowermainspinCoplus6ex();
+					term = lowermain(Coplus6ex);
 					z_arr[566] = wspinCoplus6ex * term;
 					w_arr[566] = wspinCoplus6ex;}
 			}
 #pragma omp section
 			{
 				if(wspinCoplus5){
-					term = lowermainspinCoplus5();
+					term = lowermain(Coplus5);
 					z_arr[567] = wspinCoplus5 * term;
 					w_arr[567] = wspinCoplus5;}
 			}
 #pragma omp section
 			{
 				if(wspinCoplus5ex){
-					term = lowermainspinCoplus5ex();
+					term = lowermain(Coplus5ex);
 					z_arr[568] = wspinCoplus5ex * term;
 					w_arr[568] = wspinCoplus5ex;}
 			}
 #pragma omp section
 			{
 				if(wspinCoplus5ex2){
-					term = lowermainspinCoplus5ex2();
+					term = lowermain(Coplus5ex2);
 					z_arr[569] = wspinCoplus5ex2 * term;
 					w_arr[569] = wspinCoplus5ex2;}
 			}
 #pragma omp section
 			{
 				if(wspinCoplus4){
-					term = lowermainspinCoplus4();
+					term = lowermain(Coplus4);
 					z_arr[570] = wspinCoplus4 * term;
 					w_arr[570] = wspinCoplus4;}
 			}
 #pragma omp section
 			{
 				if(wspinCoplus4ex){
-					term = lowermainspinCoplus4ex();
+					term = lowermain(Coplus4ex);
 					z_arr[571] = wspinCoplus4ex * term;
 					w_arr[571] = wspinCoplus4ex;}
 			}
 #pragma omp section
 			{
 				if(wspinCoplus4ex2){
-					term = lowermainspinCoplus4ex2();
+					term = lowermain(Coplus4ex2);
 					z_arr[572] = wspinCoplus4ex2 * term;
 					w_arr[572] = wspinCoplus4ex2;}
 			}
 #pragma omp section
 			{
 				if(wspinCoplus3){
-					term = lowermainspinCoplus3();
+					term = lowermain(Coplus3);
 					z_arr[573] = wspinCoplus3 * term;
 					w_arr[573] = wspinCoplus3;}
 			}
 #pragma omp section
 			{
 				if(wspinCoplus3ex){
-					term = lowermainspinCoplus3ex();
+					term = lowermain(Coplus3ex);
 					z_arr[574] = wspinCoplus3ex * term;
 					w_arr[574] = wspinCoplus3ex;}
 			}
 #pragma omp section
 			{
 				if(wspinCoplus3ex2){
-					term = lowermainspinCoplus3ex2();
+					term = lowermain(Coplus3ex2);
 					z_arr[575] = wspinCoplus3ex2 * term;
 					w_arr[575] = wspinCoplus3ex2;}
 			}
 #pragma omp section
 			{
 				if(wspinCoplus2){
-					term = lowermainspinCoplus2();
+					term = lowermain(Coplus2);
 					z_arr[576] = wspinCoplus2 * term;
 					w_arr[576] = wspinCoplus2;}
 			}
 #pragma omp section
 			{
 				if(wspinCoplus2ex){
-					term = lowermainspinCoplus2ex();
+					term = lowermain(Coplus2ex);
 					z_arr[577] = wspinCoplus2ex * term;
 					w_arr[577] = wspinCoplus2ex;}
 			}
 #pragma omp section
 			{
 				if(wspinCoplus2ex2){
-					term = lowermainspinCoplus2ex2();
+					term = lowermain(Coplus2ex2);
 					z_arr[578] = wspinCoplus2ex2 * term;
 					w_arr[578] = wspinCoplus2ex2;}
 			}
 #pragma omp section
 			{
 				if(wspinNiplus9){
-					term = lowermainspinNiplus9();
+					term = lowermain(Niplus9);
 					z_arr[579] = wspinNiplus9 * term;
 					w_arr[579] = wspinNiplus9;}
 			}
 #pragma omp section
 			{
 				if(wspinNiplus8){
-					term = lowermainspinNiplus8();
+					term = lowermain(Niplus8);
 					z_arr[580] = wspinNiplus8 * term;
 					w_arr[580] = wspinNiplus8;}
 			}
 #pragma omp section
 			{
 				if(wspinNiplus8ex){
-					term = lowermainspinNiplus8ex();
+					term = lowermain(Niplus8ex);
 					z_arr[581] = wspinNiplus8ex * term;
 					w_arr[581] = wspinNiplus8ex;}
 			}
 #pragma omp section
 			{
 				if(wspinNiplus7){
-					term = lowermainspinNiplus7();
+					term = lowermain(Niplus7);
 					z_arr[582] = wspinNiplus7 * term;
 					w_arr[582] = wspinNiplus7;}
 			}
 #pragma omp section
 			{
 				if(wspinNiplus7ex){
-					term = lowermainspinNiplus7ex();
+					term = lowermain(Niplus7ex);
 					z_arr[583] = wspinNiplus7ex * term;
 					w_arr[583] = wspinNiplus7ex;}
 			}
 #pragma omp section
 			{
 				if(wspinNiplus6){
-					term = lowermainspinNiplus6();
+					term = lowermain(Niplus6);
 					z_arr[584] = wspinNiplus6 * term;
 					w_arr[584] = wspinNiplus6;}
 			}
 #pragma omp section
 			{
 				if(wspinNiplus6ex){
-					term = lowermainspinNiplus6ex();
+					term = lowermain(Niplus6ex);
 					z_arr[585] = wspinNiplus6ex * term;
 					w_arr[585] = wspinNiplus6ex;}
 			}
 #pragma omp section
 			{
 				if(wspinNiplus5){
-					term = lowermainspinNiplus5();
+					term = lowermain(Niplus5);
 					z_arr[586] = wspinNiplus5 * term;
 					w_arr[586] = wspinNiplus5;}
 			}
 #pragma omp section
 			{
 				if(wspinNiplus5ex){
-					term = lowermainspinNiplus5ex();
+					term = lowermain(Niplus5ex);
 					z_arr[587] = wspinNiplus5ex * term;
 					w_arr[587] = wspinNiplus5ex;}
 			}
 #pragma omp section
 			{
 				if(wspinNiplus5ex2){
-					term = lowermainspinNiplus5ex2();
+					term = lowermain(Niplus5ex2);
 					z_arr[588] = wspinNiplus5ex2 * term;
 					w_arr[588] = wspinNiplus5ex2;}
 			}
 #pragma omp section
 			{
 				if(wspinNiplus4){
-					term = lowermainspinNiplus4();
+					term = lowermain(Niplus4);
 					z_arr[589] = wspinNiplus4 * term;
 					w_arr[589] = wspinNiplus4;}
 			}
 #pragma omp section
 			{
 				if(wspinNiplus4ex){
-					term = lowermainspinNiplus4ex();
+					term = lowermain(Niplus4ex);
 					z_arr[590] = wspinNiplus4ex * term;
 					w_arr[590] = wspinNiplus4ex;}
 			}
 #pragma omp section
 			{
 				if(wspinNiplus4ex2){
-					term = lowermainspinNiplus4ex2();
+					term = lowermain(Niplus4ex2);
 					z_arr[591] = wspinNiplus4ex2 * term;
 					w_arr[591] = wspinNiplus4ex2;}
 			}
 #pragma omp section
 			{
 				if(wspinNiplus3){
-					term = lowermainspinNiplus3();
+					term = lowermain(Niplus3);
 					z_arr[592] = wspinNiplus3 * term;
 					w_arr[592] = wspinNiplus3;}
 			}
 #pragma omp section
 			{
 				if(wspinNiplus3ex){
-					term = lowermainspinNiplus3ex();
+					term = lowermain(Niplus3ex);
 					z_arr[593] = wspinNiplus3ex * term;
 					w_arr[593] = wspinNiplus3ex;}
 			}
 #pragma omp section
 			{
 				if(wspinNiplus3ex2){
-					term = lowermainspinNiplus3ex2();
+					term = lowermain(Niplus3ex2);
 					z_arr[594] = wspinNiplus3ex2 * term;
 					w_arr[594] = wspinNiplus3ex2;}
 			}
 #pragma omp section
 			{
 				if(wspinNiplus2){
-					term = lowermainspinNiplus2();
+					term = lowermain(Niplus2);
 					z_arr[595] = wspinNiplus2 * term;
 					w_arr[595] = wspinNiplus2;}
 			}
 #pragma omp section
 			{
 				if(wspinNiplus2ex){
-					term = lowermainspinNiplus2ex();
+					term = lowermain(Niplus2ex);
 					z_arr[596] = wspinNiplus2ex * term;
 					w_arr[596] = wspinNiplus2ex;}
 			}
 #pragma omp section
 			{
 				if(wspinNiplus2ex2){
-					term = lowermainspinNiplus2ex2();
+					term = lowermain(Niplus2ex2);
 					z_arr[597] = wspinNiplus2ex2 * term;
 					w_arr[597] = wspinNiplus2ex2;}
 			}
 #pragma omp section
 			{
 				if(wspinCuplus10){
-					term = lowermainspinCuplus10();
+					term = lowermain(Cuplus10);
 					z_arr[598] = wspinCuplus10 * term;
 					w_arr[598] = wspinCuplus10;}
 			}
 #pragma omp section
 			{
 				if(wspinCuplus9){
-					term = lowermainspinCuplus9();
+					term = lowermain(Cuplus9);
 					z_arr[599] = wspinCuplus9 * term;
 					w_arr[599] = wspinCuplus9;}
 			}
 #pragma omp section
 			{
 				if(wspinCuplus9ex){
-					term = lowermainspinCuplus9ex();
+					term = lowermain(Cuplus9ex);
 					z_arr[600] = wspinCuplus9ex * term;
 					w_arr[600] = wspinCuplus9ex;}
 			}
 #pragma omp section
 			{
 				if(wspinCuplus8){
-					term = lowermainspinCuplus8();
+					term = lowermain(Cuplus8);
 					z_arr[601] = wspinCuplus8 * term;
 					w_arr[601] = wspinCuplus8;}
 			}
 #pragma omp section
 			{
 				if(wspinCuplus7){
-					term = lowermainspinCuplus7();
+					term = lowermain(Cuplus7);
 					z_arr[602] = wspinCuplus7 * term;
 					w_arr[602] = wspinCuplus7;}
 			}
 #pragma omp section
 			{
 				if(wspinCuplus6){
-					term = lowermainspinCuplus6();
+					term = lowermain(Cuplus6);
 					z_arr[603] = wspinCuplus6 * term;
 					w_arr[603] = wspinCuplus6;}
 			}
 #pragma omp section
 			{
 				if(wspinCuplus5){
-					term = lowermainspinCuplus5();
+					term = lowermain(Cuplus5);
 					z_arr[604] = wspinCuplus5 * term;
 					w_arr[604] = wspinCuplus5;}
 			}
 #pragma omp section
 			{
 				if(wspinCuplus5ex){
-					term = lowermainspinCuplus5ex();
+					term = lowermain(Cuplus5ex);
 					z_arr[605] = wspinCuplus5ex * term;
 					w_arr[605] = wspinCuplus5ex;}
 			}
 #pragma omp section
 			{
 				if(wspinCuplus5ex2){
-					term = lowermainspinCuplus5ex2();
+					term = lowermain(Cuplus5ex2);
 					z_arr[606] = wspinCuplus5ex2 * term;
 					w_arr[606] = wspinCuplus5ex2;}
 			}
 #pragma omp section
 			{
 				if(wspinCuplus4){
-					term = lowermainspinCuplus4();
+					term = lowermain(Cuplus4);
 					z_arr[607] = wspinCuplus4 * term;
 					w_arr[607] = wspinCuplus4;}
 			}
 #pragma omp section
 			{
 				if(wspinCuplus4ex){
-					term = lowermainspinCuplus4ex();
+					term = lowermain(Cuplus4ex);
 					z_arr[608] = wspinCuplus4ex * term;
 					w_arr[608] = wspinCuplus4ex;}
 			}
 #pragma omp section
 			{
 				if(wspinCuplus4ex2){
-					term = lowermainspinCuplus4ex2();
+					term = lowermain(Cuplus4ex2);
 					z_arr[609] = wspinCuplus4ex2 * term;
 					w_arr[609] = wspinCuplus4ex2;}
 			}
 #pragma omp section
 			{
 				if(wspinCuplus3){
-					term = lowermainspinCuplus3();
+					term = lowermain(Cuplus3);
 					z_arr[610] = wspinCuplus3 * term;
 					w_arr[610] = wspinCuplus3;}
 			}
 #pragma omp section
 			{
 				if(wspinCuplus3ex){
-					term = lowermainspinCuplus3ex();
+					term = lowermain(Cuplus3ex);
 					z_arr[611] = wspinCuplus3ex * term;
 					w_arr[611] = wspinCuplus3ex;}
 			}
 #pragma omp section
 			{
 				if(wspinCuplus3ex2){
-					term = lowermainspinCuplus3ex2();
+					term = lowermain(Cuplus3ex2);
 					z_arr[612] = wspinCuplus3ex2 * term;
 					w_arr[612] = wspinCuplus3ex2;}
 			}
 #pragma omp section
 			{
 				if(wspinCuplus2){
-					term = lowermainspinCuplus2();
+					term = lowermain(Cuplus2);
 					z_arr[613] = wspinCuplus2 * term;
 					w_arr[613] = wspinCuplus2;}
 			}
 #pragma omp section
 			{
 				if(wspinCuplus2ex){
-					term = lowermainspinCuplus2ex();
+					term = lowermain(Cuplus2ex);
 					z_arr[614] = wspinCuplus2ex * term;
 					w_arr[614] = wspinCuplus2ex;}
 			}
 #pragma omp section
 			{
 				if(wspinCuplus1){
-					term = lowermainspinCuplus1();
+					term = lowermain(Cuplus1);
 					z_arr[615] = wspinCuplus1 * term;
 					w_arr[615] = wspinCuplus1;}
 			}
 #pragma omp section
 			{
 				if(wspinCuplus1ex){
-					term = lowermainspinCuplus1ex();
+					term = lowermain(Cuplus1ex);
 					z_arr[616] = wspinCuplus1ex * term;
 					w_arr[616] = wspinCuplus1ex;}
 			}
 #pragma omp section
 			{
 				if(wspinYplus2){
-					term = lowermainspinYplus2();
+					term = lowermain(Yplus2);
 					z_arr[617] = wspinYplus2 * term;
 					w_arr[617] = wspinYplus2;}
 			}
 #pragma omp section
 			{
 				if(wspinZrplus3){
-					term = lowermainspinZrplus3();
+					term = lowermain(Zrplus3);
 					z_arr[618] = wspinZrplus3 * term;
 					w_arr[618] = wspinZrplus3;}
 			}
 #pragma omp section
 			{
 				if(wspinZrplus2){
-					term = lowermainspinZrplus2();
+					term = lowermain(Zrplus2);
 					z_arr[619] = wspinZrplus2 * term;
 					w_arr[619] = wspinZrplus2;}
 			}
 #pragma omp section
 			{
 				if(wspinZrplus2ex){
-					term = lowermainspinZrplus2ex();
+					term = lowermain(Zrplus2ex);
 					z_arr[620] = wspinZrplus2ex * term;
 					w_arr[620] = wspinZrplus2ex;}
 			}
 #pragma omp section
 			{
 				if(wspinNbplus4){
-					term = lowermainspinNbplus4();
+					term = lowermain(Nbplus4);
 					z_arr[621] = wspinNbplus4 * term;
 					w_arr[621] = wspinNbplus4;}
 			}
 #pragma omp section
 			{
 				if(wspinNbplus3){
-					term = lowermainspinNbplus3();
+					term = lowermain(Nbplus3);
 					z_arr[622] = wspinNbplus3 * term;
 					w_arr[622] = wspinNbplus3;}
 			}
@@ -2453,609 +2453,609 @@ double status(){
 #pragma omp section
 			{
 				if(wspinMoplus5){
-					term = lowermainspinMoplus5();
+					term = lowermain(Moplus5);
 					z_arr[629] = wspinMoplus5 * term;
 					w_arr[629] = wspinMoplus5;}
 			}
 #pragma omp section
 			{
 				if(wspinMoplus4){
-					term = lowermainspinMoplus4();
+					term = lowermain(Moplus4);
 					z_arr[630] = wspinMoplus4 * term;
 					w_arr[630] = wspinMoplus4;}
 			}
 #pragma omp section
 			{
 				if(wspinMoplus4ex){
-					term = lowermainspinMoplus4ex();
+					term = lowermain(Moplus4ex);
 					z_arr[631] = wspinMoplus4ex * term;
 					w_arr[631] = wspinMoplus4ex;}
 			}
 #pragma omp section
 			{
 				if(wspinMoplus3){
-					term = lowermainspinMoplus3();
+					term = lowermain(Moplus3);
 					z_arr[632] = wspinMoplus3 * term;
 					w_arr[632] = wspinMoplus3;}
 			}
 #pragma omp section
 			{
 				if(wspinMoplus3ex){
-					term = lowermainspinMoplus3ex();
+					term = lowermain(Moplus3ex);
 					z_arr[633] = wspinMoplus3ex * term;
 					w_arr[633] = wspinMoplus3ex;}
 			}
 #pragma omp section
 			{
 				if(wspinMoplus2){
-					term = lowermainspinMoplus2();
+					term = lowermain(Moplus2);
 					z_arr[634] = wspinMoplus2 * term;
 					w_arr[634] = wspinMoplus2;}
 			}
 #pragma omp section
 			{
 				if(wspinMoplus2ex){
-					term = lowermainspinMoplus2ex();
+					term = lowermain(Moplus2ex);
 					z_arr[635] = wspinMoplus2ex * term;
 					w_arr[635] = wspinMoplus2ex;}
 			}
 #pragma omp section
 			{
 				if(wspinMoplus2ex2){
-					term = lowermainspinMoplus2ex2();
+					term = lowermain(Moplus2ex2);
 					z_arr[636] = wspinMoplus2ex2 * term;
 					w_arr[636] = wspinMoplus2ex2;}
 			}
 #pragma omp section
 			{
 				if(wspinMoplus1){
-					term = lowermainspinMoplus1();
+					term = lowermain(Moplus1);
 					z_arr[637] = wspinMoplus1 * term;
 					w_arr[637] = wspinMoplus1;}
 			}
 #pragma omp section
 			{
 				if(wspinMoplus1ex){
-					term = lowermainspinMoplus1ex();
+					term = lowermain(Moplus1ex);
 					z_arr[638] = wspinMoplus1ex * term;
 					w_arr[638] = wspinMoplus1ex;}
 			}
 #pragma omp section
 			{
 				if(wspinMoplus1ex2){
-					term = lowermainspinMoplus1ex2();
+					term = lowermain(Moplus1ex2);
 					z_arr[639] = wspinMoplus1ex2 * term;
 					w_arr[639] = wspinMoplus1ex2;}
 			}
 #pragma omp section
 			{
 				if(wspinTcplus6){
-					term = lowermainspinTcplus6();
+					term = lowermain(Tcplus6);
 					z_arr[640] = wspinTcplus6 * term;
 					w_arr[640] = wspinTcplus6;}
 			}
 #pragma omp section
 			{
 				if(wspinTcplus5){
-					term = lowermainspinTcplus5();
+					term = lowermain(Tcplus5);
 					z_arr[641] = wspinTcplus5 * term;
 					w_arr[641] = wspinTcplus5;}
 			}
 #pragma omp section
 			{
 				if(wspinTcplus4){
-					term = lowermainspinTcplus4();
+					term = lowermain(Tcplus4);
 					z_arr[642] = wspinTcplus4 * term;
 					w_arr[642] = wspinTcplus4;}
 			}
 #pragma omp section
 			{
 				if(wspinTcplus3){
-					term = lowermainspinTcplus3();
+					term = lowermain(Tcplus3);
 					z_arr[643] = wspinTcplus3 * term;
 					w_arr[643] = wspinTcplus3;}
 			}
 #pragma omp section
 			{
 				if(wspinTcplus2){
-					term = lowermainspinTcplus2();
+					term = lowermain(Tcplus2);
 					z_arr[644] = wspinTcplus2 * term;
 					w_arr[644] = wspinTcplus2;}
 			}
 #pragma omp section
 			{
 				if(wspinRuplus7){
-					term = lowermainspinRuplus7();
+					term = lowermain(Ruplus7);
 					z_arr[645] = wspinRuplus7 * term;
 					w_arr[645] = wspinRuplus7;}
 			}
 #pragma omp section
 			{
 				if(wspinRuplus6){
-					term = lowermainspinRuplus6();
+					term = lowermain(Ruplus6);
 					z_arr[646] = wspinRuplus6 * term;
 					w_arr[646] = wspinRuplus6;}
 			}
 #pragma omp section
 			{
 				if(wspinRuplus5){
-					term = lowermainspinRuplus5();
+					term = lowermain(Ruplus5);
 					z_arr[647] = wspinRuplus5 * term;
 					w_arr[647] = wspinRuplus5;}
 			}
 #pragma omp section
 			{
 				if(wspinRuplus4){
-					term = lowermainspinRuplus4();
+					term = lowermain(Ruplus4);
 					z_arr[648] = wspinRuplus4 * term;
 					w_arr[648] = wspinRuplus4;}
 			}
 #pragma omp section
 			{
 				if(wspinRuplus3){
-					term = lowermainspinRuplus3();
+					term = lowermain(Ruplus3);
 					z_arr[649] = wspinRuplus3 * term;
 					w_arr[649] = wspinRuplus3;}
 			}
 #pragma omp section
 			{
 				if(wspinRuplus2){
-					term = lowermainspinRuplus2();
+					term = lowermain(Ruplus2);
 					z_arr[650] = wspinRuplus2 * term;
 					w_arr[650] = wspinRuplus2;}
 			}
 #pragma omp section
 			{
 				if(wspinRuplus2ex){
-					term = lowermainspinRuplus2ex();
+					term = lowermain(Ruplus2ex);
 					z_arr[651] = wspinRuplus2ex * term;
 					w_arr[651] = wspinRuplus2ex;}
 			}
 #pragma omp section
 			{
 				if(wspinRuplus1){
-					term = lowermainspinRuplus1();
+					term = lowermain(Ruplus1);
 					z_arr[652] = wspinRuplus1 * term;
 					w_arr[652] = wspinRuplus1;}
 			}
 #pragma omp section
 			{
 				if(wspinRuplus1ex){
-					term = lowermainspinRuplus1ex();
+					term = lowermain(Ruplus1ex);
 					z_arr[653] = wspinRuplus1ex * term;
 					w_arr[653] = wspinRuplus1ex;}
 			}
 #pragma omp section
 			{
 				if(wspinRuplus1ex2){
-					term = lowermainspinRuplus1ex2();
+					term = lowermain(Ruplus1ex2);
 					z_arr[654] = wspinRuplus1ex2 * term;
 					w_arr[654] = wspinRuplus1ex2;}
 			}
 #pragma omp section
 			{
 				if(wspinRhplus8){
-					term = lowermainspinRhplus8();
+					term = lowermain(Rhplus8);
 					z_arr[655] = wspinRhplus8 * term;
 					w_arr[655] = wspinRhplus8;}
 			}
 #pragma omp section
 			{
 				if(wspinRhplus7){
-					term = lowermainspinRhplus7();
+					term = lowermain(Rhplus7);
 					z_arr[656] = wspinRhplus7 * term;
 					w_arr[656] = wspinRhplus7;}
 			}
 #pragma omp section
 			{
 				if(wspinRhplus6){
-					term = lowermainspinRhplus6();
+					term = lowermain(Rhplus6);
 					z_arr[657] = wspinRhplus6 * term;
 					w_arr[657] = wspinRhplus6;}
 			}
 #pragma omp section
 			{
 				if(wspinRhplus5){
-					term = lowermainspinRhplus5();
+					term = lowermain(Rhplus5);
 					z_arr[658] = wspinRhplus5 * term;
 					w_arr[658] = wspinRhplus5;}
 			}
 #pragma omp section
 			{
 				if(wspinRhplus4){
-					term = lowermainspinRhplus4();
+					term = lowermain(Rhplus4);
 					z_arr[659] = wspinRhplus4 * term;
 					w_arr[659] = wspinRhplus4;}
 			}
 #pragma omp section
 			{
 				if(wspinRhplus3){
-					term = lowermainspinRhplus3();
+					term = lowermain(Rhplus3);
 					z_arr[660] = wspinRhplus3 * term;
 					w_arr[660] = wspinRhplus3;}
 			}
 #pragma omp section
 			{
 				if(wspinRhplus2){
-					term = lowermainspinRhplus2();
+					term = lowermain(Rhplus2);
 					z_arr[661] = wspinRhplus2 * term;
 					w_arr[661] = wspinRhplus2;}
 			}
 #pragma omp section
 			{
 				if(wspinRhplus2ex){
-					term = lowermainspinRhplus2ex();
+					term = lowermain(Rhplus2ex);
 					z_arr[662] = wspinRhplus2ex * term;
 					w_arr[662] = wspinRhplus2ex;}
 			}
 #pragma omp section
 			{
 				if(wspinRhplus2ex2){
-					term = lowermainspinRhplus2ex2();
+					term = lowermain(Rhplus2ex2);
 					z_arr[663] = wspinRhplus2ex2 * term;
 					w_arr[663] = wspinRhplus2ex2;}
 			}
 #pragma omp section
 			{
 				if(wspinRhplus1){
-					term = lowermainspinRhplus1();
+					term = lowermain(Rhplus1);
 					z_arr[664] = wspinRhplus1 * term;
 					w_arr[664] = wspinRhplus1;}
 			}
 #pragma omp section
 			{
 				if(wspinRhplus1ex){
-					term = lowermainspinRhplus1ex();
+					term = lowermain(Rhplus1ex);
 					z_arr[665] = wspinRhplus1ex * term;
 					w_arr[665] = wspinRhplus1ex;}
 			}
 #pragma omp section
 			{
 				if(wspinRhplus1ex2){
-					term = lowermainspinRhplus1ex2();
+					term = lowermain(Rhplus1ex2);
 					z_arr[666] = wspinRhplus1ex2 * term;
 					w_arr[666] = wspinRhplus1ex2;}
 			}
 #pragma omp section
 			{
 				if(wspinPdplus9){
-					term = lowermainspinPdplus9();
+					term = lowermain(Pdplus9);
 					z_arr[667] = wspinPdplus9 * term;
 					w_arr[667] = wspinPdplus9;}
 			}
 #pragma omp section
 			{
 				if(wspinPdplus8){
-					term = lowermainspinPdplus8();
+					term = lowermain(Pdplus8);
 					z_arr[668] = wspinPdplus8 * term;
 					w_arr[668] = wspinPdplus8;}
 			}
 #pragma omp section
 			{
 				if(wspinPdplus7){
-					term = lowermainspinPdplus7();
+					term = lowermain(Pdplus7);
 					z_arr[669] = wspinPdplus7 * term;
 					w_arr[669] = wspinPdplus7;}
 			}
 #pragma omp section
 			{
 				if(wspinPdplus6){
-					term = lowermainspinPdplus6();
+					term = lowermain(Pdplus6);
 					z_arr[670] = wspinPdplus6 * term;
 					w_arr[670] = wspinPdplus6;}
 			}
 #pragma omp section
 			{
 				if(wspinPdplus5){
-					term = lowermainspinPdplus5();
+					term = lowermain(Pdplus5);
 					z_arr[671] = wspinPdplus5 * term;
 					w_arr[671] = wspinPdplus5;}
 			}
 #pragma omp section
 			{
 				if(wspinPdplus4){
-					term = lowermainspinPdplus4();
+					term = lowermain(Pdplus4);
 					z_arr[672] = wspinPdplus4 * term;
 					w_arr[672] = wspinPdplus4;}
 			}
 #pragma omp section
 			{
 				if(wspinPdplus3){
-					term = lowermainspinPdplus3();
+					term = lowermain(Pdplus3);
 					z_arr[673] = wspinPdplus3 * term;
 					w_arr[673] = wspinPdplus3;}
 			}
 #pragma omp section
 			{
 				if(wspinPdplus2){
-					term = lowermainspinPdplus2();
+					term = lowermain(Pdplus2);
 					z_arr[674] = wspinPdplus2 * term;
 					w_arr[674] = wspinPdplus2;}
 			}
 #pragma omp section
 			{
 				if(wspinPdplus2ex){
-					term = lowermainspinPdplus2ex();
+					term = lowermain(Pdplus2ex);
 					z_arr[675] = wspinPdplus2ex * term;
 					w_arr[675] = wspinPdplus2ex;}
 			}
 #pragma omp section
 			{
 				if(wspinPdplus2ex2){
-					term = lowermainspinPdplus2ex2();
+					term = lowermain(Pdplus2ex2);
 					z_arr[676] = wspinPdplus2ex2 * term;
 					w_arr[676] = wspinPdplus2ex2;}
 			}
 #pragma omp section
 			{
 				if(wspinPdplus1){
-					term = lowermainspinPdplus1();
+					term = lowermain(Pdplus1);
 					z_arr[677] = wspinPdplus1 * term;
 					w_arr[677] = wspinPdplus1;}
 			}
 #pragma omp section
 			{
 				if(wspinPdplus1ex){
-					term = lowermainspinPdplus1ex();
+					term = lowermains(Pdplus1ex);
 					z_arr[678] = wspinPdplus1ex * term;
 					w_arr[678] = wspinPdplus1ex;}
 			}
 #pragma omp section
 			{
 				if(wspinPdneutrl){
-					term = lowermainspinPdneutrl();
+					term = lowermain(Pdneutrl);
 					z_arr[679] = wspinPdneutrl * term;
 					w_arr[679] = wspinPdneutrl;}
 			}
 #pragma omp section
 			{
 				if(wspinPdneutrlex){
-					term = lowermainspinPdneutrlex();
+					term = lowermain(Pdneutrlex);
 					z_arr[680] = wspinPdneutrlex * term;
 					w_arr[680] = wspinPdneutrlex;}
 			}
 #pragma omp section
 			{
 				if(wspinAgplus10){
-					term = lowermainspinAgplus10();
+					term = lowermain(Agplus10);
 					z_arr[681] = wspinAgplus10 * term;
 					w_arr[681] = wspinAgplus10;}
 			}
 #pragma omp section
 			{
 				if(wspinAgplus9){
-					term = lowermainspinAgplus9();
+					term = lowermain(Agplus9);
 					z_arr[682] = wspinAgplus9 * term;
 					w_arr[682] = wspinAgplus9;}
 			}
 #pragma omp section
 			{
 				if(wspinAgplus8){
-					term = lowermainspinAgplus8();
+					term = lowermain(Agplus8);
 					z_arr[683] = wspinAgplus8 * term;
 					w_arr[683] = wspinAgplus8;}
 			}
 #pragma omp section
 			{
 				if(wspinAgplus7){
-					term = lowermainspinAgplus7();
+					term = lowermain(Agplus7);
 					z_arr[684] = wspinAgplus7 * term;
 					w_arr[684] = wspinAgplus7;}
 			}
 #pragma omp section
 			{
 				if(wspinAgplus6){
-					term = lowermainspinAgplus6();
+					term = lowermain(Agplus6);
 					z_arr[685] = wspinAgplus6 * term;
 					w_arr[685] = wspinAgplus6;}
 			}
 #pragma omp section
 			{
 				if(wspinAgplus5){
-					term = lowermainspinAgplus5();
+					term = lowermain(Agplus5);
 					z_arr[686] = wspinAgplus5 * term;
 					w_arr[686] = wspinAgplus5;}
 			}
 #pragma omp section
 			{
 				if(wspinAgplus4){
-					term = lowermainspinAgplus4();
+					term = lowermain(Agplus4);
 					z_arr[687] = wspinAgplus4 * term;
 					w_arr[687] = wspinAgplus4;}
 			}
 #pragma omp section
 			{
 				if(wspinAgplus3){
-					term = lowermainspinAgplus3();
+					term = lowermain(Agplus3);
 					z_arr[688] = wspinAgplus3 * term;
 					w_arr[688] = wspinAgplus3;}
 			}
 #pragma omp section
 			{
 				if(wspinAgplus2){
-					term = lowermainspinAgplus2();
+					term = lowermain(Agplus2);
 					z_arr[689] = wspinAgplus2 * term;
 					w_arr[689] = wspinAgplus2;}
 			}
 #pragma omp section
 			{
 				if(wspinAgplus2ex){
-					term = lowermainspinAgplus2ex();
+					term = lowermain(Agplus2ex);
 					z_arr[690] = wspinAgplus2ex * term;
 					w_arr[690] = wspinAgplus2ex;}
 			}
 #pragma omp section
 			{
 				if(wspinAgplus1){
-					term = lowermainspinAgplus1();
+					term = lowermain(Agplus1);
 					z_arr[691] = wspinAgplus1 * term;
 					w_arr[691] = wspinAgplus1;}
 			}
 #pragma omp section
 			{
 				if(wspinAgplus1ex){
-					term = lowermainspinAgplus1ex();
+					term = lowermain(Agplus1ex);
 					z_arr[692] = wspinAgplus1ex * term;
 					w_arr[692] = wspinAgplus1ex;}
 			}
 #pragma omp section
 			{
 				if(wspinCdplus11){
-					term = lowermainspinCdplus11();
+					term = lowermain(Cdplus11);
 					z_arr[693] = wspinCdplus11 * term;
 					w_arr[693] = wspinCdplus11;}
 			}
 #pragma omp section
 			{
 				if(wspinCdplus10){
-					term = lowermainspinCdplus10();
+					term = lowermain(Cdplus10);
 					z_arr[694] = wspinCdplus10 * term;
 					w_arr[694] = wspinCdplus10;}
 			}
 #pragma omp section
 			{
 				if(wspinCdplus9){
-					term = lowermainspinCdplus9();
+					term = lowermain(Cdplus9);
 					z_arr[695] = wspinCdplus9 * term;
 					w_arr[695] = wspinCdplus9;}
 			}
 #pragma omp section
 			{
 				if(wspinCdplus8){
-					term = lowermainspinCdplus8();
+					term = lowermain(Cdplus8);
 					z_arr[696] = wspinCdplus8 * term;
 					w_arr[696] = wspinCdplus8;}
 			}
 #pragma omp section
 			{
 				if(wspinCdplus7){
-					term = lowermainspinCdplus7();
+					term = lowermain(Cdplus7);
 					z_arr[697] = wspinCdplus7 * term;
 					w_arr[697] = wspinCdplus7;}
 			}
 #pragma omp section
 			{
 				if(wspinCdplus6){
-					term = lowermainspinCdplus6();
+					term = lowermain(Cdplus6);
 					z_arr[698] = wspinCdplus6 * term;
 					w_arr[698] = wspinCdplus6;}
 			}
 #pragma omp section
 			{
 				if(wspinCdplus5){
-					term = lowermainspinCdplus5();
+					term = lowermain(Cdplus5);
 					z_arr[699] = wspinCdplus5 * term;
 					w_arr[699] = wspinCdplus5;}
 			}
 #pragma omp section
 			{
 				if(wspinCdplus4){
-					term = lowermainspinCdplus4();
+					term = lowermain(Cdplus4);
 					z_arr[700] = wspinCdplus4 * term;
 					w_arr[700] = wspinCdplus4;}
 			}
 #pragma omp section
 			{
 				if(wspinCdplus3){
-					term = lowermainspinCdplus3();
+					term = lowermain(Cdplus3);
 					z_arr[701] = wspinCdplus3 * term;
 					w_arr[701] = wspinCdplus3;}
 			}
 #pragma omp section
 			{
 				if(wspinCdplus3ex){
-					term = lowermainspinCdplus3ex();
+					term = lowermain(Cdplus3ex);
 					z_arr[702] = wspinCdplus3ex * term;
 					w_arr[702] = wspinCdplus3ex;}
 			}
 #pragma omp section
 			{
 				if(wspinCdplus2){
-					term = lowermainspinCdplus2();
+					term = lowermain(Cdplus2);
 					z_arr[703] = wspinCdplus2 * term;
 					w_arr[703] = wspinCdplus2;}
 			}
 #pragma omp section
 			{
 				if(wspinCdplus2ex){
-					term = lowermainspinCdplus2ex();
+					term = lowermain(Cdplus2ex);
 					z_arr[704] = wspinCdplus2ex * term;
 					w_arr[704] = wspinCdplus2ex;}
 			}
 #pragma omp section
 			{
 				if(wspinCuneutrl){
-					term = lowermainspinCuneutrl();
+					term = lowermain(Cuneutrl);
 					z_arr[709] = wspinCuneutrl * term;
 					w_arr[709] = wspinCuneutrl;}
 			}
 #pragma omp section
 			{
 				if(wspinCuneutrlex){
-					term = lowermainspinCuneutrlex();
+					term = lowermain(Cuneutrlex);
 					z_arr[710] = wspinCuneutrlex * term;
 					w_arr[710] = wspinCuneutrlex;}
 			}
 #pragma omp section
 			{
 				if(wspinNiplus1){
-					term = lowermainspinNiplus1();
+					term = lowermain(Niplus1);
 					z_arr[711] = wspinNiplus1 * term;
 					w_arr[711] = wspinNiplus1;}
 			}
 #pragma omp section
 			{
 				if(wspinNiplus1ex){
-					term = lowermainspinNiplus1ex();
+					term = lowermain(Niplus1ex);
 					z_arr[712] = wspinNiplus1ex * term;
 					w_arr[712] = wspinNiplus1ex;}
 			}
 #pragma omp section
 			{
 				if(wspinNineutrl){
-					term = lowermainspinNineutrl();
+					term = lowermain(Nineutrl);
 					z_arr[713] = wspinNineutrl * term;
 					w_arr[713] = wspinNineutrl;}
 			}
 #pragma omp section
 			{
 				if(wspinNineutrlex){
-					term = lowermainspinNineutrlex();
+					term = lowermain(Nineutrlex);
 					z_arr[714] = wspinNineutrlex * term;
 					w_arr[714] = wspinNineutrlex;}
 			}
 #pragma omp section
 			{
 				if(wspinCoplus1){
-					term = lowermainspinCoplus1();
+					term = lowermain(Coplus1);
 					z_arr[715] = wspinCoplus1 * term;
 					w_arr[715] = wspinCoplus1;}
 			}
 #pragma omp section
 			{
 				if(wspinCoplus1ex){
-					term = lowermainspinCoplus1ex();
+					term = lowermain(Coplus1ex);
 					z_arr[716] = wspinCoplus1ex * term;
 					w_arr[716] = wspinCoplus1ex;}
 			}
 #pragma omp section
 			{
 				if(wspinCoplus1ex2){
-					term = lowermainspinCoplus1ex2();
+					term = lowermain(Coplus1ex2);
 					z_arr[717] = wspinCoplus1ex2 * term;
 					w_arr[717] = wspinCoplus1ex2;}
 			}
 #pragma omp section
 			{
 				if(wspinConeutrl){
-					term = lowermainspinConeutrl();
+					term = lowermain(Coneutrl);
 					z_arr[718] = wspinConeutrl * term;
 					w_arr[718] = wspinConeutrl;}
 			}
 #pragma omp section
 			{
 				if(wspinConeutrlex){
-					term = lowermainspinConeutrlex();
+					term = lowermain(Coneutrlex);
 					z_arr[719] = wspinConeutrlex * term;
 					w_arr[719] = wspinConeutrlex;}
 			}
@@ -3111,420 +3111,420 @@ double status(){
 #pragma omp section
 			{
 				if(wspinMnplus1){
-					term = lowermainspinMnplus1();
+					term = lowermain(Mnplus1);
 					z_arr[727] = wspinMnplus1 * term;
 					w_arr[727] = wspinMnplus1;}
 			}
 #pragma omp section
 			{
 				if(wspinMnplus1ex){
-					term = lowermainspinMnplus1ex();
+					term = lowermain(Mnplus1ex);
 					z_arr[728] = wspinMnplus1ex * term;
 					w_arr[728] = wspinMnplus1ex;}
 			}
 #pragma omp section
 			{
 				if(wspinMnplus1ex2){
-					term = lowermainspinMnplus1ex2();
+					term = lowermain(Mnplus1ex2);
 					z_arr[729] = wspinMnplus1ex2 * term;
 					w_arr[729] = wspinMnplus1ex2;}
 			}
 #pragma omp section
 			{
 				if(wspinMnplus1ex3){
-					term = lowermainspinMnplus1ex3();
+					term = lowermain(Mnplus1ex3);
 					z_arr[730] = wspinMnplus1ex3 * term;
 					w_arr[730] = wspinMnplus1ex3;}
 			}
 #pragma omp section
 			{
 				if(wspinMnneutrl){
-					term = lowermainspinMnneutrl();
+					term = lowermain(Mnneutrl);
 					z_arr[731] = wspinMnneutrl * term;
 					w_arr[731] = wspinMnneutrl;}
 			}
 #pragma omp section
 			{
 				if(wspinMnneutrlex){
-					term = lowermainspinMnneutrlex();
+					term = lowermain(Mnneutrlex);
 					z_arr[732] = wspinMnneutrlex * term;
 					w_arr[732] = wspinMnneutrlex;}
 			}
 #pragma omp section
 			{
 				if(wspinMnneutrlex2){
-					term = lowermainspinMnneutrlex2();
+					term = lowermain(Mnneutrlex2);
 					z_arr[733] = wspinMnneutrlex2 * term;
 					w_arr[733] = wspinMnneutrlex2;}
 			}
 #pragma omp section
 			{
 				if(wspinMnneutrlex3){
-					term = lowermainspinMnneutrlex3();
+					term = lowermain(Mnneutrlex3);
 					z_arr[734] = wspinMnneutrlex3 * term;
 					w_arr[734] = wspinMnneutrlex3;}
 			}
 #pragma omp section
 			{
 				if(wspinCrneutrl){
-					term = lowermainspinCrneutrl();
+					term = lowermain(Crneutrl);
 					z_arr[735] = wspinCrneutrl * term;
 					w_arr[735] = wspinCrneutrl;}
 			}
 #pragma omp section
 			{
 				if(wspinCrneutrlex){
-					term = lowermainspinCrneutrlex();
+					term = lowermain(Crneutrlex);
 					z_arr[736] = wspinCrneutrlex * term;
 					w_arr[736] = wspinCrneutrlex;}
 			}
 #pragma omp section
 			{
 				if(wspinCrneutrlex2){
-					term = lowermainspinCrneutrlex2();
+					term = lowermain(Crneutrlex2);
 					z_arr[737] = wspinCrneutrlex2 * term;
 					w_arr[737] = wspinCrneutrlex2;}
 			}
 #pragma omp section
 			{
 				if(wspinCrneutrlex3){
-					term = lowermainspinCrneutrlex3();
+					term = lowermain(Crneutrlex3);
 					z_arr[738] = wspinCrneutrlex3 * term;
 					w_arr[738] = wspinCrneutrlex3;}
 			}
 #pragma omp section
 			{
 				if(wspinVplus1){
-					term = lowermainspinVplus1();
+					term = lowermain(Vplus1);
 					z_arr[739] = wspinVplus1 * term;
 					w_arr[739] = wspinVplus1;}
 			}
 #pragma omp section
 			{
 				if(wspinVplus1ex){
-					term = lowermainspinVplus1ex();
+					term = lowermain(Vplus1ex);
 					z_arr[740] = wspinVplus1ex * term;
 					w_arr[740] = wspinVplus1ex;}
 			}
 #pragma omp section
 			{
 				if(wspinVplus1ex2){
-					term = lowermainspinVplus1ex2();
+					term = lowermain(Vplus1ex2);
 					z_arr[741] = wspinVplus1ex2 * term;
 					w_arr[741] = wspinVplus1ex2;}
 			}
 #pragma omp section
 			{
 				if(wspinVneutrl){
-					term = lowermainspinVneutrl();
+					term = lowermain(Vneutrl);
 					z_arr[742] = wspinVneutrl * term;
 					w_arr[742] = wspinVneutrl;}
 			}
 #pragma omp section
 			{
 				if(wspinVneutrlex){
-					term = lowermainspinVneutrlex();
+					term = lowermain(Vneutrlex);
 					z_arr[743] = wspinVneutrlex * term;
 					w_arr[743] = wspinVneutrlex;}
 			}
 #pragma omp section
 			{
 				if(wspinVneutrlex2){
-					term = lowermainspinVneutrlex2();
+					term = lowermain(Vneutrlex2);
 					z_arr[744] = wspinVneutrlex2 * term;
 					w_arr[744] = wspinVneutrlex2;}
 			}
 #pragma omp section
 			{
 				if(wspinTiplus1){
-					term = lowermainspinTiplus1();
+					term = lowermain(Tiplus1);
 					z_arr[745] = wspinTiplus1 * term;
 					w_arr[745] = wspinTiplus1;}
 			}
 #pragma omp section
 			{
 				if(wspinTiplus1ex){
-					term = lowermainspinTiplus1ex();
+					term = lowermain(Tiplus1ex);
 					z_arr[746] = wspinTiplus1ex * term;
 					w_arr[746] = wspinTiplus1ex;}
 			}
 #pragma omp section
 			{
 				if(wspinTineutrl){
-					term = lowermainspinTineutrl();
+					term = lowermain(Tineutrl);
 					z_arr[747] = wspinTineutrl * term;
 					w_arr[747] = wspinTineutrl;}
 			}
 #pragma omp section
 			{
 				if(wspinTineutrlex){
-					term = lowermainspinTineutrlex();
+					term = lowermain(Tineutrlex);
 					z_arr[748] = wspinTineutrlex * term;
 					w_arr[748] = wspinTineutrlex;}
 			}
 #pragma omp section
 			{
 				if(wspinTineutrlex2){
-					term = lowermainspinTineutrlex2();
+					term = lowermain(Tineutrlex2);
 					z_arr[749] = wspinTineutrlex2 * term;
 					w_arr[749] = wspinTineutrlex2;}
 			}
 #pragma omp section
 			{
 				if(wspinScplus1){
-					term = lowermainspinScplus1();
+					term = lowermain(Scplus1);
 					z_arr[750] = wspinScplus1 * term;
 					w_arr[750] = wspinScplus1;}
 			}
 #pragma omp section
 			{
 				if(wspinScplus1ex){
-					term = lowermainspinScplus1ex();
+					term = lowermain(Scplus1ex);
 					z_arr[751] = wspinScplus1ex * term;
 					w_arr[751] = wspinScplus1ex;}
 			}
 #pragma omp section
 			{
 				if(wspinScneutrl){
-					term = lowermainspinScneutrl();
+					term = lowermain(Scneutrl);
 					z_arr[752] = wspinScneutrl * term;
 					w_arr[752] = wspinScneutrl;}
 			}
 #pragma omp section
 			{
 				if(wspinScneutrlex){
-					term = lowermainspinScneutrlex();
+					term = lowermain(Scneutrlex);
 					z_arr[753] = wspinScneutrlex * term;
 					w_arr[753] = wspinScneutrlex;}
 			}
 #pragma omp section
 			{
 				if(wspinCdplus1){
-					term = lowermainspinCdplus1();
+					term = lowermain(Cdplus1);
 					z_arr[754] = wspinCdplus1 * term;
 					w_arr[754] = wspinCdplus1;}
 			}
 #pragma omp section
 			{
 				if(wspinCdplus1ex){
-					term = lowermainspinCdplus1ex();
+					term = lowermain(Cdplus1ex);
 					z_arr[755] = wspinCdplus1ex * term;
 					w_arr[755] = wspinCdplus1ex;}
 			}
 #pragma omp section
 			{
 				if(wspinCdneutrl){
-					term = lowermainspinCdneutrl();
+					term = lowermain(Cdneutrl);
 					z_arr[756] = wspinCdneutrl * term;
 					w_arr[756] = wspinCdneutrl;}
 			}
 #pragma omp section
 			{
 				if(wspinCdneutrlex){
-					term = lowermainspinCdneutrlex();
+					term = lowermain(Cdneutrlex);
 					z_arr[757] = wspinCdneutrlex * term;
 					w_arr[757] = wspinCdneutrlex;}
 			}
 #pragma omp section
 			{
 				if(wspinAgneutrl){
-					term = lowermainspinAgneutrl();
+					term = lowermain(Agneutrl);
 					z_arr[758] = wspinAgneutrl * term;
 					w_arr[758] = wspinAgneutrl;}
 			}
 #pragma omp section
 			{
 				if(wspinAgneutrlex){
-					term = lowermainspinAgneutrlex();
+					term = lowermain(Agneutrlex);
 					z_arr[759] = wspinAgneutrlex * term;
 					w_arr[759] = wspinAgneutrlex;}
 			}
 #pragma omp section
 			{
 				if(wspinRhneutrl){
-					term = lowermainspinRhneutrl();
+					term = lowermain(Rhneutrl);
 					z_arr[760] = wspinRhneutrl * term;
 					w_arr[760] = wspinRhneutrl;}
 			}
 #pragma omp section
 			{
 				if(wspinRhneutrlex){
-					term = lowermainspinRhneutrlex();
+					term = lowermain(Rhneutrlex);
 					z_arr[761] = wspinRhneutrlex * term;
 					w_arr[761] = wspinRhneutrlex;}
 			}
 #pragma omp section
 			{
 				if(wspinRuneutrl){
-					term = lowermainspinRuneutrl();
+					term = lowermain(Runeutrl);
 					z_arr[762] = wspinRuneutrl * term;
 					w_arr[762] = wspinRuneutrl;}
 			}
 #pragma omp section
 			{
 				if(wspinRuneutrlex){
-					term = lowermainspinRuneutrlex();
+					term = lowermain(Runeutrlex);
 					z_arr[763] = wspinRuneutrlex * term;
 					w_arr[763] = wspinRuneutrlex;}
 			}
 #pragma omp section
 			{
 				if(wspinRuneutrlex2){
-					term = lowermainspinRuneutrlex2();
+					term = lowermain(Runeutrlex2);
 					z_arr[764] = wspinRuneutrlex2 * term;
 					w_arr[764] = wspinRuneutrlex2;}
 			}
 #pragma omp section
 			{
 				if(wspinTcplus1){
-					term = lowermainspinTcplus1();
+					term = lowermain(Tcplus1);
 					z_arr[765] = wspinTcplus1 * term;
 					w_arr[765] = wspinTcplus1;}
 			}
 #pragma omp section
 			{
 				if(wspinTcplus1ex){
-					term = lowermainspinTcplus1ex();
+					term = lowermain(Tcplus1ex);
 					z_arr[766] = wspinTcplus1ex * term;
 					w_arr[766] = wspinTcplus1ex;}
 			}
 #pragma omp section
 			{
 				if(wspinTcneutrl){
-					term = lowermainspinTcneutrl();
+					term = lowermain(Tcneutrl);
 					z_arr[767] = wspinTcneutrl * term;
 					w_arr[767] = wspinTcneutrl;}
 			}
 #pragma omp section
 			{
 				if(wspinTcneutrlex){
-					term = lowermainspinTcneutrlex();
+					term = lowermain(Tcneutrlex);
 					z_arr[768] = wspinTcneutrlex * term;
 					w_arr[768] = wspinTcneutrlex;}
 			}
 #pragma omp section
 			{
 				if(wspinTcneutrlex2){
-					term = lowermainspinTcneutrlex2();
+					term = lowermain(Tcneutrlex2);
 					z_arr[769] = wspinTcneutrlex2 * term;
 					w_arr[769] = wspinTcneutrlex2;}
 			}
 #pragma omp section
 			{
 				if(wspinTcneutrlex3){
-					term = lowermainspinTcneutrlex3();
+					term = lowermain(Tcneutrlex3);
 					z_arr[770] = wspinTcneutrlex3 * term;
 					w_arr[770] = wspinTcneutrlex3;}
 			}
 #pragma omp section
 			{
 				if(wspinMoneutrl){
-					term = lowermainspinMoneutrl();
+					term = lowermain(Moneutrl);
 					z_arr[771] = wspinMoneutrl * term;
 					w_arr[771] = wspinMoneutrl;}
 			}
 #pragma omp section
 			{
 				if(wspinMoneutrlex){
-					term = lowermainspinMoneutrlex();
+					term = lowermain(Moneutrlex);
 					z_arr[772] = wspinMoneutrlex * term;
 					w_arr[772] = wspinMoneutrlex;}
 			}
 #pragma omp section
 			{
 				if(wspinMoneutrlex2){
-					term = lowermainspinMoneutrlex2();
+					term = lowermain(Moneutrlex2);
 					z_arr[773] = wspinMoneutrlex2 * term;
 					w_arr[773] = wspinMoneutrlex2;}
 			}
 #pragma omp section
 			{
 				if(wspinMoneutrlex3){
-					term = lowermainspinMoneutrlex3();
+					term = lowermain(Moneutrlex3);
 					z_arr[774] = wspinMoneutrlex3 * term;
 					w_arr[774] = wspinMoneutrlex3;}
 			}
 #pragma omp section
 			{
 				if(wspinNbneutrl){
-					term = lowermainspinNbneutrl();
+					term = lowermain(Nbneutrl);
 					z_arr[775] = wspinNbneutrl * term;
 					w_arr[775] = wspinNbneutrl;}
 			}
 #pragma omp section
 			{
 				if(wspinNbneutrlex){
-					term = lowermainspinNbneutrlex();
+					term = lowermain(Nbneutrlex);
 					z_arr[776] = wspinNbneutrlex * term;
 					w_arr[776] = wspinNbneutrlex;}
 			}
 #pragma omp section
 			{
 				if(wspinNbneutrlex2){
-					term = lowermainspinNbneutrlex2();
+					term = lowermain(Nbneutrlex2);
 					z_arr[777] = wspinNbneutrlex2 * term;
 					w_arr[777] = wspinNbneutrlex2;}
 			}
 #pragma omp section
 			{
 				if(wspinZrplus1){
-					term = lowermainspinZrplus1();
+					term = lowermain(Zrplus1);
 					z_arr[778] = wspinZrplus1 * term;
 					w_arr[778] = wspinZrplus1;}
 			}
 #pragma omp section
 			{
 				if(wspinZrplus1ex){
-					term = lowermainspinZrplus1ex();
+					term = lowermain(Zrplus1ex);
 					z_arr[779] = wspinZrplus1ex * term;
 					w_arr[779] = wspinZrplus1ex;}
 			}
 #pragma omp section
 			{
 				if(wspinZrneutrl){
-					term = lowermainspinZrneutrl();
+					term = lowermain(Zrneutrl);
 					z_arr[780] = wspinZrneutrl * term;
 					w_arr[780] = wspinZrneutrl;}
 			}
 #pragma omp section
 			{
 				if(wspinZrneutrlex){
-					term = lowermainspinZrneutrlex();
+					term = lowermain(Zrneutrlex);
 					z_arr[781] = wspinZrneutrlex * term;
 					w_arr[781] = wspinZrneutrlex;}
 			}
 #pragma omp section
 			{
 				if(wspinZrneutrlex2){
-					term = lowermainspinZrneutrlex2();
+					term = lowermain(Zrneutrlex2);
 					z_arr[782] = wspinZrneutrlex2 * term;
 					w_arr[782] = wspinZrneutrlex2;}
 			}
 #pragma omp section
 			{
 				if(wspinYplus1){
-					term = lowermainspinYplus1();
+					term = lowermain(Yplus1);
 					z_arr[783] = wspinYplus1 * term;
 					w_arr[783] = wspinYplus1;}
 			}
 #pragma omp section
 			{
 				if(wspinYplus1ex){
-					term = lowermainspinYplus1ex();
+					term = lowermain(Yplus1ex);
 					z_arr[784] = wspinYplus1ex * term;
 					w_arr[784] = wspinYplus1ex;}
 			}
 #pragma omp section
 			{
 				if(wspinYneutrl){
-					term = lowermainspinYneutrl();
+					term = lowermain(Yneutrl);
 					z_arr[785] = wspinYneutrl * term;
 					w_arr[785] = wspinYneutrl;}
 			}
 #pragma omp section
 			{
 				if(wspinYneutrlex){
-					term = lowermainspinYneutrlex();
+					term = lowermain(Yneutrlex);
 					z_arr[786] = wspinYneutrlex * term;
 					w_arr[786] = wspinYneutrlex;}
 			}

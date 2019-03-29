@@ -136,6 +136,9 @@ double ainterspinH2plus(Species * spec){
         //set d value
         setDvalue(Vin, part);
 
+        //set shape value
+        setShape(Vin, part);
+
 	//calculate structure energy
         if((MC_spinH2plus) && (spec->icue ==4)){
 		for(i=0;i<4;i++){

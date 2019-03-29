@@ -234,6 +234,9 @@ double ainterspinO2qnt_linnett(Species * spec){
         //set d value
         setDvalue(Vin, part);
 
+        //set shape value
+        setShape(Vin, part);
+
 	//calculate structure energy
         if((MC_spinO2qnt_linnett) && (spec->icue ==4)){
 		for(i=0;i<4;i++){

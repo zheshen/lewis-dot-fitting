@@ -147,6 +147,94 @@ void specSwitch(Species *spec){
 		case O2_1 : specspinO2_1(spec); break;
 		case O3_linnett : specspinO3_linnett(spec); break;
 		case O3trp_linnett : specspinO3trp_linnett(spec); break;
+		
+		case N2_snglt_linnett : specspinN2_snglt_linnett(spec); break;
+		case N2_snglt_snglbnd : specspinN2_snglt_snglbnd(spec); break;
+		case N2_snglt_dblbnd : specspinN2_snglt_dblbnd(spec); break;
+		case N2_snglt_trplbnd : specspinN2_snglt_trplbnd(spec); break;
+		case N2_trplt_linnett : specspinN2_trplt_linnett(spec); break;
+		case N2_trplt_snglbnd : specspinN2_trplt_snglbnd(spec); break;
+		case N2_trplt_dblbnd : specspinN2_trplt_dblbnd(spec); break;
+		case N2_trplt_trplbnd : specspinN2_trplt_trplbnd(spec); break;
+		
+		case C2_snglt_linnett : specspinC2_snglt_linnett(spec); break;
+		case C2_snglt_snglbnd : specspinC2_snglt_snglbnd(spec); break;
+		case C2_snglt_dblbnd : specspinC2_snglt_dblbnd(spec); break;
+		case C2_snglt_trplbnd : specspinC2_snglt_trplbnd(spec); break;
+		case C2_trplt_linnett : specspinC2_trplt_linnett(spec); break;
+		case C2_trplt_snglbnd : specspinC2_trplt_snglbnd(spec); break;
+		case C2_trplt_dblbnd : specspinC2_trplt_dblbnd(spec); break;
+		case C2_trplt_trplbnd : specspinC2_trplt_trplbnd(spec); break;
+		
+		case B2_snglt_linnett : specspinB2_snglt_linnett(spec); break;
+		case B2_snglt_snglbnd : specspinB2_snglt_snglbnd(spec); break;
+		case B2_snglt_dblbnd : specspinB2_snglt_dblbnd(spec); break;
+		case B2_snglt_trplbnd : specspinB2_snglt_trplbnd(spec); break;
+		case B2_trplt_linnett : specspinB2_trplt_linnett(spec); break;
+		case B2_trplt_snglbnd : specspinB2_trplt_snglbnd(spec); break;
+		case B2_trplt_dblbnd : specspinB2_trplt_dblbnd(spec); break;
+		case B2_trplt_trplbnd : specspinB2_trplt_trplbnd(spec); break;
+		
+		case F2_snglt_linnett : specspinF2_snglt_linnett(spec); break;
+		case F2_snglt_snglbnd : specspinF2_snglt_snglbnd(spec); break;
+		case F2_snglt_dblbnd : specspinF2_snglt_dblbnd(spec); break;
+		case F2_snglt_trplbnd : specspinF2_snglt_trplbnd(spec); break;
+		case F2_trplt_linnett : specspinF2_trplt_linnett(spec); break;
+		case F2_trplt_snglbnd : specspinF2_trplt_snglbnd(spec); break;
+		case F2_trplt_dblbnd : specspinF2_trplt_dblbnd(spec); break;
+		case F2_trplt_trplbnd : specspinF2_trplt_trplbnd(spec); break;
+		
+		case Al2_snglt_linnett : specspinAl2_snglt_linnett(spec); break;
+		case Al2_snglt_snglbnd : specspinAl2_snglt_snglbnd(spec); break;
+		case Al2_snglt_dblbnd : specspinAl2_snglt_dblbnd(spec); break;
+		case Al2_snglt_trplbnd : specspinAl2_snglt_trplbnd(spec); break;
+		case Al2_trplt_linnett : specspinAl2_trplt_linnett(spec); break;
+		case Al2_trplt_snglbnd : specspinAl2_trplt_snglbnd(spec); break;
+		case Al2_trplt_dblbnd : specspinAl2_trplt_dblbnd(spec); break;
+		case Al2_trplt_trplbnd : specspinAl2_trplt_trplbnd(spec); break;
+		
+		case Si2_snglt_linnett : specspinSi2_snglt_linnett(spec); break;
+		case Si2_snglt_snglbnd : specspinSi2_snglt_snglbnd(spec); break;
+		case Si2_snglt_dblbnd : specspinSi2_snglt_dblbnd(spec); break;
+		case Si2_snglt_trplbnd : specspinSi2_snglt_trplbnd(spec); break;
+		case Si2_trplt_linnett : specspinSi2_trplt_linnett(spec); break;
+		case Si2_trplt_snglbnd : specspinSi2_trplt_snglbnd(spec); break;
+		case Si2_trplt_dblbnd : specspinSi2_trplt_dblbnd(spec); break;
+		case Si2_trplt_trplbnd : specspinSi2_trplt_trplbnd(spec); break;
+		
+		case P2_snglt_linnett : specspinP2_snglt_linnett(spec); break;
+		case P2_snglt_snglbnd : specspinP2_snglt_snglbnd(spec); break;
+		case P2_snglt_dblbnd : specspinP2_snglt_dblbnd(spec); break;
+		case P2_snglt_trplbnd : specspinP2_snglt_trplbnd(spec); break;
+		case P2_trplt_linnett : specspinP2_trplt_linnett(spec); break;
+		case P2_trplt_snglbnd : specspinP2_trplt_snglbnd(spec); break;
+		case P2_trplt_dblbnd : specspinP2_trplt_dblbnd(spec); break;
+		case P2_trplt_trplbnd : specspinP2_trplt_trplbnd(spec); break;
+		
+		case S2_snglt_linnett : specspinS2_snglt_linnett(spec); break;
+		case S2_snglt_snglbnd : specspinS2_snglt_snglbnd(spec); break;
+		case S2_snglt_dblbnd : specspinS2_snglt_dblbnd(spec); break;
+		case S2_snglt_trplbnd : specspinS2_snglt_trplbnd(spec); break;
+		case S2_trplt_linnett : specspinS2_trplt_linnett(spec); break;
+		case S2_trplt_snglbnd : specspinS2_trplt_snglbnd(spec); break;
+		case S2_trplt_dblbnd : specspinS2_trplt_dblbnd(spec); break;
+		case S2_trplt_trplbnd : specspinS2_trplt_trplbnd(spec); break;
+		
+		case Cl2_snglt_linnett : specspinCl2_snglt_linnett(spec); break;
+		case Cl2_snglt_snglbnd : specspinCl2_snglt_snglbnd(spec); break;
+		case Cl2_snglt_dblbnd : specspinCl2_snglt_dblbnd(spec); break;
+		case Cl2_snglt_trplbnd : specspinCl2_snglt_trplbnd(spec); break;
+		case Cl2_trplt_linnett : specspinCl2_trplt_linnett(spec); break;
+		case Cl2_trplt_snglbnd : specspinCl2_trplt_snglbnd(spec); break;
+		case Cl2_trplt_dblbnd : specspinCl2_trplt_dblbnd(spec); break;
+		case Cl2_trplt_trplbnd : specspinCl2_trplt_trplbnd(spec); break;
+		
+		case B_1 : specspinB_1(spec); break;
+		case Bneutrl : specspinBneutrl(spec); break;
+		case Bneutrlex : specspinBneutrlex(spec); break;
+		case Bplus1 : specspinBplus1(spec); break;
+		case Bplus1ex : specspinBplus1ex(spec); break;
+		case Bplus2 : specspinBplus2(spec); break;
 
 		case C_1 : specspinC_1(spec); break;
 		case Cneutrl : specspinCneutrl(spec); break;
@@ -170,7 +258,227 @@ void specSwitch(Species *spec){
 		case Nplus3 : specspinNplus3(spec); break;
 		case Nplus3ex : specspinNplus3ex(spec); break;
 		case Nplus4 : specspinNplus4(spec); break;
+
+		case S_1 : specspinS_1(spec); break;
+		case Sneutrl : specspinSneutrl(spec); break;
+		case Sneutrlex : specspinSneutrlex(spec); break;
+		case Sneutrlex2 : specspinSneutrlex2(spec); break;
+		case Splus1 : specspinSplus1(spec); break;
+		case Splus1ex : specspinSplus1ex(spec); break;
+		case Splus2 : specspinSplus2(spec); break;
+		case Splus2ex : specspinSplus2ex(spec); break;
+		case Splus2ex2 : specspinSplus2ex2(spec); break;
+		case Splus3 : specspinSplus3(spec); break;
+		case Splus3ex : specspinSplus3ex(spec); break;
+		case Splus4 : specspinSplus4(spec); break;
+		case Splus4ex : specspinSplus4ex(spec); break;
+		case Splus5 : specspinSplus5(spec); break;
 		
+		case P_1 : specspinP_1(spec); break;
+		case Pneutrl : specspinPneutrl(spec); break;
+		case Pneutrlex : specspinPneutrlex(spec); break;
+		case Pplus1 : specspinPplus1(spec); break;
+		case Pplus1ex : specspinPplus1ex(spec); break;
+		case Pplus1ex2 : specspinPplus1ex2(spec); break;
+		case Pplus2 : specspinPplus2(spec); break;
+		case Pplus2ex : specspinPplus2ex(spec); break;
+		case Pplus3 : specspinPplus3(spec); break;
+		case Pplus3ex : specspinPplus3ex(spec); break;
+		case Pplus4 : specspinPplus4(spec); break;
+
+		case Si_1 : specspinSi_1(spec); break;
+		case Sineutrl : specspinSineutrl(spec); break;
+		case Sineutrlex : specspinSineutrlex(spec); break;
+		case Sineutrlex2 : specspinSineutrlex2(spec); break;
+		case Siplus1 : specspinSiplus1(spec); break;
+		case Siplus1ex : specspinSiplus1ex(spec); break;
+		case Siplus2 : specspinSiplus2(spec); break;
+		case Siplus2ex : specspinSiplus2ex(spec); break;
+		case Siplus3 : specspinSiplus3(spec); break;
+
+		case F_1 : specspinF_1(spec); break;
+		case Fneutrl : specspinFneutrl(spec); break;
+		case Fneutrlex : specspinFneutrlex(spec); break;
+		case Fplus1 : specspinFplus1(spec); break;
+		case Fplus1ex : specspinFplus1ex(spec); break;
+		case Fplus1ex2 : specspinFplus1ex2(spec); break;
+		case Fplus2 : specspinFplus2(spec); break;
+		case Fplus2ex : specspinFplus2ex(spec); break;
+		case Fplus2ex2 : specspinFplus2ex2(spec); break;
+		case Fplus3 : specspinFplus3(spec); break;
+		case Fplus3ex : specspinFplus3ex(spec); break;
+		case Fplus3ex2 : specspinFplus3ex2(spec); break;
+		case Fplus4 : specspinFplus4(spec); break;
+		case Fplus4ex : specspinFplus4ex(spec); break;
+		case Fplus5 : specspinFplus5(spec); break;
+		case Fplus5ex : specspinFplus5ex(spec); break;
+		case Fplus6 : specspinFplus6(spec); break;
+
+		case Al_1 : specspinAl_1(spec); break;
+		case Alneutrl : specspinAlneutrl(spec); break;
+		case Alneutrlex : specspinAlneutrlex(spec); break;
+		case Alplus1 : specspinAlplus1(spec); break;
+		case Alplus1ex : specspinAlplus1ex(spec); break;
+		case Alplus2 : specspinAlplus2(spec); break;
+
+		case Li_1 : specspinLi_1(spec); break;
+		case Lineutrl : specspinLineutrl(spec); break;
+
+		case Beneutrl: specspinBeneutrl(spec); break;
+		case Beneutrlex: specspinBeneutrlex(spec); break;
+		case Beplus1: specspinBeplus1(spec); break;
+
+		case Na_1: specspinNa_1(spec); break;
+		case Naneutrl: specspinNaneutrl(spec); break;
+
+		case Mgneutrl: specspinMgneutrl(spec); break;
+		case Mgneutrlex: specspinMgneutrlex(spec); break;
+		case Mgplus1: specspinMgplus1(spec); break;
+
+		case Scneutrl : specspinScneutrl(spec); break;
+		case Scneutrlex : specspinScneutrlex(spec); break;
+		case Scplus1 : specspinScplus1(spec); break;
+		case Scplus1ex : specspinScplus1ex(spec); break;
+		case Scplus2 : specspinScplus2(spec); break;
+
+		case Tineutrl : specspinTineutrl(spec); break;
+		case Tineutrlex : specspinTineutrlex(spec); break;
+		case Tineutrlex2 : specspinTineutrlex2(spec); break;
+		case Tiplus1 : specspinTiplus1(spec); break;
+		case Tiplus1ex : specspinTiplus1ex(spec); break;
+		case Tiplus2 : specspinTiplus2(spec); break;
+		case Tiplus2ex : specspinTiplus2ex(spec); break;
+		case Tiplus3 : specspinTiplus3(spec); break;
+
+		case Vneutrl : specspinVneutrl(spec); break;
+		case Vneutrlex : specspinVneutrlex(spec); break;
+		case Vneutrlex2 : specspinVneutrlex2(spec); break;
+		case Vplus1 : specspinVplus1(spec); break;
+		case Vplus1ex : specspinVplus1ex(spec); break;
+		case Vplus1ex2 : specspinVplus1ex2(spec); break;
+		case Vplus2 : specspinVplus2(spec); break;
+		case Vplus2ex : specspinVplus2ex(spec); break;
+		case Vplus3 : specspinVplus3(spec); break;
+		case Vplus3ex : specspinVplus3ex(spec); break;
+		case Vplus4 : specspinVplus4(spec); break;
+
+		case Crneutrl : specspinCrneutrl(spec); break;
+		case Crneutrlex : specspinCrneutrlex(spec); break;
+		case Crneutrlex2 : specspinCrneutrlex2(spec); break;
+//		case Crneutrlex3 : specspinCrneutrlex3(spec); break;
+		case Crplus1 : specspinCrplus1(spec); break;
+		case Crplus1ex : specspinCrplus1ex(spec); break;
+		case Crplus1ex2 : specspinCrplus1ex2(spec); break;
+		case Crplus2 : specspinCrplus2(spec); break;
+		case Crplus2ex : specspinCrplus2ex(spec); break;
+		case Crplus2ex2 : specspinCrplus2ex2(spec); break;
+		case Crplus3 : specspinCrplus3(spec); break;
+		case Crplus3ex : specspinCrplus3ex(spec); break;
+		case Crplus4 : specspinCrplus4(spec); break;
+		case Crplus4ex : specspinCrplus4ex(spec); break;
+		case Crplus5 : specspinCrplus5(spec); break;
+
+		case Mnneutrl : specspinMnneutrl(spec); break;
+		case Mnneutrlex : specspinMnneutrlex(spec); break;
+		case Mnneutrlex2 : specspinMnneutrlex2(spec); break;
+//		case Mnneutrlex3 : specspinMnneutrlex3(spec); break;
+		case Mnplus1 : specspinMnplus1(spec); break;
+		case Mnplus1ex : specspinMnplus1ex(spec); break;
+		case Mnplus1ex2 : specspinMnplus1ex2(spec); break;
+		case Mnplus2 : specspinMnplus2(spec); break;
+		case Mnplus2ex : specspinMnplus2ex(spec); break;
+		case Mnplus2ex2 : specspinMnplus2ex2(spec); break;
+		case Mnplus3 : specspinMnplus3(spec); break;
+		case Mnplus3ex : specspinMnplus3ex(spec); break;
+		case Mnplus4 : specspinMnplus4(spec); break;
+		case Mnplus4ex : specspinMnplus4ex(spec); break;
+		case Mnplus5 : specspinMnplus5(spec); break;
+		case Mnplus5ex : specspinMnplus5ex(spec); break;
+		case Mnplus6 : specspinMnplus6(spec); break;
+
+		case Coneutrl : specspinConeutrl(spec); break;
+		case Coneutrlex : specspinConeutrlex(spec); break;
+		case Coplus1 : specspinCoplus1(spec); break;
+		case Coplus1ex : specspinCoplus1ex(spec); break;
+		case Coplus1ex2 : specspinCoplus1ex2(spec); break;
+		case Coplus2 : specspinCoplus2(spec); break;
+		case Coplus2ex : specspinCoplus2ex(spec); break;
+		case Coplus2ex2 : specspinCoplus2ex2(spec); break;
+		case Coplus3 : specspinCoplus3(spec); break;
+		case Coplus3ex : specspinCoplus3ex(spec); break;
+		case Coplus3ex2 : specspinCoplus3ex2(spec); break;
+		case Coplus4 : specspinCoplus4(spec); break;
+		case Coplus4ex : specspinCoplus4ex(spec); break;
+		case Coplus4ex2 : specspinCoplus4ex2(spec); break;
+		case Coplus5 : specspinCoplus5(spec); break;
+		case Coplus5ex : specspinCoplus5ex(spec); break;
+		case Coplus5ex2 : specspinCoplus5ex2(spec); break;
+		case Coplus6 : specspinCoplus6(spec); break;
+		case Coplus6ex : specspinCoplus6ex(spec); break;
+		case Coplus7 : specspinCoplus7(spec); break;
+		case Coplus7ex : specspinCoplus7ex(spec); break;
+		case Coplus8 : specspinCoplus8(spec); break;
+
+		case Nineutrl : specspinNineutrl(spec); break;
+		case Nineutrlex : specspinNineutrlex(spec); break;
+		case Niplus1 : specspinNiplus1(spec); break;
+		case Niplus1ex : specspinNiplus1ex(spec); break;
+		case Niplus2 : specspinNiplus2(spec); break;
+		case Niplus2ex : specspinNiplus2ex(spec); break;
+		case Niplus2ex2 : specspinNiplus2ex2(spec); break;
+		case Niplus3 : specspinNiplus3(spec); break;
+		case Niplus3ex : specspinNiplus3ex(spec); break;
+		case Niplus3ex2 : specspinNiplus3ex2(spec); break;
+		case Niplus4 : specspinNiplus4(spec); break;
+		case Niplus4ex : specspinNiplus4ex(spec); break;
+		case Niplus4ex2 : specspinNiplus4ex2(spec); break;
+		case Niplus5 : specspinNiplus5(spec); break;
+		case Niplus5ex : specspinNiplus5ex(spec); break;
+		case Niplus5ex2 : specspinNiplus5ex2(spec); break;
+		case Niplus6 : specspinNiplus6(spec); break;
+		case Niplus6ex : specspinNiplus6ex(spec); break;
+		case Niplus7 : specspinNiplus7(spec); break;
+		case Niplus7ex : specspinNiplus7ex(spec); break;
+		case Niplus8 : specspinNiplus8(spec); break;
+		case Niplus8ex : specspinNiplus8ex(spec); break;
+		case Niplus9 : specspinNiplus9(spec); break;
+
+		case Cuneutrl : specspinCuneutrl(spec); break;
+		case Cuneutrlex : specspinCuneutrlex(spec); break;
+		case Cuplus1 : specspinCuplus1(spec); break;
+		case Cuplus1ex : specspinCuplus1ex(spec); break;
+		case Cuplus2 : specspinCuplus2(spec); break;
+		case Cuplus2ex : specspinCuplus2ex(spec); break;
+		case Cuplus3 : specspinCuplus3(spec); break;
+		case Cuplus3ex : specspinCuplus3ex(spec); break;
+		case Cuplus3ex2 : specspinCuplus3ex2(spec); break;
+		case Cuplus4 : specspinCuplus4(spec); break;
+		case Cuplus4ex : specspinCuplus4ex(spec); break;
+		case Cuplus4ex2 : specspinCuplus4ex2(spec); break;
+		case Cuplus5 : specspinCuplus5(spec); break;
+		case Cuplus5ex : specspinCuplus5ex(spec); break;
+		case Cuplus5ex2 : specspinCuplus5ex2(spec); break;
+		case Cuplus6 : specspinCuplus6(spec); break;
+		case Cuplus7 : specspinCuplus7(spec); break;
+		case Cuplus8 : specspinCuplus8(spec); break;
+		case Cuplus9 : specspinCuplus9(spec); break;
+		case Cuplus9ex : specspinCuplus9ex(spec); break;
+		case Cuplus10 : specspinCuplus10(spec); break;
+
+		case Yneutrl : specspinYneutrl(spec); break;
+		case Yneutrlex : specspinYneutrlex(spec); break;
+		case Yplus1 : specspinYplus1(spec); break;
+		case Yplus1ex : specspinYplus1ex(spec); break;
+		case Yplus2 : specspinYplus2(spec); break;
+
+		case Zrneutrl : specspinZrneutrl(spec); break;
+		case Zrneutrlex : specspinZrneutrlex(spec); break;
+		case Zrneutrlex2 : specspinZrneutrlex2(spec); break;
+		case Zrplus1 : specspinZrplus1(spec); break;
+		case Zrplus1ex : specspinZrplus1ex(spec); break;
+		case Zrplus2 : specspinZrplus2(spec); break;
+		case Zrplus2ex : specspinZrplus2ex(spec); break;
+		case Zrplus3 : specspinZrplus3(spec); break;
 
 
 

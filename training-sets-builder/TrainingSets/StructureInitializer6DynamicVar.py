@@ -864,6 +864,9 @@ DEV0	='''
         //set d value
         setDvalue(Vin, part);
 
+        //set shape value
+        setShape(Vin, part);
+
 	//calculate structure energy
         if((MC_spin%(fullname)s) && (spec->icue ==4)){
 		for(i=0;i<4;i++){
@@ -957,6 +960,9 @@ DEV1	='''
         //set d value
         setDvalue(Vin, part);
 
+        //set shape value
+        setShape(Vin, part);
+
 	//calculate structure energy
         if((MC_spin%(fullname)s) && (spec->icue ==4)){
 		for(i=0;i<4;i++){
@@ -1047,6 +1053,9 @@ double devspin%(fullname)s(Species *spec){
 DEV2	='''
         //set d value
         setDvalue(Vin, part);
+
+        //set shape value
+        setShape(Vin, part);
 
 	//calculate structure energy
         if((MC_spin%(fullname)s) && (spec->icue ==4)){
@@ -1139,6 +1148,9 @@ double devspin%(fullname)s(Species *spec){
 DEV3	='''
         //set d value
         setDvalue(Vin, part);
+
+        //set shape value
+        setShape(Vin, part);
 
 	//calculate structure energy
         if((MC_spin%(fullname)s) && (spec->icue ==4)){

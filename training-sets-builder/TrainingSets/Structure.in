@@ -56,37 +56,127 @@ Znplus11	Zn+11	12	30	1	0
 H		H+0	1	1	1	0
 H_		H-1	1	1	1	1
 
-Fullname	Name		Fix	Charge	Kernel	Charge	Kernel	Spin_a	Spin_b	BL	BO
-#O2                             	
-O2_linnett	O2_li		1 	6	8	6	8	7	5	1.207	2      
-O2_snglbnd	O2_sn		1 	6	8	6	8	7	5	1.207	2 
-O2_dblbnd	O2_db		1 	6	8	6	8	7	5	1.207	2 
-O2_trplbnd	O2_tr		1 	6	8	6	8	7	5	1.207	2 
-O2dia_linnett	O2dia_li	1 	6	8	6	8	6	6	1.207	2 
-O2dia_snglbnd	O2dia_sn	1 	6	8	6	8	6	6	1.207	2 
-O2dia_dblbnd	O2dia_db	1 	6	8	6	8	6	6	1.207	2 
-O2dia_trplbnd	O2dia_tr	1 	6	8	6	8	6	6	1.207	2 
-O2qnt_linnett	O2qnt_li	1 	6	8	6	8	8	4	1.207	1 
-O2qnt_snglbnd	O2qnt_sn	1 	6	8	6	8	8	4	1.207	1 
-O2qnt_dblbnd	O2qnt_db	1 	6	8	6	8	8	4	1.207	1 
-O2qnt_trplbnd	O2qnt_tr	1 	6	8	6	8	8	4	1.207	1 
-O2plus1		O2+1		1	6	8	6	8	6	5	1.123	2.5
-O2_1		O2-1		1	6	8	6	8	7	6	1.33	1.5
+Fullname		Name		Fix	Charge	Kernel	Charge	Kernel	Spin_a	Spin_b	BL	BO
+#O2             	                	
+O2_linnett		O2_li		1 	6	8	6	8	7	5	1.207	2      
+O2_snglbnd		O2_sn		1 	6	8	6	8	7	5	1.207	2 
+O2_dblbnd		O2_db		1 	6	8	6	8	7	5	1.207	2 
+O2_trplbnd		O2_tr		1 	6	8	6	8	7	5	1.207	2 
+O2dia_linnett		O2dia_li	1 	6	8	6	8	6	6	1.207	2 
+O2dia_snglbnd		O2dia_sn	1 	6	8	6	8	6	6	1.207	2 
+O2dia_dblbnd		O2dia_db	1 	6	8	6	8	6	6	1.207	2 
+O2dia_trplbnd		O2dia_tr	1 	6	8	6	8	6	6	1.207	2 
+O2qnt_linnett		O2qnt_li	1 	6	8	6	8	8	4	1.207	1 
+O2qnt_snglbnd		O2qnt_sn	1 	6	8	6	8	8	4	1.207	1 
+O2qnt_dblbnd		O2qnt_db	1 	6	8	6	8	8	4	1.207	1 
+O2qnt_trplbnd		O2qnt_tr	1 	6	8	6	8	8	4	1.207	1 
+O2plus1			O2+1		1	6	8	6	8	6	5	1.123	2.5
+O2_1			O2-1		1	6	8	6	8	7	6	1.33	1.5
                                   
-#H2                               
-H2		H2		2 	1	1	1	1	1	1	0.7414	1	
-H2trp		H2*		2 	1	1	1	1	2	0	0.9890	1	
-H2plus		H2+1		2 	1	1	1	1	1	0	1.05677	1	
-H2minus		H2-1		2 	1	1	1	1	2	1	0.9750	1	
+#N2                             	
+N2_snglt_linnett	N2_sn_li	1 	5	7	5	7	5	5	1.10	3      
+N2_snglt_snglbnd	N2_sn_sn	1 	5	7	5	7	5	5	1.10	3 
+N2_snglt_dblbnd		N2_sn_db	1 	5	7	5	7	5	5	1.10	3 
+N2_snglt_trplbnd	N2_sn_tr	1 	5	7	5	7	5	5	1.10	3 
+N2_trplt_linnett	N2_tr_li	1 	5	7	5	7	6	4	1.10	3 
+N2_trplt_snglbnd	N2_tr_sn	1 	5	7	5	7	6	4	1.10	3 
+N2_trplt_dblbnd		N2_tr_db	1 	5	7	5	7	6	4	1.10	3 
+N2_trplt_trplbnd	N2_tr_tr	1 	5	7	5	7	6	4	1.10	3 
+                                  
+#C2                             	
+C2_snglt_linnett	C2_sn_li	1 	4	6	4	6	4	4	1.24	2      
+C2_snglt_snglbnd	C2_sn_sn	1 	4	6	4	6	4	4	1.24	2 
+C2_snglt_dblbnd		C2_sn_db	1 	4	6	4	6	4	4	1.24	2 
+C2_snglt_trplbnd	C2_sn_tr	1 	4	6	4	6	4	4	1.24	2 
+C2_trplt_linnett	C2_tr_li	1 	4	6	4	6	5	3	1.24	2 
+C2_trplt_snglbnd	C2_tr_sn	1 	4	6	4	6	5	3	1.24	2 
+C2_trplt_dblbnd		C2_tr_db	1 	4	6	4	6	5	3	1.24	2 
+C2_trplt_trplbnd	C2_tr_tr	1 	4	6	4	6	5	3	1.24	2 
+                                  
+#B2                             	
+B2_snglt_linnett	B2_sn_li	1 	3	5	3	5	3	3	1.59	1      
+B2_snglt_snglbnd	B2_sn_sn	1 	3	5	3	5	3	3	1.59	1 
+B2_snglt_dblbnd		B2_sn_db	1 	3	5	3	5	3	3	1.59	1 
+B2_snglt_trplbnd	B2_sn_tr	1 	3	5	3	5	3	3	1.59	1 
+B2_trplt_linnett	B2_tr_li	1 	3	5	3	5	4	2	1.59	1 
+B2_trplt_snglbnd	B2_tr_sn	1 	3	5	3	5	4	2	1.59	1 
+B2_trplt_dblbnd		B2_tr_db	1 	3	5	3	5	4	2	1.59	1 
+B2_trplt_trplbnd	B2_tr_tr	1 	3	5	3	5	4	2	1.59	1 
+                                  
+#F2                             	
+F2_snglt_linnett	F2_sn_li	1 	7	9	7	9	7	7	1.41	1      
+F2_snglt_snglbnd	F2_sn_sn	1 	7	9	7	9	7	7	1.41	1 
+F2_snglt_dblbnd		F2_sn_db	1 	7	9	7	9	7	7	1.41	1 
+F2_snglt_trplbnd	F2_sn_tr	1 	7	9	7	9	7	7	1.41	1 
+F2_trplt_linnett	F2_tr_li	1 	7	9	7	9	8	6	1.41	1 
+F2_trplt_snglbnd	F2_tr_sn	1 	7	9	7	9	8	6	1.41	1 
+F2_trplt_dblbnd		F2_tr_db	1 	7	9	7	9	8	6	1.41	1 
+F2_trplt_trplbnd	F2_tr_tr	1 	7	9	7	9	8	6	1.41	1 
+                                  
+#Al2                             	
+Al2_snglt_linnett	Al2_sn_li	1 	3	13	3	13	3	3	2.70	1      
+Al2_snglt_snglbnd	Al2_sn_sn	1 	3	13	3	13	3	3	2.70	1 
+Al2_snglt_dblbnd	Al2_sn_db	1 	3	13	3	13	3	3	2.70	1 
+Al2_snglt_trplbnd	Al2_sn_tr	1 	3	13	3	13	3	3	2.70	1 
+Al2_trplt_linnett	Al2_tr_li	1 	3	13	3	13	4	2	2.70	1 
+Al2_trplt_snglbnd	Al2_tr_sn	1 	3	13	3	13	4	2	2.70	1 
+Al2_trplt_dblbnd	Al2_tr_db	1 	3	13	3	13	4	2	2.70	1 
+Al2_trplt_trplbnd	Al2_tr_tr	1 	3	13	3	13	4	2	2.70	1 
 
-Fullname	Name		Fix     Charge	Kernel	Charge	Kernel	Charge	Kernel	Spin_a	Spin_b	BL	BO
-#H3                                     
-H3		H3		0       1	1	1	1	1	1	2	1	0.877	1 
-H3linear	H3linear	0       1	1	1	1	1	1	2	1	0.9299	1 
-#H3plus		H3+1		2	1	1	1	1	1	1	1	1	0.877	1  #need to take 3 H-H distances into cost function calculation  
-                                        
-#O3_linnett	O3_li		3	6	8	6	8	6	8	9	9	1.278	1  #mannualy change the reference dipole moment
-#O3trp_linnett	O3trp_li	0	6	8	6	8	6	8	10	8	1.278	1
+#Si2                             	
+Si2_snglt_linnett	Si2_sn_li	1 	4	14	4	14	4	4	2.24	2      
+Si2_snglt_snglbnd	Si2_sn_sn	1 	4	14	4	14	4	4	2.24	2 
+Si2_snglt_dblbnd	Si2_sn_db	1 	4	14	4	14	4	4	2.24	2 
+Si2_snglt_trplbnd	Si2_sn_tr	1 	4	14	4	14	4	4	2.24	2 
+Si2_trplt_linnett	Si2_tr_li	1 	4	14	4	14	5	3	2.24	2 
+Si2_trplt_snglbnd	Si2_tr_sn	1 	4	14	4	14	5	3	2.24	2 
+Si2_trplt_dblbnd	Si2_tr_db	1 	4	14	4	14	5	3	2.24	2 
+Si2_trplt_trplbnd	Si2_tr_tr	1 	4	14	4	14	5	3	2.24	2 
+                                  
+#P2                             	
+P2_snglt_linnett	P2_sn_li	1 	5	15	5	15	5	5	1.89	3      
+P2_snglt_snglbnd	P2_sn_sn	1 	5	15	5	15	5	5	1.89	3 
+P2_snglt_dblbnd		P2_sn_db	1 	5	15	5	15	5	5	1.89	3 
+P2_snglt_trplbnd	P2_sn_tr	1 	5	15	5	15	5	5	1.89	3 
+P2_trplt_linnett	P2_tr_li	1 	5	15	5	15	6	4	1.89	3 
+P2_trplt_snglbnd	P2_tr_sn	1 	5	15	5	15	6	4	1.89	3 
+P2_trplt_dblbnd		P2_tr_db	1 	5	15	5	15	6	4	1.89	3 
+P2_trplt_trplbnd	P2_tr_tr	1 	5	15	5	15	6	4	1.89	3 
+                                  
+#S2                             	
+S2_snglt_linnett	S2_sn_li	1 	6	16	6	16	6	6	1.89	2      
+S2_snglt_snglbnd	S2_sn_sn	1 	6	16	6	16	6	6	1.89	2 
+S2_snglt_dblbnd		S2_sn_db	1 	6	16	6	16	6	6	1.89	2 
+S2_snglt_trplbnd	S2_sn_tr	1 	6	16	6	16	6	6	1.89	2 
+S2_trplt_linnett	S2_tr_li	1 	6	16	6	16	7	5	1.89	2 
+S2_trplt_snglbnd	S2_tr_sn	1 	6	16	6	16	7	5	1.89	2 
+S2_trplt_dblbnd		S2_tr_db	1 	6	16	6	16	7	5	1.89	2 
+S2_trplt_trplbnd	S2_tr_tr	1 	6	16	6	16	7	5	1.89	2 
+                                  
+#Cl2                             	
+Cl2_snglt_linnett	Cl2_sn_li	1 	7	17	7	17	7	7	1.99	1      
+Cl2_snglt_snglbnd	Cl2_sn_sn	1 	7	17	7	17	7	7	1.99	1 
+Cl2_snglt_dblbnd	Cl2_sn_db	1 	7	17	7	17	7	7	1.99	1 
+Cl2_snglt_trplbnd	Cl2_sn_tr	1 	7	17	7	17	7	7	1.99	1 
+Cl2_trplt_linnett	Cl2_tr_li	1 	7	17	7	17	8	6	1.99	1 
+Cl2_trplt_snglbnd	Cl2_tr_sn	1 	7	17	7	17	8	6	1.99	1 
+Cl2_trplt_dblbnd	Cl2_tr_db	1 	7	17	7	17	8	6	1.99	1 
+Cl2_trplt_trplbnd	Cl2_tr_tr	1 	7	17	7	17	8	6	1.99	1 
+
+#H2                               
+H2			H2		2 	1	1	1	1	1	1	0.7414	1	
+H2trp			H2*		2 	1	1	1	1	2	0	0.9890	1	
+H2plus			H2+1		2 	1	1	1	1	1	0	1.05677	1	
+H2minus			H2-1		2 	1	1	1	1	2	1	0.9750	1	
+
+Fullname		Name		Fix     Charge	Kernel	Charge	Kernel	Charge	Kernel	Spin_a	Spin_b	BL	BO
+#H3             	                        
+H3			H3		0       1	1	1	1	1	1	2	1	0.877	1 
+H3linear		H3linear	0       1	1	1	1	1	1	2	1	0.9299	1 
+#H3plus			H3+1		2	1	1	1	1	1	1	1	1	0.877	1  #need to take 3 H-H distances into cost function calculation  
+                	                        
+#O3_linnett		O3_li		3	6	8	6	8	6	8	9	9	1.278	1  #mannualy change the reference dipole moment
+#O3trp_linnett		O3trp_li	0	6	8	6	8	6	8	10	8	1.278	1
 
 
 
@@ -126,6 +216,7 @@ Fplus2ex	F+2*	7	9	3	2
 Fplus2ex2	F+2**	7	9	5	0
 Fplus3		F+3	7	9	3	1
 Fplus3ex	F+3*	7	9	2	2
+Fplus3ex2	F+3**	7	9	4	0
 Fplus4		F+4	7	9	2	1
 Fplus4ex	F+4*	7	9	3	0
 Fplus5		F+5	7	9	1	1
@@ -238,9 +329,9 @@ Tineutrl	Ti+0	4	22	3	1
 Tineutrlex	Ti+0*	4	22	4	0
 Tineutrlex2	Ti+0**	4	22	2	2
 Tiplus1		Ti+1	4	22	3	0
-Tiplus1*	Ti+1*	4	22	2	1
+Tiplus1ex	Ti+1*	4	22	2	1
 Tiplus2		Ti+2	4	22	2	0
-Tiplus2*	Ti+2*	4	22	1	1
+Tiplus2ex	Ti+2*	4	22	1	1
 Tiplus3		Ti+3	4	22	1	0
 
 #Vanadium

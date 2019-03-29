@@ -186,6 +186,24 @@ int main (int argc, char *argv[]) {
 	lowermainspinO2();
 	lowermainspinO2dia();
 	lowermainspinO2qnt();
+	lowermainspinN2_snglt();
+	lowermainspinN2_trplt();
+	lowermainspinC2_snglt();
+	lowermainspinC2_trplt();
+	lowermainspinB2_snglt();
+	lowermainspinB2_trplt();
+	lowermainspinF2_snglt();
+	lowermainspinF2_trplt();
+	lowermainspinAl2_snglt();
+	lowermainspinAl2_trplt();
+	lowermainspinSi2_snglt();
+	lowermainspinSi2_trplt();
+	lowermainspinP2_snglt();
+	lowermainspinP2_trplt();
+	lowermainspinS2_snglt();
+	lowermainspinS2_trplt();
+	lowermainspinCl2_snglt();
+	lowermainspinCl2_trplt();
 
 	lowermain(O2_linnett);
 	lowermain(O2_snglbnd);

@@ -1,0 +1,28 @@
+
+
+void specspinCl2_snglt_linnett(Species *spec);
+void specspinCl2_snglt_snglbnd(Species *spec);
+void specspinCl2_snglt_dblbnd(Species *spec);
+void specspinCl2_snglt_trplbnd(Species *spec);
+void specspinCl2_trplt_linnett(Species *spec);
+void specspinCl2_trplt_snglbnd(Species *spec);
+void specspinCl2_trplt_dblbnd(Species *spec);
+void specspinCl2_trplt_trplbnd(Species *spec);
+
+double devspinCl2_snglt_linnett(Species *spec);
+double devspinCl2_snglt_snglbnd(Species *spec);
+double devspinCl2_snglt_dblbnd(Species *spec);
+double devspinCl2_snglt_trplbnd(Species *spec);
+double devspinCl2_trplt_linnett(Species *spec);
+double devspinCl2_trplt_snglbnd(Species *spec);
+double devspinCl2_trplt_dblbnd(Species *spec);
+double devspinCl2_trplt_trplbnd(Species *spec);
+
+double ainterspinCl2_snglt_linnett(Species *spec);
+double ainterspinCl2_snglt_snglbnd(Species *spec);
+double ainterspinCl2_snglt_dblbnd(Species *spec);
+double ainterspinCl2_snglt_trplbnd(Species *spec);
+double ainterspinCl2_trplt_linnett(Species *spec);
+double ainterspinCl2_trplt_snglbnd(Species *spec);
+double ainterspinCl2_trplt_dblbnd(Species *spec);
+double ainterspinCl2_trplt_trplbnd(Species *spec);

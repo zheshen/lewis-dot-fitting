@@ -138,3 +138,14 @@ void setDvalue(V * Vin, int part){
 		}
 	}
 }
+
+void setShape(V * Vin, int part){
+	int i;
+	for (i=0; i<part; i++){
+		if (Vin[i].q == -1){
+			Vin[i].eta = 1;
+			Vin[i].zeta = 1;
+		}
+	}
+}
+

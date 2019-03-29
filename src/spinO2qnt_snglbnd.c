@@ -234,6 +234,9 @@ double ainterspinO2qnt_snglbnd(Species * spec){
         //set d value
         setDvalue(Vin, part);
 
+        //set shape value
+        setShape(Vin, part);
+
 	//calculate structure energy
         if((MC_spinO2qnt_snglbnd) && (spec->icue ==4)){
 		for(i=0;i<4;i++){
